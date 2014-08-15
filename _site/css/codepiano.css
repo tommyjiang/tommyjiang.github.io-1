@@ -42,14 +42,18 @@ html, body, div.wrapper {
 
 /* 段落样式 */
 .paragraph {
-  font-size: 15px;
+  font-size: 16px;
   text-indent: 2em;
 }
 
-/* Org mode 段落样式 */
-.outline-2 {
-  font-size: 15px;
-  text-indent: 2em;
+/* 列表样式 Tommy */
+ul {
+  font-size: 16px;
+}
+
+/* h1 Indent Tommy */
+h1 {
+  text-indent: 32px; /* paragraph 16px = 1em */
 }
 
 /* font-awesome post信息按钮样式 */

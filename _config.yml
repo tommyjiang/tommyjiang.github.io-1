@@ -5,6 +5,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 # 分页配置，每页最多显示几篇文章
 paginate: 4
+ 
+# Markdown解析
+markdown: kramdown
 
 # 修改为自己的配置
 title : 电力引领生活
@@ -82,7 +85,9 @@ codepiano :
   # 修改评论服务设置，short_name修改为你的disque账户名
   # 如果想自定义评论服务提供商，请自行google
   comments :
-    provider : disqus
+    provider : duoshuo
+    duoshuo :
+      short_name : Tommy
     disqus :
       short_name : Tommy 
    

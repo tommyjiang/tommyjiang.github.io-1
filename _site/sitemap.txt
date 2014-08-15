@@ -8,4 +8,5 @@ http://tommyjiang.github.com/rss.xml
 http://tommyjiang.github.com/sitemap.txt
 http://tommyjiang.github.com/timeline.html
 
+http://tommyjiang.github.com/2014/08/16/pt-share
 http://tommyjiang.github.com/2014/08/15/first-post
