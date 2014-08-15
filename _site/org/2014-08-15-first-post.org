@@ -1,0 +1,20 @@
+#+BEGIN_HTML
+---
+layout: post 
+title: 第一篇博文 顺致小哥
+categories: [感悟, 技术]
+tags: [Emacs, org-mode, GitHub, Jekyll, Geek, 小哥]
+icon: leaf
+---
+#+END_HTML
+* 缘起
+2013年11月17日，当时我在香港，在小哥的忽悠下，注册了被誉为“程序员的Facebook”
+——GitHub社区的帐号。注册后小哥曾大力推荐我用Github + Jekyll搭建自己的博客，这也是他博客
+[[http://yangchao.me][小哥的博客]] 的主要工具。
+
+时过境迁，转眼已到了2014年的8月份。从2014年初我就开始折腾Emacs，到现在基本熟悉了Orgmode
+的用法，也终于有精力可以折腾点别的。前几天刚配好Emacs+ESS，今天就开始折腾Emacs
+Orgmode+Jekyll+Github搭建博客的方法，折腾了一天，总算基本成功了，还要感谢小哥引
+领我走上 *Geek* 的道路。
+* 致谢
+本博客模版来自[[https://github.com/codepiano/codepiano.github.com][codepiano]] ，感谢原作者分享的代码。

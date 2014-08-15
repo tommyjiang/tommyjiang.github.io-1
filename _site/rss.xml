@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>电力引领生活</title>
+        <description>电力引领生活 - Tommy</description>
+        <link>http://tommyjiang.github.com</link>
+        <link>http://tommyjiang.github.com</link>
+        <lastBuildDate>2014-08-16T00:15:10+08:00</lastBuildDate>
+        <pubDate>2014-08-16T00:15:10+08:00</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>第一篇博文 顺致小哥</title>
+                <description>&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;缘起&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+2013年11月17日，当时我在香港，在小哥的忽悠下，注册了被誉为“程序员的Facebook”——GitHub社区的帐号。注册后小哥曾大力推荐我用Github + Jekyll搭建自己的博客，这也是他博客
+&lt;a href=&quot;http://yangchao.me&quot;&gt;小哥的博客&lt;/a&gt; 的主要工具。
+&lt;/p&gt;
+
+&lt;p&gt;
+时过境迁，转眼已到了2014年的8月份。从2014年初我就开始折腾Emacs，到现在基本熟悉了Orgmode
+的用法，也终于有精力可以折腾点别的。前几天刚配好Emacs+ESS，今天就开始折腾Emacs
+Orgmode+Jekyll+Github搭建博客的方法，折腾了一天，总算基本成功了，还要感谢小哥引领我走上 &lt;b&gt;Geek&lt;/b&gt; 的道路。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;致谢&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+本博客模版来自&lt;a href=&quot;https://github.com/codepiano/codepiano.github.com&quot;&gt;codepiano&lt;/a&gt; ，感谢原作者分享的代码。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+                <link>http://tommyjiang.github.com/2014/08/15/first-post</link>
+                <guid>http://tommyjiang.github.com/2014/08/15/first-post</guid>
+                <pubDate>2014-08-15T00:00:00+08:00</pubDate>
+        </item>
+
+
+</channel>
+</rss>
