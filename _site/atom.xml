@@ -4,7 +4,7 @@
  <title>电力引领生活</title>
  <link href="http://tommyjiang.github.com/" rel="self"/>
  <link href="http://tommyjiang.github.com"/>
- <updated>2014-08-16T21:16:47+08:00</updated>
+ <updated>2014-08-18T10:14:04+08:00</updated>
  <id>http://tommyjiang.github.com</id>
  <author>
    <name>Tommy</name>
@@ -13,18 +13,18 @@
 
  
  <entry>
-   <title>玩PT的心得</title>
+   <title>我与PT</title>
    <link href="http://tommyjiang.github.com/2014/08/16/pt-share"/>
    <updated>2014-08-16T00:00:00+08:00</updated>
    <id>http://tommyjiang.github.com/2014/08/16/pt-share</id>
    <content type="html">&lt;h1&gt;初识PT&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  2010年世界杯的时候，为了下载比赛，我注册了第一个PT——&lt;a href=&quot;bt.neu6.edu.cn&quot;&gt;六维空间(需要IPv6连接)&lt;/a&gt;的帐号。当时是师兄发的邀请，还记得注册之后要先答题才能下载，设置这个环节主要是为了普及PT的基本知识。六维的人气在当时就已经很高了，目前应该是教育网第一大PT。当时每天早上都可以到下载到最新的比赛，一般是先有1080i，接着会出720p。虽然当时学校还没有每个月20G的流量限制，但是能第一时间下载到高清的比赛，还是非常畅快的。
+&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+  2010年世界杯的时候，为了下载比赛的视频，我注册了第一个PT——&lt;a href=&quot;http://bt.neu6.edu.cn&quot; target = &quot;_blank&quot;&gt;六维空间(需要IPv6连接)&lt;/a&gt;的帐号。当时是一个师兄发的邀请，当我用邀请码注册完后，兴冲冲地想下载视频时，却发现要先回答一些关于PT的问题之后才能下载。现在回过头看，设置答题这个门槛还是十分必要的，可以在最开始就过滤掉那些伸手党。六维的人气在当时就已经很高了，目前应该是教育网第一大PT，发种的速度非常快。注册完之后的那几天，每天早上都可以到下载到当天凌晨最新的比赛。虽然当时学校还没有每个月20G的流量限制，即使没有六维，也能用v4的工具下载，或者直接到网上看视频。但能从六维上第一时间下载到高清的比赛，感觉还是很过瘾的。
 &lt;/p&gt;
 
 &lt;h1&gt;三大PT&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  虽然六维的资源非常全，在校内下载速度也非常快(一般是几M/s)，但六维还是有一些限制的：
+&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+  虽然六维的资源非常全，在校内下载速度也很快(一般是几M/s)，但六维还是有一些限制的：
 &lt;/p&gt;
 
 &lt;ul&gt;
@@ -32,15 +32,19 @@
   &lt;li&gt;六维本身没有录制小组和压制小组，都是转载其他PT的资源。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;paragraph&quot;&gt;
+&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
   因此，本着有备无患的原则，我又申请了国内三个主要PT的帐号。
 &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://totheglory.im/&quot;&gt;TTG&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://hdwing.com&quot;&gt;HDWing&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://chdbits.org&quot;&gt;CHD&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://totheglory.im/&quot; target = &quot;_blank&quot;&gt;TTG&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://hdwing.com&quot; target = &quot;_blank&quot;&gt;HDWing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://chdbits.org&quot; target = &quot;_blank&quot;&gt;CHD&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+  如果你不是以上三个PT的会员，当你打开这些页面时，都会出现用户登录的页面。如果你也想下载高清的资源，肯定会点页面上的“注册”。但是很遗憾，这些PT都需要邀请注册，普通用户是无法直接注册的，这就涉及到PT的核心机制了。具体原因可以参考&lt;a href=&quot;http://baike.baidu.com/view/1932691.htm?fr=aladdin&quot; target = &quot;_blank&quot;&gt;百度知道·PT下载&lt;/a&gt;。简单来说，PT网站要求用户保持一定的分享率，如果可以自由注册，那一定会出现很多“马甲”，只下自己想下的，不满足分享率要求也无所谓，再重新注册一个就行了。因此，这几个PT都有邀请注册的机制，这相当于一个门槛，从开始就过滤掉潜在的伸手党。
+&lt;/p&gt;
 </content>
  </entry>
  
@@ -50,23 +54,21 @@
    <updated>2014-08-15T00:00:00+08:00</updated>
    <id>http://tommyjiang.github.com/2014/08/15/first-post</id>
    <content type="html">&lt;h1&gt;缘起&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
+&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
 2013年11月17日，当时我在香港，在小哥的忽悠下，注册了被誉为“程序员的Facebook”——GitHub社区的帐号。注册后小哥曾大力推荐我用Github + Jekyll搭建自己的博客，这也是他博客
-&lt;a href=&quot;http://yangchao.me&quot;&gt;小哥的博客&lt;/a&gt; 的主要工具。
+&lt;a href=&quot;http://yangchao.me&quot; target = &quot;_blank&quot;&gt;小哥的博客&lt;/a&gt; 的主要工具。
 &lt;/p&gt;
 
-&lt;p class=&quot;paragraph&quot;&gt;
+&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
 时过境迁，转眼已到了2014年的8月份。从2014年初我就开始折腾Emacs，到现在基本熟悉了Orgmode
 的用法，也终于有精力可以折腾点别的。前几天刚配好Emacs+ESS，今天就开始折腾Emacs
 Orgmode+Jekyll+Github搭建博客的方法，折腾了一天，总算基本成功了，还要感谢小哥引领我走上 &lt;b&gt;Geek&lt;/b&gt; 的道路。
 &lt;/p&gt;
 
 &lt;h1&gt;致谢&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-本博客模版来自&lt;a href=&quot;https://github.com/codepiano/codepiano.github.com&quot;&gt;codepiano&lt;/a&gt; ，感谢原作者分享的代码。
+&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+本博客模版来自&lt;a href=&quot;https://github.com/codepiano/codepiano.github.com&quot; target = &quot;_blank&quot;&gt;codepiano&lt;/a&gt; ，感谢原作者分享的代码。
 &lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </content>
  </entry>
  
