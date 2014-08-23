@@ -56,6 +56,18 @@ h1 {
   text-indent: 32px; /* paragraph 16px = 1em */
 }
 
+/* img center Tommy*/
+img.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* highlight margin Tommy */
+div.highlight{
+  margin-left: 32px;
+}
+
 /* font-awesome post信息按钮样式 */
 .fa-folder-open, .fa-tags, .fa-calendar {
   color:#A84365;
@@ -67,19 +79,20 @@ h1 {
 
 /* 自定义高亮样式 */
 .highlight pre,code {
-  font-size: 15px;
+  font-size: 16px;
   background-color: #002B36;
   color:#93A1A1;
 }
 
 blockquote {
-  font-size: 15px;
+  font-size: 16px;
+  margin-left: 2em;
   background-color: #002B36;
   color:#93A1A1;
 }
 
 blockquote p {
-  font-size: 15px;
+  font-size: 16px;
 }
 /* 覆盖bootstrap导航条设置 */
 a.navbar-brand {

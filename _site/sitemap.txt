@@ -1,4 +1,5 @@
 
+http://tommyjiang.github.com/draft/2015-06-16-leave-tsinghua.html
 http://tommyjiang.github.com/about.html
 http://tommyjiang.github.com/atom.xml
 http://tommyjiang.github.com/categories.html
@@ -8,5 +9,6 @@ http://tommyjiang.github.com/rss.xml
 http://tommyjiang.github.com/sitemap.txt
 http://tommyjiang.github.com/timeline.html
 
+http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language
 http://tommyjiang.github.com/2014/08/16/pt-share
 http://tommyjiang.github.com/2014/08/15/first-post
