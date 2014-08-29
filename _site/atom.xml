@@ -4,7 +4,7 @@
  <title>电力引领生活</title>
  <link href="http://tommyjiang.github.com/" rel="self"/>
  <link href="http://tommyjiang.github.com"/>
- <updated>2014-08-27T11:25:52+08:00</updated>
+ <updated>2014-09-13T11:59:26+08:00</updated>
  <id>http://tommyjiang.github.com</id>
  <author>
    <name>Tommy</name>
@@ -13,12 +13,387 @@
 
  
  <entry>
+   <title>昆明之行</title>
+   <link href="http://tommyjiang.github.com/2014/09/12/Kunming-travel"/>
+   <updated>2014-09-12T00:00:00+08:00</updated>
+   <id>http://tommyjiang.github.com/2014/09/12/Kunming-travel</id>
+   <content type="html">&lt;p class=&quot;paragraph&quot;&gt;
+  终于获得一次目的地不是通辽而且和863项目无关的出差机会，目的地是美丽的春城昆明。在此之前我在国内到过的最西的地方是2007年夏天大一暑期实践去的湖北宜昌。
+&lt;/p&gt;
+
+&lt;h1&gt;启程&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  2014年9月12日早上9点55从东主楼出发，11点20到达T3。国航北京出发的航班值机是在航班起飞前36小时，所以直接在网上值机选座。到T3后自助打印登机牌的机器不好用，最好还是到J区人工柜台排队值机。好在T3中午人并不多，很顺利地拿到登机牌过安检。今天航班的登机口是C32，算是绝佳的位置了，紧挨着T3C的安检，过了安检几乎不用走路（可以参考 &lt;a href=&quot;/2014/08/27/CA-information#T3 departure&quot; target=&quot;_blank&quot;&gt;T3航站楼出发流程&lt;/a&gt;）。乐极生悲，虽然登机口位置不错，但舱门关闭之后被告知重庆、昆明方向交通管制，起飞时间待定。最后到达昆明晚了2小时9分钟。可惜当时申请中信i白金被拒了，不然就可以薅到1000块的大羊腿了（中信延误险以落地时间为准，具体可参考 &lt;a href=&quot;http://cards.ecitic.com/tc/flight.htm&quot; target=&quot;_blank&quot;&gt;中信银行 航班延误保险条款及细则&lt;/a&gt;）。
+&lt;/p&gt;
+
+&lt;h1&gt;春城第一印象&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  飞行过程还算平稳，最后悔的是没找空姐要个毛毯，只能忍受飞机上空调的低温了。迷迷糊糊睡了2个多小时之后，下午5点39分，终于平安抵达了春城昆明。昆明的平均海拔有1900米，长水机场的海拔则有2100米，在长水机场降落时，可以看到四周的小山。下飞机后坐空港快线2号线，可以直达目的地泰丽国际酒店。云南不愧是旅游胜地，在空港快线的车上还有一位小妹介绍云南和昆明可以游玩的地方，同时解答车上乘客的各种问题。进市区之后一个明显的感觉是大街上的电动车和摩托车非常多。到酒店之后报到、入住，晚餐吃的自助，在菜品中还发现了莲藕排骨汤，不过这藕是脆的，和北京的一样，和香糯的湖北藕相比可差远了。
+&lt;/p&gt; 
+</content>
+ </entry>
+ 
+ <entry>
+   <title>国航相关信息汇总</title>
+   <link href="http://tommyjiang.github.com/2014/08/27/CA-information"/>
+   <updated>2014-08-27T00:00:00+08:00</updated>
+   <id>http://tommyjiang.github.com/2014/08/27/CA-information</id>
+   <content type="html">&lt;p class=&quot;paragraph&quot;&gt;
+  Base北京，航空公司自然选择国航，将国航相关的信息汇总如下。
+&lt;/p&gt;
+
+&lt;h1&gt;国航常旅客计划&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  国航的Logo是一个凤凰图案，其常旅客卡名字也与凤凰有关，叫凤凰知音卡。知音卡共分五个等级：普卡、银卡、金卡、白金卡和终身白金卡。有关资料可以参考&lt;a href=&quot;http://ffp.airchina.com.cn/cn/zyjh_new/zyjh.jsp?forword=zxfw&quot; target=&quot;_blank&quot;&gt;国航知音网站 成为贵宾会员&lt;/a&gt;。下面列出首次成为及保持贵宾会员（银卡以上）的标准：
+&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;caption&gt;国航首次成为贵宾会员的标准&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;等级&lt;/th&gt;
+    &lt;th&gt;里程标准&lt;/th&gt;
+    &lt;th&gt;定级航段标准&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;银卡&lt;/td&gt;
+    &lt;td&gt;4万公里&lt;/td&gt;
+    &lt;td&gt;25个&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;金卡&lt;/td&gt;
+    &lt;td&gt;8万公里&lt;/td&gt;
+    &lt;td&gt;40个&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;白金卡&lt;/td&gt;
+    &lt;td&gt;16万公里&lt;/td&gt;
+    &lt;td&gt;90个&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;caption&gt;国航保持贵宾会员的标准&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;等级&lt;/th&gt;
+    &lt;th&gt;里程标准&lt;/th&gt;
+    &lt;th&gt;定级航段标准&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;银卡&lt;/td&gt;
+    &lt;td&gt;3.5万公里&lt;/td&gt;
+    &lt;td&gt;23个&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;金卡&lt;/td&gt;
+    &lt;td&gt;7万公里&lt;/td&gt;
+    &lt;td&gt;36个&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;白金卡&lt;/td&gt;
+    &lt;td&gt;14.5万公里&lt;/td&gt;
+    &lt;td&gt;80个&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  国航的终身白金卡比较特殊，需要乘坐国航实际承运且挂CA代号的航班飞行里程累积达到100万公里的会员，将保留白金卡会员资格，终身享受白金卡会员待遇。注意一定要是&lt;font color=&quot;red&quot;&gt;国航实际承运航班&lt;/font&gt;才可以，即使是和国航代码共享的航班，如果是其他航空公司，例如深航、川航甚至美联航等执飞，是不算到这100万公里的。由此可见，国航终身白金卡的难度相当大。
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  如果成为国航的贵宾会员，也会享有相应的权益（可以参考 &lt;a href=&quot;http://ffp.airchina.com.cn/cn/zyjh_new/zyjh.jsp?forword=zxfw&quot; target=&quot;_blank&quot;&gt;国航官网 贵宾会员专享服务&lt;/a&gt; ）：
+&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;caption&gt;国航贵宾会员专享服务&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;等级&lt;/th&gt;
+    &lt;th&gt;额外里程奖励&lt;/th&gt;
+    &lt;th&gt;休息室&lt;/th&gt;
+    &lt;th&gt;额外免费行李&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;银卡&lt;/td&gt;
+    &lt;td&gt;25%&lt;/td&gt;
+    &lt;td&gt;免费使用国际公务舱休息室&lt;br&gt;有偿使用国内公务舱休息室&lt;/td&gt;
+    &lt;td&gt;20kg/1件&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;金卡&lt;/td&gt;
+    &lt;td&gt;30%&lt;/td&gt;
+    &lt;td&gt;公务舱休息室，可额外携带一名人员&lt;/td&gt;
+    &lt;td&gt;20kg/1件&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;白金卡&lt;/td&gt;
+    &lt;td&gt;50%&lt;/td&gt;
+    &lt;td&gt;头等舱休息室，可额外携带一名人员&lt;/td&gt;
+    &lt;td&gt;30kg/1件&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  其中银卡会员在北京首都机场T3航站楼、成都双流机场、天津滨海国际机场、呼和浩特白塔机场、上海浦东国际机场2号航站楼、深圳宝安国际机场B号航站楼。里程消费标准为1500公里/每人每次。
+&lt;/p&gt;
+
+&lt;h1&gt;里程累积与里程兑换&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  国航里程自2014年4月1日起实行的累积标准表如下（可参考 &lt;a href=&quot;http://ffp.airchina.com.cn/cn/aviationInfo/staticHtml/detailHtml/airChina.html&quot; target=&quot;_blank&quot;&gt;国航官网 里程累积标准表&lt;/a&gt;）：
+&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;caption&gt;国航里程累积标准表&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;舱位&lt;/th&gt;
+    &lt;th&gt;订座舱位&lt;/th&gt;
+    &lt;th&gt;可获得实际里程的比率（国内/国际）&lt;/th&gt;
+    &lt;th&gt;最小里程额（国内/国际）&lt;/th&gt;
+    &lt;th&gt;可获得定级航段数（国内/国际）&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;头等舱&lt;/td&gt;
+    &lt;td&gt;P&lt;/td&gt;
+    &lt;td&gt;300%&lt;/td&gt;
+    &lt;td&gt;1000&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;头等舱&lt;/td&gt;
+    &lt;td&gt;F&lt;/td&gt;
+    &lt;td&gt;250%/300%&lt;/td&gt;
+    &lt;td&gt;1000&lt;/td&gt;
+    &lt;td&gt;2.5/3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;头等舱&lt;/td&gt;
+    &lt;td&gt;A&lt;/td&gt;
+    &lt;td&gt;200%/250%&lt;/td&gt;
+    &lt;td&gt;1000&lt;/td&gt;
+    &lt;td&gt;2/2.5&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;公务舱&lt;/td&gt;
+    &lt;td&gt;C&lt;/td&gt;
+    &lt;td&gt;200%&lt;/td&gt;
+    &lt;td&gt;800&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;公务舱&lt;/td&gt;
+    &lt;td&gt;D Z J&lt;/td&gt;
+    &lt;td&gt;150%&lt;/td&gt;
+    &lt;td&gt;800&lt;/td&gt;
+    &lt;td&gt;1.5&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;经济舱&lt;/td&gt;
+    &lt;td&gt;W Y&lt;/td&gt;
+    &lt;td&gt;110%&lt;/td&gt;
+    &lt;td&gt;500&lt;/td&gt;
+    &lt;td&gt;1.1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;经济舱&lt;/td&gt;
+    &lt;td&gt;B M H&lt;/td&gt;
+    &lt;td&gt;100%&lt;/td&gt;
+    &lt;td&gt;500&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;经济舱&lt;/td&gt;
+    &lt;td&gt;K L Q&lt;/td&gt;
+    &lt;td&gt;75%&lt;/td&gt;
+    &lt;td&gt;500&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;经济舱&lt;/td&gt;
+    &lt;td&gt;G V U&lt;/td&gt;
+    &lt;td&gt;50%&lt;/td&gt;
+    &lt;td&gt;500&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;经济舱&lt;/td&gt;
+    &lt;td&gt;S&lt;/td&gt;
+    &lt;td&gt;50%/25%&lt;/td&gt;
+    &lt;td&gt;500&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;经济舱&lt;/td&gt;
+    &lt;td&gt;T E&lt;/td&gt;
+    &lt;td&gt;25%&lt;/td&gt;
+    &lt;td&gt;500&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;其他舱位&lt;/td&gt;
+    &lt;td&gt;O I X R N&lt;/td&gt;
+    &lt;td&gt;0%&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+    &lt;td&gt;-&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  附上国航各舱位折扣情况（官网上没有找到相应资料，下表参考的是&lt;a href=&quot;http://wenku.baidu.com/link?url=EEmlbTlNocxCex6PNyALzPmQnKKFlC3tRsZ7bN7JVejLULp11JLE2nF1D9FMY-T8f4waWinfN97cG32rcVpNZ0f9uCiCOXTwGAkwwIxl0DW&quot; target=&quot;_blank&quot;&gt;百度文库&lt;/a&gt;中的资料）：
+&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;caption&gt;国航各舱位折扣情况&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;订座舱位&lt;/th&gt;
+    &lt;th&gt;折扣&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;W&lt;/td&gt;
+    &lt;td&gt;全价&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Y&lt;/td&gt;
+    &lt;td&gt;全价&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;B&lt;/td&gt;
+    &lt;td&gt;9折&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;M&lt;/td&gt;
+    &lt;td&gt;85折&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;H&lt;/td&gt;
+    &lt;td&gt;8折&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;K&lt;/td&gt;
+    &lt;td&gt;75折&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;L&lt;/td&gt;
+    &lt;td&gt;7折&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Q&lt;/td&gt;
+    &lt;td&gt;6折&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;G&lt;/td&gt;
+    &lt;td&gt;5折&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;V&lt;/td&gt;
+    &lt;td&gt;4折&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;U&lt;/td&gt;
+    &lt;td&gt;4折以下&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  国航奖励机票兑换标准表如下（参考 &lt;a href=&quot;http://ffp.airchina.com.cn/cn/lcdh/main.jsp&quot; target=&quot;_blank&quot;&gt;国航官网 里程兑换标准&lt;/a&gt; ）：
+&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;caption&gt;国航奖励机票兑换标准表&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th rowspan=&quot;2&quot;&gt;航程距离（公里）&lt;/th&gt;
+    &lt;th colspan=&quot;2&quot;&gt;经济舱&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;单程&lt;/th&gt;
+    &lt;th&gt;往返&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;0-800&lt;/td&gt;
+    &lt;td&gt;8,000&lt;/td&gt;
+    &lt;td&gt;15,000&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;800-1200&lt;/td&gt;
+    &lt;td&gt;12,000&lt;/td&gt;
+    &lt;td&gt;22,000&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1200-2000&lt;/td&gt;
+    &lt;td&gt;15,000&lt;/td&gt;
+    &lt;td&gt;26,000&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2000以上&lt;/td&gt;
+    &lt;td&gt;20,000&lt;/td&gt;
+    &lt;td&gt;36,000&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;!--
+&lt;p class=&quot;paragraph&quot;&gt;
+  北京出发优势航段汇总（参考 &lt;a href=&quot;http://www.douban.com/group/topic/28294329/&quot; target=&quot;_blank&quot;&gt;豆瓣 里程兑换机票优势航段汇总&lt;/a&gt;）：
+&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;caption&gt;国航北京出发兑换机票优势航段汇总&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;目的地&lt;/th&gt;
+    &lt;th&gt;飞行距离&lt;/th&gt;
+    &lt;th&gt;所属区间&lt;/th&gt;
+    &lt;th&gt;单程所需里程&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;杭州&lt;/th&gt;
+    &lt;td&gt;1134&lt;/th&gt;
+    &lt;td&gt;800-1200&lt;/th&gt;
+    &lt;td&gt;12,000&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;广州&lt;/th&gt;
+    &lt;td&gt;1905&lt;/th&gt;
+    &lt;td&gt;1200-2000&lt;/th&gt;
+    &lt;td&gt;15,000&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;深圳&lt;/th&gt;
+    &lt;td&gt;1966&lt;/th&gt;
+    &lt;td&gt;1200-2000&lt;/th&gt;
+    &lt;td&gt;15,000&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+--&gt;
+
+&lt;h1&gt;T3航站楼&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  国航大本营就在首都机场的T3航站楼，经常乘坐国航航班的话，最好把T3的情况摸清楚。下面是T3国内出发的流程图，转自&lt;a href=&quot;http://www.bcia.com.cn/images/guide/t3_dd.jpg&quot; target=&quot;_blank&quot;&gt;国航官网&lt;/a&gt;：  
+&lt;/p&gt;
+&lt;a name=&quot;T3 departure&quot;&gt;&lt;/a&gt;
+
+&lt;img class=&quot;center&quot; src=&quot;/image/2014-08/T3 departure.jpg&quot; width=&quot;800px&quot;&gt;
+
+&lt;br /&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  关于上图的一些说明：
+&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;T3C四层办理国内乘机手续。国航国内航班人工值机在J区，此外自助值机、补打登机牌也都在J区，而自助补打行程单则在H区。注意如果是从携程订的票，需要到B区靠近2号门的地方取携程打印的行程单，没有办法自助打印。国内航班一般不建议托运行李，原因是国内机场等行李的时间太长了。如果不托运行李，高峰时段可以直接自助办理值机，省时省力。&lt;/li&gt;
+  &lt;li&gt;办完乘机手续拿登机牌过安检。如果登机口在T3C，直接从国内出发C01-C61下至三楼安检；如果登机口在T3D就比较麻烦了，需要从T3C四层中间下到2层坐捷运列车到T3D登机。当然在T3C登机也要看登机口位置如何，最好的当然是离安检最近的C01-C08和C30-C37，最差的是要走很远的C15-C23。另外远机位的C51-C61也好不到哪去，需要先走一段然后下到2楼坐摆渡车。去年乘坐的山航飞九江的飞机就是这个待遇。&lt;/li&gt;
+  &lt;li&gt;今年5月4日从深圳回来把iPad落在CA1397飞机上了。当时没能亲自回飞机去找的一个主要原因，就是对T3D不熟。吃一堑，长一智，这里特别记下T3D的结构，并对比其与T3C的不同。T3D的地下1层是捷运列车，1层是安检，出发在2层，而到达在3层。从深圳回来时，由于廊桥在2层，因此从登机的廊桥出来后需要先上电梯到3层，到3层之后走出与2层登机口相对应的门之后，再从3层下电梯到1层，最后从1层下到地下1层坐捷运列车回T3C。当时我是到地下1层后才发现iPad没拿，这时只能逆着电梯到1层，再逆着电梯到3层，再从3层进门逆着电梯到2层，经过廊桥才能回到飞机。当时我已经回到了3层，但可能所有人都已下了飞机，所以与2层登机口对应的门关了，没办法再回去了。注意T3D与T3C的出发和到达对应的层数是完全不同的，具体总结如下：  &lt;/li&gt;
+  &lt;ul&gt;
+    &lt;li&gt;T3C：廊桥2层，出发3层，到达2层。出发时需要从登机口下到2层廊桥登机；到达时不需要坐电梯，直接到2层。&lt;/li&gt;
+    &lt;li&gt;T3D：廊桥2层，出发2层，到达3层。出发时直接从登机口经廊桥登机；到达时需要先坐电梯到3层出与2层登机口对应的门。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Emacs Org mode 时间戳 (Time Stamp) 设置为中文的方法</title>
    <link href="http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language"/>
    <updated>2014-08-23T00:00:00+08:00</updated>
    <id>http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language</id>
    <content type="html">&lt;h1&gt;Emacs和Org mode介绍&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   先简要介绍一下Emacs和Org mode。Emacs可以算是GNU(关于GNU，可以参考其&lt;a href=&quot;http://www.gnu.org/&quot; target=&quot;_blank&quot;&gt;官网介绍&lt;/a&gt; )社区王牌性的作品。简单来说，它是一个文本编辑器，但由于其可定制性极强，使用者可以依据自己的喜好将它“改装”成各种样子。也正是由于其自由度极高，一句经典的调侃是
 &lt;/p&gt;
 
@@ -26,44 +401,48 @@
 Emacs is anything but an editor.
 &lt;/blockquote&gt;
 
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   此外，由于&lt;a href=&quot;www.vim.org&quot; target=&quot;_blank&quot;&gt;Vim&lt;/a&gt;也是十分强大的编辑器，二者之间的圣战也是程序员们津津乐道的话题，可以参考 &lt;a href=&quot;http://en.wikipedia.org/wiki/Editor_war&quot; target=&quot;_blank&quot;&gt;Wiki: Editor War&lt;/a&gt;。
 &lt;/p&gt;
 
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   &lt;a href=&quot;orgmode.org&quot; target=&quot;_blank&quot;&gt;Org mode&lt;/a&gt;是以Emacs中的Outline Mode为基础进行扩展后的强大模式，利用Org mode可以方便地按照大纲方式组织文本。因此Org mode非常适合于写作长文章或其他组织性较强的工作，此外它也有其他一些应用，例如可以作为GTD工具(详见&lt;a href=&quot;http://doc.norang.ca/org-mode.html#ChangeHistory&quot; target=&quot;_blank&quot;&gt;Org Mode - Organize Your Life In Plain Text!&lt;/a&gt;)等。
 &lt;/p&gt;
 
 &lt;h1&gt;Emacs Org mode中的时间戳&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   Org mode中有一个功能，就是插入时间戳(time stamp)，可以参考&lt;a href=&quot;http://orgmode.org/manual/Timestamps.html#Timestamps&quot; target=&quot;_blank&quot;&gt;The Org Manual 8.1 Timestamps&lt;/a&gt;，PDF版本可以从&lt;a href=&quot;http://orgmode.org/org.pdf&quot; target=&quot;_blank&quot;&gt;这里&lt;/a&gt;下载。正常情况下，Org mode中默认的时间戳是英文的，如下图所示（最下面一行的Saturday）：
 &lt;/p&gt;
 
 &lt;img class = &quot;center&quot; src=&quot;/image/2014-08/org mode time stamp.png&quot; width=&quot;800px&quot;/&gt;
 
 &lt;h1&gt;系统环境及解决方案&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   系统环境Mac OS 10.9.4，Emacs版本(&lt;a href=&quot;http://emacsformacosx.com/&quot; target=&quot;_blank&quot;&gt;Emacs for Mac OS X&lt;/a&gt;)24.3。现在我想实现的是将Org mode中的时间戳最后的Saturday由英文改为中文。在网上看到一篇文章很受启发：&lt;a href=&quot;http://blog.aizhet.com/Windows/3941.html&quot; target=&quot;_blank&quot;&gt;org-mode里时间戳显示语言的问题&lt;/a&gt;。但该文章叙述的是如何从中文改成英文，而我是要反其道而行之。借鉴他文章中的思路，在Emacs的启动配置文件(.emacs或.emacs.d/init.el)中添加如下代码：
 &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-locale-environment&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;zh_CN.utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   添加上述代码之后再在Org mode中插入的时间戳即为中文。但我的Mac系统上还有个问题，例如星期一的缩写应为周一，但我的系统上显示的是一。在Windows下利用cygwin安装的Emacs就没有这个问题，怀疑是Mac系统设置的问题。好在Org mode中还提供了自定义时间戳格式的设置，只能暂时先用全称代替缩写了。在Emacs的启动配置文件(.emacs或.emacs.d/init.el)中添加如下代码：
 &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;setq-default&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;org-display-custom-times&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;org-time-stamp-custom-formats&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A %H:%M&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   其中的%A代替了默认设置中的%a，即为星期几(weekday)的全称。有关时间戳格式更详细的介绍可以参考 &lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/elisp/Time-Parsing.html#Time-Parsing&quot; target=&quot;_blank&quot;&gt;GNU Emacs Lisp Reference Manual 39.7 Parsing and Formatting Times&lt;/a&gt;，PDF版本可以从&lt;a href=&quot;https://www.gnu.org/software/emacs/manual/pdf/elisp.pdf&quot; target=&quot;_blank&quot;&gt;这里&lt;/a&gt;下载。
 &lt;/p&gt;
 
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   最后补上一张设置好之后的图：
 &lt;/p&gt;
 
 &lt;img class=&quot;center&quot; src=&quot;/image/2014-08/time stamp Chinese.png&quot;/ width=&quot;800px&quot;&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  2014-08-29补充：按照上面的方法修改后有一个问题，即timestamp无法自由编辑，Emacs会将其视为一个整体。目前没有太好的解决方案，只能先将org.el文件中的&lt;span class=&quot;highlight&quot; align=&quot;bottom&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;org-time-stamp-formats&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;及&lt;span class=&quot;highlight&quot; align=&quot;bottom&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;org-time-stamp-custom-formats&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;中的&lt;span class=&quot;highlight&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;%a&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;改为&lt;span class=&quot;highlight&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;%A&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;。
+&lt;/p&gt;
 </content>
  </entry>
  
@@ -73,12 +452,12 @@ Emacs is anything but an editor.
    <updated>2014-08-16T00:00:00+08:00</updated>
    <id>http://tommyjiang.github.com/2014/08/16/pt-share</id>
    <content type="html">&lt;h1&gt;初识PT&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   2010年世界杯的时候，为了下载比赛的视频，我注册了第一个PT——&lt;a href=&quot;http://bt.neu6.edu.cn&quot; target = &quot;_blank&quot;&gt;六维空间(需要IPv6连接)&lt;/a&gt;的帐号。当时是一个师兄发的邀请，当我用邀请码注册完后，兴冲冲地想下载视频时，却发现要先回答一些关于PT的问题之后才能下载。现在回过头看，设置答题这个门槛还是十分必要的，可以在最开始就过滤掉那些伸手党。六维的人气在当时就已经很高了，目前应该是教育网第一大PT，发种的速度非常快。注册完之后的那几天，每天早上都可以到下载到当天凌晨最新的比赛。虽然当时学校还没有每个月20G的流量限制，即使没有六维，也能用v4的工具下载，或者直接到网上看视频。但能从六维上第一时间下载到高清的比赛，感觉还是很过瘾的。
 &lt;/p&gt;
 
 &lt;h1&gt;三大PT&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   虽然六维的资源非常全，在校内下载速度也很快(一般是几M/s)，但六维还是存在以下限制：
 &lt;/p&gt;
 
@@ -87,7 +466,7 @@ Emacs is anything but an editor.
   &lt;li&gt;六维本身没有录制小组和压制小组，都是转载其他PT的资源。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   因此，本着有备无患的原则，我又申请了国内三个主要PT的帐号。
 &lt;/p&gt;
 
@@ -97,7 +476,7 @@ Emacs is anything but an editor.
   &lt;li&gt;&lt;a href=&quot;http://chdbits.org&quot; target = &quot;_blank&quot;&gt;CHD&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
   如果你不是以上三个PT的会员，当你打开这些页面时，都会出现用户登录的页面。如果你也想下载高清的资源，肯定会点页面上的“注册”。但是很遗憾，这些PT都需要邀请注册，普通用户是无法直接注册的，这就涉及到PT的核心机制了。具体原因可以参考&lt;a href=&quot;http://baike.baidu.com/view/1932691.htm?fr=aladdin&quot; target = &quot;_blank&quot;&gt;百度知道·PT下载&lt;/a&gt;。简单来说，PT网站要求用户保持一定的分享率，如果可以自由注册，那一定会出现很多“马甲”，只下自己想下的，不满足分享率要求也无所谓，再重新注册一个就行了。因此，这几个PT都有邀请注册的机制，这相当于一个门槛，从开始就过滤掉潜在的伸手党。
 &lt;/p&gt;
 </content>
@@ -109,19 +488,19 @@ Emacs is anything but an editor.
    <updated>2014-08-15T00:00:00+08:00</updated>
    <id>http://tommyjiang.github.com/2014/08/15/first-post</id>
    <content type="html">&lt;h1&gt;缘起&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
 2013年11月17日，当时我在香港，在小哥的忽悠下，注册了被誉为“程序员的Facebook”——GitHub社区的帐号。注册后小哥曾大力推荐我用Github + Jekyll搭建自己的博客，这也是他博客
 &lt;a href=&quot;http://yangchao.me&quot; target = &quot;_blank&quot;&gt;小哥的博客&lt;/a&gt; 的主要工具。
 &lt;/p&gt;
 
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
 时过境迁，转眼已到了2014年的8月份。从2014年初我就开始折腾Emacs，到现在基本熟悉了Orgmode
 的用法，也终于有精力可以折腾点别的。前几天刚配好Emacs+ESS，今天就开始折腾Emacs
 Orgmode+Jekyll+Github搭建博客的方法，折腾了一天，总算基本成功了，还要感谢小哥引领我走上 &lt;b&gt;Geek&lt;/b&gt; 的道路。
 &lt;/p&gt;
 
 &lt;h1&gt;致谢&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot; style=&quot;text-align:justify; text-justify:inter-ideograph;&quot;&gt;
+&lt;p class=&quot;paragraph&quot;&gt; 
 本博客模版来自&lt;a href=&quot;https://github.com/codepiano/codepiano.github.com&quot; target = &quot;_blank&quot;&gt;codepiano&lt;/a&gt; ，感谢原作者分享的代码。
 &lt;/p&gt;
 </content>

@@ -7,7 +7,7 @@
 #      Version: 0.0.1
 #   LastChange: 2013-05-14 14:13:41
 #      History:
-============================================================================= */
+=========================================================================== */
 
 @charset "utf-8";
 
@@ -44,11 +44,19 @@ html, body, div.wrapper {
 .paragraph {
   font-size: 16px;
   text-indent: 2em;
+  text-align: justify;
 }
 
 /* 列表样式 Tommy */
 ul {
   font-size: 16px;
+  text-align: justify;
+}
+
+/* 有序列表样式 Tommy */
+ol {
+  font-size: 16px;
+  text-align: justify;
 }
 
 /* h1 Indent Tommy */
@@ -68,6 +76,26 @@ div.highlight{
   margin-left: 32px;
 }
 
+/* caption Tommy */
+caption{
+  font-size: 18px;
+}
+
+figcaption{
+  font-size: 14px;
+}
+
+/* table Tommy */
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td{
+  font-size: 16px;
+  text-align: center;
+}
+
 /* font-awesome post信息按钮样式 */
 .fa-folder-open, .fa-tags, .fa-calendar {
   color:#A84365;
@@ -78,11 +106,18 @@ div.highlight{
 }
 
 /* 自定义高亮样式 */
-.highlight pre,code {
+.highlight pre {
   font-size: 16px;
   background-color: #002B36;
-  color:#93A1A1;
+  color: #93A1A1;
 }
+
+/* inline code Tommy */
+.highlight code{
+  font-size: 16px;
+  color: #93A1A1;
+}
+
 
 blockquote {
   font-size: 16px;

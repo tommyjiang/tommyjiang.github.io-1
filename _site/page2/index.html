@@ -4,7 +4,7 @@
 <html lang="cn">
   <head>
     <meta charset="utf-8">
-    <title>第一篇博文 顺致小哥</title>
+    <title>Tommy's Blog</title>
     
     
     <meta name="author" content="Tommy">
@@ -85,18 +85,35 @@
       <!-- 正文 -->
       
 
-<div class="row post-full typo">
-  <div class="col-md-2"></div>
-  <div class="col-md-8 typo">
-    <h2>第一篇博文 顺致小哥 </h2>
-    <div class="post_info">
-      
-      <ul id="post_info" class="tag_box inline">
-        <li><i class="fa fa-calendar"></i></li>
-        <li> 2014 年 08 月 15 日</li>
-        <li><i class="fa fa-folder-open"></i></li>
-        
-        
+<div class="row typo">
+  <div class="col-md-2">
+    <ul class="nav nav-tabs nav-stacked dispear" id="support">
+      <li><a href="#" onclick="toggleSupport();return false;"><i class="fa fa-star-o"></i> 技术支持</a></li>
+      <li><a data-toggle="tooltip" title data-original-title="为 Twitter Bootstrap 设计的图标字体" href="http://fontawesome.io" target="_blank"><i class="fa fa-star-o"></i> Font-Awesome</a></li>
+      <li><a data-toggle="tooltip" title data-original-title="github提供的免费静态页面服务，使用git进行发布和管理" href="http://pages.github.com" target="_blank"><i class="fa fa-star-o"></i> Github Pages</a></li>
+      <li><a data-toggle="tooltip" title data-original-title="静态页面生成工具" href="http://jekyllrb.com" target="_blank"><i class="fa fa-star-o"></i> Jekyll</a></li>
+      <li><a data-toggle="tooltip" title data-original-title="博客页面模板" href="http://jekyllbootstrap.com" target="_blank"><i class="fa fa-star-o"></i> Jekyll-Bootstrap</a></li>
+      <li><a data-toggle="tooltip" title data-original-title="Javascript框架" href="http://jquery.com" target="_blank"><i class="fa fa-star-o"></i> JQuery</a></li>
+      <li><a data-toggle="tooltip" title data-original-title="基于JQuery的表格插件" href="http://www.datatables.net/" target="_blank"><i class="fa fa-star-o"></i> DataTables</a></li>
+      <li><a data-toggle="tooltip" title data-original-title="Twitter提供的前端框架" href="http://twitter.github.io/bootstrap" target="_blank"><i class="fa fa-star-o"></i> Twitter Bootstrap</a></li>
+      <li><a data-toggle="tooltip" title data-original-title="排版样式表" href="http://typo.sofish.de" target="_blank"><i class="fa fa-star-o"></i> Typo.css</a></li>
+      <li><a data-toggle="tooltip" title data-original-title="开发工具" href="http://www.gnu.org/software/emacs/" target="_blank"><i class="fa fa-star-o"></i> Emacs</a></li>
+    </ul>
+  </div>
+  <div class="col-md-8">
+    
+
+<!-- 按照分页插入博客文章 -->
+
+  <h2 class="title"><a href="/2014/08/15/first-post">第一篇博文 顺致小哥</a></h2>
+  <div class="post_info">
+  
+  <ul id="post_info" class="tag_box inline">
+    <li><i class="fa fa-calendar"></i></li>
+    <li id="post-date"> 2014 年 08 月 15 日</li>
+    <li><i class="fa fa-folder-open"></i></li>
+    
+    
  
   <li>
     <a href="/categories.html#感悟-ref">
@@ -118,11 +135,12 @@
 
 
 
-      </ul>
-        
-    </div>
-    <div class="content">
-      <h1>缘起</h1>
+  </ul>
+  
+  <span>
+  </div>
+  <div class="archive">
+    <h1>缘起</h1>
 <p class="paragraph">
 2013年11月17日，当时我在香港，在小哥的忽悠下，注册了被誉为“程序员的Facebook”——GitHub社区的帐号。注册后小哥曾大力推荐我用Github + Jekyll搭建自己的博客，这也是他博客
 <a href="http://yangchao.me" target = "_blank">小哥的博客</a> 的主要工具。
@@ -139,71 +157,51 @@ Orgmode+Jekyll+Github搭建博客的方法，折腾了一天，总算基本成�
 本博客模版来自<a href="https://github.com/codepiano/codepiano.github.com" target = "_blank">codepiano</a> ，感谢原作者分享的代码。
 </p>
 
-    </div>
-
-    
-    <ul id="tag_info" class="tag_box inline">
-      <li><i class="fa fa-tags"></i></li>
-      
-      
-   
-    <li><a href="/posts.html#Emacs">Emacs <span>2</span></a></li>
-   
-    <li><a href="/posts.html#org-mode">org-mode <span>1</span></a></li>
-   
-    <li><a href="/posts.html#GitHub">GitHub <span>1</span></a></li>
-   
-    <li><a href="/posts.html#Jekyll">Jekyll <span>1</span></a></li>
-   
-    <li><a href="/posts.html#Geek">Geek <span>1</span></a></li>
-   
-    <li><a href="/posts.html#小哥">小哥 <span>1</span></a></li>
+  </div>
+  <hr />
   
 
-
-
-    </ul>
+  <!-- 分页页码展示 -->
+  <div id="post-pagination">
+    <ul class="pagination pagination-centered pull-right">
+      <!-- 上一页按钮 -->
+      
+      <li>
+        
+        <a href="/"><i class="fa fa-chevron-left"></i></a>
+        
+      </li>
       
 
-    <hr>
-      <ul class="pagination pull-right">
-        
-        <li class="prev disabled"><a>&larr; 前一篇</a></li>
-        
-        <li><a href="/posts.html">索引</a></li>
-        
-        <li class="next"><a href="/2014/08/16/pt-share" title="我与PT">后一篇 &rarr;</a></li>
-        
-      </ul>
-    <br />
-    <div id="comment-hook"></div>
-    
+      <!-- 第一页,访问根目录 -->
+      
+      <li>
+      <a href="/">1</a>
+      </li>
+      
 
+      
+      
+      <li class="active">
+      <a href="#">2</a>
+      </li>
+      
+      
 
-  <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="第一篇博文 顺致小哥" data-title="第一篇博文 顺致小哥" data-url="page.url"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"tommyjiang"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
-
-
-
+      
+      <li class="disabled">
+      <a href="#"><i class="fa fa-chevron-right"></i></a>
+      </li>
+      
+    </ul>
+  </div>
 
 
   </div>
-  <div class="col-md-2"></div>
+  <div class="col-md-2">
+  </div>
 </div>
+
 <script type="text/javascript"
  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
@@ -215,8 +213,6 @@ var duoshuoQuery = {short_name:"tommyjiang"};
  SVG: {linebreaks: {automatic: true}}
  });
 </script>
-
-
 
 
     </div>

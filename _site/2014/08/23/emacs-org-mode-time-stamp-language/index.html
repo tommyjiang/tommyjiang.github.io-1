@@ -19,7 +19,7 @@
 
     <!-- Le styles -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
     <link href="/css/typo.css" rel="stylesheet">
     <link href="/css/solarized.css" rel="stylesheet" type="text/css" media="all">
     <link href="/css/datatables-bootstrap.css" rel="stylesheet">
@@ -112,7 +112,7 @@
     </div>
     <div class="content">
       <h1>Emacs和Org mode介绍</h1>
-<p class="paragraph" style="text-align:justify; text-justify:inter-ideograph;">
+<p class="paragraph">
   先简要介绍一下Emacs和Org mode。Emacs可以算是GNU(关于GNU，可以参考其<a href="http://www.gnu.org/" target="_blank">官网介绍</a> )社区王牌性的作品。简单来说，它是一个文本编辑器，但由于其可定制性极强，使用者可以依据自己的喜好将它“改装”成各种样子。也正是由于其自由度极高，一句经典的调侃是
 </p>
 
@@ -120,44 +120,48 @@
 Emacs is anything but an editor.
 </blockquote>
 
-<p class="paragraph" style="text-align:justify; text-justify:inter-ideograph;">
+<p class="paragraph">
   此外，由于<a href="www.vim.org" target="_blank">Vim</a>也是十分强大的编辑器，二者之间的圣战也是程序员们津津乐道的话题，可以参考 <a href="http://en.wikipedia.org/wiki/Editor_war" target="_blank">Wiki: Editor War</a>。
 </p>
 
-<p class="paragraph" style="text-align:justify; text-justify:inter-ideograph;">
+<p class="paragraph">
   <a href="orgmode.org" target="_blank">Org mode</a>是以Emacs中的Outline Mode为基础进行扩展后的强大模式，利用Org mode可以方便地按照大纲方式组织文本。因此Org mode非常适合于写作长文章或其他组织性较强的工作，此外它也有其他一些应用，例如可以作为GTD工具(详见<a href="http://doc.norang.ca/org-mode.html#ChangeHistory" target="_blank">Org Mode - Organize Your Life In Plain Text!</a>)等。
 </p>
 
 <h1>Emacs Org mode中的时间戳</h1>
-<p class="paragraph" style="text-align:justify; text-justify:inter-ideograph;">
+<p class="paragraph">
   Org mode中有一个功能，就是插入时间戳(time stamp)，可以参考<a href="http://orgmode.org/manual/Timestamps.html#Timestamps" target="_blank">The Org Manual 8.1 Timestamps</a>，PDF版本可以从<a href="http://orgmode.org/org.pdf" target="_blank">这里</a>下载。正常情况下，Org mode中默认的时间戳是英文的，如下图所示（最下面一行的Saturday）：
 </p>
 
 <img class = "center" src="/image/2014-08/org mode time stamp.png" width="800px"/>
 
 <h1>系统环境及解决方案</h1>
-<p class="paragraph" style="text-align:justify; text-justify:inter-ideograph;">
+<p class="paragraph">
   系统环境Mac OS 10.9.4，Emacs版本(<a href="http://emacsformacosx.com/" target="_blank">Emacs for Mac OS X</a>)24.3。现在我想实现的是将Org mode中的时间戳最后的Saturday由英文改为中文。在网上看到一篇文章很受启发：<a href="http://blog.aizhet.com/Windows/3941.html" target="_blank">org-mode里时间戳显示语言的问题</a>。但该文章叙述的是如何从中文改成英文，而我是要反其道而行之。借鉴他文章中的思路，在Emacs的启动配置文件(.emacs或.emacs.d/init.el)中添加如下代码：
 </p>
 
 <div class="highlight"><pre><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nv">set-locale-environment</span> <span class="s">&quot;zh_CN.utf-8&quot;</span><span class="p">)</span></code></pre></div>
 
-<p class="paragraph" style="text-align:justify; text-justify:inter-ideograph;">
+<p class="paragraph">
   添加上述代码之后再在Org mode中插入的时间戳即为中文。但我的Mac系统上还有个问题，例如星期一的缩写应为周一，但我的系统上显示的是一。在Windows下利用cygwin安装的Emacs就没有这个问题，怀疑是Mac系统设置的问题。好在Org mode中还提供了自定义时间戳格式的设置，只能暂时先用全称代替缩写了。在Emacs的启动配置文件(.emacs或.emacs.d/init.el)中添加如下代码：
 </p>
 
 <div class="highlight"><pre><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nv">setq-default</span> <span class="nv">org-display-custom-times</span> <span class="no">t</span><span class="p">)</span>
 <span class="p">(</span><span class="k">setq</span> <span class="nv">org-time-stamp-custom-formats</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&quot;&lt;%Y-%m-%d %A&gt;&quot;</span> <span class="o">.</span> <span class="s">&quot;&lt;%Y-%m-%d %A %H:%M&gt;&quot;</span><span class="p">))</span></code></pre></div>
 
-<p class="paragraph" style="text-align:justify; text-justify:inter-ideograph;">
+<p class="paragraph">
   其中的%A代替了默认设置中的%a，即为星期几(weekday)的全称。有关时间戳格式更详细的介绍可以参考 <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Time-Parsing.html#Time-Parsing" target="_blank">GNU Emacs Lisp Reference Manual 39.7 Parsing and Formatting Times</a>，PDF版本可以从<a href="https://www.gnu.org/software/emacs/manual/pdf/elisp.pdf" target="_blank">这里</a>下载。
 </p>
 
-<p class="paragraph" style="text-align:justify; text-justify:inter-ideograph;">
+<p class="paragraph">
   最后补上一张设置好之后的图：
 </p>
 
 <img class="center" src="/image/2014-08/time stamp Chinese.png"/ width="800px">
+
+<p class="paragraph">
+  2014-08-29补充：按照上面的方法修改后有一个问题，即timestamp无法自由编辑，Emacs会将其视为一个整体。目前没有太好的解决方案，只能先将org.el文件中的<span class="highlight" align="bottom"><code class="lisp"><span class="nv">org-time-stamp-formats</span></code></span>及<span class="highlight" align="bottom"><code class="lisp"><span class="nv">org-time-stamp-custom-formats</span></code></span>中的<span class="highlight"><code class="lisp"><span class="nv">%a</span></code></span>改为<span class="highlight"><code class="lisp"><span class="nv">%A</span></code></span>。
+</p>
 
     </div>
 
@@ -184,7 +188,7 @@ Emacs is anything but an editor.
         
         <li><a href="/posts.html">索引</a></li>
         
-        <li class="next disabled"><a>后一篇 &rarr;</a>
+        <li class="next"><a href="/2014/08/27/CA-information" title="国航相关信息汇总">后一篇 &rarr;</a></li>
         
       </ul>
     <br />
