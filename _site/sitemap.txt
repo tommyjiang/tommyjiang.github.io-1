@@ -1,15 +1,15 @@
 
 http://tommyjiang.github.com/draft/2015-06-16-leave-tsinghua.html
 http://tommyjiang.github.com/about.html
-http://tommyjiang.github.com/atom.xml
 http://tommyjiang.github.com/categories.html
+http://tommyjiang.github.com/feed.xml
 http://tommyjiang.github.com/index.html
 http://tommyjiang.github.com/posts.html
-http://tommyjiang.github.com/rss.xml
 http://tommyjiang.github.com/sitemap.txt
 http://tommyjiang.github.com/timeline.html
 http://tommyjiang.github.com/page2/index.html
 
+http://tommyjiang.github.com/2014/09/30/credit-card
 http://tommyjiang.github.com/2014/09/12/Kunming-travel
 http://tommyjiang.github.com/2014/08/27/CA-information
 http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language

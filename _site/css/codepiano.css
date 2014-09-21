@@ -60,7 +60,7 @@ ol {
 }
 
 /* h1 Indent Tommy */
-h1 {
+h1, h2 {
   text-indent: 32px; /* paragraph 16px = 1em */
 }
 

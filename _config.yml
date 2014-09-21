@@ -4,8 +4,11 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 # auto: true
 highlighter: pygments
 # 分页配置，每页最多显示几篇文章
-paginate: 4
+paginate: 5
  
+# 首页显示的分隔符
+excerpt_separator: "\n\n"
+
 # Markdown解析
 markdown: kramdown
 
@@ -28,6 +31,11 @@ author :
 #
 # 博客地址，如果没有自定义CNAME，写用户名即可
 production_url : http://tommyjiang.github.com
+
+# Tommy的设置
+name: Tommy's Blog
+description: 电力引领生活
+url: http://tommyjiang.github.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 # 我使用我的id作为了这个属性的属性名
@@ -76,8 +84,8 @@ codepiano :
   archive_path: /posts.html
   categories_path : /categories.html
   tags_path : /posts.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
+  # atom_path : /atom.xml
+  # rss_path : /rss.xml
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.

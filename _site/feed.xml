@@ -1,44 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>电力引领生活</title>
- <link href="http://tommyjiang.github.com/" rel="self"/>
- <link href="http://tommyjiang.github.com"/>
- <updated>2014-09-13T11:59:26+08:00</updated>
- <id>http://tommyjiang.github.com</id>
- <author>
-   <name>Tommy</name>
-   <email>tommy_jiang@foxmail.com</email>
- </author>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tommy&#39;s Blog</title>
+		<description>电力引领生活</description>		
+		<link>http://tommyjiang.github.com</link>
+		<atom:link href="http://tommyjiang.github.com/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>人生第一张白金信用卡</title>
+				<description>&lt;p class=&quot;paragraph&quot;&gt;
+  2014年9月25日，终于收到了人生第一张白金信用卡——中信i白金卡。
+&lt;/p&gt;
 
- 
- <entry>
-   <title>昆明之行</title>
-   <link href="http://tommyjiang.github.com/2014/09/12/Kunming-travel"/>
-   <updated>2014-09-12T00:00:00+08:00</updated>
-   <id>http://tommyjiang.github.com/2014/09/12/Kunming-travel</id>
-   <content type="html">&lt;p class=&quot;paragraph&quot;&gt;
+&lt;h1&gt;i白金申卡经历&lt;/h1&gt;
+&lt;h2&gt;第一次申请&lt;/h2&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  2014年6月22日第一次申请，6月23日建档，6月27日上网查询进度，显示“因为综合评分不足，您的申请未能通过”，第一次申请以失败告终。
+&lt;/p&gt;
+&lt;h2&gt;第二次申请&lt;/h2&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  2014年9月18日第二次申请，当天建档，9月20日下午深圳卡部打来征信电话，当时正在打排球未接到。等了两天，9月22日下午第二次征信，这次接到了，核实了相关信息。9月23日早上收到短信，要求到柜台面签，到东门外的中信银行办理，23日晚上查询申请进度，显示“您的申请已获批准，感谢您使用中信信用卡！”。按照网友提供的经验，一般当天批卡，第二天用EMS快递，9月25日收到卡片，额度不高。
+&lt;/p&gt;
+
+&lt;h1&gt;中信i白金卡的各种福利&lt;/h1&gt;
+
+&lt;h1&gt;个人用卡经历&lt;/h1&gt;
+
+&lt;h1&gt;信用卡相关知识&lt;/h1&gt;
+</description>
+				<pubDate>Tue, 30 Sep 2014 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2014/09/30/credit-card</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2014/09/30/credit-card</guid>
+			</item>
+		
+			<item>
+				<title>昆明之行</title>
+				<description>&lt;p class=&quot;paragraph&quot;&gt;
   终于获得一次目的地不是通辽而且和863项目无关的出差机会，目的地是美丽的春城昆明。在此之前我在国内到过的最西的地方是2007年夏天大一暑期实践去的湖北宜昌。
 &lt;/p&gt;
 
 &lt;h1&gt;启程&lt;/h1&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
-  2014年9月12日早上9点55从东主楼出发，11点20到达T3。国航北京出发的航班值机是在航班起飞前36小时，所以直接在网上值机选座。到T3后自助打印登机牌的机器不好用，最好还是到J区人工柜台排队值机。好在T3中午人并不多，很顺利地拿到登机牌过安检。今天航班的登机口是C32，算是绝佳的位置了，紧挨着T3C的安检，过了安检几乎不用走路（可以参考 &lt;a href=&quot;/2014/08/27/CA-information#T3 departure&quot; target=&quot;_blank&quot;&gt;T3航站楼出发流程&lt;/a&gt;）。乐极生悲，虽然登机口位置不错，但舱门关闭之后被告知重庆、昆明方向交通管制，起飞时间待定。最后到达昆明晚了2小时9分钟。可惜当时申请中信i白金被拒了，不然就可以薅到1000块的大羊腿了（中信延误险以落地时间为准，具体可参考 &lt;a href=&quot;http://cards.ecitic.com/tc/flight.htm&quot; target=&quot;_blank&quot;&gt;中信银行 航班延误保险条款及细则&lt;/a&gt;）。
+  2014年9月12日早上9点55从东主楼出发，11点20到达T3。国航北京出发的航班值机是在航班起飞前36小时，所以直接在网上值机选座。到T3后自助打印登机牌的机器不好用，最好还是到J区人工柜台排队值机。好在T3中午人并不多，很顺利地拿到登机牌过安检。今天航班的登机口是C32，算是绝佳的位置了，紧挨着T3C的安检，过了安检几乎不用走路（可以参考 &lt;a href=&quot;http://tommyjiang.github.com/2014/08/27/CA-information#T3 departure&quot; target=&quot;_blank&quot;&gt;T3航站楼出发流程&lt;/a&gt;）。乐极生悲，虽然登机口位置不错，但舱门关闭之后被告知重庆、昆明方向交通管制，起飞时间待定。最后到达昆明晚了2小时9分钟。可惜当时申请中信i白金被拒了，不然就可以薅到1000块的大羊腿了（中信延误险以落地时间为准，具体可参考 &lt;a href=&quot;http://cards.ecitic.com/tc/flight.htm&quot; target=&quot;_blank&quot;&gt;中信银行 航班延误保险条款及细则&lt;/a&gt;）。
 &lt;/p&gt;
 
 &lt;h1&gt;春城第一印象&lt;/h1&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
   飞行过程还算平稳，最后悔的是没找空姐要个毛毯，只能忍受飞机上空调的低温了。迷迷糊糊睡了2个多小时之后，下午5点39分，终于平安抵达了春城昆明。昆明的平均海拔有1900米，长水机场的海拔则有2100米，在长水机场降落时，可以看到四周的小山。下飞机后坐空港快线2号线，可以直达目的地泰丽国际酒店。云南不愧是旅游胜地，在空港快线的车上还有一位小妹介绍云南和昆明可以游玩的地方，同时解答车上乘客的各种问题。进市区之后一个明显的感觉是大街上的电动车和摩托车非常多。到酒店之后报到、入住，晚餐吃的自助，在菜品中还发现了莲藕排骨汤，不过这藕是脆的，和北京的一样，和香糯的湖北藕相比可差远了。
 &lt;/p&gt; 
-</content>
- </entry>
- 
- <entry>
-   <title>国航相关信息汇总</title>
-   <link href="http://tommyjiang.github.com/2014/08/27/CA-information"/>
-   <updated>2014-08-27T00:00:00+08:00</updated>
-   <id>http://tommyjiang.github.com/2014/08/27/CA-information</id>
-   <content type="html">&lt;p class=&quot;paragraph&quot;&gt;
+</description>
+				<pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2014/09/12/Kunming-travel</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2014/09/12/Kunming-travel</guid>
+			</item>
+		
+			<item>
+				<title>国航相关信息汇总</title>
+				<description>&lt;p class=&quot;paragraph&quot;&gt;
   Base北京，航空公司自然选择国航，将国航相关的信息汇总如下。
 &lt;/p&gt;
 
@@ -367,7 +385,7 @@
 &lt;/p&gt;
 &lt;a name=&quot;T3 departure&quot;&gt;&lt;/a&gt;
 
-&lt;img class=&quot;center&quot; src=&quot;/image/2014-08/T3 departure.jpg&quot; width=&quot;800px&quot;&gt;
+&lt;img class=&quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2014-08/T3 departure.jpg&quot; width=&quot;800px&quot;&gt;
 
 &lt;br /&gt;
 
@@ -384,15 +402,15 @@
     &lt;li&gt;T3D：廊桥2层，出发2层，到达3层。出发时直接从登机口经廊桥登机；到达时需要先坐电梯到3层出与2层登机口对应的门。&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/ol&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Emacs Org mode 时间戳 (Time Stamp) 设置为中文的方法</title>
-   <link href="http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language"/>
-   <updated>2014-08-23T00:00:00+08:00</updated>
-   <id>http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language</id>
-   <content type="html">&lt;h1&gt;Emacs和Org mode介绍&lt;/h1&gt;
+</description>
+				<pubDate>Wed, 27 Aug 2014 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2014/08/27/CA-information</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2014/08/27/CA-information</guid>
+			</item>
+		
+			<item>
+				<title>Emacs Org mode 时间戳 (Time Stamp) 设置为中文的方法</title>
+				<description>&lt;h1&gt;Emacs和Org mode介绍&lt;/h1&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
   先简要介绍一下Emacs和Org mode。Emacs可以算是GNU(关于GNU，可以参考其&lt;a href=&quot;http://www.gnu.org/&quot; target=&quot;_blank&quot;&gt;官网介绍&lt;/a&gt; )社区王牌性的作品。简单来说，它是一个文本编辑器，但由于其可定制性极强，使用者可以依据自己的喜好将它“改装”成各种样子。也正是由于其自由度极高，一句经典的调侃是
 &lt;/p&gt;
@@ -414,7 +432,7 @@ Emacs is anything but an editor.
   Org mode中有一个功能，就是插入时间戳(time stamp)，可以参考&lt;a href=&quot;http://orgmode.org/manual/Timestamps.html#Timestamps&quot; target=&quot;_blank&quot;&gt;The Org Manual 8.1 Timestamps&lt;/a&gt;，PDF版本可以从&lt;a href=&quot;http://orgmode.org/org.pdf&quot; target=&quot;_blank&quot;&gt;这里&lt;/a&gt;下载。正常情况下，Org mode中默认的时间戳是英文的，如下图所示（最下面一行的Saturday）：
 &lt;/p&gt;
 
-&lt;img class = &quot;center&quot; src=&quot;/image/2014-08/org mode time stamp.png&quot; width=&quot;800px&quot;/&gt;
+&lt;img class = &quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2014-08/org mode time stamp.png&quot; width=&quot;800px&quot;/&gt;
 
 &lt;h1&gt;系统环境及解决方案&lt;/h1&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
@@ -438,20 +456,20 @@ Emacs is anything but an editor.
   最后补上一张设置好之后的图：
 &lt;/p&gt;
 
-&lt;img class=&quot;center&quot; src=&quot;/image/2014-08/time stamp Chinese.png&quot;/ width=&quot;800px&quot;&gt;
+&lt;img class=&quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2014-08/time stamp Chinese.png&quot;/ width=&quot;800px&quot;&gt;
 
 &lt;p class=&quot;paragraph&quot;&gt;
   2014-08-29补充：按照上面的方法修改后有一个问题，即timestamp无法自由编辑，Emacs会将其视为一个整体。目前没有太好的解决方案，只能先将org.el文件中的&lt;span class=&quot;highlight&quot; align=&quot;bottom&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;org-time-stamp-formats&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;及&lt;span class=&quot;highlight&quot; align=&quot;bottom&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;org-time-stamp-custom-formats&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;中的&lt;span class=&quot;highlight&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;%a&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;改为&lt;span class=&quot;highlight&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;%A&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;。
 &lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>我与PT</title>
-   <link href="http://tommyjiang.github.com/2014/08/16/pt-share"/>
-   <updated>2014-08-16T00:00:00+08:00</updated>
-   <id>http://tommyjiang.github.com/2014/08/16/pt-share</id>
-   <content type="html">&lt;h1&gt;初识PT&lt;/h1&gt;
+</description>
+				<pubDate>Sat, 23 Aug 2014 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language</guid>
+			</item>
+		
+			<item>
+				<title>我与PT</title>
+				<description>&lt;h1&gt;初识PT&lt;/h1&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
   2010年世界杯的时候，为了下载比赛的视频，我注册了第一个PT——&lt;a href=&quot;http://bt.neu6.edu.cn&quot; target = &quot;_blank&quot;&gt;六维空间(需要IPv6连接)&lt;/a&gt;的帐号。当时是一个师兄发的邀请，当我用邀请码注册完后，兴冲冲地想下载视频时，却发现要先回答一些关于PT的问题之后才能下载。现在回过头看，设置答题这个门槛还是十分必要的，可以在最开始就过滤掉那些伸手党。六维的人气在当时就已经很高了，目前应该是教育网第一大PT，发种的速度非常快。注册完之后的那几天，每天早上都可以到下载到当天凌晨最新的比赛。虽然当时学校还没有每个月20G的流量限制，即使没有六维，也能用v4的工具下载，或者直接到网上看视频。但能从六维上第一时间下载到高清的比赛，感觉还是很过瘾的。
 &lt;/p&gt;
@@ -479,15 +497,15 @@ Emacs is anything but an editor.
 &lt;p class=&quot;paragraph&quot;&gt;
   如果你不是以上三个PT的会员，当你打开这些页面时，都会出现用户登录的页面。如果你也想下载高清的资源，肯定会点页面上的“注册”。但是很遗憾，这些PT都需要邀请注册，普通用户是无法直接注册的，这就涉及到PT的核心机制了。具体原因可以参考&lt;a href=&quot;http://baike.baidu.com/view/1932691.htm?fr=aladdin&quot; target = &quot;_blank&quot;&gt;百度知道·PT下载&lt;/a&gt;。简单来说，PT网站要求用户保持一定的分享率，如果可以自由注册，那一定会出现很多“马甲”，只下自己想下的，不满足分享率要求也无所谓，再重新注册一个就行了。因此，这几个PT都有邀请注册的机制，这相当于一个门槛，从开始就过滤掉潜在的伸手党。
 &lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>第一篇博文 顺致小哥</title>
-   <link href="http://tommyjiang.github.com/2014/08/15/first-post"/>
-   <updated>2014-08-15T00:00:00+08:00</updated>
-   <id>http://tommyjiang.github.com/2014/08/15/first-post</id>
-   <content type="html">&lt;h1&gt;缘起&lt;/h1&gt;
+</description>
+				<pubDate>Sat, 16 Aug 2014 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2014/08/16/pt-share</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2014/08/16/pt-share</guid>
+			</item>
+		
+			<item>
+				<title>第一篇博文 顺致小哥</title>
+				<description>&lt;h1&gt;缘起&lt;/h1&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
 2013年11月17日，当时我在香港，在小哥的忽悠下，注册了被誉为“程序员的Facebook”——GitHub社区的帐号。注册后小哥曾大力推荐我用Github + Jekyll搭建自己的博客，这也是他博客
 &lt;a href=&quot;http://yangchao.me&quot; target = &quot;_blank&quot;&gt;小哥的博客&lt;/a&gt; 的主要工具。
@@ -503,8 +521,11 @@ Orgmode+Jekyll+Github搭建博客的方法，折腾了一天，总算基本成�
 &lt;p class=&quot;paragraph&quot;&gt; 
 本博客模版来自&lt;a href=&quot;https://github.com/codepiano/codepiano.github.com&quot; target = &quot;_blank&quot;&gt;codepiano&lt;/a&gt; ，感谢原作者分享的代码。
 &lt;/p&gt;
-</content>
- </entry>
- 
- 
-</feed>
+</description>
+				<pubDate>Fri, 15 Aug 2014 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2014/08/15/first-post</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2014/08/15/first-post</guid>
+			</item>
+		
+	</channel>
+</rss>
