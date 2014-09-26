@@ -4,7 +4,7 @@
 <html lang="cn">
   <head>
     <meta charset="utf-8">
-    <title>Emacs Org mode 时间戳 (Time Stamp) 设置为中文的方法</title>
+    <title>Emacs Org mode Time Stamp 设置为中文的方法</title>
     
     
     <meta name="author" content="Tommy">
@@ -88,7 +88,7 @@
 <div class="row post-full typo">
   <div class="col-md-2"></div>
   <div class="col-md-8 typo">
-    <h2>Emacs Org mode 时间戳 (Time Stamp) 设置为中文的方法 </h2>
+    <h2>Emacs Org mode Time Stamp 设置为中文的方法 </h2>
     <div class="post_info">
       
       <ul id="post_info" class="tag_box inline">
@@ -140,13 +140,13 @@ Emacs is anything but an editor.
   系统环境Mac OS 10.9.4，Emacs版本(<a href="http://emacsformacosx.com/" target="_blank">Emacs for Mac OS X</a>)24.3。现在我想实现的是将Org mode中的时间戳最后的Saturday由英文改为中文。在网上看到一篇文章很受启发：<a href="http://blog.aizhet.com/Windows/3941.html" target="_blank">org-mode里时间戳显示语言的问题</a>。但该文章叙述的是如何从中文改成英文，而我是要反其道而行之。借鉴他文章中的思路，在Emacs的启动配置文件(.emacs或.emacs.d/init.el)中添加如下代码：
 </p>
 
-<div class="highlight"><pre><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nv">set-locale-environment</span> <span class="s">&quot;zh_CN.utf-8&quot;</span><span class="p">)</span></code></pre></div>
+<div class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="p">(</span><span class="nv">set-locale-environment</span> <span class="s">&quot;zh_CN.utf-8&quot;</span><span class="p">)</span></code></pre></div>
 
 <p class="paragraph">
   添加上述代码之后再在Org mode中插入的时间戳即为中文。但我的Mac系统上还有个问题，例如星期一的缩写应为周一，但我的系统上显示的是一。在Windows下利用cygwin安装的Emacs就没有这个问题，怀疑是Mac系统设置的问题。好在Org mode中还提供了自定义时间戳格式的设置，只能暂时先用全称代替缩写了。在Emacs的启动配置文件(.emacs或.emacs.d/init.el)中添加如下代码：
 </p>
 
-<div class="highlight"><pre><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nv">setq-default</span> <span class="nv">org-display-custom-times</span> <span class="no">t</span><span class="p">)</span>
+<div class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="p">(</span><span class="nv">setq-default</span> <span class="nv">org-display-custom-times</span> <span class="no">t</span><span class="p">)</span>
 <span class="p">(</span><span class="k">setq</span> <span class="nv">org-time-stamp-custom-formats</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&quot;&lt;%Y-%m-%d %A&gt;&quot;</span> <span class="o">.</span> <span class="s">&quot;&lt;%Y-%m-%d %A %H:%M&gt;&quot;</span><span class="p">))</span></code></pre></div>
 
 <p class="paragraph">
@@ -160,8 +160,11 @@ Emacs is anything but an editor.
 <img class="center" src="http://tommyjiang.github.com/image/2014-08/time stamp Chinese.png"/ width="800px">
 
 <p class="paragraph">
-  2014-08-29补充：按照上面的方法修改后有一个问题，即timestamp无法自由编辑，Emacs会将其视为一个整体。目前没有太好的解决方案，只能先将org.el文件中的<span class="highlight" align="bottom"><code class="lisp"><span class="nv">org-time-stamp-formats</span></code></span>及<span class="highlight" align="bottom"><code class="lisp"><span class="nv">org-time-stamp-custom-formats</span></code></span>中的<span class="highlight"><code class="lisp"><span class="nv">%a</span></code></span>改为<span class="highlight"><code class="lisp"><span class="nv">%A</span></code></span>。
+  2014年11月25日更新：可以直接在init.el中添加如下代码实现时间戳用中文显示的功能：
 </p>
+
+<div class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="p">(</span><span class="k">setq</span> <span class="nv">org-time-stamp-formats</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&quot;&lt;%Y-%m-%d %A&gt;&quot;</span> <span class="o">.</span> <span class="s">&quot;&lt;%Y-%m-%d %A %H:%M&gt;&quot;</span><span class="p">))</span>
+<span class="p">(</span><span class="k">setq</span> <span class="nv">org-time-stamp-custom-formats</span>  <span class="o">&#39;</span><span class="p">(</span><span class="s">&quot;&lt;%Y-%m-%d %A&gt;&quot;</span> <span class="o">.</span> <span class="s">&quot;&lt;%Y-%m-%d %A %H:%M&gt;&quot;</span><span class="p">))</span></code></pre></div>
 
     </div>
 
@@ -197,7 +200,7 @@ Emacs is anything but an editor.
 
 
   <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Emacs Org mode 时间戳 (Time Stamp) 设置为中文的方法" data-title="Emacs Org mode 时间戳 (Time Stamp) 设置为中文的方法" data-url="page.url"></div>
+	<div class="ds-thread" data-thread-key="Emacs Org mode Time Stamp 设置为中文的方法" data-title="Emacs Org mode Time Stamp 设置为中文的方法" data-url="page.url"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -234,18 +237,6 @@ var duoshuoQuery = {short_name:"tommyjiang"};
 
 
 
-
-    </div>
-    <!-- 底部声明 -->
-    <div class="row bottom">
-      <div class="col-md-2">
-      </div>
-      <div class="col-md-8 text-center">
-        &mdash;&nbsp;&nbsp;<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" class="license">原创作品许可 &mdash; 署名-非商业性使用-禁止演绎 3.0 未本地化版本 &mdash; CC BY-NC-ND 3.0 </a>&nbsp;&nbsp;&mdash;
-      </div>
-      <div class="col-md-2">
-      </div>
-    </div>
 
     
 

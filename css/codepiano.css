@@ -14,6 +14,7 @@
 /* a标签样式 */
 a {
   text-decoration: none;
+  font:Hiragino Sans GB, Helvetica, WenQuanYi Micro Hei, sans-serif;
 }
 
 a:link {
@@ -41,7 +42,18 @@ html, body, div.wrapper {
 }
 
 /* 段落样式 */
-.paragraph {
+p {
+  font-size: 16px;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+li p {
+  text-indent: 0;
+}
+
+/* 段落样式 */
+.paragraph, .archive {
   font-size: 16px;
   text-indent: 2em;
   text-align: justify;
@@ -56,24 +68,24 @@ ul {
 /* 有序列表样式 Tommy */
 ol {
   font-size: 16px;
+  margin-left: 28px;
   text-align: justify;
 }
 
-/* h1 Indent Tommy */
-h1, h2 {
+/* h1~h5 Indent Tommy */
+h1, h2, h3, h4, h5 {
   text-indent: 32px; /* paragraph 16px = 1em */
 }
+
+/* inline pygments Tommy */
+.inlined { display:inline; }
 
 /* img center Tommy*/
 img.center{
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* highlight margin Tommy */
-div.highlight{
-  margin-left: 32px;
+  margin-bottom: 16px;
 }
 
 /* caption Tommy */
@@ -94,6 +106,16 @@ table{
 td{
   font-size: 16px;
   text-align: center;
+  min-width: 180px;
+}
+
+input{
+  font-size: 16px;
+  width: 60px;
+  border: 0;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  background-color: #F3F3F3;
 }
 
 /* font-awesome post信息按钮样式 */
@@ -108,7 +130,6 @@ td{
 /* 自定义高亮样式 */
 .highlight pre {
   font-size: 16px;
-  background-color: #002B36;
   color: #93A1A1;
 }
 
@@ -122,13 +143,20 @@ td{
 blockquote {
   font-size: 16px;
   margin-left: 2em;
+  text-indent: 0;
+  text-align: justify;
   background-color: #002B36;
   color:#93A1A1;
 }
 
-blockquote p {
+blockquote paragraph {
   font-size: 16px;
+  margin-left: 0em;
 }
+
+blockquote:before,blockquote:after
+{content: none;}
+
 /* 覆盖bootstrap导航条设置 */
 a.navbar-brand {
   height: auto;

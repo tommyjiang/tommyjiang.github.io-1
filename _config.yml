@@ -10,7 +10,12 @@ paginate: 5
 excerpt_separator: "\n\n"
 
 # Markdown解析
+# markdown: redcarpet
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # 修改为自己的配置
 title : 电力引领生活

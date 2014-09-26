@@ -7,26 +7,354 @@
 		<atom:link href="http://tommyjiang.github.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>RMBP Geek 工具配置过程</title>
+				<description>&lt;p&gt;2015年2月14日，甲午年腊月二十六，&lt;a href=&quot;http://yangchao.me&quot;&gt;小哥&lt;/a&gt;从香港回来探亲，路过北京，顺便带回了我的 RMBP。虽然最近 HK 又针对大陆游客发起了无差别攻击运动，但免税的诱惑实在太大。以2014年中的顶配RMBP(型号为MGXC2) 为例，大陆行货价格RMB 17988，而HK只要HKD 18888，按照1 HKD = 0.8 RMB换算，也要便宜将近3000块，赶上我一个月工资了。&lt;/p&gt;
+
+&lt;p&gt;拿到RMBP自然要先折腾一番，为了以后更新换代方便，将折腾的过程记录如下。&lt;/p&gt;
+
+&lt;h1 id=&quot;geek&quot;&gt;Geek工具&lt;/h1&gt;
+&lt;p&gt;RMBP现在应该算码农的标配了，炫丽的高清屏写起代码真是倍儿爽。虽然学的是电气，但咱也有一颗Geek的心。本节包括Geek的主要工具。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;文本编辑器&lt;/h2&gt;
+
+&lt;h3 id=&quot;vim&quot;&gt;Vim&lt;/h3&gt;
+
+&lt;p&gt;Vim被誉为“编辑器之神”，相较于Emacs，其最大的好处是启动快。我选择的是MacVim，可以直接从&lt;a href=&quot;http://www.vim.org/download.php&quot; target=&quot;_blank&quot;&gt;Vim主页的下载页面&lt;/a&gt;下载dmg文件后安装。&lt;/p&gt;
+
+&lt;p&gt;Vim的配置工作相对简单，只需要将配置文件&lt;code class=&quot;highlighter-rouge&quot;&gt;.vimrc&lt;/code&gt;放到根目录~下就可以了。我个人用的是&lt;a href=&quot;http://github.com/tomasr/molokai&quot;&gt;molokai&lt;/a&gt;主题，下载后需要放到Vim对应的文件夹中，具体路径为：/MacVim.app/Contents/Resources/vim/runtime/colors.&lt;/p&gt;
+
+&lt;h3 id=&quot;emacs&quot;&gt;Emacs&lt;/h3&gt;
+
+&lt;p&gt;与Vim相比，Emacs被誉为“神之编辑器”，也有人调侃Emacs是伪装成操作系统的编辑器。Emacs需要配合各种&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;以实现各种强大的功能。我个人主要用的是Org-mode，用来做简单的GTD管理和日常记录。&lt;/p&gt;
+
+&lt;p&gt;Emacs的配置比Vim要复杂一些。首先是下载Emacs程序，不想自己编译的话可以直接选择&lt;a href=&quot;http://emacsformacosx.com/&quot;&gt;Emacs for Mac OS X&lt;/a&gt;，之后需要将配置文件放到&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.emacs.d&lt;/code&gt;中。理论上利用&lt;code class=&quot;highlighter-rouge&quot;&gt;package.el&lt;/code&gt;提供的包管理功能可以自动下载需要的&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;，不过现在我的配置文件中还没有这么智能，需要到 Emacs 中手动下载各个&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;，比较麻烦。各个&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;的配置文件可以参考之前的配置文件稍加修改。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;排版工具&lt;/h2&gt;
+
+&lt;h3 id=&quot;tex&quot;&gt;TeX&lt;/h3&gt;
+
+&lt;p&gt;TeX是学术界通用的排版工具，而且Mac上的Microsoft Office可以用惨不忍睹来形容。我选择的是&lt;a href=&quot;https://tug.org/mactex/&quot;&gt;MaCTeX 发行版&lt;/a&gt;。TeX的编辑工具推荐以下两个：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;TeXPad：之前在MBA上用过一阵，支持各种snippet，还能在输入的间隙自动生成预览的PDF文件，缺点是正版的要$19.99。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Emacs + AUCTeX：“神之编辑器”出现了！利用GNU自己的AUCTeX 可以方便地在Emacs中编辑TeX文档，再加上Skim即可实现TeX &amp;lt;-&amp;gt; PDF的双向搜索功能，唯一的问题是学习成本较高。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;blog&quot;&gt;Blog相关&lt;/h2&gt;
+
+&lt;h3 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h3&gt;
+
+&lt;p&gt;Jekyll是基于Ruby的静态博客生成工具，利用Jekyll + Bootstrap + GitHub Pages可以方便快捷地生成自己的博客网站（例如本网站）。Mac是自带Ruby的，因此可以直接利用gem安装最新stable版的Jekyll：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;sudo] gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;redcarpet&quot;&gt;redcarpet&lt;/h3&gt;
+
+&lt;p&gt;由于没找到Pygments支持行内代码高亮的方法，现在的解决方案是利用redcarpet + Markdown实现，redcarpet同样可以利用gem安装：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;sudo] gem install redcarpet
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;其他工具&lt;/h2&gt;
+
+&lt;h3 id=&quot;homebrew&quot;&gt;Homebrew&lt;/h3&gt;
+
+&lt;p&gt;用过Ubuntu的应该都能体会&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;的好处，Mac上也有类似的包管理程序，主要是Homebrew和Macports。Homebrew的安装方法可以参考&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew主页&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
+&lt;p&gt;Git是Linux之父Linus Torvalds创作的分布式版本控制系统，结合GitHub可以轻松实现版本控制。Git可以利用Homebrew直接安装：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+				<pubDate>Mon, 02 Mar 2015 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/03/02/RMBP-Geek</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/03/02/RMBP-Geek</guid>
+			</item>
+		
+			<item>
+				<title>中信i白金航班延误险理赔全记录</title>
+				<description>&lt;p class=&quot;paragraph&quot;&gt;
+  i白金批卡2个月，赶上航班延误两小时，终于可以薅中信的羊毛了。
+&lt;/p&gt;
+
+&lt;h1&gt;航班延误&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  2014年11月20日，计划乘坐东航MU2884航班由通辽飞往北京。计划起飞时间为10:20，9点多到机场，发现飞机还没来。过一会机场广播说由于通辽机场大雾，MU2884的前序航班MU2883备降哈尔滨。无奈下返回酒店，心理盘算着如果能晚两小时以上就完美了。11点15接到MU2883由备降的哈尔滨机场起飞来通辽机场，12点从酒店吃完饭再次前往通辽。12点35登机，12点45起飞，可能由于通辽有雾，北京有霾，原本60分钟的航程用了80分钟，14点05分才降落在首都机场。由于中信的延误是以落地时间为准的，延误2小时20分钟，超过了2小时，因此可以索赔。
+&lt;/p&gt;
+
+&lt;h1&gt;索赔所需材料&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  回校后立即着手开始准备索赔材料。根据&lt;a href=&quot;http://cards.ecitic.com/tc/flight.htm&quot; target=&quot;_blank&quot;&gt;中信银行航班延误保险条款及细则&lt;/a&gt;，需要准备的索赔材料有：
+&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;被保险人的机票复印件、登机牌复印件。&lt;/li&gt;
+  &lt;li&gt;被保险人的身份证或护照正、反面复印件&lt;/li&gt;
+  &lt;li&gt;被保险人签购机票时所使用的中信信用卡正面复印件&lt;/li&gt;
+  &lt;li&gt;被保险人已填妥的保险出险索赔通知书&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  行程当天除了行程单没有送到，其他材料都已准备完毕。11月24日收到行程单后，找顺丰快递一起寄到深圳，等待理赔。顺丰单号033124380627。 
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  2014年11月26日，收到95518的短信，说保险出险/索赔通知书有误，要到&lt;a href=&quot;http://creditcard.ecitic.com/yongka/quanyi.shtml&quot; target=&quot;_blank&quot;&gt;中信官网&lt;/a&gt;下载正确版本索赔通知书并重新快递到深圳。又要多花22运费了……已于11月27日上午9点14签收。
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  2014年12月3日，又收到95518的短信，需要提供购票时信用卡的消费记录（或账单）。由于账单日是14号，上月19号买的票，因此账单还没出，只能到中信网银截图并提供携程的订单信息。可能是我用的支付宝快捷支付，因此看不到信用卡支付信息，如果直接用信用卡支付应该不需要补充这部分信息了。
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  2014年12月9日下午收到95518短信，已于2014-12-09往i白金账户支付1000元，请查收。但晚上7点查还是没到帐……一直等到了12月10日下午5点，实在忍不了了，先给中国人保深圳分公司打电话，对方说查询一下回复，过了15分钟打电话说确实已经转了。无奈之下只能去找中信的客服，在被问了一堆个人信息问题后，答复说没有到账。5点半的时候再次给平安打电话，要求对方核实卡号是否输入有误，等待明天的回复。
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  2014年12月11日上午11点，再次给人保打电话，被告知处理我理赔的同事不在，等他回来给我打电话，会发我转账的截屏。下午2点多，负责我的赔款的小哥回来了，告诉我他们的财务系统由于升级，没有及时把款打过来，说12日下午之前肯定会收到赔款。下午3点45接到中信短信通知，i白还款1000元。
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  虽然几经波折，但一个大羊腿总算薅到了，着实不容易，几点感想如下。
+&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;中信i白不愧是神卡，买机票用支付宝快捷支付有积分（每月最多10000分），不需要买保险可以直接享受延误险。2小时赔1000在中国信用卡界极为厚道。&lt;/li&gt;
+  &lt;li&gt;人算不如天算。本以为秋季飞通辽的航班怎么都不会延误，偏偏让我赶上了。虽然这次延误的原因是通辽机场有雾，但根据我当天在机场观察的情况，感觉不足以影响飞机起降。可能因为通辽机场是小机场，设施不够先进，所以飞机不能降落。&lt;/li&gt;
+  &lt;li&gt;大深圳的服务态度没得说。中间和中国人保财险深圳分公司通过几次电话，对方都很耐心地询问和解释，最后一次说明是他们系统升级的原因后，还及时地表达了歉意。我在去香港的半年里多次到深圳，对深圳感觉很不错，这是一座充满活力的城市。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1&gt;国航新机型波音747-8&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  国航新机型波音747-8，目前已有两架入列国航梯队，编号分别是B-2485和B-2486，二者执飞的航班可以参考&lt;a href=&quot;http://www.flightradar24.com/reg/b-2485&quot; target=&quot;_blank&quot;&gt;国航B-2485执飞航班&lt;/a&gt;和&lt;a href=&quot;http://www.flightradar24.com/reg/b-2486&quot; target=&quot;_blank&quot;&gt;国航B-2486执飞航班&lt;/a&gt;。在国内由于一些特殊原因，以上链接可能没法直接访问，请考虑利用VPN等其他方式。目前（2014年11月）二者执飞航班为
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;B-2485:CA1351/1352 PEK-CAN CA1855/1856 PEK-SHA&lt;/li&gt;
+  &lt;li&gt;B-2486:CA1405/1406 PEK-CTU CA1549/1550 PEK-SHA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  2014年12月12日更新，国航第三架747-8已于12月11日首飞，目前三架747-8航班的执飞航班为
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;B-2485:CA1315/1316 PEK-CAN&lt;/li&gt;
+  &lt;li&gt;B-2486:CA1501/1502 PEK-SHA CA1515/1516 PEK-SHA&lt;/li&gt;
+  &lt;li&gt;B-2487:CA1515/1516 PEK-SHA&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Thu, 20 Nov 2014 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2014/11/20/citic-card-delay-record</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2014/11/20/citic-card-delay-record</guid>
+			</item>
+		
+			<item>
+				<title>抵港一周年纪念</title>
+				<description>&lt;p class=&quot;paragraph&quot;&gt;
+  转眼间又到11月了，去年这时候我起身赴港，一周年之际，写篇博客纪念我的香港生活，以及我与香港的不解之缘。
+&lt;/p&gt;
+
+&lt;h1&gt;缘起&lt;/h1&gt;
+
+&lt;blockquote&gt;
+小河弯弯向南流 流到香江去看一看 &lt;br /&gt;
+东方之珠 我的爱人 你的风采是否浪漫依然 &lt;br /&gt;
+月儿弯弯的海港 夜色深深 灯火闪亮 &lt;br /&gt;
+东方之珠 整夜未眠 &lt;br /&gt;
+守着沧海桑田变幻的诺言 &lt;br /&gt;
+让海风吹拂了五千年 &lt;br /&gt;
+每一滴泪珠 仿佛都说出你的尊严 &lt;br /&gt;
+让海潮伴我来保佑你 &lt;br /&gt;
+请别忘记我 永远不变黄色的脸 &lt;br /&gt;
+船儿弯弯入海港 回头望望沧海茫茫 &lt;br /&gt;
+东方之珠拥抱着我 &lt;br /&gt;
+让我温暖 你那苍凉的胸膛 &lt;br /&gt;
+让海风吹拂了五千年 &lt;br /&gt;
+每一滴泪珠 仿佛都说出你的尊严 &lt;br /&gt;
+让海潮伴我来保佑你 &lt;br /&gt;
+请别忘记我 永远不变黄色的脸
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  《东方之珠》是内地人耳熟能详的，也可能是最容易想到的与香港有关的歌曲了。然而我印象中最早听到这首歌还是在幼儿园，那天还是阴天，快到晚上了，身边的小朋友一个个都被家长接走了，只有我一个人坐在屋子里，听老师单曲循环这首歌。原因是我妈那天有事，没能来按时接我，最后来接我时天都黑了。后来想想，一下午都沉浸在《东方之珠》的旋律里，应该算是我和香港最早的缘分了，虽然当时我并不知道这首歌唱的是香港。
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  转眼到了1997年，香港回归的年份，全国都沉浸在喜悦的氛围中。作为祖国的花朵，自然会被拉去参加与香港回归相关的事情。我自己就参加了香港回归知识竞赛和香港回归舞蹈表演，都是作为秦皇岛铁路小学参加北京铁路局天津铁路分局举办的活动。先说知识竞赛吧，记得是每人发一本书，上面画一些重点，死记硬背之后去参赛，当时我过年都还在背题。记了一大堆人名，安子介、霍英东、邵逸夫……最后考试的时候有道题印象尤深，世界船王是（），我填的包玉刚，答案是香港的包玉刚。翻开发的书一看，确实是香港的包玉刚……这不是香港回归竞赛么，不是香港的还能是台湾的么……舞蹈表演听起来比较奇幻，虽然现在体型发胖，没法起舞了。不过当时还排练了好久，而且我是扮演香港儿童，和大陆的儿童团聚，后面还有一群小白鸽。现在还有表演的照片在家里，就不传上来了。
+&lt;/p&gt;
+
+&lt;h1&gt;第一次抵港&lt;/h1&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  2012年6月底，赴佛山参加博士生实践。2012年6月30日，从福田口岸过关，来到了教科书中提到的万恶的资本主义社会，世界三大金融中心之一的香港。当晚从第一城坐到旺角东，然后步行到旺角，再经油麻地到尖沙咀，深切地感受了香港闹市区的繁华和嘈杂。第二天上午又到港岛的中环苹果店买了个Thunderbolt和网口的转接头，品尝了米其林一星的添好运，还到维多利亚公园围观了港人的七一大游行。下午就乘车由福田口岸过关返回佛山，结束了短暂的香港两日游。
+&lt;/p&gt;
+
+&lt;h1&gt;半年的香港交换学习&lt;/h1&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  2013年11月10日再次由福田口岸过关到达香港，开始半年的香港交换学习生活。仍然是住在小哥家，不过这次终于不是睡在客厅了，而是搬进了卧室。香港的天气并没有想象中的那么难熬，不过3月份连日阴天不见阳光确实让我抑郁了一阵。在港的最大收获就是在小哥的带领下，试图学了学做饭，虽然最后手艺仍不理想，但好歹是饿不死了。另外还去广东的广州肇庆以及潮汕分别转了一圈，深圳去的就太多了。还记得和瓜瓜、胖哥哥和岩峰在深圳happy那天回港后赶上香港20年来最早的黑雨警告，也算一个特别的回忆吧。
+&lt;/p&gt;
+
+&lt;h1&gt;结语&lt;/h1&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  转眼离开香港也有半年的时间了。这一段时间香港并不太平。人大发表的《“一国两制”在香港特别行政区的实践》，以及后来关于普选的争论和占中事件，都让香港经常出现在新闻中。下面是非官方的香港市歌《狮子山下》，以此祝愿金紫荆永远盛开。
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+人生中有歡喜　難免亦常有淚 &lt;br /&gt;
+我哋大家在獅子山下相遇上 &lt;br /&gt;
+總算是歡笑多於唏噓 &lt;br /&gt;
+人生不免崎嶇　難以絕無掛慮 &lt;br /&gt;
+既是同舟在獅子山下且共濟 &lt;br /&gt;
+拋棄區分求共對 &lt;br /&gt;
+放開彼此心中矛盾　理想一起去追 &lt;br /&gt;
+同舟人　誓相隨　無畏更無懼 &lt;br /&gt;
+同處海角天邊　攜手踏平崎嶇 &lt;br /&gt;
+我哋大家用艱辛努力寫下那 &lt;br /&gt;
+不朽香江名句 
+&lt;/blockquote&gt;
+</description>
+				<pubDate>Mon, 10 Nov 2014 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2014/11/10/Hong-Kong-anniversary</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2014/11/10/Hong-Kong-anniversary</guid>
+			</item>
+		
+			<item>
+				<title>Python中调用Matlab进行混合编程</title>
+				<description>&lt;p class=&quot;paragraph&quot;&gt;
+  因为科研的需要，最近钻研了一下Python中调用Matlab进行混合编程的方法，记录如下。
+&lt;/p&gt;
+
+&lt;h1&gt;Python中调用Matlab的方法&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  我用的仿真软件是Power Factory（简称PF），在机电暂态仿真方面非常好用。当然，仿真软件的一个软肋是添加自己需要的功能比较麻烦。我的实际需求是在仿真时进行优化，PF自身无能为力。好在最近PF加入了调用Python脚本的功能，而Python又是典型的&lt;a href=&quot;https://www.python.org/doc/essays/omg-darpa-mcc-position/&quot; target=&quot;_blank&quot;&gt;胶水语言&lt;/a&gt;，所以利用Python调用Matlab进行优化即可。其实最简单的方法是不用Matlab，直接在Python中利用NumPy和SciPy等进行优化，但无奈最初的程序是用Matlab写的，只能采用PF&lt;-&gt;Python&lt;-&gt;Matlab的方法。
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  利用Python调用Matlab需要用到Python中的&lt;a href=&quot;http://sourceforge.net/projects/pywin32/&quot; target=&quot;_blank&quot;&gt;pywin32&lt;/a&gt;以及Matlab中的COM组件。具体的调用方法如下。
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  Matlab函数testFun.m.
+&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;c &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;testFun&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;a, b&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  Python中调用Matlab中的testFun函数.
+&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;win32com.client&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;MATLAB&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;win32com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GetActiveObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Matlab.application&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;MATLAB&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;win32com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Matlab.application&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MATLAB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Feval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;testFun&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  在Python中利用win32com.client中的方法，先尝试查询是否有正在运行的Matlab Server，若没有，则新建一个Matlab Server。下面Feval的用法可以参考&lt;a href=&quot;http://www.mathworks.cn/help/matlab/ref/com.feval.html&quot; target=&quot;_blank&quot;&gt;Matlab官网Feval(COM)&lt;/a&gt;的说明。简单来说，第一个参数是函数名，第二个参数是nargout即返回变量的个数，第三个参数我还没搞清楚，根据官网的说明，这个可以用于不同client间传递数据。最后面的参数就是函数的输入参数。
+&lt;/p&gt;
+
+&lt;h1&gt;Matlab函数参数及返回值为矩阵时的处理&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  上面一节的内容是比较基础的，在网上也都能查到。现在都讲究微创新，在别人的基础上加一些新的东西，例如本节内容。我查到的网上关于Python调用Matlab方法的资料中，调用的Matlab函数中的参数均为标量，返回值也为标量。本节主要讨论的是参数和返回值均为向量的情况。
+&lt;/p&gt;
+
+&lt;h2&gt;Python传参给Matlab函数&lt;/h2&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  在Python中生成一个list对象，即可作为参数传递给Matlab。但该list传到Matlab中之后，并不是数值矩阵，而是cell矩阵，因此需要利用&lt;span class=&quot;highlight&quot; align=&quot;bottom&quot;&gt;&lt;code class=&quot;matlab&quot;&gt;&lt;span class=&quot;nf&quot;&gt;cell2mat&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;函数，在Matlab中将传入的cell矩阵转化为数值矩阵。
+&lt;/p&gt;
+
+&lt;h2&gt;Matlab返回值给Python&lt;/h2&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  同样的，Matlab返回的矩阵在Python中并不是list类型。以我实际使用的函数为例，该函数在Matlab中返回的是一个10*1的矩阵。但是在Python中的类型为三维的tuple，需要用tuple[0][n][0](n为0到9的整数)才能获得其返回值。最好能将返回的三维tuple转换为一维的list，以方便后续的处理。
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  更复杂的情况是Matlab函数中的参数和返回值均为矩阵的情况，处理方法应与向量时类似，由于我没有遇到这个情况，在这里就不讨论了。不过这种情况会更复杂一点，如果有人能具体讨论一下，也算是所谓的“创新”吧。
+&lt;/p&gt;
+</description>
+				<pubDate>Fri, 31 Oct 2014 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2014/10/31/python-matlab-hybrid</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2014/10/31/python-matlab-hybrid</guid>
+			</item>
+		
+			<item>
 				<title>人生第一张白金信用卡</title>
 				<description>&lt;p class=&quot;paragraph&quot;&gt;
-  2014年9月25日，终于收到了人生第一张白金信用卡——中信i白金卡。
+  2014年9月26日，终于收到了人生第一张白金信用卡——中信i白金卡。
 &lt;/p&gt;
+
+&lt;img class=&quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2014-09/ecitic.png&quot; width=&quot;800px&quot;/&gt;
 
 &lt;h1&gt;i白金申卡经历&lt;/h1&gt;
 &lt;h2&gt;第一次申请&lt;/h2&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
-  2014年6月22日第一次申请，6月23日建档，6月27日上网查询进度，显示“因为综合评分不足，您的申请未能通过”，第一次申请以失败告终。
+  2014年6月22日第一次申请，6月23日建档，6月25日接到征信电话，6月27日上网查询进度，显示“因为综合评分不足，您的申请未能通过”，第一次申请以失败告终。
 &lt;/p&gt;
 &lt;h2&gt;第二次申请&lt;/h2&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
-  2014年9月18日第二次申请，当天建档，9月20日下午深圳卡部打来征信电话，当时正在打排球未接到。等了两天，9月22日下午第二次征信，这次接到了，核实了相关信息。9月23日早上收到短信，要求到柜台面签，到东门外的中信银行办理，23日晚上查询申请进度，显示“您的申请已获批准，感谢您使用中信信用卡！”。按照网友提供的经验，一般当天批卡，第二天用EMS快递，9月25日收到卡片，额度不高。
+  2014年9月18日第二次申请，当天建档，9月20日下午深圳卡部打来征信电话，当时正在打排球未接到。等了两天，9月22日下午第二次征信，这次接到了，核实了相关信息。9月23日早上收到短信，要求到柜台面签，到东门外的中信银行办理，23日晚上查询申请进度，显示“您的申请已获批准，感谢您使用中信信用卡！”。按照网友提供的经验，一般当天批卡，第二天用EMS快递。但我的面签第三天才快递，9月26日收到卡片，额度16k，已经比我他行额度最高的卡还要高了。
 &lt;/p&gt;
 
 &lt;h1&gt;中信i白金卡的各种福利&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  主要是前两项，尤其是第一项，都不能算羊毛了，简直是羊腿啊；第二项算是中信的王牌活动了。此外还有一些小羊毛。
+&lt;/p&gt;
+&lt;h2&gt;航空延误险&lt;/h2&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  以下介绍摘自&lt;a href=&quot;http://cards.ecitic.com/platinum/ibaijin.html&quot; target=&quot;_blank&quot;&gt;中信银行信用卡官网i白金卡介绍&lt;/a&gt;：
+&lt;/p&gt;
+
+&lt;blockquote&gt;使用中信白金信用卡通过指定订票渠道为本人及同行配偶、父母、子女订购机票，并全额支付机票款，更可获赠国内首创的高额航班延误保险。航班延误2小时，即可获赔人民币1000元。贴心关怀，一路照顾。&lt;/blockquote&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  注意要想薅到上面的保险，需要通过指定渠道订票，具体见&lt;a href=&quot;http://cards.ecitic.com/platinum/yanwuxian.html&quot; target=&quot;_blank&quot;&gt;中信指定渠道&lt;/a&gt;，如果不是在这些渠道订的，延误险是薅不到的。这个延误险厚道的一点是以降落时间为准计算的，所以就算关了舱门在飞机上坐了俩小时，依然是可以拿到的，可以参考&lt;a href=&quot;http://cards.ecitic.com/tc/flight.htm&quot; target=&quot;_blank&quot;&gt;中信航班延误保险条款及细则&lt;/a&gt;。
+&lt;/p&gt;
+
+&lt;h2&gt;9分享兑&lt;/h2&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  应该算中信的王牌活动了。只需要9积分，就可以享受星巴克咖啡、哈根达斯冰淇淋、万宁30元消费金等超值优惠。具体见&lt;a href=&quot;http://cards.ecitic.com/youhui/120926/&quot; target=&quot;_blank&quot;&gt;中信信用卡 9分享兑&lt;/a&gt;。对于新发卡的客户，只要批卡60天之内指定商户类型交易满99元，就可以获得一次9分享兑的功能，非常棒。
+&lt;/p&gt;
 
 &lt;h1&gt;个人用卡经历&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  2010年12月5日，参加研究生“一二·九”合唱比赛，百无聊赖之中看大放哥玩iPhone的游戏。从玩的游戏聊到了购买App，放哥说App Store不支持银联支付，必须要有VISA或者MasterCard的账户，办个校友卡是最方便的。博士办的话是金卡，额度也很高，有10k。当时我虽然还没入手苹果的设备，但觉得有备无患，先去办一张试试。2011年1月的某天，去同方部填了申请表，过两天上网查，发现信用卡申请竟然被建行拒绝了！原因是在2009年5月，央行、银监会等机构发布的&lt;a href=&quot;http://www.gov.cn/gongbao/content/2009/content_1365917.htm&quot; target=&quot;_blank&quot;&gt;关于加强银行卡安全管理预防和打击银行卡犯罪的通知&lt;/a&gt;。通知中明确提出“谨慎发展无稳定工作、收入的客户群体，从严授信”。其实本科刚入学之后的一段时间（2006~2008年）信用卡办理还是很宽松的，经常碰到上门推销信用卡的，但央行规定一出，银行立即收紧了信用卡的办卡渠道，于是我的人生首次申请就悲剧了。
+&lt;/p&gt;
 
-&lt;h1&gt;信用卡相关知识&lt;/h1&gt;
+&lt;p class=&quot;paragraph&quot;&gt;
+  2011年4月某天，去紫荆吃饭的时候发现一层有两个哥们支个台子，走近一看正好是办校友卡的。真实踏破铁鞋无觅处，得来全不费功夫，赶快填表复印身份证，果然没过两周就下卡了。人生首卡，建行清华校友卡，额度10k，应该说非常棒了。有了这张卡以卡办卡就很容易了，2011年5月又到中行申请了国航联名卡，印象中过了好久中行才来电话征信，下卡额度8k，也还不错了。2014年8月申请提额，额度已经涨到13k了。中行是出名的铁公鸡，对于一个在读的学生来说，13k的额度已经相当厚道了。另外还有一个只刷过一次的卡，就是2013年6月中行推出只有VISA通道的全币种芯片卡，刷卡统一以人民币结算，而且终身免年费。小羊毛是开卡后第一笔交易满99送50元话费，果断在去美国的时候薅到。
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  这么算下来，中信i白应该是我的第四卡了，虽然额度并不高，但好歹也是白金卡（虽然是伪白金），首卡金卡，二卡三卡普卡，四卡伪白金，向大白金稳步迈进。
+&lt;/p&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  2014年12月14日更新：蓝翼总结的&lt;a href=&quot;http://jy.smzdm.com/detail/34435&quot; target=&quot;_blank&quot;&gt;2014年信用卡申请全攻略：2014年下半年回顾&lt;/a&gt;中，把i白推荐为永恒的“一卡走天下”最优选择。
+&lt;/p&gt;
 </description>
 				<pubDate>Tue, 30 Sep 2014 00:00:00 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2014/09/30/credit-card</link>
@@ -396,7 +724,7 @@
 &lt;ol&gt;
   &lt;li&gt;T3C四层办理国内乘机手续。国航国内航班人工值机在J区，此外自助值机、补打登机牌也都在J区，而自助补打行程单则在H区。注意如果是从携程订的票，需要到B区靠近2号门的地方取携程打印的行程单，没有办法自助打印。国内航班一般不建议托运行李，原因是国内机场等行李的时间太长了。如果不托运行李，高峰时段可以直接自助办理值机，省时省力。&lt;/li&gt;
   &lt;li&gt;办完乘机手续拿登机牌过安检。如果登机口在T3C，直接从国内出发C01-C61下至三楼安检；如果登机口在T3D就比较麻烦了，需要从T3C四层中间下到2层坐捷运列车到T3D登机。当然在T3C登机也要看登机口位置如何，最好的当然是离安检最近的C01-C08和C30-C37，最差的是要走很远的C15-C23。另外远机位的C51-C61也好不到哪去，需要先走一段然后下到2楼坐摆渡车。去年乘坐的山航飞九江的飞机就是这个待遇。&lt;/li&gt;
-  &lt;li&gt;今年5月4日从深圳回来把iPad落在CA1397飞机上了。当时没能亲自回飞机去找的一个主要原因，就是对T3D不熟。吃一堑，长一智，这里特别记下T3D的结构，并对比其与T3C的不同。T3D的地下1层是捷运列车，1层是安检，出发在2层，而到达在3层。从深圳回来时，由于廊桥在2层，因此从登机的廊桥出来后需要先上电梯到3层，到3层之后走出与2层登机口相对应的门之后，再从3层下电梯到1层，最后从1层下到地下1层坐捷运列车回T3C。当时我是到地下1层后才发现iPad没拿，这时只能逆着电梯到1层，再逆着电梯到3层，再从3层进门逆着电梯到2层，经过廊桥才能回到飞机。当时我已经回到了3层，但可能所有人都已下了飞机，所以与2层登机口对应的门关了，没办法再回去了。注意T3D与T3C的出发和到达对应的层数是完全不同的，具体总结如下：  &lt;/li&gt;
+  &lt;li&gt;今年5月4日从深圳回来把iPad落在CA1397飞机上了。当时没能亲自回飞机去找的一个主要原因，就是对T3D不熟。吃一堑，长一智，这里特别记下T3D的结构，并对比其与T3C的不同。T3D的地下1层是捷运列车，1层是安检，出发在2层，而到达在3层。从深圳回来时，由于廊桥在2层，因此从登机的廊桥出来后需要先上电梯到3层，到3层走出与2层登机口相对应的门之后，再从3层下电梯到1层，最后从1层下到地下1层坐捷运列车回T3C。当时我是到地下1层后才发现iPad没拿，这时只能逆着电梯到1层，再逆着电梯到3层，再从3层进门逆着电梯到2层，经过廊桥才能回到飞机。当时我已经回到了3层，但可能所有人都已下了飞机，所以与2层登机口对应的门关了，没办法再回去了。注意T3D与T3C的出发和到达对应的层数是完全不同的，具体总结如下：  &lt;/li&gt;
   &lt;ul&gt;
     &lt;li&gt;T3C：廊桥2层，出发3层，到达2层。出发时需要从登机口下到2层廊桥登机；到达时不需要坐电梯，直接到2层。&lt;/li&gt;
     &lt;li&gt;T3D：廊桥2层，出发2层，到达3层。出发时直接从登机口经廊桥登机；到达时需要先坐电梯到3层出与2层登机口对应的门。&lt;/li&gt;
@@ -409,7 +737,7 @@
 			</item>
 		
 			<item>
-				<title>Emacs Org mode 时间戳 (Time Stamp) 设置为中文的方法</title>
+				<title>Emacs Org mode Time Stamp 设置为中文的方法</title>
 				<description>&lt;h1&gt;Emacs和Org mode介绍&lt;/h1&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
   先简要介绍一下Emacs和Org mode。Emacs可以算是GNU(关于GNU，可以参考其&lt;a href=&quot;http://www.gnu.org/&quot; target=&quot;_blank&quot;&gt;官网介绍&lt;/a&gt; )社区王牌性的作品。简单来说，它是一个文本编辑器，但由于其可定制性极强，使用者可以依据自己的喜好将它“改装”成各种样子。也正是由于其自由度极高，一句经典的调侃是
@@ -439,13 +767,13 @@ Emacs is anything but an editor.
   系统环境Mac OS 10.9.4，Emacs版本(&lt;a href=&quot;http://emacsformacosx.com/&quot; target=&quot;_blank&quot;&gt;Emacs for Mac OS X&lt;/a&gt;)24.3。现在我想实现的是将Org mode中的时间戳最后的Saturday由英文改为中文。在网上看到一篇文章很受启发：&lt;a href=&quot;http://blog.aizhet.com/Windows/3941.html&quot; target=&quot;_blank&quot;&gt;org-mode里时间戳显示语言的问题&lt;/a&gt;。但该文章叙述的是如何从中文改成英文，而我是要反其道而行之。借鉴他文章中的思路，在Emacs的启动配置文件(.emacs或.emacs.d/init.el)中添加如下代码：
 &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-locale-environment&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;zh_CN.utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-locale-environment&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;zh_CN.utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p class=&quot;paragraph&quot;&gt;
   添加上述代码之后再在Org mode中插入的时间戳即为中文。但我的Mac系统上还有个问题，例如星期一的缩写应为周一，但我的系统上显示的是一。在Windows下利用cygwin安装的Emacs就没有这个问题，怀疑是Mac系统设置的问题。好在Org mode中还提供了自定义时间戳格式的设置，只能暂时先用全称代替缩写了。在Emacs的启动配置文件(.emacs或.emacs.d/init.el)中添加如下代码：
 &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;setq-default&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;org-display-custom-times&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;setq-default&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;org-display-custom-times&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;org-time-stamp-custom-formats&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A %H:%M&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p class=&quot;paragraph&quot;&gt;
@@ -459,8 +787,11 @@ Emacs is anything but an editor.
 &lt;img class=&quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2014-08/time stamp Chinese.png&quot;/ width=&quot;800px&quot;&gt;
 
 &lt;p class=&quot;paragraph&quot;&gt;
-  2014-08-29补充：按照上面的方法修改后有一个问题，即timestamp无法自由编辑，Emacs会将其视为一个整体。目前没有太好的解决方案，只能先将org.el文件中的&lt;span class=&quot;highlight&quot; align=&quot;bottom&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;org-time-stamp-formats&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;及&lt;span class=&quot;highlight&quot; align=&quot;bottom&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;org-time-stamp-custom-formats&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;中的&lt;span class=&quot;highlight&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;%a&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;改为&lt;span class=&quot;highlight&quot;&gt;&lt;code class=&quot;lisp&quot;&gt;&lt;span class=&quot;nv&quot;&gt;%A&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;。
+  2014年11月25日更新：可以直接在init.el中添加如下代码实现时间戳用中文显示的功能：
 &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;org-time-stamp-formats&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A %H:%M&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;org-time-stamp-custom-formats&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A %H:%M&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
 				<pubDate>Sat, 23 Aug 2014 00:00:00 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language</link>

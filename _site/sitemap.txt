@@ -1,5 +1,4 @@
 
-http://tommyjiang.github.com/draft/2015-06-16-leave-tsinghua.html
 http://tommyjiang.github.com/about.html
 http://tommyjiang.github.com/categories.html
 http://tommyjiang.github.com/feed.xml
@@ -9,6 +8,10 @@ http://tommyjiang.github.com/sitemap.txt
 http://tommyjiang.github.com/timeline.html
 http://tommyjiang.github.com/page2/index.html
 
+http://tommyjiang.github.com/2015/03/02/RMBP-Geek
+http://tommyjiang.github.com/2014/11/20/citic-card-delay-record
+http://tommyjiang.github.com/2014/11/10/Hong-Kong-anniversary
+http://tommyjiang.github.com/2014/10/31/python-matlab-hybrid
 http://tommyjiang.github.com/2014/09/30/credit-card
 http://tommyjiang.github.com/2014/09/12/Kunming-travel
 http://tommyjiang.github.com/2014/08/27/CA-information

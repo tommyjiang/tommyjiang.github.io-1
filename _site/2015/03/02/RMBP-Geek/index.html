@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="utf-8">
+    <title>RMBP Geek 工具配置过程</title>
+    
+    
+    <meta name="author" content="Tommy">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/typo.css" rel="stylesheet">
+    <link href="/css/solarized.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/datatables-bootstrap.css" rel="stylesheet">
+    <link href="/css/codepiano.css" rel="stylesheet">
+
+    <!-- javascript files -->
+    <script type="text/javascript" src="/js/jquery-2.0.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/js/datatables-bootstrap.js"></script>
+    <script type="text/javascript" src="/js/codepiano.js"></script>
+
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    <script type="text/javascript">
+    </script>
+
+  </head>
+
+  <body id="scroll-pane" data-spy="scroll" data-target="#time-list-nav">
+    <div class="wrapper">
+      <!-- 导航条 -->
+      <div class="nav navbar-nav" id="nav-wrap">
+        <div class="navbar-header">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+            <a class="navbar-brand" href="/">
+              <span class="site-author"> Tommy </span>
+              <span class="site-title"> /* 电力引领生活 */ </span>
+            </a>
+            <ul id="nav-menu" class="nav navbar-nav">
+              
+              
+              
+
+
+
+
+
+<li class="posts"><a href="/posts.html">文章</a></li>
+<li class="timeline"><a href="/timeline.html">归档</a></li>
+<li class="categories"><a href="/categories.html">目录</a></li>
+<li class="about"><a href="/about.html">关于</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+      </div>
+
+      <!-- 正文 -->
+      
+
+<div class="row post-full typo">
+  <div class="col-md-2"></div>
+  <div class="col-md-8 typo">
+    <h2>RMBP Geek 工具配置过程 </h2>
+    <div class="post_info">
+      
+      <ul id="post_info" class="tag_box inline">
+        <li><i class="fa fa-calendar"></i></li>
+        <li> 2015 年 03 月 02 日</li>
+        <li><i class="fa fa-folder-open"></i></li>
+        
+        
+ 
+  <li>
+    <a href="/categories.html#技术-ref">
+      技术 
+    </a>
+  </li>
+  
+
+
+
+      </ul>
+        
+    </div>
+    <div class="content">
+      <p>2015年2月14日，甲午年腊月二十六，<a href="http://yangchao.me">小哥</a>从香港回来探亲，路过北京，顺便带回了我的 RMBP。虽然最近 HK 又针对大陆游客发起了无差别攻击运动，但免税的诱惑实在太大。以2014年中的顶配RMBP(型号为MGXC2) 为例，大陆行货价格RMB 17988，而HK只要HKD 18888，按照1 HKD = 0.8 RMB换算，也要便宜将近3000块，赶上我一个月工资了。</p>
+
+<p>拿到RMBP自然要先折腾一番，为了以后更新换代方便，将折腾的过程记录如下。</p>
+
+<h1 id="geek">Geek工具</h1>
+<p>RMBP现在应该算码农的标配了，炫丽的高清屏写起代码真是倍儿爽。虽然学的是电气，但咱也有一颗Geek的心。本节包括Geek的主要工具。</p>
+
+<h2 id="section">文本编辑器</h2>
+
+<h3 id="vim">Vim</h3>
+
+<p>Vim被誉为“编辑器之神”，相较于Emacs，其最大的好处是启动快。我选择的是MacVim，可以直接从<a href="http://www.vim.org/download.php" target="_blank">Vim主页的下载页面</a>下载dmg文件后安装。</p>
+
+<p>Vim的配置工作相对简单，只需要将配置文件<code class="highlighter-rouge">.vimrc</code>放到根目录~下就可以了。我个人用的是<a href="http://github.com/tomasr/molokai">molokai</a>主题，下载后需要放到Vim对应的文件夹中，具体路径为：/MacVim.app/Contents/Resources/vim/runtime/colors.</p>
+
+<h3 id="emacs">Emacs</h3>
+
+<p>与Vim相比，Emacs被誉为“神之编辑器”，也有人调侃Emacs是伪装成操作系统的编辑器。Emacs需要配合各种<code class="highlighter-rouge">package</code>以实现各种强大的功能。我个人主要用的是Org-mode，用来做简单的GTD管理和日常记录。</p>
+
+<p>Emacs的配置比Vim要复杂一些。首先是下载Emacs程序，不想自己编译的话可以直接选择<a href="http://emacsformacosx.com/">Emacs for Mac OS X</a>，之后需要将配置文件放到<code class="highlighter-rouge">~/.emacs.d</code>中。理论上利用<code class="highlighter-rouge">package.el</code>提供的包管理功能可以自动下载需要的<code class="highlighter-rouge">package</code>，不过现在我的配置文件中还没有这么智能，需要到 Emacs 中手动下载各个<code class="highlighter-rouge">package</code>，比较麻烦。各个<code class="highlighter-rouge">package</code>的配置文件可以参考之前的配置文件稍加修改。</p>
+
+<h2 id="section-1">排版工具</h2>
+
+<h3 id="tex">TeX</h3>
+
+<p>TeX是学术界通用的排版工具，而且Mac上的Microsoft Office可以用惨不忍睹来形容。我选择的是<a href="https://tug.org/mactex/">MaCTeX 发行版</a>。TeX的编辑工具推荐以下两个：</p>
+
+<ul>
+  <li>
+    <p>TeXPad：之前在MBA上用过一阵，支持各种snippet，还能在输入的间隙自动生成预览的PDF文件，缺点是正版的要$19.99。</p>
+  </li>
+  <li>
+    <p>Emacs + AUCTeX：“神之编辑器”出现了！利用GNU自己的AUCTeX 可以方便地在Emacs中编辑TeX文档，再加上Skim即可实现TeX &lt;-&gt; PDF的双向搜索功能，唯一的问题是学习成本较高。</p>
+  </li>
+</ul>
+
+<h2 id="blog">Blog相关</h2>
+
+<h3 id="jekyll">Jekyll</h3>
+
+<p>Jekyll是基于Ruby的静态博客生成工具，利用Jekyll + Bootstrap + GitHub Pages可以方便快捷地生成自己的博客网站（例如本网站）。Mac是自带Ruby的，因此可以直接利用gem安装最新stable版的Jekyll：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">[</span>sudo] gem install jekyll
+</code></pre>
+</div>
+
+<h3 id="redcarpet">redcarpet</h3>
+
+<p>由于没找到Pygments支持行内代码高亮的方法，现在的解决方案是利用redcarpet + Markdown实现，redcarpet同样可以利用gem安装：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">[</span>sudo] gem install redcarpet
+</code></pre>
+</div>
+
+<h2 id="section-2">其他工具</h2>
+
+<h3 id="homebrew">Homebrew</h3>
+
+<p>用过Ubuntu的应该都能体会<code class="highlighter-rouge">apt-get</code>的好处，Mac上也有类似的包管理程序，主要是Homebrew和Macports。Homebrew的安装方法可以参考<a href="http://brew.sh/">Homebrew主页</a>。</p>
+
+<h3 id="git">Git</h3>
+<p>Git是Linux之父Linus Torvalds创作的分布式版本控制系统，结合GitHub可以轻松实现版本控制。Git可以利用Homebrew直接安装：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>brew install git
+</code></pre>
+</div>
+
+    </div>
+
+    
+    <ul id="tag_info" class="tag_box inline">
+      <li><i class="fa fa-tags"></i></li>
+      
+      
+   
+    <li><a href="/posts.html#Geek">Geek <span>2</span></a></li>
+   
+    <li><a href="/posts.html#RMBP">RMBP <span>1</span></a></li>
+   
+    <li><a href="/posts.html#Mac">Mac <span>1</span></a></li>
+   
+    <li><a href="/posts.html#港行">港行 <span>1</span></a></li>
+  
+
+
+
+    </ul>
+      
+
+    <hr>
+      <ul class="pagination pull-right">
+        
+        <li class="prev"><a href="/2014/11/20/citic-card-delay-record" title="中信i白金航班延误险理赔全记录">&larr; 前一篇</a></li>
+        
+        <li><a href="/posts.html">索引</a></li>
+        
+        <li class="next disabled"><a>后一篇 &rarr;</a>
+        
+      </ul>
+    <br />
+    <div id="comment-hook"></div>
+    
+
+
+  <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="RMBP Geek 工具配置过程" data-title="RMBP Geek 工具配置过程" data-url="page.url"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"tommyjiang"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+  </div>
+  <div class="col-md-2"></div>
+</div>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+ "HTML-CSS": {linebreaks: {automatic: true}},
+ SVG: {linebreaks: {automatic: true}}
+ });
+</script>
+
+
+
+
+    
+
+  </body>
+</html>
+
