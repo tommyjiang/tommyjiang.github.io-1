@@ -10,7 +10,6 @@ paginate: 5
 excerpt_separator: "\n\n"
 
 # Markdown解析
-# markdown: redcarpet
 markdown: kramdown
 
 kramdown:

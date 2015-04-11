@@ -150,7 +150,7 @@ mark {
 
 /* 代码片断 */
 pre, code {
-	font-family: "Courier New", Courier, monospace;
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 	white-space: pre-wrap;
 	word-wrap: break-word;
 	font-size: 16px;

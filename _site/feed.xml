@@ -7,6 +7,64 @@
 		<atom:link href="http://tommyjiang.github.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>电气工程领域期刊 h5 指数排名感想</title>
+				<description>&lt;p&gt;最近新发现 Google 学术搜索推出了评价期刊的 h5 指数。该指数的评定方法是，将某个期刊最近 5 年来的所有文章，按引用次数从多到少进行排列，至少有 i 篇文章被引次数不少于 i 次，则取最大的 i 值作为 h5 指数。该指数的详细介绍可以参考 &lt;a href=&quot;https://scholar.google.com/intl/zh-CN/scholar/metrics.html#metrics&quot;&gt;Google Scholar Metrics&lt;/a&gt; 的介绍。&lt;/p&gt;
+
+&lt;p&gt;Google 发布了 h5 指数位居前 100 名的中文期刊，参见 &lt;a href=&quot;https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=zh-CN&amp;amp;vq=zh&quot;&gt;h5 指数为前 100 名的中文期刊&lt;/a&gt;。在这个榜单中，我发现电力系统的相关期刊都榜上有名，而且排名还不低。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;期刊名&lt;/th&gt;
+      &lt;th&gt;h5 指数排名&lt;/th&gt;
+      &lt;th&gt;h5 指数值&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;电力系统自动化&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;41&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;电网技术&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;38&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;中国电机工程学报&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+      &lt;td&gt;36&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;电力系统保护与控制&lt;/td&gt;
+      &lt;td&gt;19&lt;/td&gt;
+      &lt;td&gt;32&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;电工技术学报&lt;/td&gt;
+      &lt;td&gt;89&lt;/td&gt;
+      &lt;td&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;看到这么多熟悉的电力系统相关期刊上榜，感觉是件很光彩的事。但转念一想，为什么会出现这种情况？我个人的一些感想如下。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;说明电力系统的研究者数量不少，至少发文章的数量不少。h5 指数和引用数相关，只有发的文章多，一些文章的被引次数才有可能很多。&lt;/li&gt;
+  &lt;li&gt;说明电力系统的知名期刊数量不多，且&lt;a href=&quot;http://zh.wikipedia.org/wiki/%E9%A9%AC%E5%A4%AA%E6%95%88%E5%BA%94&quot;&gt;马太效应&lt;/a&gt;明显。因为期刊数量不多，研究人员投稿时基本都会选择这些期刊。而这样又导致研究文章只集中在这些期刊上，研究人员在阅读时也会看这些期刊的文章，如此循环，形成马太效应。&lt;/li&gt;
+  &lt;li&gt;说明电力系统的研究热点相对集中。如果不同学者间彼此研究差异很大，而文章一般只会被相同研究领域的学者引用，那每篇文章的被引次数也不会太高。而反观电力系统，目前的研究大多都涉及风电、光伏、配电网/微电网、电动汽车、储能等方向，因此大家的研究领域重复度很高，也推高了电力系统期刊的 h5 指数。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;综上，应该说 h5 指数高的期刊相对集中并不是什么好现象，这反映出电力系统目前研究的集中性，大家研究的东西都差不多，没什么本质上的创新。其实电力系统领域已经很久没有重大革新了，这一点和 CS 领域形成了鲜明的对比。Talk is cheap, show me the code.希望电力系统界能多出一些实用的成果，少发一些无聊的文章。&lt;/p&gt;
+</description>
+				<pubDate>Fri, 10 Apr 2015 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/04/10/EEA-Journal</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/04/10/EEA-Journal</guid>
+			</item>
+		
+			<item>
 				<title>RMBP Geek 工具配置过程</title>
 				<description>&lt;p&gt;2015年2月14日，甲午年腊月二十六，&lt;a href=&quot;http://yangchao.me&quot;&gt;小哥&lt;/a&gt;从香港回来探亲，路过北京，顺便带回了我的 RMBP。虽然最近 HK 又针对大陆游客发起了无差别攻击运动，但免税的诱惑实在太大。以2014年中的顶配RMBP(型号为MGXC2) 为例，大陆行货价格RMB 17988，而HK只要HKD 18888，按照1 HKD = 0.8 RMB换算，也要便宜将近3000块，赶上我一个月工资了。&lt;/p&gt;
 
@@ -21,13 +79,13 @@
 
 &lt;p&gt;Vim被誉为“编辑器之神”，相较于Emacs，其最大的好处是启动快。我选择的是MacVim，可以直接从&lt;a href=&quot;http://www.vim.org/download.php&quot; target=&quot;_blank&quot;&gt;Vim主页的下载页面&lt;/a&gt;下载dmg文件后安装。&lt;/p&gt;
 
-&lt;p&gt;Vim的配置工作相对简单，只需要将配置文件&lt;code class=&quot;highlighter-rouge&quot;&gt;.vimrc&lt;/code&gt;放到根目录~下就可以了。我个人用的是&lt;a href=&quot;http://github.com/tomasr/molokai&quot;&gt;molokai&lt;/a&gt;主题，下载后需要放到Vim对应的文件夹中，具体路径为：/MacVim.app/Contents/Resources/vim/runtime/colors.&lt;/p&gt;
+&lt;p&gt;Vim的配置工作相对简单，只需要将配置文件&lt;code&gt;.vimrc&lt;/code&gt;放到根目录~下就可以了。我个人用的是&lt;a href=&quot;http://github.com/tomasr/molokai&quot;&gt;molokai&lt;/a&gt;主题，下载后需要放到Vim对应的文件夹中，具体路径为：/MacVim.app/Contents/Resources/vim/runtime/colors.&lt;/p&gt;
 
 &lt;h3 id=&quot;emacs&quot;&gt;Emacs&lt;/h3&gt;
 
-&lt;p&gt;与Vim相比，Emacs被誉为“神之编辑器”，也有人调侃Emacs是伪装成操作系统的编辑器。Emacs需要配合各种&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;以实现各种强大的功能。我个人主要用的是Org-mode，用来做简单的GTD管理和日常记录。&lt;/p&gt;
+&lt;p&gt;与Vim相比，Emacs被誉为“神之编辑器”，也有人调侃Emacs是伪装成操作系统的编辑器。Emacs需要配合各种&lt;code&gt;package&lt;/code&gt;以实现各种强大的功能。我个人主要用的是Org-mode，用来做简单的GTD管理和日常记录。&lt;/p&gt;
 
-&lt;p&gt;Emacs的配置比Vim要复杂一些。首先是下载Emacs程序，不想自己编译的话可以直接选择&lt;a href=&quot;http://emacsformacosx.com/&quot;&gt;Emacs for Mac OS X&lt;/a&gt;，之后需要将配置文件放到&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.emacs.d&lt;/code&gt;中。理论上利用&lt;code class=&quot;highlighter-rouge&quot;&gt;package.el&lt;/code&gt;提供的包管理功能可以自动下载需要的&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;，不过现在我的配置文件中还没有这么智能，需要到 Emacs 中手动下载各个&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;，比较麻烦。各个&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;的配置文件可以参考之前的配置文件稍加修改。&lt;/p&gt;
+&lt;p&gt;Emacs的配置比Vim要复杂一些。首先是下载Emacs程序，不想自己编译的话可以直接选择&lt;a href=&quot;http://emacsformacosx.com/&quot;&gt;Emacs for Mac OS X&lt;/a&gt;，之后需要将配置文件放到&lt;code&gt;~/.emacs.d&lt;/code&gt;中。理论上利用&lt;code&gt;package.el&lt;/code&gt;提供的包管理功能可以自动下载需要的&lt;code&gt;package&lt;/code&gt;，不过现在我的配置文件中还没有这么智能，需要到 Emacs 中手动下载各个&lt;code&gt;package&lt;/code&gt;，比较麻烦。各个&lt;code&gt;package&lt;/code&gt;的配置文件可以参考之前的配置文件稍加修改。&lt;/p&gt;
 
 &lt;h2 id=&quot;section-1&quot;&gt;排版工具&lt;/h2&gt;
 
@@ -50,30 +108,27 @@
 
 &lt;p&gt;Jekyll是基于Ruby的静态博客生成工具，利用Jekyll + Bootstrap + GitHub Pages可以方便快捷地生成自己的博客网站（例如本网站）。Mac是自带Ruby的，因此可以直接利用gem安装最新stable版的Jekyll：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;sudo] gem install jekyll
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;[sudo] gem install jekyll
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h3 id=&quot;redcarpet&quot;&gt;redcarpet&lt;/h3&gt;
 
 &lt;p&gt;由于没找到Pygments支持行内代码高亮的方法，现在的解决方案是利用redcarpet + Markdown实现，redcarpet同样可以利用gem安装：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;sudo] gem install redcarpet
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;[sudo] gem install redcarpet
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 &lt;h2 id=&quot;section-2&quot;&gt;其他工具&lt;/h2&gt;
 
 &lt;h3 id=&quot;homebrew&quot;&gt;Homebrew&lt;/h3&gt;
 
-&lt;p&gt;用过Ubuntu的应该都能体会&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;的好处，Mac上也有类似的包管理程序，主要是Homebrew和Macports。Homebrew的安装方法可以参考&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew主页&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;用过Ubuntu的应该都能体会&lt;code&gt;apt-get&lt;/code&gt;的好处，Mac上也有类似的包管理程序，主要是Homebrew和Macports。Homebrew的安装方法可以参考&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew主页&lt;/a&gt;。&lt;/p&gt;
 
 &lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
 &lt;p&gt;Git是Linux之父Linus Torvalds创作的分布式版本控制系统，结合GitHub可以轻松实现版本控制。Git可以利用Homebrew直接安装：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install git
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;brew install git
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 </description>
 				<pubDate>Mon, 02 Mar 2015 00:00:00 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2015/03/02/RMBP-Geek</link>
@@ -151,6 +206,16 @@
   &lt;li&gt;B-2485:CA1315/1316 PEK-CAN&lt;/li&gt;
   &lt;li&gt;B-2486:CA1501/1502 PEK-SHA CA1515/1516 PEK-SHA&lt;/li&gt;
   &lt;li&gt;B-2487:CA1515/1516 PEK-SHA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;
+  2015年4月3日更新，目前三架747-8航班的主要执飞航班为
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;B-2485:CA981/982 PEK-JFK&lt;/li&gt;
+  &lt;li&gt;B-2486:CA981/982 PEK-JFK&lt;/li&gt;
+  &lt;li&gt;B-2487:CA1515/1516 CA1519/1520 CA1501/1502 PEK-SHA&lt;/li&gt;
 &lt;/ul&gt;
 </description>
 				<pubDate>Thu, 20 Nov 2014 00:00:00 +0800</pubDate>
@@ -832,30 +897,6 @@ Emacs is anything but an editor.
 				<pubDate>Sat, 16 Aug 2014 00:00:00 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2014/08/16/pt-share</link>
 				<guid isPermaLink="true">http://tommyjiang.github.com/2014/08/16/pt-share</guid>
-			</item>
-		
-			<item>
-				<title>第一篇博文 顺致小哥</title>
-				<description>&lt;h1&gt;缘起&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-2013年11月17日，当时我在香港，在小哥的忽悠下，注册了被誉为“程序员的Facebook”——GitHub社区的帐号。注册后小哥曾大力推荐我用Github + Jekyll搭建自己的博客，这也是他博客
-&lt;a href=&quot;http://yangchao.me&quot; target = &quot;_blank&quot;&gt;小哥的博客&lt;/a&gt; 的主要工具。
-&lt;/p&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-时过境迁，转眼已到了2014年的8月份。从2014年初我就开始折腾Emacs，到现在基本熟悉了Orgmode
-的用法，也终于有精力可以折腾点别的。前几天刚配好Emacs+ESS，今天就开始折腾Emacs
-Orgmode+Jekyll+Github搭建博客的方法，折腾了一天，总算基本成功了，还要感谢小哥引领我走上 &lt;b&gt;Geek&lt;/b&gt; 的道路。
-&lt;/p&gt;
-
-&lt;h1&gt;致谢&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt; 
-本博客模版来自&lt;a href=&quot;https://github.com/codepiano/codepiano.github.com&quot; target = &quot;_blank&quot;&gt;codepiano&lt;/a&gt; ，感谢原作者分享的代码。
-&lt;/p&gt;
-</description>
-				<pubDate>Fri, 15 Aug 2014 00:00:00 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2014/08/15/first-post</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2014/08/15/first-post</guid>
 			</item>
 		
 	</channel>

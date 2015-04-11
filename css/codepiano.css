@@ -123,6 +123,10 @@ input{
   color:#A84365;
 }
 
+.fa-border {
+  border: 0;
+}
+
 .fa-double-angle-right {
   color: #FF6699;
 }
@@ -145,8 +149,6 @@ blockquote {
   margin-left: 2em;
   text-indent: 0;
   text-align: justify;
-  background-color: #002B36;
-  color:#93A1A1;
 }
 
 blockquote paragraph {
