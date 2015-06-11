@@ -7,6 +7,286 @@
 		<atom:link href="http://tommyjiang.github.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>资料来源及工具总结</title>
+				<description>&lt;p&gt;最近想搜集一些关于竖琴的音频和视频资料，在收集的过程中联想到，现在自己能做到的事，其实都是之前一点一滴不断积累的结果，包括资料的来源以及合适的播放器。有一些是提前想到的，有一些算是无心插柳吧，简单总结下。&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;资料来源&lt;/h1&gt;
+&lt;p&gt;资料主要从 PT 网站、电驴资源网站和视频网站获取。&lt;/p&gt;
+
+&lt;h2 id=&quot;pt-&quot;&gt;PT 网站&lt;/h2&gt;
+&lt;p&gt;PT 网站其实之前已经在博客中介绍过，详见&lt;a href=&quot;http://tommyjiang.github.com/2014/08/16/pt-share/&quot;&gt;我与 PT&lt;/a&gt;。那篇文章中提到的公网3大 PT 中目前只有 &lt;a href=&quot;https://totheglory.im&quot;&gt;TTG&lt;/a&gt; 还能正常访问，而六维空间由于主要面向教育网，也只能利用在学校的最后这段时间下载了。其实早在2011年9月我就加入 TTG 了，虽然当时离毕业还很遥远，但为了离校后还能有高清看，早早入了 PT 的坑，可以说忧患意识十足，想起了单位师妹的一句话：路都是自己铺出来的。注意，不是走，而是铺，其实多想一步，结果会很不一样。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;资源网站&lt;/h2&gt;
+&lt;p&gt;主要是从 &lt;a href=&quot;www.verycd.com&quot;&gt;VeryCD&lt;/a&gt; 网站下载，包括无损音乐(ape, flac)和 MP3 资源。根据&lt;a href=&quot;http://baike.baidu.com/link?url=IVVqysXpu0FmjYexEyggr8rTkCLeyVK6QVAeOdrNTsQW8O0THulvKrTB4dcH8bypIMWCw7txXVcQviA8pMDTjq#1&quot;&gt;百度百科&lt;/a&gt;的介绍：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2012年8月30日之后，VeryCD 网站上所有资源的 eD2k 下载链接均被完全隐藏。未登录或新注册登录的用户无权查看所有链接，仅部分高等级的用户（“铜光盘”或以上）登录后可以正常浏览到所有资源的 eD2k 链接。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;还记得刚上大二的时候每天早上6点多起来在宿舍下载《百家讲坛》的视频，当时经常在资源下回帖感谢发布者，而且由于注册时间早，所以成了“铜光盘”，所以现在仍然可以正常下载 VeryCD 的资源。此外，2012年清华网费改革，将网费由原来每月1.5元不限流量改为每月20G免费，超出部分阶梯计费。像我这样的下载狂，如果还像之前那样下载，每月不知道会给网络中心恭喜多少收入。还好道高一尺，魔高一丈，详细的方法就不公开了，以免被网络中心发现贻害师弟师妹。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;视频网站&lt;/h2&gt;
+&lt;p&gt;主要包括&lt;a href=&quot;www.youku.com&quot;&gt;优酷&lt;/a&gt;和 &lt;a href=&quot;www.youtube.com&quot;&gt;YouTube&lt;/a&gt;。其中优酷的视频可以利用&lt;a href=&quot;http://www.flvcd.com/&quot;&gt;硕鼠&lt;/a&gt;下载，不过这个软件最近更新了，在下载之前也要看优酷的广告，很烦。YouTube 的视频可以利用 &lt;a href=&quot;http://www.clipconverter.cc/&quot;&gt;ClipConverter&lt;/a&gt; 网站将 YouTube 视频地址解析之后下载，需要利用科学上网工具，我个人用的是&lt;a href=&quot;http://www.banwagong.me/&quot;&gt;搬瓦工 VPS&lt;/a&gt;，每年只要 USD 3.99，每月流量 100G，很不错。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;音频播放器&lt;/h1&gt;
+
+&lt;p&gt;OS X 系统的音频播放器主要包括 iTunes 和 Vox，其中 iTunes 播放 MPC，Vox 播放无损格式(ape, flac)等。&lt;/p&gt;
+
+&lt;h2 id=&quot;itunes&quot;&gt;iTunes&lt;/h2&gt;
+&lt;p&gt;iTunes 导入音乐后会在自己的资料文件夹中复制一份音乐文件，因此可以将原始的音乐文件删除。同时可以利用 iTunes 中的风格作为标签，区分不同类型的音乐。&lt;/p&gt;
+
+&lt;h2 id=&quot;vox&quot;&gt;Vox&lt;/h2&gt;
+&lt;p&gt;Vox 播放无损音乐时需要 cue 文件，而 Win 系统下的编码一般是 GB-2312，而 OS X 系统中的编码是 UTF-8，因此直接打开 Win 下编码的 cue 文件会出现乱码，需要利用 &lt;a href=&quot;https://itunes.apple.com/cn/app/eztext/id421342426?mt=12&quot;&gt;ezText&lt;/a&gt; 应用转码才能正常打开。&lt;/p&gt;
+</description>
+				<pubDate>Wed, 10 Jun 2015 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/10/collect-resources</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/10/collect-resources</guid>
+			</item>
+		
+			<item>
+				<title>d3的应用</title>
+				<description>&lt;p&gt;At work I was tasked with creating an internal tool to track and display vital company stats. I knew that meant I would likely be displaying some data in charts and graphs. Thus began my search for an easily customizable data visualization library.&lt;/p&gt;
+
+&lt;p&gt;I perused the roundup of libraries that Google and Stack Overflow offered: &lt;a href=&quot;http://www.highcharts.com/&quot;&gt;Highcharts.js&lt;/a&gt;, &lt;a href=&quot;http://www.flotcharts.org/&quot;&gt;Flot&lt;/a&gt;, &lt;a href=&quot;http://g.raphaeljs.com/&quot;&gt;gRaphael&lt;/a&gt;, &lt;a href=&quot;http://www.jscharts.com/&quot;&gt;jsCharts&lt;/a&gt;, and finally &lt;a href=&quot;http://d3js.org/&quot;&gt;d3.js&lt;/a&gt; (I hadn’t seen &lt;a href=&quot;http://www.chartjs.org/&quot;&gt;Chart.js&lt;/a&gt; at the time, but it looks pretty nice). I won’t go into comparisons on the various libraries, but I will tell you why I chose d3.js:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;easy to use (after the beginner’s hump)&lt;/li&gt;
+  &lt;li&gt;uses svg: scalable &amp;amp; widely supported&lt;/li&gt;
+  &lt;li&gt;completely customizable&lt;/li&gt;
+  &lt;li&gt;flexible &amp;amp; extendable&lt;/li&gt;
+  &lt;li&gt;extremely powerful&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mbostock/d3/wiki/Gallery&quot;&gt;lots of examples&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bl.ocks.org/mbostock&quot;&gt;even more examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At the top of this article I’ve inserted a simple bar chart as an example. You can see &lt;a href=&quot;http://dribbble.com/shots/966448-Monitor-fullview?list=users&quot;&gt;some screenshots&lt;/a&gt; of actual real-time data visualizations I created for our company monitor. Let’s take a look at how D3 makes these animating bar charts:&lt;/p&gt;
+
+&lt;p&gt;First, let’s drop in a few simple styles:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.foreground&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#2D6A99&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.background&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#eee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And of course we need to include the d3.js library:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, let’s get some basic moving parts. We need to setup what a bar is and establish initial variables:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// how many bars?&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// randomize some numbers for data&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// an array of randomized datapoints&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;barChart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;220&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;padding&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;el&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;article header&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// where we&amp;#39;ll put our svg &lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// calculate the bar width from the total chart width&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;barWidth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;padding&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;barHeight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;el&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;insert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;svg&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;:first-child&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;width&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, we have to actually render it:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;barChart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/***/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// draw our svg container&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;meters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;svg&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;g&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;class&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;meter&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;selectAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;rect&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;enter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;g&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;class&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;drawBar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;class&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;background&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;barHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;drawBar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;class&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;foreground&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;barHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// this actually draws a bar&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;drawBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;meters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;rect&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;x&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;barWidth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;width&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;barWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// initialize the bar chart!&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;barChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ok. So this is what we’ve got so far:&lt;/p&gt;
+
+&lt;pre class=&quot;codepen&quot; data-height=&quot;300&quot; data-type=&quot;result&quot; data-href=&quot;wakhK&quot; data-user=&quot;mshwery&quot; data-safe=&quot;true&quot;&gt;&lt;code&gt;&lt;/code&gt;&lt;a href=&quot;http://codepen.io/mshwery/pen/wakhK&quot;&gt;Check out this Pen!&lt;/a&gt;&lt;/pre&gt;
+&lt;script async=&quot;&quot; src=&quot;http://codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Alright, now let’s animate this shiz.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;barChart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/***/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/***/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;drawBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/***/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;self&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// select the foreground bars and call the animate method on them&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;selectAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;rect.foreground&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;total&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;barHeight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;total&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;duration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;total&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;barHeight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;total&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// In this example, every couple seconds update the bar chart with new numbers!&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;setInterval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// get new random numbers&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;barChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+  &lt;figure class=&quot;final&quot;&gt;
+    &lt;figcaption&gt;The final result&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;div&gt;
+
+&lt;a href=&quot;http://codepen.io/mshwery/pen/uCBbn&quot; class=&quot;codepen&quot; target=&quot;_blank&quot;&gt;Check out the code in action on CodePen&lt;/a&gt;
+
+&lt;style&gt;
+  svg {
+    font: 10px sans-serif;
+  }
+
+  .foreground {
+    fill: #2D6A99;
+  }
+
+  .background {
+    fill: #eee;
+  }
+&lt;/style&gt;
+&lt;script src=&quot;http://d3js.org/d3.v3.min.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+  var n = 10,
+      random = function() { return Math.floor(Math.random() * 100); },
+      data = d3.range(n).map(random);
+  
+  var barChart = {
+    init: function(el) {
+      this.height = 80;
+      this.width = 220;
+      this.padding = 12;
+      barWidth = Math.floor((this.width - (this.padding * (data.length - 1))) / data.length);
+      barHeight = this.height;
+
+      this.svg = d3.select(el).insert(&#39;svg&#39;, &#39;:first-child&#39;)
+        .attr(&#39;width&#39;, this.width)
+        .attr(&quot;height&quot;, this.height);
+
+      this.draw();
+    },
+
+    draw: function() {
+      var self = this;
+
+      this.meters = this.svg
+        .append(&quot;g&quot;)
+          .attr(&quot;class&quot;, &quot;meter&quot;)
+          .selectAll(&quot;rect&quot;)
+            .data(data)
+            .enter()
+            .append(&#39;g&#39;)
+              .attr(&quot;class&quot;, &quot;bar&quot;);
+
+      this.drawBar().attr(&quot;class&quot;, &quot;background&quot;).attr(&quot;y&quot;, 0).attr(&quot;height&quot;, barHeight);
+      this.drawBar().attr(&quot;class&quot;, &quot;foreground&quot;).attr(&quot;y&quot;, barHeight).attr(&quot;height&quot;, 0);
+
+      setInterval(function() {
+        data = d3.range(n).map(random);
+        self.update();
+      }, 2000);
+    },
+
+    update: function () {
+        var self = this;
+        d3.selectAll(&quot;rect.foreground&quot;).each(self.animate);
+    },
+
+    animate: function (d, i) {
+      var total = data[i];
+      var bar = d3.select(this);
+      if (barHeight - total != bar.attr(&quot;y&quot;)) {
+        bar.transition().duration(1500).attr(&quot;height&quot;, total).attr(&quot;y&quot;, barHeight - total);
+      }
+    },
+
+    drawBar: function () {
+      var self = this;
+
+      return this.meters.append(&quot;rect&quot;)
+        .attr(&quot;x&quot;, function (d, i) {
+          return i * (barWidth + self.padding);
+        })
+        .attr(&quot;width&quot;, barWidth);
+    }
+  }
+
+  barChart.init(&#39;figure.final&#39;);
+&lt;/script&gt;
+&lt;/div&gt;&lt;/div&gt;
+</description>
+				<pubDate>Tue, 02 Jun 2015 10:04:37 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/02/2015-04-16-test-d3</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/02/2015-04-16-test-d3</guid>
+			</item>
+		
+			<item>
+				<title>Farewell, Tsinghua</title>
+				<description>&lt;p&gt;终于到了这一天，要告别这个园子了。&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;清华的食堂&lt;/h1&gt;
+&lt;p&gt;虽然六维的资源非常全，在校内下载速度也很快(一般是几M/s)，但六维还是存在以下限制：&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;清华的图书馆&lt;/h1&gt;
+</description>
+				<pubDate>Sat, 30 May 2015 15:32:50 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/05/30/2015-07-15-farewell-my-tsinghua</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/05/30/2015-07-15-farewell-my-tsinghua</guid>
+			</item>
+		
+			<item>
 				<title>电气工程领域期刊 h5 指数排名感想</title>
 				<description>&lt;p&gt;最近新发现 Google 学术搜索推出了评价期刊的 h5 指数。该指数的评定方法是，将某个期刊最近 5 年来的所有文章，按引用次数从多到少进行排列，至少有 i 篇文章被引次数不少于 i 次，则取最大的 i 值作为 h5 指数。该指数的详细介绍可以参考 &lt;a href=&quot;https://scholar.google.com/intl/zh-CN/scholar/metrics.html#metrics&quot;&gt;Google Scholar Metrics&lt;/a&gt; 的介绍。&lt;/p&gt;
 
@@ -79,13 +359,13 @@
 
 &lt;p&gt;Vim被誉为“编辑器之神”，相较于Emacs，其最大的好处是启动快。我选择的是MacVim，可以直接从&lt;a href=&quot;http://www.vim.org/download.php&quot; target=&quot;_blank&quot;&gt;Vim主页的下载页面&lt;/a&gt;下载dmg文件后安装。&lt;/p&gt;
 
-&lt;p&gt;Vim的配置工作相对简单，只需要将配置文件&lt;code&gt;.vimrc&lt;/code&gt;放到根目录~下就可以了。我个人用的是&lt;a href=&quot;http://github.com/tomasr/molokai&quot;&gt;molokai&lt;/a&gt;主题，下载后需要放到Vim对应的文件夹中，具体路径为：/MacVim.app/Contents/Resources/vim/runtime/colors.&lt;/p&gt;
+&lt;p&gt;Vim的配置工作相对简单，只需要将配置文件&lt;code class=&quot;highlighter-rouge&quot;&gt;.vimrc&lt;/code&gt;放到根目录~下就可以了。我个人用的是&lt;a href=&quot;http://github.com/tomasr/molokai&quot;&gt;molokai&lt;/a&gt;主题，下载后需要放到Vim对应的文件夹中，具体路径为：/MacVim.app/Contents/Resources/vim/runtime/colors.&lt;/p&gt;
 
 &lt;h3 id=&quot;emacs&quot;&gt;Emacs&lt;/h3&gt;
 
-&lt;p&gt;与Vim相比，Emacs被誉为“神之编辑器”，也有人调侃Emacs是伪装成操作系统的编辑器。Emacs需要配合各种&lt;code&gt;package&lt;/code&gt;以实现各种强大的功能。我个人主要用的是Org-mode，用来做简单的GTD管理和日常记录。&lt;/p&gt;
+&lt;p&gt;与Vim相比，Emacs被誉为“神之编辑器”，也有人调侃Emacs是伪装成操作系统的编辑器。Emacs需要配合各种&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;以实现各种强大的功能。我个人主要用的是Org-mode，用来做简单的GTD管理和日常记录。&lt;/p&gt;
 
-&lt;p&gt;Emacs的配置比Vim要复杂一些。首先是下载Emacs程序，不想自己编译的话可以直接选择&lt;a href=&quot;http://emacsformacosx.com/&quot;&gt;Emacs for Mac OS X&lt;/a&gt;，之后需要将配置文件放到&lt;code&gt;~/.emacs.d&lt;/code&gt;中。理论上利用&lt;code&gt;package.el&lt;/code&gt;提供的包管理功能可以自动下载需要的&lt;code&gt;package&lt;/code&gt;，不过现在我的配置文件中还没有这么智能，需要到 Emacs 中手动下载各个&lt;code&gt;package&lt;/code&gt;，比较麻烦。各个&lt;code&gt;package&lt;/code&gt;的配置文件可以参考之前的配置文件稍加修改。&lt;/p&gt;
+&lt;p&gt;Emacs的配置比Vim要复杂一些。首先是下载Emacs程序，不想自己编译的话可以直接选择&lt;a href=&quot;http://emacsformacosx.com/&quot;&gt;Emacs for Mac OS X&lt;/a&gt;，之后需要将配置文件放到&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.emacs.d&lt;/code&gt;中。理论上利用&lt;code class=&quot;highlighter-rouge&quot;&gt;package.el&lt;/code&gt;提供的包管理功能可以自动下载需要的&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;，不过现在我的配置文件中还没有这么智能，需要到 Emacs 中手动下载各个&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;，比较麻烦。各个&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;的配置文件可以参考之前的配置文件稍加修改。&lt;/p&gt;
 
 &lt;h2 id=&quot;section-1&quot;&gt;排版工具&lt;/h2&gt;
 
@@ -108,27 +388,30 @@
 
 &lt;p&gt;Jekyll是基于Ruby的静态博客生成工具，利用Jekyll + Bootstrap + GitHub Pages可以方便快捷地生成自己的博客网站（例如本网站）。Mac是自带Ruby的，因此可以直接利用gem安装最新stable版的Jekyll：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;[sudo] gem install jekyll
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gem install jekyll
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;redcarpet&quot;&gt;redcarpet&lt;/h3&gt;
 
 &lt;p&gt;由于没找到Pygments支持行内代码高亮的方法，现在的解决方案是利用redcarpet + Markdown实现，redcarpet同样可以利用gem安装：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;[sudo] gem install redcarpet
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gem install redcarpet
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;section-2&quot;&gt;其他工具&lt;/h2&gt;
 
 &lt;h3 id=&quot;homebrew&quot;&gt;Homebrew&lt;/h3&gt;
 
-&lt;p&gt;用过Ubuntu的应该都能体会&lt;code&gt;apt-get&lt;/code&gt;的好处，Mac上也有类似的包管理程序，主要是Homebrew和Macports。Homebrew的安装方法可以参考&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew主页&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;用过Ubuntu的应该都能体会&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;的好处，Mac上也有类似的包管理程序，主要是Homebrew和Macports。Homebrew的安装方法可以参考&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew主页&lt;/a&gt;。&lt;/p&gt;
 
 &lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
 &lt;p&gt;Git是Linux之父Linus Torvalds创作的分布式版本控制系统，结合GitHub可以轻松实现版本控制。Git可以利用Homebrew直接安装：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;brew install git
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install git
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
 				<pubDate>Mon, 02 Mar 2015 00:00:00 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2015/03/02/RMBP-Geek</link>
@@ -445,458 +728,6 @@
 				<pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2014/09/12/Kunming-travel</link>
 				<guid isPermaLink="true">http://tommyjiang.github.com/2014/09/12/Kunming-travel</guid>
-			</item>
-		
-			<item>
-				<title>国航相关信息汇总</title>
-				<description>&lt;p class=&quot;paragraph&quot;&gt;
-  Base北京，航空公司自然选择国航，将国航相关的信息汇总如下。
-&lt;/p&gt;
-
-&lt;h1&gt;国航常旅客计划&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  国航的Logo是一个凤凰图案，其常旅客卡名字也与凤凰有关，叫凤凰知音卡。知音卡共分五个等级：普卡、银卡、金卡、白金卡和终身白金卡。有关资料可以参考&lt;a href=&quot;http://ffp.airchina.com.cn/cn/zyjh_new/zyjh.jsp?forword=zxfw&quot; target=&quot;_blank&quot;&gt;国航知音网站 成为贵宾会员&lt;/a&gt;。下面列出首次成为及保持贵宾会员（银卡以上）的标准：
-&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;caption&gt;国航首次成为贵宾会员的标准&lt;/caption&gt;
-  &lt;tr&gt;
-    &lt;th&gt;等级&lt;/th&gt;
-    &lt;th&gt;里程标准&lt;/th&gt;
-    &lt;th&gt;定级航段标准&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;银卡&lt;/td&gt;
-    &lt;td&gt;4万公里&lt;/td&gt;
-    &lt;td&gt;25个&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;金卡&lt;/td&gt;
-    &lt;td&gt;8万公里&lt;/td&gt;
-    &lt;td&gt;40个&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;白金卡&lt;/td&gt;
-    &lt;td&gt;16万公里&lt;/td&gt;
-    &lt;td&gt;90个&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;caption&gt;国航保持贵宾会员的标准&lt;/caption&gt;
-  &lt;tr&gt;
-    &lt;th&gt;等级&lt;/th&gt;
-    &lt;th&gt;里程标准&lt;/th&gt;
-    &lt;th&gt;定级航段标准&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;银卡&lt;/td&gt;
-    &lt;td&gt;3.5万公里&lt;/td&gt;
-    &lt;td&gt;23个&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;金卡&lt;/td&gt;
-    &lt;td&gt;7万公里&lt;/td&gt;
-    &lt;td&gt;36个&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;白金卡&lt;/td&gt;
-    &lt;td&gt;14.5万公里&lt;/td&gt;
-    &lt;td&gt;80个&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  国航的终身白金卡比较特殊，需要乘坐国航实际承运且挂CA代号的航班飞行里程累积达到100万公里的会员，将保留白金卡会员资格，终身享受白金卡会员待遇。注意一定要是&lt;font color=&quot;red&quot;&gt;国航实际承运航班&lt;/font&gt;才可以，即使是和国航代码共享的航班，如果是其他航空公司，例如深航、川航甚至美联航等执飞，是不算到这100万公里的。由此可见，国航终身白金卡的难度相当大。
-&lt;/p&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  如果成为国航的贵宾会员，也会享有相应的权益（可以参考 &lt;a href=&quot;http://ffp.airchina.com.cn/cn/zyjh_new/zyjh.jsp?forword=zxfw&quot; target=&quot;_blank&quot;&gt;国航官网 贵宾会员专享服务&lt;/a&gt; ）：
-&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;caption&gt;国航贵宾会员专享服务&lt;/caption&gt;
-  &lt;tr&gt;
-    &lt;th&gt;等级&lt;/th&gt;
-    &lt;th&gt;额外里程奖励&lt;/th&gt;
-    &lt;th&gt;休息室&lt;/th&gt;
-    &lt;th&gt;额外免费行李&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;银卡&lt;/td&gt;
-    &lt;td&gt;25%&lt;/td&gt;
-    &lt;td&gt;免费使用国际公务舱休息室&lt;br&gt;有偿使用国内公务舱休息室&lt;/td&gt;
-    &lt;td&gt;20kg/1件&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;金卡&lt;/td&gt;
-    &lt;td&gt;30%&lt;/td&gt;
-    &lt;td&gt;公务舱休息室，可额外携带一名人员&lt;/td&gt;
-    &lt;td&gt;20kg/1件&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;白金卡&lt;/td&gt;
-    &lt;td&gt;50%&lt;/td&gt;
-    &lt;td&gt;头等舱休息室，可额外携带一名人员&lt;/td&gt;
-    &lt;td&gt;30kg/1件&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  其中银卡会员在北京首都机场T3航站楼、成都双流机场、天津滨海国际机场、呼和浩特白塔机场、上海浦东国际机场2号航站楼、深圳宝安国际机场B号航站楼。里程消费标准为1500公里/每人每次。
-&lt;/p&gt;
-
-&lt;h1&gt;里程累积与里程兑换&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  国航里程自2014年4月1日起实行的累积标准表如下（可参考 &lt;a href=&quot;http://ffp.airchina.com.cn/cn/aviationInfo/staticHtml/detailHtml/airChina.html&quot; target=&quot;_blank&quot;&gt;国航官网 里程累积标准表&lt;/a&gt;）：
-&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;caption&gt;国航里程累积标准表&lt;/caption&gt;
-  &lt;tr&gt;
-    &lt;th&gt;舱位&lt;/th&gt;
-    &lt;th&gt;订座舱位&lt;/th&gt;
-    &lt;th&gt;可获得实际里程的比率（国内/国际）&lt;/th&gt;
-    &lt;th&gt;最小里程额（国内/国际）&lt;/th&gt;
-    &lt;th&gt;可获得定级航段数（国内/国际）&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;头等舱&lt;/td&gt;
-    &lt;td&gt;P&lt;/td&gt;
-    &lt;td&gt;300%&lt;/td&gt;
-    &lt;td&gt;1000&lt;/td&gt;
-    &lt;td&gt;3&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;头等舱&lt;/td&gt;
-    &lt;td&gt;F&lt;/td&gt;
-    &lt;td&gt;250%/300%&lt;/td&gt;
-    &lt;td&gt;1000&lt;/td&gt;
-    &lt;td&gt;2.5/3&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;头等舱&lt;/td&gt;
-    &lt;td&gt;A&lt;/td&gt;
-    &lt;td&gt;200%/250%&lt;/td&gt;
-    &lt;td&gt;1000&lt;/td&gt;
-    &lt;td&gt;2/2.5&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;公务舱&lt;/td&gt;
-    &lt;td&gt;C&lt;/td&gt;
-    &lt;td&gt;200%&lt;/td&gt;
-    &lt;td&gt;800&lt;/td&gt;
-    &lt;td&gt;2&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;公务舱&lt;/td&gt;
-    &lt;td&gt;D Z J&lt;/td&gt;
-    &lt;td&gt;150%&lt;/td&gt;
-    &lt;td&gt;800&lt;/td&gt;
-    &lt;td&gt;1.5&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;经济舱&lt;/td&gt;
-    &lt;td&gt;W Y&lt;/td&gt;
-    &lt;td&gt;110%&lt;/td&gt;
-    &lt;td&gt;500&lt;/td&gt;
-    &lt;td&gt;1.1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;经济舱&lt;/td&gt;
-    &lt;td&gt;B M H&lt;/td&gt;
-    &lt;td&gt;100%&lt;/td&gt;
-    &lt;td&gt;500&lt;/td&gt;
-    &lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;经济舱&lt;/td&gt;
-    &lt;td&gt;K L Q&lt;/td&gt;
-    &lt;td&gt;75%&lt;/td&gt;
-    &lt;td&gt;500&lt;/td&gt;
-    &lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;经济舱&lt;/td&gt;
-    &lt;td&gt;G V U&lt;/td&gt;
-    &lt;td&gt;50%&lt;/td&gt;
-    &lt;td&gt;500&lt;/td&gt;
-    &lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;经济舱&lt;/td&gt;
-    &lt;td&gt;S&lt;/td&gt;
-    &lt;td&gt;50%/25%&lt;/td&gt;
-    &lt;td&gt;500&lt;/td&gt;
-    &lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;经济舱&lt;/td&gt;
-    &lt;td&gt;T E&lt;/td&gt;
-    &lt;td&gt;25%&lt;/td&gt;
-    &lt;td&gt;500&lt;/td&gt;
-    &lt;td&gt;1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;其他舱位&lt;/td&gt;
-    &lt;td&gt;O I X R N&lt;/td&gt;
-    &lt;td&gt;0%&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-    &lt;td&gt;-&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  附上国航各舱位折扣情况（官网上没有找到相应资料，下表参考的是&lt;a href=&quot;http://wenku.baidu.com/link?url=EEmlbTlNocxCex6PNyALzPmQnKKFlC3tRsZ7bN7JVejLULp11JLE2nF1D9FMY-T8f4waWinfN97cG32rcVpNZ0f9uCiCOXTwGAkwwIxl0DW&quot; target=&quot;_blank&quot;&gt;百度文库&lt;/a&gt;中的资料）：
-&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;caption&gt;国航各舱位折扣情况&lt;/caption&gt;
-  &lt;tr&gt;
-    &lt;th&gt;订座舱位&lt;/th&gt;
-    &lt;th&gt;折扣&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;W&lt;/td&gt;
-    &lt;td&gt;全价&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Y&lt;/td&gt;
-    &lt;td&gt;全价&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;B&lt;/td&gt;
-    &lt;td&gt;9折&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;M&lt;/td&gt;
-    &lt;td&gt;85折&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;H&lt;/td&gt;
-    &lt;td&gt;8折&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;K&lt;/td&gt;
-    &lt;td&gt;75折&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;L&lt;/td&gt;
-    &lt;td&gt;7折&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Q&lt;/td&gt;
-    &lt;td&gt;6折&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;G&lt;/td&gt;
-    &lt;td&gt;5折&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;V&lt;/td&gt;
-    &lt;td&gt;4折&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;U&lt;/td&gt;
-    &lt;td&gt;4折以下&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  国航奖励机票兑换标准表如下（参考 &lt;a href=&quot;http://ffp.airchina.com.cn/cn/lcdh/main.jsp&quot; target=&quot;_blank&quot;&gt;国航官网 里程兑换标准&lt;/a&gt; ）：
-&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;caption&gt;国航奖励机票兑换标准表&lt;/caption&gt;
-  &lt;tr&gt;
-    &lt;th rowspan=&quot;2&quot;&gt;航程距离（公里）&lt;/th&gt;
-    &lt;th colspan=&quot;2&quot;&gt;经济舱&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;th&gt;单程&lt;/th&gt;
-    &lt;th&gt;往返&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;0-800&lt;/td&gt;
-    &lt;td&gt;8,000&lt;/td&gt;
-    &lt;td&gt;15,000&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;800-1200&lt;/td&gt;
-    &lt;td&gt;12,000&lt;/td&gt;
-    &lt;td&gt;22,000&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1200-2000&lt;/td&gt;
-    &lt;td&gt;15,000&lt;/td&gt;
-    &lt;td&gt;26,000&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;2000以上&lt;/td&gt;
-    &lt;td&gt;20,000&lt;/td&gt;
-    &lt;td&gt;36,000&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;!--
-&lt;p class=&quot;paragraph&quot;&gt;
-  北京出发优势航段汇总（参考 &lt;a href=&quot;http://www.douban.com/group/topic/28294329/&quot; target=&quot;_blank&quot;&gt;豆瓣 里程兑换机票优势航段汇总&lt;/a&gt;）：
-&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;caption&gt;国航北京出发兑换机票优势航段汇总&lt;/caption&gt;
-  &lt;tr&gt;
-    &lt;th&gt;目的地&lt;/th&gt;
-    &lt;th&gt;飞行距离&lt;/th&gt;
-    &lt;th&gt;所属区间&lt;/th&gt;
-    &lt;th&gt;单程所需里程&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;杭州&lt;/th&gt;
-    &lt;td&gt;1134&lt;/th&gt;
-    &lt;td&gt;800-1200&lt;/th&gt;
-    &lt;td&gt;12,000&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;广州&lt;/th&gt;
-    &lt;td&gt;1905&lt;/th&gt;
-    &lt;td&gt;1200-2000&lt;/th&gt;
-    &lt;td&gt;15,000&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;深圳&lt;/th&gt;
-    &lt;td&gt;1966&lt;/th&gt;
-    &lt;td&gt;1200-2000&lt;/th&gt;
-    &lt;td&gt;15,000&lt;/th&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
---&gt;
-
-&lt;h1&gt;T3航站楼&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  国航大本营就在首都机场的T3航站楼，经常乘坐国航航班的话，最好把T3的情况摸清楚。下面是T3国内出发的流程图，转自&lt;a href=&quot;http://www.bcia.com.cn/images/guide/t3_dd.jpg&quot; target=&quot;_blank&quot;&gt;国航官网&lt;/a&gt;：  
-&lt;/p&gt;
-&lt;a name=&quot;T3 departure&quot;&gt;&lt;/a&gt;
-
-&lt;img class=&quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2014-08/T3 departure.jpg&quot; width=&quot;800px&quot;&gt;
-
-&lt;br /&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  关于上图的一些说明：
-&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;T3C四层办理国内乘机手续。国航国内航班人工值机在J区，此外自助值机、补打登机牌也都在J区，而自助补打行程单则在H区。注意如果是从携程订的票，需要到B区靠近2号门的地方取携程打印的行程单，没有办法自助打印。国内航班一般不建议托运行李，原因是国内机场等行李的时间太长了。如果不托运行李，高峰时段可以直接自助办理值机，省时省力。&lt;/li&gt;
-  &lt;li&gt;办完乘机手续拿登机牌过安检。如果登机口在T3C，直接从国内出发C01-C61下至三楼安检；如果登机口在T3D就比较麻烦了，需要从T3C四层中间下到2层坐捷运列车到T3D登机。当然在T3C登机也要看登机口位置如何，最好的当然是离安检最近的C01-C08和C30-C37，最差的是要走很远的C15-C23。另外远机位的C51-C61也好不到哪去，需要先走一段然后下到2楼坐摆渡车。去年乘坐的山航飞九江的飞机就是这个待遇。&lt;/li&gt;
-  &lt;li&gt;今年5月4日从深圳回来把iPad落在CA1397飞机上了。当时没能亲自回飞机去找的一个主要原因，就是对T3D不熟。吃一堑，长一智，这里特别记下T3D的结构，并对比其与T3C的不同。T3D的地下1层是捷运列车，1层是安检，出发在2层，而到达在3层。从深圳回来时，由于廊桥在2层，因此从登机的廊桥出来后需要先上电梯到3层，到3层走出与2层登机口相对应的门之后，再从3层下电梯到1层，最后从1层下到地下1层坐捷运列车回T3C。当时我是到地下1层后才发现iPad没拿，这时只能逆着电梯到1层，再逆着电梯到3层，再从3层进门逆着电梯到2层，经过廊桥才能回到飞机。当时我已经回到了3层，但可能所有人都已下了飞机，所以与2层登机口对应的门关了，没办法再回去了。注意T3D与T3C的出发和到达对应的层数是完全不同的，具体总结如下：  &lt;/li&gt;
-  &lt;ul&gt;
-    &lt;li&gt;T3C：廊桥2层，出发3层，到达2层。出发时需要从登机口下到2层廊桥登机；到达时不需要坐电梯，直接到2层。&lt;/li&gt;
-    &lt;li&gt;T3D：廊桥2层，出发2层，到达3层。出发时直接从登机口经廊桥登机；到达时需要先坐电梯到3层出与2层登机口对应的门。&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/ol&gt;
-</description>
-				<pubDate>Wed, 27 Aug 2014 00:00:00 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2014/08/27/CA-information</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2014/08/27/CA-information</guid>
-			</item>
-		
-			<item>
-				<title>Emacs Org mode Time Stamp 设置为中文的方法</title>
-				<description>&lt;h1&gt;Emacs和Org mode介绍&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  先简要介绍一下Emacs和Org mode。Emacs可以算是GNU(关于GNU，可以参考其&lt;a href=&quot;http://www.gnu.org/&quot; target=&quot;_blank&quot;&gt;官网介绍&lt;/a&gt; )社区王牌性的作品。简单来说，它是一个文本编辑器，但由于其可定制性极强，使用者可以依据自己的喜好将它“改装”成各种样子。也正是由于其自由度极高，一句经典的调侃是
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-Emacs is anything but an editor.
-&lt;/blockquote&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  此外，由于&lt;a href=&quot;www.vim.org&quot; target=&quot;_blank&quot;&gt;Vim&lt;/a&gt;也是十分强大的编辑器，二者之间的圣战也是程序员们津津乐道的话题，可以参考 &lt;a href=&quot;http://en.wikipedia.org/wiki/Editor_war&quot; target=&quot;_blank&quot;&gt;Wiki: Editor War&lt;/a&gt;。
-&lt;/p&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  &lt;a href=&quot;orgmode.org&quot; target=&quot;_blank&quot;&gt;Org mode&lt;/a&gt;是以Emacs中的Outline Mode为基础进行扩展后的强大模式，利用Org mode可以方便地按照大纲方式组织文本。因此Org mode非常适合于写作长文章或其他组织性较强的工作，此外它也有其他一些应用，例如可以作为GTD工具(详见&lt;a href=&quot;http://doc.norang.ca/org-mode.html#ChangeHistory&quot; target=&quot;_blank&quot;&gt;Org Mode - Organize Your Life In Plain Text!&lt;/a&gt;)等。
-&lt;/p&gt;
-
-&lt;h1&gt;Emacs Org mode中的时间戳&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  Org mode中有一个功能，就是插入时间戳(time stamp)，可以参考&lt;a href=&quot;http://orgmode.org/manual/Timestamps.html#Timestamps&quot; target=&quot;_blank&quot;&gt;The Org Manual 8.1 Timestamps&lt;/a&gt;，PDF版本可以从&lt;a href=&quot;http://orgmode.org/org.pdf&quot; target=&quot;_blank&quot;&gt;这里&lt;/a&gt;下载。正常情况下，Org mode中默认的时间戳是英文的，如下图所示（最下面一行的Saturday）：
-&lt;/p&gt;
-
-&lt;img class = &quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2014-08/org mode time stamp.png&quot; width=&quot;800px&quot;/&gt;
-
-&lt;h1&gt;系统环境及解决方案&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  系统环境Mac OS 10.9.4，Emacs版本(&lt;a href=&quot;http://emacsformacosx.com/&quot; target=&quot;_blank&quot;&gt;Emacs for Mac OS X&lt;/a&gt;)24.3。现在我想实现的是将Org mode中的时间戳最后的Saturday由英文改为中文。在网上看到一篇文章很受启发：&lt;a href=&quot;http://blog.aizhet.com/Windows/3941.html&quot; target=&quot;_blank&quot;&gt;org-mode里时间戳显示语言的问题&lt;/a&gt;。但该文章叙述的是如何从中文改成英文，而我是要反其道而行之。借鉴他文章中的思路，在Emacs的启动配置文件(.emacs或.emacs.d/init.el)中添加如下代码：
-&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-locale-environment&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;zh_CN.utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  添加上述代码之后再在Org mode中插入的时间戳即为中文。但我的Mac系统上还有个问题，例如星期一的缩写应为周一，但我的系统上显示的是一。在Windows下利用cygwin安装的Emacs就没有这个问题，怀疑是Mac系统设置的问题。好在Org mode中还提供了自定义时间戳格式的设置，只能暂时先用全称代替缩写了。在Emacs的启动配置文件(.emacs或.emacs.d/init.el)中添加如下代码：
-&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;setq-default&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;org-display-custom-times&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;org-time-stamp-custom-formats&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A %H:%M&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  其中的%A代替了默认设置中的%a，即为星期几(weekday)的全称。有关时间戳格式更详细的介绍可以参考 &lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/elisp/Time-Parsing.html#Time-Parsing&quot; target=&quot;_blank&quot;&gt;GNU Emacs Lisp Reference Manual 39.7 Parsing and Formatting Times&lt;/a&gt;，PDF版本可以从&lt;a href=&quot;https://www.gnu.org/software/emacs/manual/pdf/elisp.pdf&quot; target=&quot;_blank&quot;&gt;这里&lt;/a&gt;下载。
-&lt;/p&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  最后补上一张设置好之后的图：
-&lt;/p&gt;
-
-&lt;img class=&quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2014-08/time stamp Chinese.png&quot;/ width=&quot;800px&quot;&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  2014年11月25日更新：可以直接在init.el中添加如下代码实现时间戳用中文显示的功能：
-&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;org-time-stamp-formats&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A %H:%M&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;org-time-stamp-custom-formats&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;%Y-%m-%d %A %H:%M&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-</description>
-				<pubDate>Sat, 23 Aug 2014 00:00:00 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language</guid>
-			</item>
-		
-			<item>
-				<title>我与PT</title>
-				<description>&lt;h1&gt;初识PT&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  2010年世界杯的时候，为了下载比赛的视频，我注册了第一个PT——&lt;a href=&quot;http://bt.neu6.edu.cn&quot; target = &quot;_blank&quot;&gt;六维空间(需要IPv6连接)&lt;/a&gt;的帐号。当时是一个师兄发的邀请，当我用邀请码注册完后，兴冲冲地想下载视频时，却发现要先回答一些关于PT的问题之后才能下载。现在回过头看，设置答题这个门槛还是十分必要的，可以在最开始就过滤掉那些伸手党。六维的人气在当时就已经很高了，目前应该是教育网第一大PT，发种的速度非常快。注册完之后的那几天，每天早上都可以到下载到当天凌晨最新的比赛。虽然当时学校还没有每个月20G的流量限制，即使没有六维，也能用v4的工具下载，或者直接到网上看视频。但能从六维上第一时间下载到高清的比赛，感觉还是很过瘾的。
-&lt;/p&gt;
-
-&lt;h1&gt;三大PT&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  虽然六维的资源非常全，在校内下载速度也很快(一般是几M/s)，但六维还是存在以下限制：
-&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;只能通过IPv6通道使用(现在tracker中加入了v4，但我还不清楚具体情况)。&lt;/li&gt;
-  &lt;li&gt;六维本身没有录制小组和压制小组，都是转载其他PT的资源。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  因此，本着有备无患的原则，我又申请了国内三个主要PT的帐号。
-&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://totheglory.im/&quot; target = &quot;_blank&quot;&gt;TTG&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://hdwing.com&quot; target = &quot;_blank&quot;&gt;HDWing&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://chdbits.org&quot; target = &quot;_blank&quot;&gt;CHD&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  如果你不是以上三个PT的会员，当你打开这些页面时，都会出现用户登录的页面。如果你也想下载高清的资源，肯定会点页面上的“注册”。但是很遗憾，这些PT都需要邀请注册，普通用户是无法直接注册的，这就涉及到PT的核心机制了。具体原因可以参考&lt;a href=&quot;http://baike.baidu.com/view/1932691.htm?fr=aladdin&quot; target = &quot;_blank&quot;&gt;百度知道·PT下载&lt;/a&gt;。简单来说，PT网站要求用户保持一定的分享率，如果可以自由注册，那一定会出现很多“马甲”，只下自己想下的，不满足分享率要求也无所谓，再重新注册一个就行了。因此，这几个PT都有邀请注册的机制，这相当于一个门槛，从开始就过滤掉潜在的伸手党。
-&lt;/p&gt;
-</description>
-				<pubDate>Sat, 16 Aug 2014 00:00:00 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2014/08/16/pt-share</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2014/08/16/pt-share</guid>
 			</item>
 		
 	</channel>
