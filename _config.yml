@@ -9,12 +9,15 @@ paginate: 5
 # 首页显示的分隔符
 excerpt_separator: "\n\n"
 
-# Markdown解析
-markdown: kramdown
+# # Markdown解析
+# markdown: kramdown
+# 
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+# Markdown解析
+markdown: redcarpet
 
 # 修改为自己的配置
 title : 电力引领生活

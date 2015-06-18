@@ -15,3 +15,6 @@
 /_plugins/.DS_Store
 /_posts/2014-11/.DS_Store
 /image/2014-11/.DS_Store
+/_drafts/*.md#
+/_drafts/.*.md
+

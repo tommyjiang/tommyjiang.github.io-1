@@ -4,7 +4,7 @@
 <html lang="cn">
   <head>
     <meta charset="utf-8">
-    <title>第一篇博文 顺致小哥</title>
+    <title>Ubuntu 系统 Emacs 中英文字体设置</title>
     
     
     <meta name="author" content="Tommy">
@@ -88,26 +88,15 @@
 <div class="row post-full typo">
   <div class="col-md-2"></div>
   <div class="col-md-8 typo">
-    <h2>第一篇博文 顺致小哥 </h2>
+    <h2>Ubuntu 系统 Emacs 中英文字体设置 </h2>
     <div class="post_info">
       
       <ul id="post_info" class="tag_box inline">
         <li><i class="fa fa-calendar"></i></li>
-        <li> 2014 年 08 月 15 日</li>
+        <li> 2015 年 06 月 21 日</li>
         <li><i class="fa fa-folder-open"></i></li>
         
         
- 
-  <li>
-    <a href="/categories.html#感悟-ref">
-      感悟 
-    </a>
-  </li>
-  
-  <li>
-    <i class="fa fa-angle-double-right"></i>
-  </li>
-  
  
   <li>
     <a href="/categories.html#技术-ref">
@@ -122,22 +111,21 @@
         
     </div>
     <div class="content">
-      <h1>缘起</h1>
-<p class="paragraph">
-2013年11月17日，当时我在香港，在小哥的忽悠下，注册了被誉为“程序员的Facebook”——GitHub社区的帐号。注册后小哥曾大力推荐我用Github + Jekyll搭建自己的博客，这也是他博客
-<a href="http://yangchao.me" target = "_blank">小哥的博客</a> 的主要工具。
-</p>
+      <p>最近把2010年的华硕老电脑重装了，没再用 Win，选择了 Ubuntu 15.04系统，把 RMBP 上的配置全部迁移过来，其中 Emacs 字体部分折腾了一阵，采用的是英文 Inconsolata + 中文 黑体-简（Heiti SC）的搭配，配置过程如下。</p>
 
-<p class="paragraph">
-时过境迁，转眼已到了2014年的8月份。从2014年初我就开始折腾Emacs，到现在基本熟悉了Orgmode
-的用法，也终于有精力可以折腾点别的。前几天刚配好Emacs+ESS，今天就开始折腾Emacs
-Orgmode+Jekyll+Github搭建博客的方法，折腾了一天，总算基本成功了，还要感谢小哥引领我走上 <b>Geek</b> 的道路。
-</p>
+<h1>OS X 系统 Emacs 字体设置</h1>
 
-<h1>致谢</h1>
-<p class="paragraph"> 
-本博客模版来自<a href="https://github.com/codepiano/codepiano.github.com" target = "_blank">codepiano</a> ，感谢原作者分享的代码。
-</p>
+<p>OS X 系统下的配置比较简单，由于系统已经自带了黑体-简字体，因此只需要安装 Inconsolata 字体，由于 Emacs 默认使用的中文就是黑体-简字体，因此只需要在 Emacs 的配置文件中加入如下配置语句即可。</p>
+<div class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;default</span> <span class="no">nil</span> <span class="ss">:font</span> <span class="s">&quot;Inconsolata 24&quot;</span><span class="p">))</span>
+</code></pre></div>
+<h1>Ubuntu 系统 Emacs 字体设置</h1>
+
+<p>Ubuntu 下的配置相对麻烦一些。首先要安装 Inconsolata 和 黑体-简 两种字体，然后在 Emacs 的配置文件中加入如下配置语句。</p>
+<div class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="p">(</span><span class="k">setq</span> <span class="nv">a</span> <span class="nv">test</span><span class="p">)</span>
+</code></pre></div>
+<h1>中英文混排等宽效果</h1>
+
+<p>英文 Inconsolata + 中文 黑体-简 的字体搭配可以在 Emacs 中实现中英文混排等宽的效果，但必须将字号设置为12，18或者24号，可能与两种字体的比例有关。笔记本的屏幕下一般18号字体就足够了，如果外接显示器或者台式机，可以选择24号字体。</p>
 
     </div>
 
@@ -147,17 +135,9 @@ Orgmode+Jekyll+Github搭建博客的方法，折腾了一天，总算基本成�
       
       
    
+    <li><a href="/posts.html#Ubuntu">Ubuntu <span>1</span></a></li>
+   
     <li><a href="/posts.html#Emacs">Emacs <span>3</span></a></li>
-   
-    <li><a href="/posts.html#org-mode">org-mode <span>1</span></a></li>
-   
-    <li><a href="/posts.html#GitHub">GitHub <span>1</span></a></li>
-   
-    <li><a href="/posts.html#Jekyll">Jekyll <span>1</span></a></li>
-   
-    <li><a href="/posts.html#Geek">Geek <span>2</span></a></li>
-   
-    <li><a href="/posts.html#小哥">小哥 <span>2</span></a></li>
   
 
 
@@ -168,11 +148,11 @@ Orgmode+Jekyll+Github搭建博客的方法，折腾了一天，总算基本成�
     <hr>
       <ul class="pagination pull-right">
         
-        <li class="prev disabled"><a>&larr; 前一篇</a></li>
+        <li class="prev"><a href="/2015/06/10/collect-resources" title="资料来源及工具总结">&larr; 前一篇</a></li>
         
         <li><a href="/posts.html">索引</a></li>
         
-        <li class="next"><a href="/2014/08/16/pt-share" title="我与PT">后一篇 &rarr;</a></li>
+        <li class="next disabled"><a>后一篇 &rarr;</a>
         
       </ul>
     <br />
@@ -181,7 +161,7 @@ Orgmode+Jekyll+Github搭建博客的方法，折腾了一天，总算基本成�
 
 
   <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="第一篇博文 顺致小哥" data-title="第一篇博文 顺致小哥" data-url="page.url"></div>
+	<div class="ds-thread" data-thread-key="Ubuntu 系统 Emacs 中英文字体设置" data-title="Ubuntu 系统 Emacs 中英文字体设置" data-url="page.url"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">

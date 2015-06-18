@@ -7,35 +7,61 @@
 		<atom:link href="http://tommyjiang.github.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Ubuntu 系统 Emacs 中英文字体设置</title>
+				<description>&lt;p&gt;最近把2010年的华硕老电脑重装了，没再用 Win，选择了 Ubuntu 15.04系统，把 RMBP 上的配置全部迁移过来，其中 Emacs 字体部分折腾了一阵，采用的是英文 Inconsolata + 中文 黑体-简（Heiti SC）的搭配，配置过程如下。&lt;/p&gt;
+
+&lt;h1&gt;OS X 系统 Emacs 字体设置&lt;/h1&gt;
+
+&lt;p&gt;OS X 系统下的配置比较简单，由于系统已经自带了黑体-简字体，因此只需要安装 Inconsolata 字体，由于 Emacs 默认使用的中文就是黑体-简字体，因此只需要在 Emacs 的配置文件中加入如下配置语句即可。&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-face-attribute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;&amp;#39;default&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:font&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Inconsolata 24&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Ubuntu 系统 Emacs 字体设置&lt;/h1&gt;
+
+&lt;p&gt;Ubuntu 下的配置相对麻烦一些。首先要安装 Inconsolata 和 黑体-简 两种字体，然后在 Emacs 的配置文件中加入如下配置语句。&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;中英文混排等宽效果&lt;/h1&gt;
+
+&lt;p&gt;英文 Inconsolata + 中文 黑体-简 的字体搭配可以在 Emacs 中实现中英文混排等宽的效果，但必须将字号设置为12，18或者24号，可能与两种字体的比例有关。笔记本的屏幕下一般18号字体就足够了，如果外接显示器或者台式机，可以选择24号字体。&lt;/p&gt;
+</description>
+				<pubDate>Sun, 21 Jun 2015 11:10:15 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/21/2015-06-19-Ubuntu-Emacs-Chinese-English-fonts</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/21/2015-06-19-Ubuntu-Emacs-Chinese-English-fonts</guid>
+			</item>
+		
+			<item>
 				<title>资料来源及工具总结</title>
 				<description>&lt;p&gt;最近想搜集一些关于竖琴的音频和视频资料，在收集的过程中联想到，现在自己能做到的事，其实都是之前一点一滴不断积累的结果，包括资料的来源以及合适的播放器。有一些是提前想到的，有一些算是无心插柳吧，简单总结下。&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;资料来源&lt;/h1&gt;
+&lt;h1&gt;资料来源&lt;/h1&gt;
+
 &lt;p&gt;资料主要从 PT 网站、电驴资源网站和视频网站获取。&lt;/p&gt;
 
-&lt;h2 id=&quot;pt-&quot;&gt;PT 网站&lt;/h2&gt;
+&lt;h2&gt;PT 网站&lt;/h2&gt;
+
 &lt;p&gt;PT 网站其实之前已经在博客中介绍过，详见&lt;a href=&quot;http://tommyjiang.github.com/2014/08/16/pt-share/&quot;&gt;我与 PT&lt;/a&gt;。那篇文章中提到的公网3大 PT 中目前只有 &lt;a href=&quot;https://totheglory.im&quot;&gt;TTG&lt;/a&gt; 还能正常访问，而六维空间由于主要面向教育网，也只能利用在学校的最后这段时间下载了。其实早在2011年9月我就加入 TTG 了，虽然当时离毕业还很遥远，但为了离校后还能有高清看，早早入了 PT 的坑，可以说忧患意识十足，想起了单位师妹的一句话：路都是自己铺出来的。注意，不是走，而是铺，其实多想一步，结果会很不一样。&lt;/p&gt;
 
-&lt;h2 id=&quot;section-1&quot;&gt;资源网站&lt;/h2&gt;
+&lt;h2&gt;资源网站&lt;/h2&gt;
+
 &lt;p&gt;主要是从 &lt;a href=&quot;www.verycd.com&quot;&gt;VeryCD&lt;/a&gt; 网站下载，包括无损音乐(ape, flac)和 MP3 资源。根据&lt;a href=&quot;http://baike.baidu.com/link?url=IVVqysXpu0FmjYexEyggr8rTkCLeyVK6QVAeOdrNTsQW8O0THulvKrTB4dcH8bypIMWCw7txXVcQviA8pMDTjq#1&quot;&gt;百度百科&lt;/a&gt;的介绍：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2012年8月30日之后，VeryCD 网站上所有资源的 eD2k 下载链接均被完全隐藏。未登录或新注册登录的用户无权查看所有链接，仅部分高等级的用户（“铜光盘”或以上）登录后可以正常浏览到所有资源的 eD2k 链接。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;2012年8月30日之后，VeryCD 网站上所有资源的 eD2k 下载链接均被完全隐藏。未登录或新注册登录的用户无权查看所有链接，仅部分高等级的用户（“铜光盘”或以上）登录后可以正常浏览到所有资源的 eD2k 链接。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;还记得刚上大二的时候每天早上6点多起来在宿舍下载《百家讲坛》的视频，当时经常在资源下回帖感谢发布者，而且由于注册时间早，所以成了“铜光盘”，所以现在仍然可以正常下载 VeryCD 的资源。此外，2012年清华网费改革，将网费由原来每月1.5元不限流量改为每月20G免费，超出部分阶梯计费。像我这样的下载狂，如果还像之前那样下载，每月不知道会给网络中心恭喜多少收入。还好道高一尺，魔高一丈，详细的方法就不公开了，以免被网络中心发现贻害师弟师妹。&lt;/p&gt;
 
-&lt;h2 id=&quot;section-2&quot;&gt;视频网站&lt;/h2&gt;
+&lt;h2&gt;视频网站&lt;/h2&gt;
+
 &lt;p&gt;主要包括&lt;a href=&quot;www.youku.com&quot;&gt;优酷&lt;/a&gt;和 &lt;a href=&quot;www.youtube.com&quot;&gt;YouTube&lt;/a&gt;。其中优酷的视频可以利用&lt;a href=&quot;http://www.flvcd.com/&quot;&gt;硕鼠&lt;/a&gt;下载，不过这个软件最近更新了，在下载之前也要看优酷的广告，很烦。YouTube 的视频可以利用 &lt;a href=&quot;http://www.clipconverter.cc/&quot;&gt;ClipConverter&lt;/a&gt; 网站将 YouTube 视频地址解析之后下载，需要利用科学上网工具，我个人用的是&lt;a href=&quot;http://www.banwagong.me/&quot;&gt;搬瓦工 VPS&lt;/a&gt;，每年只要 USD 3.99，每月流量 100G，很不错。&lt;/p&gt;
 
-&lt;h1 id=&quot;section-3&quot;&gt;音频播放器&lt;/h1&gt;
+&lt;h1&gt;音频播放器&lt;/h1&gt;
 
 &lt;p&gt;OS X 系统的音频播放器主要包括 iTunes 和 Vox，其中 iTunes 播放 MPC，Vox 播放无损格式(ape, flac)等。&lt;/p&gt;
 
-&lt;h2 id=&quot;itunes&quot;&gt;iTunes&lt;/h2&gt;
+&lt;h2&gt;iTunes&lt;/h2&gt;
+
 &lt;p&gt;iTunes 导入音乐后会在自己的资料文件夹中复制一份音乐文件，因此可以将原始的音乐文件删除。同时可以利用 iTunes 中的风格作为标签，区分不同类型的音乐。&lt;/p&gt;
 
-&lt;h2 id=&quot;vox&quot;&gt;Vox&lt;/h2&gt;
+&lt;h2&gt;Vox&lt;/h2&gt;
+
 &lt;p&gt;Vox 播放无损音乐时需要 cue 文件，而 Win 系统下的编码一般是 GB-2312，而 OS X 系统中的编码是 UTF-8，因此直接打开 Win 下编码的 cue 文件会出现乱码，需要利用 &lt;a href=&quot;https://itunes.apple.com/cn/app/eztext/id421342426?mt=12&quot;&gt;ezText&lt;/a&gt; 应用转码才能正常打开。&lt;/p&gt;
 </description>
 				<pubDate>Wed, 10 Jun 2015 00:00:00 +0800</pubDate>
@@ -47,21 +73,21 @@
 				<title>d3的应用</title>
 				<description>&lt;p&gt;At work I was tasked with creating an internal tool to track and display vital company stats. I knew that meant I would likely be displaying some data in charts and graphs. Thus began my search for an easily customizable data visualization library.&lt;/p&gt;
 
-&lt;p&gt;I perused the roundup of libraries that Google and Stack Overflow offered: &lt;a href=&quot;http://www.highcharts.com/&quot;&gt;Highcharts.js&lt;/a&gt;, &lt;a href=&quot;http://www.flotcharts.org/&quot;&gt;Flot&lt;/a&gt;, &lt;a href=&quot;http://g.raphaeljs.com/&quot;&gt;gRaphael&lt;/a&gt;, &lt;a href=&quot;http://www.jscharts.com/&quot;&gt;jsCharts&lt;/a&gt;, and finally &lt;a href=&quot;http://d3js.org/&quot;&gt;d3.js&lt;/a&gt; (I hadn’t seen &lt;a href=&quot;http://www.chartjs.org/&quot;&gt;Chart.js&lt;/a&gt; at the time, but it looks pretty nice). I won’t go into comparisons on the various libraries, but I will tell you why I chose d3.js:&lt;/p&gt;
+&lt;p&gt;I perused the roundup of libraries that Google and Stack Overflow offered: &lt;a href=&quot;http://www.highcharts.com/&quot;&gt;Highcharts.js&lt;/a&gt;, &lt;a href=&quot;http://www.flotcharts.org/&quot;&gt;Flot&lt;/a&gt;, &lt;a href=&quot;http://g.raphaeljs.com/&quot;&gt;gRaphael&lt;/a&gt;, &lt;a href=&quot;http://www.jscharts.com/&quot;&gt;jsCharts&lt;/a&gt;, and finally &lt;a href=&quot;http://d3js.org/&quot;&gt;d3.js&lt;/a&gt; (I hadn&amp;#39;t seen &lt;a href=&quot;http://www.chartjs.org/&quot;&gt;Chart.js&lt;/a&gt; at the time, but it looks pretty nice). I won&amp;#39;t go into comparisons on the various libraries, but I will tell you why I chose d3.js:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;easy to use (after the beginner’s hump)&lt;/li&gt;
-  &lt;li&gt;uses svg: scalable &amp;amp; widely supported&lt;/li&gt;
-  &lt;li&gt;completely customizable&lt;/li&gt;
-  &lt;li&gt;flexible &amp;amp; extendable&lt;/li&gt;
-  &lt;li&gt;extremely powerful&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/mbostock/d3/wiki/Gallery&quot;&gt;lots of examples&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bl.ocks.org/mbostock&quot;&gt;even more examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;easy to use (after the beginner&amp;#39;s hump)&lt;/li&gt;
+&lt;li&gt;uses svg: scalable &amp;amp; widely supported&lt;/li&gt;
+&lt;li&gt;completely customizable&lt;/li&gt;
+&lt;li&gt;flexible &amp;amp; extendable&lt;/li&gt;
+&lt;li&gt;extremely powerful&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mbostock/d3/wiki/Gallery&quot;&gt;lots of examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://bl.ocks.org/mbostock&quot;&gt;even more examples&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;At the top of this article I’ve inserted a simple bar chart as an example. You can see &lt;a href=&quot;http://dribbble.com/shots/966448-Monitor-fullview?list=users&quot;&gt;some screenshots&lt;/a&gt; of actual real-time data visualizations I created for our company monitor. Let’s take a look at how D3 makes these animating bar charts:&lt;/p&gt;
+&lt;p&gt;At the top of this article I&amp;#39;ve inserted a simple bar chart as an example. You can see &lt;a href=&quot;http://dribbble.com/shots/966448-Monitor-fullview?list=users&quot;&gt;some screenshots&lt;/a&gt; of actual real-time data visualizations I created for our company monitor. Let&amp;#39;s take a look at how D3 makes these animating bar charts:&lt;/p&gt;
 
-&lt;p&gt;First, let’s drop in a few simple styles:&lt;/p&gt;
+&lt;p&gt;First, let&amp;#39;s drop in a few simple styles:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;svg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -80,7 +106,7 @@
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://d3js.org/d3.v3.min.js&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Now, let’s get some basic moving parts. We need to setup what a bar is and establish initial variables:&lt;/p&gt;
+&lt;p&gt;Now, let&amp;#39;s get some basic moving parts. We need to setup what a bar is and establish initial variables:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// how many bars?&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// randomize some numbers for data&lt;/span&gt;
@@ -141,12 +167,13 @@
 &lt;span class=&quot;c1&quot;&gt;// initialize the bar chart!&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;barChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Ok. So this is what we’ve got so far:&lt;/p&gt;
+&lt;p&gt;Ok. So this is what we&amp;#39;ve got so far:&lt;/p&gt;
 
 &lt;pre class=&quot;codepen&quot; data-height=&quot;300&quot; data-type=&quot;result&quot; data-href=&quot;wakhK&quot; data-user=&quot;mshwery&quot; data-safe=&quot;true&quot;&gt;&lt;code&gt;&lt;/code&gt;&lt;a href=&quot;http://codepen.io/mshwery/pen/wakhK&quot;&gt;Check out this Pen!&lt;/a&gt;&lt;/pre&gt;
-&lt;script async=&quot;&quot; src=&quot;http://codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;Alright, now let’s animate this shiz.&lt;/p&gt;
+&lt;script async src=&quot;http://codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Alright, now let&amp;#39;s animate this shiz.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;barChart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 
@@ -175,13 +202,13 @@
   &lt;span class=&quot;nx&quot;&gt;barChart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div align=&quot;center&quot;&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;
   &lt;figure class=&quot;final&quot;&gt;
     &lt;figcaption&gt;The final result&lt;/figcaption&gt;
   &lt;/figure&gt;
-&lt;div&gt;
+&lt;div&gt;&lt;/p&gt;
 
-&lt;a href=&quot;http://codepen.io/mshwery/pen/uCBbn&quot; class=&quot;codepen&quot; target=&quot;_blank&quot;&gt;Check out the code in action on CodePen&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;http://codepen.io/mshwery/pen/uCBbn&quot; class=&quot;codepen&quot; target=&quot;_blank&quot;&gt;Check out the code in action on CodePen&lt;/a&gt;&lt;/p&gt;
 
 &lt;style&gt;
   svg {
@@ -196,7 +223,9 @@
     fill: #eee;
   }
 &lt;/style&gt;
+
 &lt;script src=&quot;http://d3js.org/d3.v3.min.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
 &lt;script type=&quot;text/javascript&quot;&gt;
 
   var n = 10,
@@ -265,7 +294,6 @@
 
   barChart.init(&#39;figure.final&#39;);
 &lt;/script&gt;
-&lt;/div&gt;&lt;/div&gt;
 </description>
 				<pubDate>Tue, 02 Jun 2015 10:04:37 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2015/06/02/2015-04-16-test-d3</link>
@@ -276,10 +304,11 @@
 				<title>Farewell, Tsinghua</title>
 				<description>&lt;p&gt;终于到了这一天，要告别这个园子了。&lt;/p&gt;
 
-&lt;h1 id=&quot;section&quot;&gt;清华的食堂&lt;/h1&gt;
+&lt;h1&gt;清华的食堂&lt;/h1&gt;
+
 &lt;p&gt;虽然六维的资源非常全，在校内下载速度也很快(一般是几M/s)，但六维还是存在以下限制：&lt;/p&gt;
 
-&lt;h1 id=&quot;section-1&quot;&gt;清华的图书馆&lt;/h1&gt;
+&lt;h1&gt;清华的图书馆&lt;/h1&gt;
 </description>
 				<pubDate>Sat, 30 May 2015 15:32:50 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2015/05/30/2015-07-15-farewell-my-tsinghua</link>
@@ -292,49 +321,20 @@
 
 &lt;p&gt;Google 发布了 h5 指数位居前 100 名的中文期刊，参见 &lt;a href=&quot;https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=zh-CN&amp;amp;vq=zh&quot;&gt;h5 指数为前 100 名的中文期刊&lt;/a&gt;。在这个榜单中，我发现电力系统的相关期刊都榜上有名，而且排名还不低。&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;期刊名&lt;/th&gt;
-      &lt;th&gt;h5 指数排名&lt;/th&gt;
-      &lt;th&gt;h5 指数值&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;电力系统自动化&lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;41&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;电网技术&lt;/td&gt;
-      &lt;td&gt;6&lt;/td&gt;
-      &lt;td&gt;38&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;中国电机工程学报&lt;/td&gt;
-      &lt;td&gt;11&lt;/td&gt;
-      &lt;td&gt;36&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;电力系统保护与控制&lt;/td&gt;
-      &lt;td&gt;19&lt;/td&gt;
-      &lt;td&gt;32&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;电工技术学报&lt;/td&gt;
-      &lt;td&gt;89&lt;/td&gt;
-      &lt;td&gt;23&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;| 期刊名             | h5 指数排名 | h5 指数值 |
+| --------           | ----------- | --------- |
+| 电力系统自动化     |           4 |        41 |
+| 电网技术           |           6 |        38 |
+| 中国电机工程学报   |          11 |        36 |
+| 电力系统保护与控制 |          19 |        32 |
+| 电工技术学报       |          89 |        23 |&lt;/p&gt;
 
 &lt;p&gt;看到这么多熟悉的电力系统相关期刊上榜，感觉是件很光彩的事。但转念一想，为什么会出现这种情况？我个人的一些感想如下。&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;说明电力系统的研究者数量不少，至少发文章的数量不少。h5 指数和引用数相关，只有发的文章多，一些文章的被引次数才有可能很多。&lt;/li&gt;
-  &lt;li&gt;说明电力系统的知名期刊数量不多，且&lt;a href=&quot;http://zh.wikipedia.org/wiki/%E9%A9%AC%E5%A4%AA%E6%95%88%E5%BA%94&quot;&gt;马太效应&lt;/a&gt;明显。因为期刊数量不多，研究人员投稿时基本都会选择这些期刊。而这样又导致研究文章只集中在这些期刊上，研究人员在阅读时也会看这些期刊的文章，如此循环，形成马太效应。&lt;/li&gt;
-  &lt;li&gt;说明电力系统的研究热点相对集中。如果不同学者间彼此研究差异很大，而文章一般只会被相同研究领域的学者引用，那每篇文章的被引次数也不会太高。而反观电力系统，目前的研究大多都涉及风电、光伏、配电网/微电网、电动汽车、储能等方向，因此大家的研究领域重复度很高，也推高了电力系统期刊的 h5 指数。&lt;/li&gt;
+&lt;li&gt;说明电力系统的研究者数量不少，至少发文章的数量不少。h5 指数和引用数相关，只有发的文章多，一些文章的被引次数才有可能很多。&lt;/li&gt;
+&lt;li&gt;说明电力系统的知名期刊数量不多，且&lt;a href=&quot;http://zh.wikipedia.org/wiki/%E9%A9%AC%E5%A4%AA%E6%95%88%E5%BA%94&quot;&gt;马太效应&lt;/a&gt;明显。因为期刊数量不多，研究人员投稿时基本都会选择这些期刊。而这样又导致研究文章只集中在这些期刊上，研究人员在阅读时也会看这些期刊的文章，如此循环，形成马太效应。&lt;/li&gt;
+&lt;li&gt;说明电力系统的研究热点相对集中。如果不同学者间彼此研究差异很大，而文章一般只会被相同研究领域的学者引用，那每篇文章的被引次数也不会太高。而反观电力系统，目前的研究大多都涉及风电、光伏、配电网/微电网、电动汽车、储能等方向，因此大家的研究领域重复度很高，也推高了电力系统期刊的 h5 指数。&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;综上，应该说 h5 指数高的期刊相对集中并不是什么好现象，这反映出电力系统目前研究的集中性，大家研究的东西都差不多，没什么本质上的创新。其实电力系统领域已经很久没有重大革新了，这一点和 CS 领域形成了鲜明的对比。Talk is cheap, show me the code.希望电力系统界能多出一些实用的成果，少发一些无聊的文章。&lt;/p&gt;
@@ -350,69 +350,58 @@
 
 &lt;p&gt;拿到RMBP自然要先折腾一番，为了以后更新换代方便，将折腾的过程记录如下。&lt;/p&gt;
 
-&lt;h1 id=&quot;geek&quot;&gt;Geek工具&lt;/h1&gt;
+&lt;h1&gt;Geek工具&lt;/h1&gt;
+
 &lt;p&gt;RMBP现在应该算码农的标配了，炫丽的高清屏写起代码真是倍儿爽。虽然学的是电气，但咱也有一颗Geek的心。本节包括Geek的主要工具。&lt;/p&gt;
 
-&lt;h2 id=&quot;section&quot;&gt;文本编辑器&lt;/h2&gt;
+&lt;h2&gt;文本编辑器&lt;/h2&gt;
 
-&lt;h3 id=&quot;vim&quot;&gt;Vim&lt;/h3&gt;
+&lt;h3&gt;Vim&lt;/h3&gt;
 
 &lt;p&gt;Vim被誉为“编辑器之神”，相较于Emacs，其最大的好处是启动快。我选择的是MacVim，可以直接从&lt;a href=&quot;http://www.vim.org/download.php&quot; target=&quot;_blank&quot;&gt;Vim主页的下载页面&lt;/a&gt;下载dmg文件后安装。&lt;/p&gt;
 
-&lt;p&gt;Vim的配置工作相对简单，只需要将配置文件&lt;code class=&quot;highlighter-rouge&quot;&gt;.vimrc&lt;/code&gt;放到根目录~下就可以了。我个人用的是&lt;a href=&quot;http://github.com/tomasr/molokai&quot;&gt;molokai&lt;/a&gt;主题，下载后需要放到Vim对应的文件夹中，具体路径为：/MacVim.app/Contents/Resources/vim/runtime/colors.&lt;/p&gt;
+&lt;p&gt;Vim的配置工作相对简单，只需要将配置文件&lt;code&gt;.vimrc&lt;/code&gt;放到根目录~下就可以了。我个人用的是&lt;a href=&quot;http://github.com/tomasr/molokai&quot;&gt;molokai&lt;/a&gt;主题，下载后需要放到Vim对应的文件夹中，具体路径为：/MacVim.app/Contents/Resources/vim/runtime/colors.&lt;/p&gt;
 
-&lt;h3 id=&quot;emacs&quot;&gt;Emacs&lt;/h3&gt;
+&lt;h3&gt;Emacs&lt;/h3&gt;
 
-&lt;p&gt;与Vim相比，Emacs被誉为“神之编辑器”，也有人调侃Emacs是伪装成操作系统的编辑器。Emacs需要配合各种&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;以实现各种强大的功能。我个人主要用的是Org-mode，用来做简单的GTD管理和日常记录。&lt;/p&gt;
+&lt;p&gt;与Vim相比，Emacs被誉为“神之编辑器”，也有人调侃Emacs是伪装成操作系统的编辑器。Emacs需要配合各种&lt;code&gt;package&lt;/code&gt;以实现各种强大的功能。我个人主要用的是Org-mode，用来做简单的GTD管理和日常记录。&lt;/p&gt;
 
-&lt;p&gt;Emacs的配置比Vim要复杂一些。首先是下载Emacs程序，不想自己编译的话可以直接选择&lt;a href=&quot;http://emacsformacosx.com/&quot;&gt;Emacs for Mac OS X&lt;/a&gt;，之后需要将配置文件放到&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.emacs.d&lt;/code&gt;中。理论上利用&lt;code class=&quot;highlighter-rouge&quot;&gt;package.el&lt;/code&gt;提供的包管理功能可以自动下载需要的&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;，不过现在我的配置文件中还没有这么智能，需要到 Emacs 中手动下载各个&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;，比较麻烦。各个&lt;code class=&quot;highlighter-rouge&quot;&gt;package&lt;/code&gt;的配置文件可以参考之前的配置文件稍加修改。&lt;/p&gt;
+&lt;p&gt;Emacs的配置比Vim要复杂一些。首先是下载Emacs程序，不想自己编译的话可以直接选择&lt;a href=&quot;http://emacsformacosx.com/&quot;&gt;Emacs for Mac OS X&lt;/a&gt;，之后需要将配置文件放到&lt;code&gt;~/.emacs.d&lt;/code&gt;中。理论上利用&lt;code&gt;package.el&lt;/code&gt;提供的包管理功能可以自动下载需要的&lt;code&gt;package&lt;/code&gt;，不过现在我的配置文件中还没有这么智能，需要到 Emacs 中手动下载各个&lt;code&gt;package&lt;/code&gt;，比较麻烦。各个&lt;code&gt;package&lt;/code&gt;的配置文件可以参考之前的配置文件稍加修改。&lt;/p&gt;
 
-&lt;h2 id=&quot;section-1&quot;&gt;排版工具&lt;/h2&gt;
+&lt;h2&gt;排版工具&lt;/h2&gt;
 
-&lt;h3 id=&quot;tex&quot;&gt;TeX&lt;/h3&gt;
+&lt;h3&gt;TeX&lt;/h3&gt;
 
 &lt;p&gt;TeX是学术界通用的排版工具，而且Mac上的Microsoft Office可以用惨不忍睹来形容。我选择的是&lt;a href=&quot;https://tug.org/mactex/&quot;&gt;MaCTeX 发行版&lt;/a&gt;。TeX的编辑工具推荐以下两个：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;TeXPad：之前在MBA上用过一阵，支持各种snippet，还能在输入的间隙自动生成预览的PDF文件，缺点是正版的要$19.99。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Emacs + AUCTeX：“神之编辑器”出现了！利用GNU自己的AUCTeX 可以方便地在Emacs中编辑TeX文档，再加上Skim即可实现TeX &amp;lt;-&amp;gt; PDF的双向搜索功能，唯一的问题是学习成本较高。&lt;/p&gt;
-  &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;TeXPad：之前在MBA上用过一阵，支持各种snippet，还能在输入的间隙自动生成预览的PDF文件，缺点是正版的要$19.99。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Emacs + AUCTeX：“神之编辑器”出现了！利用GNU自己的AUCTeX 可以方便地在Emacs中编辑TeX文档，再加上Skim即可实现TeX &amp;lt;-&amp;gt; PDF的双向搜索功能，唯一的问题是学习成本较高。&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;blog&quot;&gt;Blog相关&lt;/h2&gt;
+&lt;h2&gt;Blog相关&lt;/h2&gt;
 
-&lt;h3 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h3&gt;
+&lt;h3&gt;Jekyll&lt;/h3&gt;
 
 &lt;p&gt;Jekyll是基于Ruby的静态博客生成工具，利用Jekyll + Bootstrap + GitHub Pages可以方便快捷地生成自己的博客网站（例如本网站）。Mac是自带Ruby的，因此可以直接利用gem安装最新stable版的Jekyll：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gem install jekyll
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;redcarpet&quot;&gt;redcarpet&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;redcarpet&lt;/h3&gt;
 
 &lt;p&gt;由于没找到Pygments支持行内代码高亮的方法，现在的解决方案是利用redcarpet + Markdown实现，redcarpet同样可以利用gem安装：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo gem install redcarpet
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;其他工具&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gem install redcarpet
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;h3&gt;Homebrew&lt;/h3&gt;
 
-&lt;h2 id=&quot;section-2&quot;&gt;其他工具&lt;/h2&gt;
+&lt;p&gt;用过Ubuntu的应该都能体会&lt;code&gt;apt-get&lt;/code&gt;的好处，Mac上也有类似的包管理程序，主要是Homebrew和Macports。Homebrew的安装方法可以参考&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew主页&lt;/a&gt;。&lt;/p&gt;
 
-&lt;h3 id=&quot;homebrew&quot;&gt;Homebrew&lt;/h3&gt;
+&lt;h3&gt;Git&lt;/h3&gt;
 
-&lt;p&gt;用过Ubuntu的应该都能体会&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;的好处，Mac上也有类似的包管理程序，主要是Homebrew和Macports。Homebrew的安装方法可以参考&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew主页&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
 &lt;p&gt;Git是Linux之父Linus Torvalds创作的分布式版本控制系统，结合GitHub可以轻松实现版本控制。Git可以利用Homebrew直接安装：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install git
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;brew install git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 				<pubDate>Mon, 02 Mar 2015 00:00:00 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2015/03/02/RMBP-Geek</link>
 				<guid isPermaLink="true">http://tommyjiang.github.com/2015/03/02/RMBP-Geek</guid>
@@ -707,27 +696,6 @@
 				<pubDate>Tue, 30 Sep 2014 00:00:00 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2014/09/30/credit-card</link>
 				<guid isPermaLink="true">http://tommyjiang.github.com/2014/09/30/credit-card</guid>
-			</item>
-		
-			<item>
-				<title>昆明之行</title>
-				<description>&lt;p class=&quot;paragraph&quot;&gt;
-  终于获得一次目的地不是通辽而且和863项目无关的出差机会，目的地是美丽的春城昆明。在此之前我在国内到过的最西的地方是2007年夏天大一暑期实践去的湖北宜昌。
-&lt;/p&gt;
-
-&lt;h1&gt;启程&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  2014年9月12日早上9点55从东主楼出发，11点20到达T3。国航北京出发的航班值机是在航班起飞前36小时，所以直接在网上值机选座。到T3后自助打印登机牌的机器不好用，最好还是到J区人工柜台排队值机。好在T3中午人并不多，很顺利地拿到登机牌过安检。今天航班的登机口是C32，算是绝佳的位置了，紧挨着T3C的安检，过了安检几乎不用走路（可以参考 &lt;a href=&quot;http://tommyjiang.github.com/2014/08/27/CA-information#T3 departure&quot; target=&quot;_blank&quot;&gt;T3航站楼出发流程&lt;/a&gt;）。乐极生悲，虽然登机口位置不错，但舱门关闭之后被告知重庆、昆明方向交通管制，起飞时间待定。最后到达昆明晚了2小时9分钟。可惜当时申请中信i白金被拒了，不然就可以薅到1000块的大羊腿了（中信延误险以落地时间为准，具体可参考 &lt;a href=&quot;http://cards.ecitic.com/tc/flight.htm&quot; target=&quot;_blank&quot;&gt;中信银行 航班延误保险条款及细则&lt;/a&gt;）。
-&lt;/p&gt;
-
-&lt;h1&gt;春城第一印象&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  飞行过程还算平稳，最后悔的是没找空姐要个毛毯，只能忍受飞机上空调的低温了。迷迷糊糊睡了2个多小时之后，下午5点39分，终于平安抵达了春城昆明。昆明的平均海拔有1900米，长水机场的海拔则有2100米，在长水机场降落时，可以看到四周的小山。下飞机后坐空港快线2号线，可以直达目的地泰丽国际酒店。云南不愧是旅游胜地，在空港快线的车上还有一位小妹介绍云南和昆明可以游玩的地方，同时解答车上乘客的各种问题。进市区之后一个明显的感觉是大街上的电动车和摩托车非常多。到酒店之后报到、入住，晚餐吃的自助，在菜品中还发现了莲藕排骨汤，不过这藕是脆的，和北京的一样，和香糯的湖北藕相比可差远了。
-&lt;/p&gt; 
-</description>
-				<pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2014/09/12/Kunming-travel</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2014/09/12/Kunming-travel</guid>
 			</item>
 		
 	</channel>
