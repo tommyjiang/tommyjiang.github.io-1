@@ -7,7 +7,7 @@
   </td>
   <td class="post-tags">
     {% for tags in post.tags %}
-      <a href="{{ BASE_PATH }}posts.html#{{ tags }}">{{ tags }}</a>
+      <a href="{{ BASE_PATH }}posts.html#{{ tags }}" onclick="window.location.reload(true)">{{ tags }}</a>
     {% endfor %}
   </td>
 </tr>

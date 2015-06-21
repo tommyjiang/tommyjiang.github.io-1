@@ -19,6 +19,9 @@ excerpt_separator: "\n\n"
 # Markdown解析
 markdown: redcarpet
 
+redcarpet:
+ extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
 # 修改为自己的配置
 title : 电力引领生活
 tagline: 电力引领生活 

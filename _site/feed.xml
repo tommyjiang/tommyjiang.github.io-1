@@ -7,17 +7,42 @@
 		<atom:link href="http://tommyjiang.github.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Farewell, Tsinghua</title>
+				<description>&lt;p&gt;终于到了这一天，要告别这个园子了。&lt;/p&gt;
+
+&lt;h1 id=&quot;清华的食堂&quot;&gt;清华的食堂&lt;/h1&gt;
+
+&lt;h1 id=&quot;清华的图书馆&quot;&gt;清华的图书馆&lt;/h1&gt;
+
+&lt;p&gt;清华图书馆的服务真是没话说，尤其是与网络中心相比&lt;/p&gt;
+
+&lt;h1 id=&quot;清华的网络&quot;&gt;清华的网络&lt;/h1&gt;
+</description>
+				<pubDate>Fri, 26 Jun 2015 23:25:19 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/26/2015-07-15-farewell-my-tsinghua</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/26/2015-07-15-farewell-my-tsinghua</guid>
+			</item>
+		
+			<item>
+				<title>电力系统的科研思维与工程思维</title>
+				<description></description>
+				<pubDate>Fri, 26 Jun 2015 21:42:16 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/26/2015-06-30-power-system-research-thoughts-vs-engineering-thoughts</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/26/2015-06-30-power-system-research-thoughts-vs-engineering-thoughts</guid>
+			</item>
+		
+			<item>
 				<title>Ubuntu 系统 Emacs 中英文字体设置</title>
 				<description>&lt;p&gt;终于要毕业了，离开前把2010年3月买的华硕老电脑重装了，没再装 Win，选择的是 Ubuntu 15.04系统，装完才发现不是 LTS (Long Term Support)，先凑合用吧。计划把 RMBP 上的配置全部迁移过来，其中 Emacs 字体部分折腾了一上午，配置过程记录如下备案。&lt;/p&gt;
 
-&lt;h1&gt;OS X 系统 Emacs 字体设置&lt;/h1&gt;
+&lt;h1 id=&quot;os-x-系统-emacs-字体设置&quot;&gt;OS X 系统 Emacs 字体设置&lt;/h1&gt;
 
 &lt;p&gt;目前我个人 Emacs 的字体方案是英文 Inconsolata + 中文 黑体-简（Heiti SC）。OS X 系统下的配置相对简单，由于已经自带了黑体-简字体，因此只需要安装 Inconsolata 字体。Emacs 默认使用的就是黑体-简字体，因此只需要在 Emacs 的配置文件中加入如下配置语句即可。&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-face-attribute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;&amp;#39;default&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:font&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Inconsolata 24&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;由于 Inconsolata 字体只包括英文，因此中文仍然用 Heiti SC 字体显示。&lt;/p&gt;
 
-&lt;h1&gt;Ubuntu 系统 Emacs 字体设置&lt;/h1&gt;
+&lt;h1 id=&quot;ubuntu-系统-emacs-字体设置&quot;&gt;Ubuntu 系统 Emacs 字体设置&lt;/h1&gt;
 
 &lt;p&gt;Ubuntu 下的配置要麻烦一些。首先要安装 Inconsolata 和 Heiti SC 两种字体，用 GUI 就可以直接安装。然后在 Emacs 的配置文件中加入如下配置语句。&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;c1&quot;&gt;; 设置英文字体&lt;/span&gt;
@@ -28,28 +53,53 @@
   &lt;span class=&quot;nv&quot;&gt;charset&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;font-spec&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:family&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Heiti SC&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;中英文混排等宽效果&lt;/h1&gt;
+&lt;h1 id=&quot;中英文混排等宽效果&quot;&gt;中英文混排等宽效果&lt;/h1&gt;
 
 &lt;p&gt;英文 Inconsolata + 中文 Heiti SC 的字体搭配可以在 Emacs 中实现中英文混排等宽的效果，但必须将字号设置为12，18或者24号，可能与两种字体的比例有关。笔记本的屏幕下一般18号字体就足够了，如果外接显示器或者台式机，可以选择24号字体。&lt;/p&gt;
 </description>
-				<pubDate>Mon, 22 Jun 2015 00:28:39 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2015/06/22/2015-06-19-Ubuntu-Emacs-Chinese-English-fonts</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/22/2015-06-19-Ubuntu-Emacs-Chinese-English-fonts</guid>
+				<pubDate>Fri, 19 Jun 2015 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/19/Ubuntu-Emacs-Chinese-English-fonts</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/19/Ubuntu-Emacs-Chinese-English-fonts</guid>
 			</item>
 		
 			<item>
-				<title>Farewell, Tsinghua</title>
-				<description>&lt;p&gt;终于到了这一天，要告别这个园子了。&lt;/p&gt;
+				<title>资料来源及工具总结</title>
+				<description>&lt;p&gt;最近想搜集一些关于竖琴的音频和视频资料，在收集的过程中联想到，现在自己能做到的事，其实都是之前一点一滴不断积累的结果，包括资料的来源以及合适的播放器。有一些是提前想到的，有一些算是无心插柳吧，简单总结下。&lt;/p&gt;
 
-&lt;h1&gt;清华的食堂&lt;/h1&gt;
+&lt;h1 id=&quot;资料来源&quot;&gt;资料来源&lt;/h1&gt;
 
-&lt;p&gt;虽然六维的资源非常全，在校内下载速度也很快(一般是几M/s)，但六维还是存在以下限制：&lt;/p&gt;
+&lt;p&gt;资料主要从 PT 网站、电驴资源网站和视频网站获取。&lt;/p&gt;
 
-&lt;h1&gt;清华的图书馆&lt;/h1&gt;
+&lt;h2 id=&quot;pt-网站&quot;&gt;PT 网站&lt;/h2&gt;
+
+&lt;p&gt;PT 网站其实之前已经在博客中介绍过，详见&lt;a href=&quot;http://tommyjiang.github.com/2014/08/16/pt-share/&quot;&gt;我与 PT&lt;/a&gt;。那篇文章中提到的公网3大 PT 中目前只有 &lt;a href=&quot;https://totheglory.im&quot;&gt;TTG&lt;/a&gt; 还能正常访问，而六维空间由于主要面向教育网，也只能利用在学校的最后这段时间下载了。其实早在2011年9月我就加入 TTG 了，虽然当时离毕业还很遥远，但为了离校后还能有高清看，早早入了 PT 的坑，可以说忧患意识十足，想起了单位师妹的一句话：路都是自己铺出来的。注意，不是走，而是铺，其实多想一步，结果会很不一样。&lt;/p&gt;
+
+&lt;h2 id=&quot;资源网站&quot;&gt;资源网站&lt;/h2&gt;
+
+&lt;p&gt;主要是从 &lt;a href=&quot;www.verycd.com&quot;&gt;VeryCD&lt;/a&gt; 网站下载，包括无损音乐(ape, flac)和 MP3 资源。根据&lt;a href=&quot;http://baike.baidu.com/link?url=IVVqysXpu0FmjYexEyggr8rTkCLeyVK6QVAeOdrNTsQW8O0THulvKrTB4dcH8bypIMWCw7txXVcQviA8pMDTjq#1&quot;&gt;百度百科&lt;/a&gt;的介绍：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;2012年8月30日之后，VeryCD 网站上所有资源的 eD2k 下载链接均被完全隐藏。未登录或新注册登录的用户无权查看所有链接，仅部分高等级的用户（“铜光盘”或以上）登录后可以正常浏览到所有资源的 eD2k 链接。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;还记得刚上大二的时候每天早上6点多起来在宿舍下载《百家讲坛》的视频，当时经常在资源下回帖感谢发布者，而且由于注册时间早，所以成了“铜光盘”，所以现在仍然可以正常下载 VeryCD 的资源。此外，2012年清华网费改革，将网费由原来每月1.5元不限流量改为每月20G免费，超出部分阶梯计费。像我这样的下载狂，如果还像之前那样下载，每月不知道会给网络中心恭喜多少收入。还好道高一尺，魔高一丈，详细的方法就不公开了，以免被网络中心发现贻害师弟师妹。&lt;/p&gt;
+
+&lt;h2 id=&quot;视频网站&quot;&gt;视频网站&lt;/h2&gt;
+
+&lt;p&gt;主要包括&lt;a href=&quot;www.youku.com&quot;&gt;优酷&lt;/a&gt;和 &lt;a href=&quot;www.youtube.com&quot;&gt;YouTube&lt;/a&gt;。其中优酷的视频可以利用&lt;a href=&quot;http://www.flvcd.com/&quot;&gt;硕鼠&lt;/a&gt;下载，不过这个软件最近更新了，在下载之前也要看优酷的广告，很烦。YouTube 的视频可以利用 &lt;a href=&quot;http://www.clipconverter.cc/&quot;&gt;ClipConverter&lt;/a&gt; 网站将 YouTube 视频地址解析之后下载，需要利用科学上网工具，我个人用的是&lt;a href=&quot;http://www.banwagong.me/&quot;&gt;搬瓦工 VPS&lt;/a&gt;，每年只要 USD 3.99，每月流量 100G，很不错。&lt;/p&gt;
+
+&lt;h1 id=&quot;音频播放器&quot;&gt;音频播放器&lt;/h1&gt;
+
+&lt;p&gt;OS X 系统的音频播放器主要包括 iTunes 和 Vox，其中 iTunes 播放 MPC，Vox 播放无损格式(ape, flac)等。&lt;/p&gt;
+
+&lt;h2 id=&quot;itunes&quot;&gt;iTunes&lt;/h2&gt;
+
+&lt;p&gt;iTunes 导入音乐后会在自己的资料文件夹中复制一份音乐文件，因此可以将原始的音乐文件删除。同时可以利用 iTunes 中的风格作为标签，区分不同类型的音乐。&lt;/p&gt;
+
+&lt;h2 id=&quot;vox&quot;&gt;Vox&lt;/h2&gt;
+
+&lt;p&gt;Vox 播放无损音乐时需要 cue 文件，而 Win 系统下的编码一般是 GB-2312，而 OS X 系统中的编码是 UTF-8，因此直接打开 Win 下编码的 cue 文件会出现乱码，需要利用 &lt;a href=&quot;https://itunes.apple.com/cn/app/eztext/id421342426?mt=12&quot;&gt;ezText&lt;/a&gt; 应用转码才能正常打开。&lt;/p&gt;
 </description>
-				<pubDate>Thu, 18 Jun 2015 15:52:55 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2015/06/18/2015-07-15-farewell-my-tsinghua</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/18/2015-07-15-farewell-my-tsinghua</guid>
+				<pubDate>Wed, 10 Jun 2015 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/10/collect-resources</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/10/collect-resources</guid>
 			</item>
 		
 			<item>
@@ -278,64 +328,91 @@
   barChart.init(&#39;figure.final&#39;);
 &lt;/script&gt;
 </description>
-				<pubDate>Thu, 18 Jun 2015 15:52:55 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2015/06/18/2015-04-16-test-d3</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/18/2015-04-16-test-d3</guid>
-			</item>
-		
-			<item>
-				<title>资料来源及工具总结</title>
-				<description>&lt;p&gt;最近想搜集一些关于竖琴的音频和视频资料，在收集的过程中联想到，现在自己能做到的事，其实都是之前一点一滴不断积累的结果，包括资料的来源以及合适的播放器。有一些是提前想到的，有一些算是无心插柳吧，简单总结下。&lt;/p&gt;
-
-&lt;h1&gt;资料来源&lt;/h1&gt;
-
-&lt;p&gt;资料主要从 PT 网站、电驴资源网站和视频网站获取。&lt;/p&gt;
-
-&lt;h2&gt;PT 网站&lt;/h2&gt;
-
-&lt;p&gt;PT 网站其实之前已经在博客中介绍过，详见&lt;a href=&quot;http://tommyjiang.github.com/2014/08/16/pt-share/&quot;&gt;我与 PT&lt;/a&gt;。那篇文章中提到的公网3大 PT 中目前只有 &lt;a href=&quot;https://totheglory.im&quot;&gt;TTG&lt;/a&gt; 还能正常访问，而六维空间由于主要面向教育网，也只能利用在学校的最后这段时间下载了。其实早在2011年9月我就加入 TTG 了，虽然当时离毕业还很遥远，但为了离校后还能有高清看，早早入了 PT 的坑，可以说忧患意识十足，想起了单位师妹的一句话：路都是自己铺出来的。注意，不是走，而是铺，其实多想一步，结果会很不一样。&lt;/p&gt;
-
-&lt;h2&gt;资源网站&lt;/h2&gt;
-
-&lt;p&gt;主要是从 &lt;a href=&quot;www.verycd.com&quot;&gt;VeryCD&lt;/a&gt; 网站下载，包括无损音乐(ape, flac)和 MP3 资源。根据&lt;a href=&quot;http://baike.baidu.com/link?url=IVVqysXpu0FmjYexEyggr8rTkCLeyVK6QVAeOdrNTsQW8O0THulvKrTB4dcH8bypIMWCw7txXVcQviA8pMDTjq#1&quot;&gt;百度百科&lt;/a&gt;的介绍：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;2012年8月30日之后，VeryCD 网站上所有资源的 eD2k 下载链接均被完全隐藏。未登录或新注册登录的用户无权查看所有链接，仅部分高等级的用户（“铜光盘”或以上）登录后可以正常浏览到所有资源的 eD2k 链接。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;还记得刚上大二的时候每天早上6点多起来在宿舍下载《百家讲坛》的视频，当时经常在资源下回帖感谢发布者，而且由于注册时间早，所以成了“铜光盘”，所以现在仍然可以正常下载 VeryCD 的资源。此外，2012年清华网费改革，将网费由原来每月1.5元不限流量改为每月20G免费，超出部分阶梯计费。像我这样的下载狂，如果还像之前那样下载，每月不知道会给网络中心恭喜多少收入。还好道高一尺，魔高一丈，详细的方法就不公开了，以免被网络中心发现贻害师弟师妹。&lt;/p&gt;
-
-&lt;h2&gt;视频网站&lt;/h2&gt;
-
-&lt;p&gt;主要包括&lt;a href=&quot;www.youku.com&quot;&gt;优酷&lt;/a&gt;和 &lt;a href=&quot;www.youtube.com&quot;&gt;YouTube&lt;/a&gt;。其中优酷的视频可以利用&lt;a href=&quot;http://www.flvcd.com/&quot;&gt;硕鼠&lt;/a&gt;下载，不过这个软件最近更新了，在下载之前也要看优酷的广告，很烦。YouTube 的视频可以利用 &lt;a href=&quot;http://www.clipconverter.cc/&quot;&gt;ClipConverter&lt;/a&gt; 网站将 YouTube 视频地址解析之后下载，需要利用科学上网工具，我个人用的是&lt;a href=&quot;http://www.banwagong.me/&quot;&gt;搬瓦工 VPS&lt;/a&gt;，每年只要 USD 3.99，每月流量 100G，很不错。&lt;/p&gt;
-
-&lt;h1&gt;音频播放器&lt;/h1&gt;
-
-&lt;p&gt;OS X 系统的音频播放器主要包括 iTunes 和 Vox，其中 iTunes 播放 MPC，Vox 播放无损格式(ape, flac)等。&lt;/p&gt;
-
-&lt;h2&gt;iTunes&lt;/h2&gt;
-
-&lt;p&gt;iTunes 导入音乐后会在自己的资料文件夹中复制一份音乐文件，因此可以将原始的音乐文件删除。同时可以利用 iTunes 中的风格作为标签，区分不同类型的音乐。&lt;/p&gt;
-
-&lt;h2&gt;Vox&lt;/h2&gt;
-
-&lt;p&gt;Vox 播放无损音乐时需要 cue 文件，而 Win 系统下的编码一般是 GB-2312，而 OS X 系统中的编码是 UTF-8，因此直接打开 Win 下编码的 cue 文件会出现乱码，需要利用 &lt;a href=&quot;https://itunes.apple.com/cn/app/eztext/id421342426?mt=12&quot;&gt;ezText&lt;/a&gt; 应用转码才能正常打开。&lt;/p&gt;
-</description>
-				<pubDate>Wed, 10 Jun 2015 00:00:00 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2015/06/10/collect-resources</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/10/collect-resources</guid>
+				<pubDate>Tue, 02 Jun 2015 10:04:37 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/02/2015-04-16-test-d3</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/02/2015-04-16-test-d3</guid>
 			</item>
 		
 			<item>
 				<title>电气工程领域期刊 h5 指数排名感想</title>
 				<description>&lt;p&gt;最近新发现 Google 学术搜索推出了评价期刊的 h5 指数。该指数的评定方法是，将某个期刊最近 5 年来的所有文章，按引用次数从多到少进行排列，至少有 i 篇文章被引次数不少于 i 次，则取最大的 i 值作为 h5 指数。该指数的详细介绍可以参考 &lt;a href=&quot;https://scholar.google.com/intl/zh-CN/scholar/metrics.html#metrics&quot;&gt;Google Scholar Metrics&lt;/a&gt; 的介绍。&lt;/p&gt;
 
-&lt;p&gt;Google 发布了 h5 指数位居前 100 名的中文期刊，参见 &lt;a href=&quot;https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=zh-CN&amp;amp;vq=zh&quot;&gt;h5 指数为前 100 名的中文期刊&lt;/a&gt;。在这个榜单中，我发现电力系统的相关期刊都榜上有名，而且排名还不低。&lt;/p&gt;
+&lt;p&gt;Google 发布了2014年 h5 指数位居前 100 名的中文期刊，参见 &lt;a href=&quot;https://scholar.google.com/citations?view_op=top_venues&amp;amp;hl=zh-CN&amp;amp;vq=zh&quot;&gt;h5 指数为前 100 名的中文期刊&lt;/a&gt;。在这个榜单中，我发现电力系统的相关期刊都榜上有名，而且排名还不低。&lt;/p&gt;
 
-&lt;p&gt;| 期刊名             | h5 指数排名 | h5 指数值 |
-| --------           | ----------- | --------- |
-| 电力系统自动化     |           4 |        41 |
-| 电网技术           |           6 |        38 |
-| 中国电机工程学报   |          11 |        36 |
-| 电力系统保护与控制 |          19 |        32 |
-| 电工技术学报       |          89 |        23 |&lt;/p&gt;
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;期刊名&lt;/th&gt;
+&lt;th&gt;h5 指数排名&lt;/th&gt;
+&lt;th&gt;h5 指数值&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;电力系统自动化&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;41&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;电网技术&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;38&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;中国电机工程学报&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;36&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;电力系统保护与控制&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;32&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;电工技术学报&lt;/td&gt;
+&lt;td&gt;89&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;2015-06-28更新：今天发现 Google Scholar 已经发布了2015年的 h5 指数，上表更新如下：&lt;/p&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;期刊名&lt;/th&gt;
+&lt;th&gt;h5 指数排名&lt;/th&gt;
+&lt;th&gt;h5 指数值&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;电力系统自动化&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;41&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;中国电机工程学报&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;38&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;电网技术&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;电力系统保护与控制&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;33&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;电工技术学报&lt;/td&gt;
+&lt;td&gt;73&lt;/td&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;高电压技术&lt;/td&gt;
+&lt;td&gt;77&lt;/td&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 
 &lt;p&gt;看到这么多熟悉的电力系统相关期刊上榜，感觉是件很光彩的事。但转念一想，为什么会出现这种情况？我个人的一些感想如下。&lt;/p&gt;
 
@@ -358,27 +435,27 @@
 
 &lt;p&gt;拿到RMBP自然要先折腾一番，为了以后更新换代方便，将折腾的过程记录如下。&lt;/p&gt;
 
-&lt;h1&gt;Geek工具&lt;/h1&gt;
+&lt;h1 id=&quot;geek工具&quot;&gt;Geek工具&lt;/h1&gt;
 
 &lt;p&gt;RMBP现在应该算码农的标配了，炫丽的高清屏写起代码真是倍儿爽。虽然学的是电气，但咱也有一颗Geek的心。本节包括Geek的主要工具。&lt;/p&gt;
 
-&lt;h2&gt;文本编辑器&lt;/h2&gt;
+&lt;h2 id=&quot;文本编辑器&quot;&gt;文本编辑器&lt;/h2&gt;
 
-&lt;h3&gt;Vim&lt;/h3&gt;
+&lt;h3 id=&quot;vim&quot;&gt;Vim&lt;/h3&gt;
 
 &lt;p&gt;Vim被誉为“编辑器之神”，相较于Emacs，其最大的好处是启动快。我选择的是MacVim，可以直接从&lt;a href=&quot;http://www.vim.org/download.php&quot; target=&quot;_blank&quot;&gt;Vim主页的下载页面&lt;/a&gt;下载dmg文件后安装。&lt;/p&gt;
 
 &lt;p&gt;Vim的配置工作相对简单，只需要将配置文件&lt;code&gt;.vimrc&lt;/code&gt;放到根目录~下就可以了。我个人用的是&lt;a href=&quot;http://github.com/tomasr/molokai&quot;&gt;molokai&lt;/a&gt;主题，下载后需要放到Vim对应的文件夹中，具体路径为：/MacVim.app/Contents/Resources/vim/runtime/colors.&lt;/p&gt;
 
-&lt;h3&gt;Emacs&lt;/h3&gt;
+&lt;h3 id=&quot;emacs&quot;&gt;Emacs&lt;/h3&gt;
 
 &lt;p&gt;与Vim相比，Emacs被誉为“神之编辑器”，也有人调侃Emacs是伪装成操作系统的编辑器。Emacs需要配合各种&lt;code&gt;package&lt;/code&gt;以实现各种强大的功能。我个人主要用的是Org-mode，用来做简单的GTD管理和日常记录。&lt;/p&gt;
 
 &lt;p&gt;Emacs的配置比Vim要复杂一些。首先是下载Emacs程序，不想自己编译的话可以直接选择&lt;a href=&quot;http://emacsformacosx.com/&quot;&gt;Emacs for Mac OS X&lt;/a&gt;，之后需要将配置文件放到&lt;code&gt;~/.emacs.d&lt;/code&gt;中。理论上利用&lt;code&gt;package.el&lt;/code&gt;提供的包管理功能可以自动下载需要的&lt;code&gt;package&lt;/code&gt;，不过现在我的配置文件中还没有这么智能，需要到 Emacs 中手动下载各个&lt;code&gt;package&lt;/code&gt;，比较麻烦。各个&lt;code&gt;package&lt;/code&gt;的配置文件可以参考之前的配置文件稍加修改。&lt;/p&gt;
 
-&lt;h2&gt;排版工具&lt;/h2&gt;
+&lt;h2 id=&quot;排版工具&quot;&gt;排版工具&lt;/h2&gt;
 
-&lt;h3&gt;TeX&lt;/h3&gt;
+&lt;h3 id=&quot;tex&quot;&gt;TeX&lt;/h3&gt;
 
 &lt;p&gt;TeX是学术界通用的排版工具，而且Mac上的Microsoft Office可以用惨不忍睹来形容。我选择的是&lt;a href=&quot;https://tug.org/mactex/&quot;&gt;MaCTeX 发行版&lt;/a&gt;。TeX的编辑工具推荐以下两个：&lt;/p&gt;
 
@@ -387,25 +464,25 @@
 &lt;li&gt;&lt;p&gt;Emacs + AUCTeX：“神之编辑器”出现了！利用GNU自己的AUCTeX 可以方便地在Emacs中编辑TeX文档，再加上Skim即可实现TeX &amp;lt;-&amp;gt; PDF的双向搜索功能，唯一的问题是学习成本较高。&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2&gt;Blog相关&lt;/h2&gt;
+&lt;h2 id=&quot;blog相关&quot;&gt;Blog相关&lt;/h2&gt;
 
-&lt;h3&gt;Jekyll&lt;/h3&gt;
+&lt;h3 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h3&gt;
 
 &lt;p&gt;Jekyll是基于Ruby的静态博客生成工具，利用Jekyll + Bootstrap + GitHub Pages可以方便快捷地生成自己的博客网站（例如本网站）。Mac是自带Ruby的，因此可以直接利用gem安装最新stable版的Jekyll：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo gem install jekyll
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;redcarpet&lt;/h3&gt;
+&lt;h3 id=&quot;redcarpet&quot;&gt;redcarpet&lt;/h3&gt;
 
 &lt;p&gt;由于没找到Pygments支持行内代码高亮的方法，现在的解决方案是利用redcarpet + Markdown实现，redcarpet同样可以利用gem安装：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo gem install redcarpet
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;其他工具&lt;/h2&gt;
+&lt;h2 id=&quot;其他工具&quot;&gt;其他工具&lt;/h2&gt;
 
-&lt;h3&gt;Homebrew&lt;/h3&gt;
+&lt;h3 id=&quot;homebrew&quot;&gt;Homebrew&lt;/h3&gt;
 
 &lt;p&gt;用过Ubuntu的应该都能体会&lt;code&gt;apt-get&lt;/code&gt;的好处，Mac上也有类似的包管理程序，主要是Homebrew和Macports。Homebrew的安装方法可以参考&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew主页&lt;/a&gt;。&lt;/p&gt;
 
-&lt;h3&gt;Git&lt;/h3&gt;
+&lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
 
 &lt;p&gt;Git是Linux之父Linus Torvalds创作的分布式版本控制系统，结合GitHub可以轻松实现版本控制。Git可以利用Homebrew直接安装：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;brew install git
@@ -644,66 +721,6 @@
 				<pubDate>Fri, 31 Oct 2014 00:00:00 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2014/10/31/python-matlab-hybrid</link>
 				<guid isPermaLink="true">http://tommyjiang.github.com/2014/10/31/python-matlab-hybrid</guid>
-			</item>
-		
-			<item>
-				<title>人生第一张白金信用卡</title>
-				<description>&lt;p class=&quot;paragraph&quot;&gt;
-  2014年9月26日，终于收到了人生第一张白金信用卡——中信i白金卡。
-&lt;/p&gt;
-
-&lt;img class=&quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2014-09/ecitic.png&quot; width=&quot;800px&quot;/&gt;
-
-&lt;h1&gt;i白金申卡经历&lt;/h1&gt;
-&lt;h2&gt;第一次申请&lt;/h2&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  2014年6月22日第一次申请，6月23日建档，6月25日接到征信电话，6月27日上网查询进度，显示“因为综合评分不足，您的申请未能通过”，第一次申请以失败告终。
-&lt;/p&gt;
-&lt;h2&gt;第二次申请&lt;/h2&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  2014年9月18日第二次申请，当天建档，9月20日下午深圳卡部打来征信电话，当时正在打排球未接到。等了两天，9月22日下午第二次征信，这次接到了，核实了相关信息。9月23日早上收到短信，要求到柜台面签，到东门外的中信银行办理，23日晚上查询申请进度，显示“您的申请已获批准，感谢您使用中信信用卡！”。按照网友提供的经验，一般当天批卡，第二天用EMS快递。但我的面签第三天才快递，9月26日收到卡片，额度16k，已经比我他行额度最高的卡还要高了。
-&lt;/p&gt;
-
-&lt;h1&gt;中信i白金卡的各种福利&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  主要是前两项，尤其是第一项，都不能算羊毛了，简直是羊腿啊；第二项算是中信的王牌活动了。此外还有一些小羊毛。
-&lt;/p&gt;
-&lt;h2&gt;航空延误险&lt;/h2&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  以下介绍摘自&lt;a href=&quot;http://cards.ecitic.com/platinum/ibaijin.html&quot; target=&quot;_blank&quot;&gt;中信银行信用卡官网i白金卡介绍&lt;/a&gt;：
-&lt;/p&gt;
-
-&lt;blockquote&gt;使用中信白金信用卡通过指定订票渠道为本人及同行配偶、父母、子女订购机票，并全额支付机票款，更可获赠国内首创的高额航班延误保险。航班延误2小时，即可获赔人民币1000元。贴心关怀，一路照顾。&lt;/blockquote&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  注意要想薅到上面的保险，需要通过指定渠道订票，具体见&lt;a href=&quot;http://cards.ecitic.com/platinum/yanwuxian.html&quot; target=&quot;_blank&quot;&gt;中信指定渠道&lt;/a&gt;，如果不是在这些渠道订的，延误险是薅不到的。这个延误险厚道的一点是以降落时间为准计算的，所以就算关了舱门在飞机上坐了俩小时，依然是可以拿到的，可以参考&lt;a href=&quot;http://cards.ecitic.com/tc/flight.htm&quot; target=&quot;_blank&quot;&gt;中信航班延误保险条款及细则&lt;/a&gt;。
-&lt;/p&gt;
-
-&lt;h2&gt;9分享兑&lt;/h2&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  应该算中信的王牌活动了。只需要9积分，就可以享受星巴克咖啡、哈根达斯冰淇淋、万宁30元消费金等超值优惠。具体见&lt;a href=&quot;http://cards.ecitic.com/youhui/120926/&quot; target=&quot;_blank&quot;&gt;中信信用卡 9分享兑&lt;/a&gt;。对于新发卡的客户，只要批卡60天之内指定商户类型交易满99元，就可以获得一次9分享兑的功能，非常棒。
-&lt;/p&gt;
-
-&lt;h1&gt;个人用卡经历&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  2010年12月5日，参加研究生“一二·九”合唱比赛，百无聊赖之中看大放哥玩iPhone的游戏。从玩的游戏聊到了购买App，放哥说App Store不支持银联支付，必须要有VISA或者MasterCard的账户，办个校友卡是最方便的。博士办的话是金卡，额度也很高，有10k。当时我虽然还没入手苹果的设备，但觉得有备无患，先去办一张试试。2011年1月的某天，去同方部填了申请表，过两天上网查，发现信用卡申请竟然被建行拒绝了！原因是在2009年5月，央行、银监会等机构发布的&lt;a href=&quot;http://www.gov.cn/gongbao/content/2009/content_1365917.htm&quot; target=&quot;_blank&quot;&gt;关于加强银行卡安全管理预防和打击银行卡犯罪的通知&lt;/a&gt;。通知中明确提出“谨慎发展无稳定工作、收入的客户群体，从严授信”。其实本科刚入学之后的一段时间（2006~2008年）信用卡办理还是很宽松的，经常碰到上门推销信用卡的，但央行规定一出，银行立即收紧了信用卡的办卡渠道，于是我的人生首次申请就悲剧了。
-&lt;/p&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  2011年4月某天，去紫荆吃饭的时候发现一层有两个哥们支个台子，走近一看正好是办校友卡的。真实踏破铁鞋无觅处，得来全不费功夫，赶快填表复印身份证，果然没过两周就下卡了。人生首卡，建行清华校友卡，额度10k，应该说非常棒了。有了这张卡以卡办卡就很容易了，2011年5月又到中行申请了国航联名卡，印象中过了好久中行才来电话征信，下卡额度8k，也还不错了。2014年8月申请提额，额度已经涨到13k了。中行是出名的铁公鸡，对于一个在读的学生来说，13k的额度已经相当厚道了。另外还有一个只刷过一次的卡，就是2013年6月中行推出只有VISA通道的全币种芯片卡，刷卡统一以人民币结算，而且终身免年费。小羊毛是开卡后第一笔交易满99送50元话费，果断在去美国的时候薅到。
-&lt;/p&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  这么算下来，中信i白应该是我的第四卡了，虽然额度并不高，但好歹也是白金卡（虽然是伪白金），首卡金卡，二卡三卡普卡，四卡伪白金，向大白金稳步迈进。
-&lt;/p&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  2014年12月14日更新：蓝翼总结的&lt;a href=&quot;http://jy.smzdm.com/detail/34435&quot; target=&quot;_blank&quot;&gt;2014年信用卡申请全攻略：2014年下半年回顾&lt;/a&gt;中，把i白推荐为永恒的“一卡走天下”最优选择。
-&lt;/p&gt;
-</description>
-				<pubDate>Tue, 30 Sep 2014 00:00:00 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2014/09/30/credit-card</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2014/09/30/credit-card</guid>
 			</item>
 		
 	</channel>

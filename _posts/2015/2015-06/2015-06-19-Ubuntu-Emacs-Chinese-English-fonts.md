@@ -11,7 +11,7 @@ icon: code
 # OS X 系统 Emacs 字体设置
 目前我个人 Emacs 的字体方案是英文 Inconsolata + 中文 黑体-简（Heiti SC）。OS X 系统下的配置相对简单，由于已经自带了黑体-简字体，因此只需要安装 Inconsolata 字体。Emacs 默认使用的就是黑体-简字体，因此只需要在 Emacs 的配置文件中加入如下配置语句即可。
 
-``` cl
+```cl
 (set-face-attribute 'default nil :font "Inconsolata 24"))
 ```
 
@@ -20,7 +20,7 @@ icon: code
 # Ubuntu 系统 Emacs 字体设置
 Ubuntu 下的配置要麻烦一些。首先要安装 Inconsolata 和 Heiti SC 两种字体，用 GUI 就可以直接安装。然后在 Emacs 的配置文件中加入如下配置语句。
 
-``` cl
+```cl
 ; 设置英文字体
 (set-face-attribute 'default nil :font "Inconsolata 18")
 ; 设置中文字体
