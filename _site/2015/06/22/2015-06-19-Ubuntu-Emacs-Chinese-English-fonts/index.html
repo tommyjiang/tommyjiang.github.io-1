@@ -4,7 +4,7 @@
 <html lang="cn">
   <head>
     <meta charset="utf-8">
-    <title>Farewell, Tsinghua</title>
+    <title>Ubuntu 系统 Emacs 中英文字体设置</title>
     
     
     <meta name="author" content="Tommy">
@@ -88,19 +88,19 @@
 <div class="row post-full typo">
   <div class="col-md-2"></div>
   <div class="col-md-8 typo">
-    <h2>Farewell, Tsinghua </h2>
+    <h2>Ubuntu 系统 Emacs 中英文字体设置 </h2>
     <div class="post_info">
       
       <ul id="post_info" class="tag_box inline">
         <li><i class="fa fa-calendar"></i></li>
-        <li> 2015 年 05 月 30 日</li>
+        <li> 2015 年 06 月 22 日</li>
         <li><i class="fa fa-folder-open"></i></li>
         
         
  
   <li>
-    <a href="/categories.html#感悟-ref">
-      感悟 
+    <a href="/categories.html#技术-ref">
+      技术 
     </a>
   </li>
   
@@ -111,13 +111,29 @@
         
     </div>
     <div class="content">
-      <p>终于到了这一天，要告别这个园子了。</p>
+      <p>终于要毕业了，离开前把2010年3月买的华硕老电脑重装了，没再装 Win，选择的是 Ubuntu 15.04系统，装完才发现不是 LTS (Long Term Support)，先凑合用吧。计划把 RMBP 上的配置全部迁移过来，其中 Emacs 字体部分折腾了一上午，配置过程记录如下备案。</p>
 
-<h1>清华的食堂</h1>
+<h1>OS X 系统 Emacs 字体设置</h1>
 
-<p>虽然六维的资源非常全，在校内下载速度也很快(一般是几M/s)，但六维还是存在以下限制：</p>
+<p>目前我个人 Emacs 的字体方案是英文 Inconsolata + 中文 黑体-简（Heiti SC）。OS X 系统下的配置相对简单，由于已经自带了黑体-简字体，因此只需要安装 Inconsolata 字体。Emacs 默认使用的就是黑体-简字体，因此只需要在 Emacs 的配置文件中加入如下配置语句即可。</p>
+<div class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;default</span> <span class="no">nil</span> <span class="ss">:font</span> <span class="s">&quot;Inconsolata 24&quot;</span><span class="p">))</span>
+</code></pre></div>
+<p>由于 Inconsolata 字体只包括英文，因此中文仍然用 Heiti SC 字体显示。</p>
 
-<h1>清华的图书馆</h1>
+<h1>Ubuntu 系统 Emacs 字体设置</h1>
+
+<p>Ubuntu 下的配置要麻烦一些。首先要安装 Inconsolata 和 Heiti SC 两种字体，用 GUI 就可以直接安装。然后在 Emacs 的配置文件中加入如下配置语句。</p>
+<div class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="c1">; 设置英文字体</span>
+<span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;default</span> <span class="no">nil</span> <span class="ss">:font</span> <span class="s">&quot;Inconsolata 18&quot;</span><span class="p">)</span>
+<span class="c1">; 设置中文字体</span>
+<span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">charset</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">kana</span> <span class="nv">han</span> <span class="nc">symbol</span> <span class="nv">cjk-misc</span> <span class="nv">bopomofo</span><span class="p">))</span>
+  <span class="p">(</span><span class="nv">set-fontset-font</span> <span class="p">(</span><span class="nv">frame-parameter</span> <span class="no">nil</span> <span class="ss">&#39;font</span><span class="p">)</span>
+  <span class="nv">charset</span>
+  <span class="p">(</span><span class="nv">font-spec</span> <span class="ss">:family</span> <span class="s">&quot;Heiti SC&quot;</span><span class="p">)))</span>
+</code></pre></div>
+<h1>中英文混排等宽效果</h1>
+
+<p>英文 Inconsolata + 中文 Heiti SC 的字体搭配可以在 Emacs 中实现中英文混排等宽的效果，但必须将字号设置为12，18或者24号，可能与两种字体的比例有关。笔记本的屏幕下一般18号字体就足够了，如果外接显示器或者台式机，可以选择24号字体。</p>
 
     </div>
 
@@ -127,7 +143,9 @@
       
       
    
-    <li><a href="/posts.html#清华">清华 <span>1</span></a></li>
+    <li><a href="/posts.html#Ubuntu">Ubuntu <span>1</span></a></li>
+   
+    <li><a href="/posts.html#Emacs">Emacs <span>3</span></a></li>
   
 
 
@@ -138,11 +156,11 @@
     <hr>
       <ul class="pagination pull-right">
         
-        <li class="prev"><a href="/2015/04/10/EEA-Journal" title="电气工程领域期刊 h5 指数排名感想">&larr; 前一篇</a></li>
+        <li class="prev"><a href="/2015/06/18/2015-07-15-farewell-my-tsinghua" title="Farewell, Tsinghua">&larr; 前一篇</a></li>
         
         <li><a href="/posts.html">索引</a></li>
         
-        <li class="next"><a href="/2015/06/02/2015-04-16-test-d3" title="d3的应用">后一篇 &rarr;</a></li>
+        <li class="next disabled"><a>后一篇 &rarr;</a>
         
       </ul>
     <br />
@@ -151,7 +169,7 @@
 
 
   <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Farewell, Tsinghua" data-title="Farewell, Tsinghua" data-url="page.url"></div>
+	<div class="ds-thread" data-thread-key="Ubuntu 系统 Emacs 中英文字体设置" data-title="Ubuntu 系统 Emacs 中英文字体设置" data-url="page.url"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">

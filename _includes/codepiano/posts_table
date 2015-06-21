@@ -5,7 +5,11 @@
   <td class="post-url">
     <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
   </td>
-  <td class="post-tags">{{ post.tags | join:', ' }}</td>
+  <td class="post-tags">
+    {% for tags in post.tags %}
+      <a href="{{ BASE_PATH }}posts.html#{{ tags }}">{{ tags }}</a>
+    {% endfor %}
+  </td>
 </tr>
 {% endfor %}
   

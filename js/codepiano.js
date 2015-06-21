@@ -46,11 +46,10 @@
         $('#post-data_filter input').val(matches[1])
       }
 
-
       $("#post-data_filter input").keyup( function () {
         tableReference.fnFilter('', 2);
-        tableReference.fnFilter( this.value, 2);
-      } );
+        tableReference.fnFilter(this.value, 2);
+      });
     }
   });
 

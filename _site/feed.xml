@@ -8,65 +8,48 @@
 		
 			<item>
 				<title>Ubuntu 系统 Emacs 中英文字体设置</title>
-				<description>&lt;p&gt;最近把2010年的华硕老电脑重装了，没再用 Win，选择了 Ubuntu 15.04系统，把 RMBP 上的配置全部迁移过来，其中 Emacs 字体部分折腾了一阵，采用的是英文 Inconsolata + 中文 黑体-简（Heiti SC）的搭配，配置过程如下。&lt;/p&gt;
+				<description>&lt;p&gt;终于要毕业了，离开前把2010年3月买的华硕老电脑重装了，没再装 Win，选择的是 Ubuntu 15.04系统，装完才发现不是 LTS (Long Term Support)，先凑合用吧。计划把 RMBP 上的配置全部迁移过来，其中 Emacs 字体部分折腾了一上午，配置过程记录如下备案。&lt;/p&gt;
 
 &lt;h1&gt;OS X 系统 Emacs 字体设置&lt;/h1&gt;
 
-&lt;p&gt;OS X 系统下的配置比较简单，由于系统已经自带了黑体-简字体，因此只需要安装 Inconsolata 字体，由于 Emacs 默认使用的中文就是黑体-简字体，因此只需要在 Emacs 的配置文件中加入如下配置语句即可。&lt;/p&gt;
+&lt;p&gt;目前我个人 Emacs 的字体方案是英文 Inconsolata + 中文 黑体-简（Heiti SC）。OS X 系统下的配置相对简单，由于已经自带了黑体-简字体，因此只需要安装 Inconsolata 字体。Emacs 默认使用的就是黑体-简字体，因此只需要在 Emacs 的配置文件中加入如下配置语句即可。&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-face-attribute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;&amp;#39;default&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:font&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Inconsolata 24&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;由于 Inconsolata 字体只包括英文，因此中文仍然用 Heiti SC 字体显示。&lt;/p&gt;
+
 &lt;h1&gt;Ubuntu 系统 Emacs 字体设置&lt;/h1&gt;
 
-&lt;p&gt;Ubuntu 下的配置相对麻烦一些。首先要安装 Inconsolata 和 黑体-简 两种字体，然后在 Emacs 的配置文件中加入如下配置语句。&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;setq&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;p&gt;Ubuntu 下的配置要麻烦一些。首先要安装 Inconsolata 和 Heiti SC 两种字体，用 GUI 就可以直接安装。然后在 Emacs 的配置文件中加入如下配置语句。&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;c1&quot;&gt;; 设置英文字体&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-face-attribute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;&amp;#39;default&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:font&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Inconsolata 18&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;; 设置中文字体&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;dolist&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;charset&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;kana&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;han&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;symbol&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;cjk-misc&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;bopomofo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-fontset-font&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;frame-parameter&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;&amp;#39;font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;charset&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;font-spec&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:family&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Heiti SC&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h1&gt;中英文混排等宽效果&lt;/h1&gt;
 
-&lt;p&gt;英文 Inconsolata + 中文 黑体-简 的字体搭配可以在 Emacs 中实现中英文混排等宽的效果，但必须将字号设置为12，18或者24号，可能与两种字体的比例有关。笔记本的屏幕下一般18号字体就足够了，如果外接显示器或者台式机，可以选择24号字体。&lt;/p&gt;
+&lt;p&gt;英文 Inconsolata + 中文 Heiti SC 的字体搭配可以在 Emacs 中实现中英文混排等宽的效果，但必须将字号设置为12，18或者24号，可能与两种字体的比例有关。笔记本的屏幕下一般18号字体就足够了，如果外接显示器或者台式机，可以选择24号字体。&lt;/p&gt;
 </description>
-				<pubDate>Sun, 21 Jun 2015 11:10:15 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2015/06/21/2015-06-19-Ubuntu-Emacs-Chinese-English-fonts</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/21/2015-06-19-Ubuntu-Emacs-Chinese-English-fonts</guid>
+				<pubDate>Mon, 22 Jun 2015 00:28:39 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/22/2015-06-19-Ubuntu-Emacs-Chinese-English-fonts</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/22/2015-06-19-Ubuntu-Emacs-Chinese-English-fonts</guid>
 			</item>
 		
 			<item>
-				<title>资料来源及工具总结</title>
-				<description>&lt;p&gt;最近想搜集一些关于竖琴的音频和视频资料，在收集的过程中联想到，现在自己能做到的事，其实都是之前一点一滴不断积累的结果，包括资料的来源以及合适的播放器。有一些是提前想到的，有一些算是无心插柳吧，简单总结下。&lt;/p&gt;
+				<title>Farewell, Tsinghua</title>
+				<description>&lt;p&gt;终于到了这一天，要告别这个园子了。&lt;/p&gt;
 
-&lt;h1&gt;资料来源&lt;/h1&gt;
+&lt;h1&gt;清华的食堂&lt;/h1&gt;
 
-&lt;p&gt;资料主要从 PT 网站、电驴资源网站和视频网站获取。&lt;/p&gt;
+&lt;p&gt;虽然六维的资源非常全，在校内下载速度也很快(一般是几M/s)，但六维还是存在以下限制：&lt;/p&gt;
 
-&lt;h2&gt;PT 网站&lt;/h2&gt;
-
-&lt;p&gt;PT 网站其实之前已经在博客中介绍过，详见&lt;a href=&quot;http://tommyjiang.github.com/2014/08/16/pt-share/&quot;&gt;我与 PT&lt;/a&gt;。那篇文章中提到的公网3大 PT 中目前只有 &lt;a href=&quot;https://totheglory.im&quot;&gt;TTG&lt;/a&gt; 还能正常访问，而六维空间由于主要面向教育网，也只能利用在学校的最后这段时间下载了。其实早在2011年9月我就加入 TTG 了，虽然当时离毕业还很遥远，但为了离校后还能有高清看，早早入了 PT 的坑，可以说忧患意识十足，想起了单位师妹的一句话：路都是自己铺出来的。注意，不是走，而是铺，其实多想一步，结果会很不一样。&lt;/p&gt;
-
-&lt;h2&gt;资源网站&lt;/h2&gt;
-
-&lt;p&gt;主要是从 &lt;a href=&quot;www.verycd.com&quot;&gt;VeryCD&lt;/a&gt; 网站下载，包括无损音乐(ape, flac)和 MP3 资源。根据&lt;a href=&quot;http://baike.baidu.com/link?url=IVVqysXpu0FmjYexEyggr8rTkCLeyVK6QVAeOdrNTsQW8O0THulvKrTB4dcH8bypIMWCw7txXVcQviA8pMDTjq#1&quot;&gt;百度百科&lt;/a&gt;的介绍：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;2012年8月30日之后，VeryCD 网站上所有资源的 eD2k 下载链接均被完全隐藏。未登录或新注册登录的用户无权查看所有链接，仅部分高等级的用户（“铜光盘”或以上）登录后可以正常浏览到所有资源的 eD2k 链接。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;还记得刚上大二的时候每天早上6点多起来在宿舍下载《百家讲坛》的视频，当时经常在资源下回帖感谢发布者，而且由于注册时间早，所以成了“铜光盘”，所以现在仍然可以正常下载 VeryCD 的资源。此外，2012年清华网费改革，将网费由原来每月1.5元不限流量改为每月20G免费，超出部分阶梯计费。像我这样的下载狂，如果还像之前那样下载，每月不知道会给网络中心恭喜多少收入。还好道高一尺，魔高一丈，详细的方法就不公开了，以免被网络中心发现贻害师弟师妹。&lt;/p&gt;
-
-&lt;h2&gt;视频网站&lt;/h2&gt;
-
-&lt;p&gt;主要包括&lt;a href=&quot;www.youku.com&quot;&gt;优酷&lt;/a&gt;和 &lt;a href=&quot;www.youtube.com&quot;&gt;YouTube&lt;/a&gt;。其中优酷的视频可以利用&lt;a href=&quot;http://www.flvcd.com/&quot;&gt;硕鼠&lt;/a&gt;下载，不过这个软件最近更新了，在下载之前也要看优酷的广告，很烦。YouTube 的视频可以利用 &lt;a href=&quot;http://www.clipconverter.cc/&quot;&gt;ClipConverter&lt;/a&gt; 网站将 YouTube 视频地址解析之后下载，需要利用科学上网工具，我个人用的是&lt;a href=&quot;http://www.banwagong.me/&quot;&gt;搬瓦工 VPS&lt;/a&gt;，每年只要 USD 3.99，每月流量 100G，很不错。&lt;/p&gt;
-
-&lt;h1&gt;音频播放器&lt;/h1&gt;
-
-&lt;p&gt;OS X 系统的音频播放器主要包括 iTunes 和 Vox，其中 iTunes 播放 MPC，Vox 播放无损格式(ape, flac)等。&lt;/p&gt;
-
-&lt;h2&gt;iTunes&lt;/h2&gt;
-
-&lt;p&gt;iTunes 导入音乐后会在自己的资料文件夹中复制一份音乐文件，因此可以将原始的音乐文件删除。同时可以利用 iTunes 中的风格作为标签，区分不同类型的音乐。&lt;/p&gt;
-
-&lt;h2&gt;Vox&lt;/h2&gt;
-
-&lt;p&gt;Vox 播放无损音乐时需要 cue 文件，而 Win 系统下的编码一般是 GB-2312，而 OS X 系统中的编码是 UTF-8，因此直接打开 Win 下编码的 cue 文件会出现乱码，需要利用 &lt;a href=&quot;https://itunes.apple.com/cn/app/eztext/id421342426?mt=12&quot;&gt;ezText&lt;/a&gt; 应用转码才能正常打开。&lt;/p&gt;
+&lt;h1&gt;清华的图书馆&lt;/h1&gt;
 </description>
-				<pubDate>Wed, 10 Jun 2015 00:00:00 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2015/06/10/collect-resources</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/10/collect-resources</guid>
+				<pubDate>Thu, 18 Jun 2015 15:52:55 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/18/2015-07-15-farewell-my-tsinghua</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/18/2015-07-15-farewell-my-tsinghua</guid>
 			</item>
 		
 			<item>
@@ -295,24 +278,49 @@
   barChart.init(&#39;figure.final&#39;);
 &lt;/script&gt;
 </description>
-				<pubDate>Tue, 02 Jun 2015 10:04:37 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2015/06/02/2015-04-16-test-d3</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/02/2015-04-16-test-d3</guid>
+				<pubDate>Thu, 18 Jun 2015 15:52:55 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/18/2015-04-16-test-d3</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/18/2015-04-16-test-d3</guid>
 			</item>
 		
 			<item>
-				<title>Farewell, Tsinghua</title>
-				<description>&lt;p&gt;终于到了这一天，要告别这个园子了。&lt;/p&gt;
+				<title>资料来源及工具总结</title>
+				<description>&lt;p&gt;最近想搜集一些关于竖琴的音频和视频资料，在收集的过程中联想到，现在自己能做到的事，其实都是之前一点一滴不断积累的结果，包括资料的来源以及合适的播放器。有一些是提前想到的，有一些算是无心插柳吧，简单总结下。&lt;/p&gt;
 
-&lt;h1&gt;清华的食堂&lt;/h1&gt;
+&lt;h1&gt;资料来源&lt;/h1&gt;
 
-&lt;p&gt;虽然六维的资源非常全，在校内下载速度也很快(一般是几M/s)，但六维还是存在以下限制：&lt;/p&gt;
+&lt;p&gt;资料主要从 PT 网站、电驴资源网站和视频网站获取。&lt;/p&gt;
 
-&lt;h1&gt;清华的图书馆&lt;/h1&gt;
+&lt;h2&gt;PT 网站&lt;/h2&gt;
+
+&lt;p&gt;PT 网站其实之前已经在博客中介绍过，详见&lt;a href=&quot;http://tommyjiang.github.com/2014/08/16/pt-share/&quot;&gt;我与 PT&lt;/a&gt;。那篇文章中提到的公网3大 PT 中目前只有 &lt;a href=&quot;https://totheglory.im&quot;&gt;TTG&lt;/a&gt; 还能正常访问，而六维空间由于主要面向教育网，也只能利用在学校的最后这段时间下载了。其实早在2011年9月我就加入 TTG 了，虽然当时离毕业还很遥远，但为了离校后还能有高清看，早早入了 PT 的坑，可以说忧患意识十足，想起了单位师妹的一句话：路都是自己铺出来的。注意，不是走，而是铺，其实多想一步，结果会很不一样。&lt;/p&gt;
+
+&lt;h2&gt;资源网站&lt;/h2&gt;
+
+&lt;p&gt;主要是从 &lt;a href=&quot;www.verycd.com&quot;&gt;VeryCD&lt;/a&gt; 网站下载，包括无损音乐(ape, flac)和 MP3 资源。根据&lt;a href=&quot;http://baike.baidu.com/link?url=IVVqysXpu0FmjYexEyggr8rTkCLeyVK6QVAeOdrNTsQW8O0THulvKrTB4dcH8bypIMWCw7txXVcQviA8pMDTjq#1&quot;&gt;百度百科&lt;/a&gt;的介绍：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;2012年8月30日之后，VeryCD 网站上所有资源的 eD2k 下载链接均被完全隐藏。未登录或新注册登录的用户无权查看所有链接，仅部分高等级的用户（“铜光盘”或以上）登录后可以正常浏览到所有资源的 eD2k 链接。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;还记得刚上大二的时候每天早上6点多起来在宿舍下载《百家讲坛》的视频，当时经常在资源下回帖感谢发布者，而且由于注册时间早，所以成了“铜光盘”，所以现在仍然可以正常下载 VeryCD 的资源。此外，2012年清华网费改革，将网费由原来每月1.5元不限流量改为每月20G免费，超出部分阶梯计费。像我这样的下载狂，如果还像之前那样下载，每月不知道会给网络中心恭喜多少收入。还好道高一尺，魔高一丈，详细的方法就不公开了，以免被网络中心发现贻害师弟师妹。&lt;/p&gt;
+
+&lt;h2&gt;视频网站&lt;/h2&gt;
+
+&lt;p&gt;主要包括&lt;a href=&quot;www.youku.com&quot;&gt;优酷&lt;/a&gt;和 &lt;a href=&quot;www.youtube.com&quot;&gt;YouTube&lt;/a&gt;。其中优酷的视频可以利用&lt;a href=&quot;http://www.flvcd.com/&quot;&gt;硕鼠&lt;/a&gt;下载，不过这个软件最近更新了，在下载之前也要看优酷的广告，很烦。YouTube 的视频可以利用 &lt;a href=&quot;http://www.clipconverter.cc/&quot;&gt;ClipConverter&lt;/a&gt; 网站将 YouTube 视频地址解析之后下载，需要利用科学上网工具，我个人用的是&lt;a href=&quot;http://www.banwagong.me/&quot;&gt;搬瓦工 VPS&lt;/a&gt;，每年只要 USD 3.99，每月流量 100G，很不错。&lt;/p&gt;
+
+&lt;h1&gt;音频播放器&lt;/h1&gt;
+
+&lt;p&gt;OS X 系统的音频播放器主要包括 iTunes 和 Vox，其中 iTunes 播放 MPC，Vox 播放无损格式(ape, flac)等。&lt;/p&gt;
+
+&lt;h2&gt;iTunes&lt;/h2&gt;
+
+&lt;p&gt;iTunes 导入音乐后会在自己的资料文件夹中复制一份音乐文件，因此可以将原始的音乐文件删除。同时可以利用 iTunes 中的风格作为标签，区分不同类型的音乐。&lt;/p&gt;
+
+&lt;h2&gt;Vox&lt;/h2&gt;
+
+&lt;p&gt;Vox 播放无损音乐时需要 cue 文件，而 Win 系统下的编码一般是 GB-2312，而 OS X 系统中的编码是 UTF-8，因此直接打开 Win 下编码的 cue 文件会出现乱码，需要利用 &lt;a href=&quot;https://itunes.apple.com/cn/app/eztext/id421342426?mt=12&quot;&gt;ezText&lt;/a&gt; 应用转码才能正常打开。&lt;/p&gt;
 </description>
-				<pubDate>Sat, 30 May 2015 15:32:50 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2015/05/30/2015-07-15-farewell-my-tsinghua</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2015/05/30/2015-07-15-farewell-my-tsinghua</guid>
+				<pubDate>Wed, 10 Jun 2015 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/06/10/collect-resources</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/06/10/collect-resources</guid>
 			</item>
 		
 			<item>
