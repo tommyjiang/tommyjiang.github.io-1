@@ -8,13 +8,10 @@ http://tommyjiang.github.com/sitemap.txt
 http://tommyjiang.github.com/timeline.html
 http://tommyjiang.github.com/page2/index.html
 http://tommyjiang.github.com/page3/index.html
-http://tommyjiang.github.com/page4/index.html
 
-http://tommyjiang.github.com/2015/06/26/2015-07-15-farewell-my-tsinghua
-http://tommyjiang.github.com/2015/06/26/2015-06-30-power-system-research-thoughts-vs-engineering-thoughts
+http://tommyjiang.github.com/2015/07/03/driver-license-renew
 http://tommyjiang.github.com/2015/06/19/Ubuntu-Emacs-Chinese-English-fonts
 http://tommyjiang.github.com/2015/06/10/collect-resources
-http://tommyjiang.github.com/2015/06/02/2015-04-16-test-d3
 http://tommyjiang.github.com/2015/04/10/EEA-Journal
 http://tommyjiang.github.com/2015/03/02/RMBP-Geek
 http://tommyjiang.github.com/2014/11/20/citic-card-delay-record
