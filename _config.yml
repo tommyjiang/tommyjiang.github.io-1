@@ -16,11 +16,14 @@ excerpt_separator: "\n\n"
 #   input: GFM
 #   syntax_highlighter: rouge
 
+# Encoding
+encoding: utf-8
+
 # Markdown解析
 markdown: redcarpet
 
 redcarpet:
- extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+ extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "footnotes", "footnote_ref"]
 
 # 修改为自己的配置
 title : 电力引领生活

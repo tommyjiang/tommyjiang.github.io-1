@@ -105,12 +105,12 @@
 
 <!-- 按照分页插入博客文章 -->
 
-  <h2 class="title"><a href="/2015/06/19/Ubuntu-Emacs-Chinese-English-fonts">Ubuntu 系统 Emacs 中英文字体设置</a></h2>
+  <h2 class="title"><a href="/2014/08/23/emacs-org-mode-time-stamp-language">Emacs Org mode Time Stamp 设置为中文的方法</a></h2>
   <div class="post_info">
   
   <ul id="post_info" class="tag_box inline">
     <li><i class="fa fa-calendar"></i></li>
-    <li id="post-date"> 2015 年 06 月 19 日</li>
+    <li id="post-date"> 2014 年 08 月 23 日</li>
     <li><i class="fa fa-folder-open"></i></li>
     
     
@@ -129,17 +129,21 @@
   <span>
   </div>
   <div class="archive">
-	  <p>终于要毕业了，离开前把2010年3月买的华硕老电脑重装了，没再装 Win，选择的是 Ubuntu 15.04系统，装完才发现不是 LTS (Long Term Support)，先凑合用吧。计划把 RMBP 上的配置全部迁移过来，其中 Emacs 字体部分折腾了一上午，配置过程记录如下备案。</p>
+	  <h1>Emacs和Org mode介绍</h1>
+<p class="paragraph">
+  先简要介绍一下Emacs和Org mode。Emacs可以算是GNU(关于GNU，可以参考其<a href="http://www.gnu.org/" target="_blank">官网介绍</a> )社区王牌性的作品。简单来说，它是一个文本编辑器，但由于其可定制性极强，使用者可以依据自己的喜好将它“改装”成各种样子。也正是由于其自由度极高，一句经典的调侃是
+</p>
+
 
   </div>
   <hr />
   
-  <h2 class="title"><a href="/2015/06/10/collect-resources">资料来源及工具总结</a></h2>
+  <h2 class="title"><a href="/2014/08/16/pt-share">我与PT</a></h2>
   <div class="post_info">
   
   <ul id="post_info" class="tag_box inline">
     <li><i class="fa fa-calendar"></i></li>
-    <li id="post-date"> 2015 年 06 月 10 日</li>
+    <li id="post-date"> 2014 年 08 月 16 日</li>
     <li><i class="fa fa-folder-open"></i></li>
     
     
@@ -150,84 +154,10 @@
     </a>
   </li>
   
-
-
-
-  </ul>
-  
-  <span>
-  </div>
-  <div class="archive">
-	  <p>最近想搜集一些关于竖琴的音频和视频资料，在收集的过程中联想到，现在自己能做到的事，其实都是之前一点一滴不断积累的结果，包括资料的来源以及合适的播放器。有一些是提前想到的，有一些算是无心插柳吧，简单总结下。</p>
-
-  </div>
-  <hr />
-  
-  <h2 class="title"><a href="/2015/04/10/EEA-Journal">电气工程领域期刊 h5 指数排名感想</a></h2>
-  <div class="post_info">
-  
-  <ul id="post_info" class="tag_box inline">
-    <li><i class="fa fa-calendar"></i></li>
-    <li id="post-date"> 2015 年 04 月 10 日</li>
-    <li><i class="fa fa-folder-open"></i></li>
-    
-    
- 
   <li>
-    <a href="/categories.html#工作-ref">
-      工作 
-    </a>
+    <i class="fa fa-angle-double-right"></i>
   </li>
   
-
-
-
-  </ul>
-  
-  <span>
-  </div>
-  <div class="archive">
-	  由电气工程领域期刊的 h5 指数所想到的
-  </div>
-  <hr />
-  
-  <h2 class="title"><a href="/2015/03/02/RMBP-Geek">RMBP Geek 工具配置过程</a></h2>
-  <div class="post_info">
-  
-  <ul id="post_info" class="tag_box inline">
-    <li><i class="fa fa-calendar"></i></li>
-    <li id="post-date"> 2015 年 03 月 02 日</li>
-    <li><i class="fa fa-folder-open"></i></li>
-    
-    
- 
-  <li>
-    <a href="/categories.html#技术-ref">
-      技术 
-    </a>
-  </li>
-  
-
-
-
-  </ul>
-  
-  <span>
-  </div>
-  <div class="archive">
-	  感谢小哥从 HK 带来的 RMBP
-  </div>
-  <hr />
-  
-  <h2 class="title"><a href="/2014/11/20/citic-card-delay-record">中信i白金航班延误险理赔全记录</a></h2>
-  <div class="post_info">
-  
-  <ul id="post_info" class="tag_box inline">
-    <li><i class="fa fa-calendar"></i></li>
-    <li id="post-date"> 2014 年 11 月 20 日</li>
-    <li><i class="fa fa-folder-open"></i></li>
-    
-    
  
   <li>
     <a href="/categories.html#生活-ref">
@@ -243,7 +173,57 @@
   <span>
   </div>
   <div class="archive">
-	  <p class="paragraph">终于可以薅中信的羊毛了</p>
+	  <h1>初识PT</h1>
+<p class="paragraph">
+  2010年世界杯的时候，为了下载比赛的视频，我注册了第一个PT——<a href="http://bt.neu6.edu.cn" target = "_blank">六维空间(需要IPv6连接)</a>的帐号。当时是一个师兄发的邀请，当我用邀请码注册完后，兴冲冲地想下载视频时，却发现要先回答一些关于PT的问题之后才能下载。现在回过头看，设置答题这个门槛还是十分必要的，可以在最开始就过滤掉那些伸手党。六维的人气在当时就已经很高了，目前应该是教育网第一大PT，发种的速度非常快。注册完之后的那几天，每天早上都可以到下载到当天凌晨最新的比赛。虽然当时学校还没有每个月20G的流量限制，即使没有六维，也能用v4的工具下载，或者直接到网上看视频。但能从六维上第一时间下载到高清的比赛，感觉还是很过瘾的。
+</p>
+
+
+  </div>
+  <hr />
+  
+  <h2 class="title"><a href="/2014/08/15/first-post">第一篇博文 顺致小哥</a></h2>
+  <div class="post_info">
+  
+  <ul id="post_info" class="tag_box inline">
+    <li><i class="fa fa-calendar"></i></li>
+    <li id="post-date"> 2014 年 08 月 15 日</li>
+    <li><i class="fa fa-folder-open"></i></li>
+    
+    
+ 
+  <li>
+    <a href="/categories.html#感悟-ref">
+      感悟 
+    </a>
+  </li>
+  
+  <li>
+    <i class="fa fa-angle-double-right"></i>
+  </li>
+  
+ 
+  <li>
+    <a href="/categories.html#技术-ref">
+      技术 
+    </a>
+  </li>
+  
+
+
+
+  </ul>
+  
+  <span>
+  </div>
+  <div class="archive">
+	  <h1>缘起</h1>
+<p class="paragraph">
+2013年11月17日，当时我在香港，在小哥的忽悠下，注册了被誉为“程序员的Facebook”——GitHub社区的帐号。注册后小哥曾大力推荐我用Github + Jekyll搭建自己的博客，这也是他博客
+<a href="http://yangchao.me" target = "_blank">小哥的博客</a> 的主要工具。
+</p>
+
+
   </div>
   <hr />
   
@@ -255,7 +235,7 @@
       
       <li>
         
-        <a href="/"><i class="fa fa-chevron-left"></i></a>
+        <a href="/page3"><i class="fa fa-chevron-left"></i></a>
         
       </li>
       
@@ -269,8 +249,8 @@
 
       
       
-      <li class="active">
-      <a href="#">2</a>
+      <li>
+      <a href="/page2">2</a>
       </li>
       
       
@@ -281,15 +261,15 @@
       
       
       
-      <li>
-      <a href="/page4">4</a>
+      <li class="active">
+      <a href="#">4</a>
       </li>
       
       
 
       
-      <li>
-      <a href="/page3"><i class="fa fa-chevron-right"></i></a>
+      <li class="disabled">
+      <a href="#"><i class="fa fa-chevron-right"></i></a>
       </li>
       
     </ul>
