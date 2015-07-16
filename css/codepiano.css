@@ -156,6 +156,11 @@ blockquote {
   color: #777;
 }
 
+blockquote p {
+  text-indent: 0;
+  text-align: justify;
+}
+
 blockquote paragraph {
   font-size: 16px;
   margin-left: 0em;
