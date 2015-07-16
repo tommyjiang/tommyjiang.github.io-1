@@ -156,6 +156,11 @@ blockquote {
   color: #777;
 }
 
+blockquote p {
+  text-indent: 0;
+  text-align: justify;
+}
+
 blockquote paragraph {
   font-size: 16px;
   margin-left: 0em;
@@ -163,6 +168,16 @@ blockquote paragraph {
 
 blockquote:before,blockquote:after
 {content: none;}
+
+/* 脚注样式  */
+a[href][rev] {
+  color: #f0f0f0;
+}
+
+/* Echarts 图表缩进  */
+div[id][style] {
+  margin-left: 2em;
+}
 
 /* 覆盖bootstrap导航条设置 */
 a.navbar-brand {
