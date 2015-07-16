@@ -169,6 +169,11 @@ blockquote paragraph {
 blockquote:before,blockquote:after
 {content: none;}
 
+/* 脚注样式  */
+a[href][rev] {
+  color: #f0f0f0;
+}
+
 /* 覆盖bootstrap导航条设置 */
 a.navbar-brand {
   height: auto;
