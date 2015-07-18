@@ -7,6 +7,376 @@
 		<atom:link href="http://tommyjiang.github.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Echarts</title>
+				<description>&lt;p&gt;test&lt;/p&gt;
+
+&lt;!-- 为ECharts准备一个具备大小（宽高）的Dom --&gt;
+
+&lt;div id=&quot;barMain&quot; style=&quot;height:400px&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;test&lt;/p&gt;
+
+&lt;div id=&quot;lineMain&quot; style=&quot;height:400px&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;test2&lt;/p&gt;
+
+&lt;div id=&quot;lineMain2&quot; style=&quot;height:400px&quot;&gt;&lt;/div&gt;
+
+&lt;!-- --&gt;
+
+&lt;!-- ECharts单文件引入 --&gt;
+
+&lt;script src=&quot;http://echarts.baidu.com/build/dist/echarts.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+// 路径配置
+        require.config(
+                {
+                        paths: {
+                                echarts: &#39;http://echarts.baidu.com/build/dist&#39;
+            }
+        }
+        );
+
+    require(
+            [
+        　　&#39;echarts&#39;,
+        　　&#39;echarts/chart/bar&#39;, 
+        　　&#39;echarts/chart/line&#39;
+        ],
+        drawEcharts
+    );
+
+    function drawEcharts(ec){
+        drawBar(ec);
+        drawLine(ec);
+        drawLine2(ec);
+    }
+    
+    function drawBar(ec){
+        var myBarChart = ec.init(document.getElementById(&#39;barMain&#39;)); 
+        option = {
+                        title : {
+                text: &quot;各渠道销量&quot;
+                        },
+            tooltip : {
+                trigger: &#39;axis&#39;
+            },
+            legend: {
+                data:[&#39;邮件营销&#39;,&#39;联盟广告&#39;,&#39;视频广告&#39;,&#39;直接访问&#39;,&#39;搜索引擎&#39;]
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : &#39;category&#39;,
+                    boundaryGap : false,
+                    data : [&#39;周一&#39;,&#39;周二&#39;,&#39;周三&#39;,&#39;周四&#39;,&#39;周五&#39;,&#39;周六&#39;,&#39;周日&#39;]
+                }
+            ],
+            yAxis : [
+                {
+                    type : &#39;value&#39;
+                }
+            ],
+            series : [
+                {
+                    name:&#39;邮件营销&#39;,
+                    type:&#39;line&#39;,
+                    stack: &#39;总量&#39;,
+                    data:[120, 132, 101, 134, 90, 230, 210]
+                },
+                {
+                    name:&#39;联盟广告&#39;,
+                    type:&#39;line&#39;,
+                    stack: &#39;总量&#39;,
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                },
+                {
+                    name:&#39;视频广告&#39;,
+                    type:&#39;line&#39;,
+                    stack: &#39;总量&#39;,
+                    data:[150, 232, 201, 154, 190, 330, 410]
+                },
+                {
+                    name:&#39;直接访问&#39;,
+                    type:&#39;line&#39;,
+                    stack: &#39;总量&#39;,
+                    data:[320, 332, 301, 334, 390, 330, 320]
+                },
+                {
+                    name:&#39;搜索引擎&#39;,
+                    type:&#39;line&#39;,
+                    stack: &#39;总量&#39;,
+                    data:[820, 932, 901, 934, 1290, 1330, 1320]
+                }
+            ]
+        };    
+        myBarChart.setOption(option,true); //当setOption第二个参数为true时，会阻止数据合并
+    }
+
+    function drawLine(ec){
+            var myLineChart = ec.init(document.getElementById(&#39;lineMain&#39;)); 
+        var option2 = {
+                title : {
+                            text: &quot;一周气温变化&quot;
+                    },
+                    tooltip : {
+                            trigger: &#39;axis&#39;
+                    },
+                    legend: {
+                            data:[&#39;最高气温&#39;,&#39;最低气温&#39;]
+                    },
+                    calculable : true,
+                    xAxis : [{
+                        type : &#39;category&#39;,
+                            boundaryGap : false,
+                            data : [&#39;周一&#39;,&#39;周二&#39;,&#39;周三&#39;,&#39;周四&#39;,&#39;周五&#39;,&#39;周六&#39;,&#39;周日&#39;]
+                    }],
+                    yAxis : [{
+                            type : &#39;value&#39;,
+                            axisLabel : {
+                                formatter: &#39;{value} °C&#39;
+                            }
+                    }],
+                    series : [
+                        {
+                                name:&#39;最高气温&#39;,
+                                type:&#39;line&#39;,
+                                data:[11, 11, 15, 13, 12, 13, 10],
+                                markPoint : {
+                                        data : [
+                                                {type : &#39;max&#39;, name: &#39;最大值&#39;},
+                                                {type : &#39;min&#39;, name: &#39;最小值&#39;}
+                                        ]
+                                },
+                                markLine : {
+                                        data : [
+　　    　　　　            {type : &#39;average&#39;, name: &#39;平均值&#39;}
+　　    　　            ]
+                    }
+                },
+
+                            {
+                    name:&#39;最低气温&#39;,
+                            type:&#39;line&#39;,
+                            data:[1, -2, 2, 5, 3, 2, 0],
+                            markPoint : {
+                                    data : [
+                                            {name : &#39;周最低&#39;, value : -2, xAxis: 1, yAxis: -1.5}
+                                    ]
+                            },
+                    markLine : {
+                                    data : [
+　　    　　　　            {type : &#39;average&#39;, name : &#39;平均值&#39;}
+　　    　　            ]
+                    },
+                },
+            ]
+        };
+        myLineChart.setOption(option2,true); 
+    }
+
+    function drawLine2(ec){
+            var myLineChart2 = ec.init(document.getElementById(&#39;lineMain2&#39;)); 
+        var option3 = {
+                title : {
+                            text: &quot;一周气温变化&quot;
+                    },
+                    tooltip : {
+                            trigger: &#39;axis&#39;
+                    },
+                    legend: {
+                            data:[&#39;最高气温&#39;,&#39;最低气温&#39;]
+                    },
+                    calculable : true,
+                    xAxis : [{
+                        type : &#39;category&#39;,
+                            boundaryGap : false,
+                            data : [&#39;周一&#39;,&#39;周二&#39;,&#39;周三&#39;,&#39;周四&#39;,&#39;周五&#39;,&#39;周六&#39;,&#39;周日&#39;]
+                    }],
+                    yAxis : [{
+                            type : &#39;value&#39;,
+                            axisLabel : {
+                                formatter: &#39;{value} °C&#39;
+                            }
+                    }],
+                    series : [
+                        {
+                                name:&#39;最高气温&#39;,
+                                type:&#39;line&#39;,
+                                data:[11, 11, 15, 13, 12, 13, 10],
+                                markPoint : {
+                                        data : [
+                                                {type : &#39;max&#39;, name: &#39;最大值&#39;},
+                                                {type : &#39;min&#39;, name: &#39;最小值&#39;}
+                                        ]
+                                },
+                                markLine : {
+                                        data : [
+　　    　　　　            {type : &#39;average&#39;, name: &#39;平均值&#39;}
+　　    　　            ]
+                    }
+                },
+
+                            {
+                    name:&#39;最低气温&#39;,
+                            type:&#39;line&#39;,
+                            data:[1, -2, 2, 5, 3, 2, 0],
+                            markPoint : {
+                                    data : [
+                                            {name : &#39;周最低&#39;, value : -2, xAxis: 1, yAxis: -1.5}
+                                    ]
+                            },
+                    markLine : {
+                                    data : [
+　　    　　　　            {type : &#39;average&#39;, name : &#39;平均值&#39;}
+　　    　　            ]
+                    },
+                },
+            ]
+                }
+        myLineChart2.setOption(option3,true); 
+    };
+&lt;/script&gt;
+
+&lt;!-- end --&gt;
+</description>
+				<pubDate>Fri, 17 Jul 2015 21:45:19 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/07/17/2015-07-17-test-echarts</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/07/17/2015-07-17-test-echarts</guid>
+			</item>
+		
+			<item>
+				<title>2015年毕业晚会观后感</title>
+				<description>&lt;p&gt;犹记得5年前本科毕业时的毕业晚会，中途就离场了。5年后，即将博士毕业了，再来看毕业晚会，让人唏嘘不已。&lt;/p&gt;
+
+&lt;h1 id=&quot;节目单&quot;&gt;节目单&lt;/h1&gt;
+
+&lt;p&gt;整场晚会的节目单如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2015-07/2015-Graduation-Party.png&quot; width=&quot;600px&quot;&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;个人观后感&quot;&gt;个人观后感&lt;/h1&gt;
+
+&lt;p&gt;整场晚会印象最深刻的就是两个以毕业为主题的视频节目。&lt;/p&gt;
+
+&lt;h2 id=&quot;起点&quot;&gt;起点&lt;/h2&gt;
+
+&lt;p&gt;2015年清华原创毕业歌曲，视频见&lt;a href=&quot;http://v.youku.com/v_show/id_XMTI4MjE1OTY1Mg==.html?from=s1.8-1-1.2&quot;&gt;这里&lt;/a&gt;。整首歌用了大段的 Rap，精彩的歌词配上手绘的背景足以唤起每个清华毕业生对母校的留恋。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;几年前的一个夏天 我来到清华园&lt;br&gt;
+一辆崭新的二手车 打算骑四年&lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;
+那时的清华男女比 比现在更跑偏&lt;br&gt;
+一对儿情侣甜蜜蜜 男双男单坐一边&lt;br&gt;
+微积分的习题课 坐过道和窗前&lt;br&gt;
+大学语文平仄平 还作诗一篇&lt;br&gt;
+奥运国庆大场面 刻在学长的光盘&lt;br&gt;
+百年校庆的尾巴根儿 只见过明信片&lt;br&gt;
+小桥队伍排最长 是凌晨十二点&lt;br&gt;
+五道口的枣糕王 一等小半天&lt;br&gt;
+苏世民的小书院 叮当响三年&lt;br&gt;
+天天绕道的图书馆 临走也没见着正脸&lt;sup id=&quot;fnref2&quot;&gt;&lt;a href=&quot;#fn2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;
+宿舍系馆两点一线 日子太简单&lt;br&gt;
+情人坡的每个浪漫时间 我总路过去实验&lt;br&gt;
+创业志愿和实践 假期没几天&lt;br&gt;
+我开题报告参考文献 才刚看二十篇  &lt;/p&gt;
+
+&lt;p&gt;转眼间就要告别昨天 我们何年再相见&lt;br&gt;
+(什么年 什么月 什么值得纪念)&lt;br&gt;
+那些纠结的论文和答辩 都随往事如烟&lt;br&gt;
+(什么人 什么鬼 什么值得留恋)&lt;br&gt;
+昨天 我站在起点 不知前方路多远&lt;br&gt;
+今天 我张开双手 想要拥抱这世界&lt;br&gt;
+想要飞 就必须从不妥协&lt;br&gt;
+想要追 就必须超越一切  &lt;/p&gt;
+
+&lt;p&gt;那时刚有文图馆 学霸占座一整天&lt;br&gt;
+那时清芬小包子 一个三毛钱&lt;sup id=&quot;fnref3&quot;&gt;&lt;a href=&quot;#fn3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;
+那时没有 Color Run 北京没有阴天&lt;br&gt;
+那时学堂七点半 票总被抢完&lt;br&gt;
+那时的欢笑鬼脸 那时的我们班&lt;br&gt;
+那时的泪水汉水 那时的清华蓝&lt;br&gt;
+那时的下午四点半 追你的笑颜&lt;br&gt;
+你回头问我三千米 能不能过关  &lt;/p&gt;
+
+&lt;p&gt;转眼间就要告别昨天 我们何年再相见&lt;br&gt;
+(什么年 什么月 什么值得纪念)&lt;br&gt;
+那些骄傲的奖杯和绩点 都随往事如烟&lt;br&gt;
+(什么人 什么鬼 什么值得留恋)&lt;br&gt;
+昨天 我站在起点 不知前方路多远&lt;br&gt;
+今天 我张开双手 想要拥抱这世界&lt;br&gt;
+想要飞 就必须从不妥协&lt;br&gt;
+想要追 就必须超越一切&lt;br&gt;
+勇敢飞 对自己从不妥协&lt;br&gt;
+勇敢追 向着下一个起点  &lt;/p&gt;
+
+&lt;p&gt;(新起点 我们 和清华一起出发)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;闪光的记忆&quot;&gt;闪光的记忆&lt;/h2&gt;
+
+&lt;p&gt;应该是从2012年起，每年的毕业晚会都有一个用《闪光的记忆》这首歌作为背景音乐的视频，今年当然也不例外，视频见&lt;a href=&quot;http://v.qq.com/iframe/player.html?vid=h01594giz7r&amp;amp;width=670&amp;amp;height=502.5&amp;amp;auto=0&quot;&gt;这里&lt;/a&gt;。印象最深的是视频的最后一段——清华园普通一天各个整点时刻的场景：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;01:00AM 那些不眠的夜晚，陪伴我们的，除了大作业，还有一盏温柔的灯。&lt;br&gt;
+02:00AM 一座小小的屋子，飘香四溢的屋子，成为烧烤的代名词——小桥。&lt;br&gt;
+03:00AM 曾有一群人，为了一个共同的梦想在这里讨论甚至争执，不舍昼夜。&lt;br&gt;
+04:00AM 让人惊艳的美术设计背后，或许是熬夜到三四点的苦楚。&lt;br&gt;
+05:00AM 紫荆园后，盛夏日出，刚摘下的果蔬，也许还滴着晨露。&lt;br&gt;
+06:00AM 在晨光熹微，旁人熟睡的时刻，总有些人在忍受风吹日晒，绽放青春。&lt;br&gt;
+07:00AM 鲜红的旗帜，坚毅的面孔，月月年年。&lt;br&gt;
+08:00AM 早餐和生活一样在路上。&lt;br&gt;
+09:00AM 求知的眼睛，挥动的笔杆，在课堂上载着梦想启程。&lt;br&gt;
+10:00AM 水木清华众秀钟，真是无一景不可入画。&lt;br&gt;
+11:00AM 道旁的银杏树和来往的人潮，构成一抹极具生机的亮色。&lt;br&gt;
+12:00PM 很难在别处见到的热闹与魅力。&lt;sup id=&quot;fnref4&quot;&gt;&lt;a href=&quot;#fn4&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;
+01:00PM 梦里，天堂一定是图书馆的模样。&lt;br&gt;
+02:00PM 如果要真正感受清华，那么就来自习教室吧。&lt;br&gt;
+03:00PM 在实验中谨慎求索，辛苦劳碌，舔尝酸楚，积攒幸福。&lt;br&gt;
+04:00PM 那时候日色很慢，草坪很暖，一辈子只够爱一个人。&lt;br&gt;
+05:00PM 夕阳下的奔跑与伫足，那是我们昂扬的青春。&lt;br&gt;
+06:00PM 落日余晖遍布校园，感受舌尖上的清华。&lt;br&gt;
+07:00PM 生活，因为这里的嬉笑怒骂、管弦丝竹而不同。&lt;br&gt;
+08:00PM 周遭的嘈杂包围着专注讨论的我们。&lt;br&gt;
+09:00PM 这是真实而生动的生活。&lt;br&gt;
+10:00PM 既见君子，云胡不喜？&lt;br&gt;
+11:00PM 熄灯已经成为一种习惯，成为我们珍贵的共同记忆。&lt;sup id=&quot;fnref5&quot;&gt;&lt;a href=&quot;#fn5&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn1&quot;&gt;
+&lt;p&gt;清华校园很大，占地面积&lt;a href=&quot;http://www.tsinghua.edu.cn/publish/newthu/newthu_cnt/about/about-6.html&quot;&gt;442.14公顷&lt;/a&gt;，因此自行车是清华学生的标配。二手车便宜而且不容易被偷，因此受到新生的青睐。&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn2&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://lib.tsinghua.edu.cn/about/beiguan/beiguan.html&quot;&gt;图书馆北馆（李文正楼）&lt;/a&gt;于百年校庆之际——2011年4月23日奠基，2013年12月工程正式启动，预计2015年9月竣工。&amp;nbsp;&lt;a href=&quot;#fnref2&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn3&quot;&gt;
+&lt;p&gt;清芬园即七食堂，曾经以包子和麻辣香锅闻名全校，于2013年6月15日停伙。2015年本科生毕业典礼上，&lt;a href=&quot;http://news.tsinghua.edu.cn/publish/news/4205/2015/20150712090658606540272/20150712090658606540272_.html&quot;&gt;邱勇校长的讲话&lt;/a&gt;中提到：“我也知道，你们爱吃的清芬园包子已经不在了，现在我要告诉你们，今年年底清芬园将重新开业，我相信，开业的同时，包子也会回来。”&amp;nbsp;&lt;a href=&quot;#fnref3&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn4&quot;&gt;
+&lt;p&gt;原视频中误为“12:00AM”，中午12点应为12:00PM。&amp;nbsp;&lt;a href=&quot;#fnref4&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn5&quot;&gt;
+&lt;p&gt;最后少了一个午夜12点的时刻，我觉得可以选择静谧的紫荆宿舍外景。&amp;nbsp;&lt;a href=&quot;#fnref5&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+				<pubDate>Thu, 09 Jul 2015 00:00:00 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/07/09/graduation-party</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/07/09/graduation-party</guid>
+			</item>
+		
+			<item>
 				<title>外地驾驶证到期在北京换领新驾驶证流程总结</title>
 				<description>&lt;p&gt;09年十一考的驾照，虽然没怎么开过车，但马上到6年，也要换新的驾照了，正好也把家里的驾照换成北京的，换驾照流程记录如下。&lt;/p&gt;
 
@@ -502,87 +872,6 @@
 				<pubDate>Fri, 31 Oct 2014 00:00:00 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2014/10/31/python-matlab-hybrid</link>
 				<guid isPermaLink="true">http://tommyjiang.github.com/2014/10/31/python-matlab-hybrid</guid>
-			</item>
-		
-			<item>
-				<title>人生第一张白金信用卡</title>
-				<description>&lt;p class=&quot;paragraph&quot;&gt;
-  2014年9月26日，终于收到了人生第一张白金信用卡——中信i白金卡。
-&lt;/p&gt;
-
-&lt;img class=&quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2014-09/ecitic.png&quot; width=&quot;800px&quot;/&gt;
-
-&lt;h1&gt;i白金申卡经历&lt;/h1&gt;
-&lt;h2&gt;第一次申请&lt;/h2&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  2014年6月22日第一次申请，6月23日建档，6月25日接到征信电话，6月27日上网查询进度，显示“因为综合评分不足，您的申请未能通过”，第一次申请以失败告终。
-&lt;/p&gt;
-&lt;h2&gt;第二次申请&lt;/h2&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  2014年9月18日第二次申请，当天建档，9月20日下午深圳卡部打来征信电话，当时正在打排球未接到。等了两天，9月22日下午第二次征信，这次接到了，核实了相关信息。9月23日早上收到短信，要求到柜台面签，到东门外的中信银行办理，23日晚上查询申请进度，显示“您的申请已获批准，感谢您使用中信信用卡！”。按照网友提供的经验，一般当天批卡，第二天用EMS快递。但我的面签第三天才快递，9月26日收到卡片，额度16k，已经比我他行额度最高的卡还要高了。
-&lt;/p&gt;
-
-&lt;h1&gt;中信i白金卡的各种福利&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  主要是前两项，尤其是第一项，都不能算羊毛了，简直是羊腿啊；第二项算是中信的王牌活动了。此外还有一些小羊毛。
-&lt;/p&gt;
-&lt;h2&gt;航空延误险&lt;/h2&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  以下介绍摘自&lt;a href=&quot;http://cards.ecitic.com/platinum/ibaijin.html&quot; target=&quot;_blank&quot;&gt;中信银行信用卡官网i白金卡介绍&lt;/a&gt;：
-&lt;/p&gt;
-
-&lt;blockquote&gt;使用中信白金信用卡通过指定订票渠道为本人及同行配偶、父母、子女订购机票，并全额支付机票款，更可获赠国内首创的高额航班延误保险。航班延误2小时，即可获赔人民币1000元。贴心关怀，一路照顾。&lt;/blockquote&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  注意要想薅到上面的保险，需要通过指定渠道订票，具体见&lt;a href=&quot;http://cards.ecitic.com/platinum/yanwuxian.html&quot; target=&quot;_blank&quot;&gt;中信指定渠道&lt;/a&gt;，如果不是在这些渠道订的，延误险是薅不到的。这个延误险厚道的一点是以降落时间为准计算的，所以就算关了舱门在飞机上坐了俩小时，依然是可以拿到的，可以参考&lt;a href=&quot;http://cards.ecitic.com/tc/flight.htm&quot; target=&quot;_blank&quot;&gt;中信航班延误保险条款及细则&lt;/a&gt;。
-&lt;/p&gt;
-
-&lt;h2&gt;9分享兑&lt;/h2&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  应该算中信的王牌活动了。只需要9积分，就可以享受星巴克咖啡、哈根达斯冰淇淋、万宁30元消费金等超值优惠。具体见&lt;a href=&quot;http://cards.ecitic.com/youhui/120926/&quot; target=&quot;_blank&quot;&gt;中信信用卡 9分享兑&lt;/a&gt;。对于新发卡的客户，只要批卡60天之内指定商户类型交易满99元，就可以获得一次9分享兑的功能，非常棒。
-&lt;/p&gt;
-
-&lt;h1&gt;个人用卡经历&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  2010年12月5日，参加研究生“一二·九”合唱比赛，百无聊赖之中看大放哥玩iPhone的游戏。从玩的游戏聊到了购买App，放哥说App Store不支持银联支付，必须要有VISA或者MasterCard的账户，办个校友卡是最方便的。博士办的话是金卡，额度也很高，有10k。当时我虽然还没入手苹果的设备，但觉得有备无患，先去办一张试试。2011年1月的某天，去同方部填了申请表，过两天上网查，发现信用卡申请竟然被建行拒绝了！原因是在2009年5月，央行、银监会等机构发布的&lt;a href=&quot;http://www.gov.cn/gongbao/content/2009/content_1365917.htm&quot; target=&quot;_blank&quot;&gt;关于加强银行卡安全管理预防和打击银行卡犯罪的通知&lt;/a&gt;。通知中明确提出“谨慎发展无稳定工作、收入的客户群体，从严授信”。其实本科刚入学之后的一段时间（2006~2008年）信用卡办理还是很宽松的，经常碰到上门推销信用卡的，但央行规定一出，银行立即收紧了信用卡的办卡渠道，于是我的人生首次申请就悲剧了。
-&lt;/p&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  2011年4月某天，去紫荆吃饭的时候发现一层有两个哥们支个台子，走近一看正好是办校友卡的。真实踏破铁鞋无觅处，得来全不费功夫，赶快填表复印身份证，果然没过两周就下卡了。人生首卡，建行清华校友卡，额度10k，应该说非常棒了。有了这张卡以卡办卡就很容易了，2011年5月又到中行申请了国航联名卡，印象中过了好久中行才来电话征信，下卡额度8k，也还不错了。2014年8月申请提额，额度已经涨到13k了。中行是出名的铁公鸡，对于一个在读的学生来说，13k的额度已经相当厚道了。另外还有一个只刷过一次的卡，就是2013年6月中行推出只有VISA通道的全币种芯片卡，刷卡统一以人民币结算，而且终身免年费。小羊毛是开卡后第一笔交易满99送50元话费，果断在去美国的时候薅到。
-&lt;/p&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  这么算下来，中信i白应该是我的第四卡了，虽然额度并不高，但好歹也是白金卡（虽然是伪白金），首卡金卡，二卡三卡普卡，四卡伪白金，向大白金稳步迈进。
-&lt;/p&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  2014年12月14日更新：蓝翼总结的&lt;a href=&quot;http://jy.smzdm.com/detail/34435&quot; target=&quot;_blank&quot;&gt;2014年信用卡申请全攻略：2014年下半年回顾&lt;/a&gt;中，把i白推荐为永恒的“一卡走天下”最优选择。
-&lt;/p&gt;
-</description>
-				<pubDate>Tue, 30 Sep 2014 00:00:00 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2014/09/30/credit-card</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2014/09/30/credit-card</guid>
-			</item>
-		
-			<item>
-				<title>昆明之行</title>
-				<description>&lt;p class=&quot;paragraph&quot;&gt;
-  终于获得一次目的地不是通辽而且和863项目无关的出差机会，目的地是美丽的春城昆明。在此之前我在国内到过的最西的地方是2007年夏天大一暑期实践去的湖北宜昌。
-&lt;/p&gt;
-
-&lt;h1&gt;启程&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  2014年9月12日早上9点55从东主楼出发，11点20到达T3。国航北京出发的航班值机是在航班起飞前36小时，所以直接在网上值机选座。到T3后自助打印登机牌的机器不好用，最好还是到J区人工柜台排队值机。好在T3中午人并不多，很顺利地拿到登机牌过安检。今天航班的登机口是C32，算是绝佳的位置了，紧挨着T3C的安检，过了安检几乎不用走路（可以参考 &lt;a href=&quot;http://tommyjiang.github.com/2014/08/27/CA-information#T3 departure&quot; target=&quot;_blank&quot;&gt;T3航站楼出发流程&lt;/a&gt;）。乐极生悲，虽然登机口位置不错，但舱门关闭之后被告知重庆、昆明方向交通管制，起飞时间待定。最后到达昆明晚了2小时9分钟。可惜当时申请中信i白金被拒了，不然就可以薅到1000块的大羊腿了（中信延误险以落地时间为准，具体可参考 &lt;a href=&quot;http://cards.ecitic.com/tc/flight.htm&quot; target=&quot;_blank&quot;&gt;中信银行 航班延误保险条款及细则&lt;/a&gt;）。
-&lt;/p&gt;
-
-&lt;h1&gt;春城第一印象&lt;/h1&gt;
-&lt;p class=&quot;paragraph&quot;&gt;
-  飞行过程还算平稳，最后悔的是没找空姐要个毛毯，只能忍受飞机上空调的低温了。迷迷糊糊睡了2个多小时之后，下午5点39分，终于平安抵达了春城昆明。昆明的平均海拔有1900米，长水机场的海拔则有2100米，在长水机场降落时，可以看到四周的小山。下飞机后坐空港快线2号线，可以直达目的地泰丽国际酒店。云南不愧是旅游胜地，在空港快线的车上还有一位小妹介绍云南和昆明可以游玩的地方，同时解答车上乘客的各种问题。进市区之后一个明显的感觉是大街上的电动车和摩托车非常多。到酒店之后报到、入住，晚餐吃的自助，在菜品中还发现了莲藕排骨汤，不过这藕是脆的，和北京的一样，和香糯的湖北藕相比可差远了。
-&lt;/p&gt; 
-</description>
-				<pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2014/09/12/Kunming-travel</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2014/09/12/Kunming-travel</guid>
 			</item>
 		
 	</channel>

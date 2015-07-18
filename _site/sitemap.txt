@@ -8,7 +8,10 @@ http://tommyjiang.github.com/sitemap.txt
 http://tommyjiang.github.com/timeline
 http://tommyjiang.github.com/page2/
 http://tommyjiang.github.com/page3/
+http://tommyjiang.github.com/page4/
 
+http://tommyjiang.github.com/2015/07/17/2015-07-17-test-echarts
+http://tommyjiang.github.com/2015/07/09/graduation-party
 http://tommyjiang.github.com/2015/07/03/driver-license-renew
 http://tommyjiang.github.com/2015/06/19/Ubuntu-Emacs-Chinese-English-fonts
 http://tommyjiang.github.com/2015/06/10/collect-resources
