@@ -72,14 +72,10 @@ ol {
   text-align: justify;
 }
 
-/* h1~h5 Indent Tommy */
+/* h3~h5 Indent Tommy */
 h1, h2, h3, h4, h5 {
-  text-indent: 32px; /* paragraph 16px = 1em */
-}
-
-/* 博文索引页面博文目录不缩进 */
-h2.title {
-  text-indent: 0px;
+  text-indent: 0px; /* paragraph 16px = 1em */
+  font-weight: bold;
 }
 
 /* inline pygments Tommy */

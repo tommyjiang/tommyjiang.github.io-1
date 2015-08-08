@@ -14,21 +14,21 @@
 
 &lt;p&gt;前提条件：iPhone 需要越狱，Mac 上需要安装 iTunes 和同步助手（或其他同类软件）。&lt;/p&gt;
 
-&lt;h1 id=&quot;iphone-qq音乐中-mp3-文件的批量导出&quot;&gt;iPhone QQ音乐中 mp3 文件的批量导出&lt;/h1&gt;
+&lt;h3 id=&quot;iphone-qq音乐中-mp3-文件的批量导出&quot;&gt;iPhone QQ音乐中 mp3 文件的批量导出&lt;/h3&gt;
 
 &lt;p&gt;iPhone QQ音乐中的 mp3 文件并不是存储在程序对应的 Documents 文件夹下面，而是在如下路径中：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;/var/mobile/Containers/Data/Application/编号/Documents/iMusic/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;以上路径中的“编号”每个 iPhone 都不一样，可以用如下方法查询到该编号：利用 Cydia 在越狱后的 iPhone 上安装 iFile，查询不同编号程序的文档大小，一般来说，由于QQ音乐中的 mp3 文件较多，因此文档大小一般很大，可以利用文档大小这个特征查询QQ音乐对应的编号。得到该编号后，就可以在同步助手中把这个目录下的所有子文件夹和其中的 mp3 文件导出到 Mac 了。&lt;/p&gt;
+&lt;p&gt;以上路径中的“编号”每个 iPhone 都不一样，例如我的是以 02F6D75F 开头的一系列字符，可以用如下方法查询到该编号：利用 Cydia 在越狱后的 iPhone 上安装 iFile，查询不同编号程序的文档大小，一般来说，由于QQ音乐中的 mp3 文件较多，因此文档大小一般很大，可以利用文档大小这个特征查询QQ音乐对应的编号。得到该编号后，就可以在同步助手中把这个目录下的所有子文件夹和其中的 mp3 文件导出到 Mac 了。&lt;/p&gt;
 
-&lt;h1 id=&quot;已导出-mp3-文件批量更改后缀名&quot;&gt;已导出 mp3 文件批量更改后缀名&lt;/h1&gt;
+&lt;h3 id=&quot;已导出-mp3-文件批量更改后缀名&quot;&gt;已导出 mp3 文件批量更改后缀名&lt;/h3&gt;
 
 &lt;p&gt;上一步导出的是 iMusic 整个文件夹，其中包括很多子文件夹，每个子文件夹内又有一些后缀名为 tm0 的文件，其实这些就是 QQ音乐里的 mp3 文件，我们需要批量将这个文件夹下所有文件的后缀名 tm0 改为 mp3。可以在终端中输入如下命令将文件后缀名由 tm0 更改为 mp3：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;find . -name &lt;span class=&quot;s2&quot;&gt;&amp;quot;*.tm0&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;sed &lt;span class=&quot;s1&quot;&gt;&amp;#39;s/.tm0//&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;xargs -n1 -I &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; mv &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;.tm0 &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;.mp3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;注意需要先进入导出的 iMusic 文件夹对应的目录后，再输入以上命令。&lt;/p&gt;
 
-&lt;h1 id=&quot;找到对应的歌曲&quot;&gt;找到对应的歌曲&lt;/h1&gt;
+&lt;h3 id=&quot;找到对应的歌曲&quot;&gt;找到对应的歌曲&lt;/h3&gt;
 
 &lt;p&gt;把导出的 iMusic 文件夹中的后缀名为 tm0 文件的后缀名全部更改为 mp3 后，还差最后一步，也就是在所有 mp3 文件中找到某一首歌。这步不推荐使用 iTunes，因为 iTunes 会把所有歌曲复制一份到程序的存储目录。可以选择 &lt;a href=&quot;http://coppertino.com/vox/mac&quot;&gt;Vox&lt;/a&gt; 添加 iMusic 文件夹中的所有歌曲到一个播放列表，再在播放列表中找到对应的歌名，然后右键选择“Show in Finder”即可定位到具体的 mp3 文件。&lt;/p&gt;
 </description>
@@ -281,17 +281,17 @@
 				<title>2015年毕业晚会观后感</title>
 				<description>&lt;p&gt;犹记得5年前本科毕业时的毕业晚会，中途就离场了。5年后，即将博士毕业了，再来看毕业晚会，让人唏嘘不已。&lt;/p&gt;
 
-&lt;h1 id=&quot;节目单&quot;&gt;节目单&lt;/h1&gt;
+&lt;h3 id=&quot;节目单&quot;&gt;节目单&lt;/h3&gt;
 
 &lt;p&gt;整场晚会的节目单如下：&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://tommyjiang.github.com/image/2015-07/2015-Graduation-Party.png&quot; width=&quot;600px&quot;&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;个人观后感&quot;&gt;个人观后感&lt;/h1&gt;
+&lt;h3 id=&quot;个人观后感&quot;&gt;个人观后感&lt;/h3&gt;
 
 &lt;p&gt;整场晚会印象最深刻的就是两个以毕业为主题的视频节目。&lt;/p&gt;
 
-&lt;h2 id=&quot;起点&quot;&gt;起点&lt;/h2&gt;
+&lt;h4 id=&quot;起点&quot;&gt;起点&lt;/h4&gt;
 
 &lt;p&gt;2015年清华原创毕业歌曲，视频见&lt;a href=&quot;http://v.youku.com/v_show/id_XMTI4MjE1OTY1Mg==.html?from=s1.8-1-1.2&quot;&gt;这里&lt;/a&gt;。整首歌用了大段的 Rap，精彩的歌词配上手绘的背景足以唤起每个清华毕业生对母校的留恋。&lt;/p&gt;
 
@@ -345,7 +345,7 @@
 &lt;p&gt;(新起点 我们 和清华一起出发)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;闪光的记忆&quot;&gt;闪光的记忆&lt;/h2&gt;
+&lt;h4 id=&quot;闪光的记忆&quot;&gt;闪光的记忆&lt;/h4&gt;
 
 &lt;p&gt;应该是从2012年起，每年的毕业晚会都有一个用《闪光的记忆》这首歌作为背景音乐的视频，今年当然也不例外，视频见&lt;a href=&quot;http://v.qq.com/iframe/player.html?vid=h01594giz7r&amp;amp;width=670&amp;amp;height=502.5&amp;amp;auto=0&quot;&gt;这里&lt;/a&gt;。印象最深的是视频的最后一段——清华园普通一天各个整点时刻的场景：&lt;/p&gt;
 
@@ -411,19 +411,19 @@
 				<title>外地驾驶证到期在北京换领新驾驶证流程总结</title>
 				<description>&lt;p&gt;09年十一考的驾照，虽然没怎么开过车，但马上到6年，也要换新的驾照了，正好也把家里的驾照换成北京的，换驾照流程记录如下。&lt;/p&gt;
 
-&lt;h1 id=&quot;医院体检&quot;&gt;医院体检&lt;/h1&gt;
+&lt;h3 id=&quot;医院体检&quot;&gt;医院体检&lt;/h3&gt;
 
-&lt;h2 id=&quot;第一次体检&quot;&gt;第一次体检&lt;/h2&gt;
+&lt;h4 id=&quot;第一次体检&quot;&gt;第一次体检&lt;/h4&gt;
 
 &lt;p&gt;换驾照需要提供《机动车驾驶人身体条件证明》，北京市承担机动车驾驶员体检工作的医疗机构名单可以参考&lt;a href=&quot;http://www.bjtjzx.com/zxtj/zx04.asp&quot;&gt;这里&lt;/a&gt;。我选的是离学校最近的海淀医院，周一至周五中午1点到下午3点半可以进行司机体检，在2楼202房间，费用10元，只需要带身份证和驾驶证即可，不需要提前打印《身体条件证明》那张表，体检完医院会打印一份。&lt;/p&gt;
 
 &lt;p&gt;第一次去海淀医院体检，负责体检的医生让我把视力表4.9的那一排全部念一遍，我发现完全看不清，无奈之下只好回学校配副眼镜，左右眼都是50度，戴上之后5.0都能看的很清楚了。&lt;/p&gt;
 
-&lt;h2 id=&quot;第二次体检&quot;&gt;第二次体检&lt;/h2&gt;
+&lt;h4 id=&quot;第二次体检&quot;&gt;第二次体检&lt;/h4&gt;
 
 &lt;p&gt;2015年7月8日，戴着新配的50度眼镜，第二次到海淀医院体检，拿着收据直接到体检室，顺利通过，拿到了医院提供的《机动车驾驶人身体条件证明》。&lt;/p&gt;
 
-&lt;h1 id=&quot;车管局办手续&quot;&gt;车管局办手续&lt;/h1&gt;
+&lt;h3 id=&quot;车管局办手续&quot;&gt;车管局办手续&lt;/h3&gt;
 
 &lt;p&gt;根据北京市车管所网站的信息，到车管局办理外地驾照换领北京驾照手续需要&lt;a href=&quot;http://www.bjjtgl.gov.cn/jgj/jsrgl/205275/index.html&quot;&gt;以下材料&lt;/a&gt;：&lt;/p&gt;
 
@@ -448,14 +448,14 @@
 				<title>Ubuntu 系统 Emacs 中英文字体设置</title>
 				<description>&lt;p&gt;终于要毕业了，离开前把2010年3月买的华硕老电脑重装了，没再装 Win，选择的是 Ubuntu 15.04系统，装完才发现不是 LTS (Long Term Support)，先凑合用吧。计划把 RMBP 上的配置全部迁移过来，其中 Emacs 字体部分折腾了一上午，配置过程记录如下备案。&lt;/p&gt;
 
-&lt;h1 id=&quot;os-x-系统-emacs-字体设置&quot;&gt;OS X 系统 Emacs 字体设置&lt;/h1&gt;
+&lt;h3 id=&quot;os-x-系统-emacs-字体设置&quot;&gt;OS X 系统 Emacs 字体设置&lt;/h3&gt;
 
 &lt;p&gt;目前我个人 Emacs 的字体方案是英文 Inconsolata + 中文 黑体-简（Heiti SC）。OS X 系统下的配置相对简单，由于已经自带了黑体-简字体，因此只需要安装 Inconsolata 字体。Emacs 默认使用的就是黑体-简字体，因此只需要在 Emacs 的配置文件中加入如下配置语句即可。&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;set-face-attribute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;&amp;#39;default&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:font&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Inconsolata 24&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;由于 Inconsolata 字体只包括英文，因此中文仍然用 Heiti SC 字体显示。&lt;/p&gt;
 
-&lt;h1 id=&quot;ubuntu-系统-emacs-字体设置&quot;&gt;Ubuntu 系统 Emacs 字体设置&lt;/h1&gt;
+&lt;h4 id=&quot;ubuntu-系统-emacs-字体设置&quot;&gt;Ubuntu 系统 Emacs 字体设置&lt;/h4&gt;
 
 &lt;p&gt;Ubuntu 下的配置要麻烦一些。首先要安装 Inconsolata 和 Heiti SC 两种字体，用 GUI 就可以直接安装。然后在 Emacs 的配置文件中加入如下配置语句。&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;c1&quot;&gt;; 设置英文字体&lt;/span&gt;
@@ -466,7 +466,7 @@
   &lt;span class=&quot;nv&quot;&gt;charset&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;font-spec&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:family&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Heiti SC&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;中英文混排等宽效果&quot;&gt;中英文混排等宽效果&lt;/h1&gt;
+&lt;h3 id=&quot;中英文混排等宽效果&quot;&gt;中英文混排等宽效果&lt;/h3&gt;
 
 &lt;p&gt;英文 Inconsolata + 中文 Heiti SC 的字体搭配可以在 Emacs 中实现中英文混排等宽的效果，但必须将字号设置为12，18或者24号，可能与两种字体的比例有关。笔记本的屏幕下一般18号字体就足够了，如果外接显示器或者台式机，可以选择24号字体。&lt;/p&gt;
 </description>
@@ -479,34 +479,34 @@
 				<title>资料来源及工具总结</title>
 				<description>&lt;p&gt;最近想搜集一些关于竖琴的音频和视频资料，在收集的过程中联想到，现在自己能做到的事，其实都是之前一点一滴不断积累的结果，包括资料的来源以及合适的播放器。有一些是提前想到的，有一些算是无心插柳吧，简单总结下。&lt;/p&gt;
 
-&lt;h1 id=&quot;资料来源&quot;&gt;资料来源&lt;/h1&gt;
+&lt;h3 id=&quot;资料来源&quot;&gt;资料来源&lt;/h3&gt;
 
 &lt;p&gt;资料主要从 PT 网站、电驴资源网站和视频网站获取。&lt;/p&gt;
 
-&lt;h2 id=&quot;pt-网站&quot;&gt;PT 网站&lt;/h2&gt;
+&lt;h4 id=&quot;pt-网站&quot;&gt;PT 网站&lt;/h4&gt;
 
 &lt;p&gt;PT 网站其实之前已经在博客中介绍过，详见&lt;a href=&quot;http://tommyjiang.github.com/2014/08/16/pt-share/&quot;&gt;我与 PT&lt;/a&gt;。那篇文章中提到的公网3大 PT 中目前只有 &lt;a href=&quot;https://totheglory.im&quot;&gt;TTG&lt;/a&gt; 还能正常访问，而六维空间由于主要面向教育网，也只能利用在学校的最后这段时间下载了。其实早在2011年9月我就加入 TTG 了，虽然当时离毕业还很遥远，但为了离校后还能有高清看，早早入了 PT 的坑，可以说忧患意识十足，想起了单位师妹的一句话：路都是自己铺出来的。注意，不是走，而是铺，其实多想一步，结果会很不一样。&lt;/p&gt;
 
-&lt;h2 id=&quot;资源网站&quot;&gt;资源网站&lt;/h2&gt;
+&lt;h4 id=&quot;资源网站&quot;&gt;资源网站&lt;/h4&gt;
 
 &lt;p&gt;主要是从 &lt;a href=&quot;www.verycd.com&quot;&gt;VeryCD&lt;/a&gt; 网站下载，包括无损音乐(ape, flac)和 MP3 资源。根据&lt;a href=&quot;http://baike.baidu.com/link?url=IVVqysXpu0FmjYexEyggr8rTkCLeyVK6QVAeOdrNTsQW8O0THulvKrTB4dcH8bypIMWCw7txXVcQviA8pMDTjq#1&quot;&gt;百度百科&lt;/a&gt;的介绍：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;2012年8月30日之后，VeryCD 网站上所有资源的 eD2k 下载链接均被完全隐藏。未登录或新注册登录的用户无权查看所有链接，仅部分高等级的用户（“铜光盘”或以上）登录后可以正常浏览到所有资源的 eD2k 链接。
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;还记得刚上大二的时候每天早上6点多起来在宿舍下载《百家讲坛》的视频，当时经常在资源下回帖感谢发布者，而且由于注册时间早，所以成了“铜光盘”，所以现在仍然可以正常下载 VeryCD 的资源。此外，2012年清华网费改革，将网费由原来每月1.5元不限流量改为每月20G免费，超出部分阶梯计费。像我这样的下载狂，如果还像之前那样下载，每月不知道会给网络中心恭喜多少收入。还好道高一尺，魔高一丈，详细的方法就不公开了，以免被网络中心发现贻害师弟师妹。&lt;/p&gt;
 
-&lt;h2 id=&quot;视频网站&quot;&gt;视频网站&lt;/h2&gt;
+&lt;h4 id=&quot;视频网站&quot;&gt;视频网站&lt;/h4&gt;
 
 &lt;p&gt;主要包括&lt;a href=&quot;www.youku.com&quot;&gt;优酷&lt;/a&gt;和 &lt;a href=&quot;www.youtube.com&quot;&gt;YouTube&lt;/a&gt;。其中优酷的视频可以利用&lt;a href=&quot;http://www.flvcd.com/&quot;&gt;硕鼠&lt;/a&gt;下载，不过这个软件最近更新了，在下载之前也要看优酷的广告，很烦。YouTube 的视频可以利用 &lt;a href=&quot;http://www.clipconverter.cc/&quot;&gt;ClipConverter&lt;/a&gt; 网站将 YouTube 视频地址解析之后下载，需要利用科学上网工具，我个人用的是&lt;a href=&quot;http://www.banwagong.me/&quot;&gt;搬瓦工 VPS&lt;/a&gt;，每年只要 USD 3.99，每月流量 100G，很不错。&lt;/p&gt;
 
-&lt;h1 id=&quot;音频播放器&quot;&gt;音频播放器&lt;/h1&gt;
+&lt;h3 id=&quot;音频播放器&quot;&gt;音频播放器&lt;/h3&gt;
 
 &lt;p&gt;OS X 系统的音频播放器主要包括 iTunes 和 Vox，其中 iTunes 播放 MPC，Vox 播放无损格式(ape, flac)等。&lt;/p&gt;
 
-&lt;h2 id=&quot;itunes&quot;&gt;iTunes&lt;/h2&gt;
+&lt;h4 id=&quot;itunes&quot;&gt;iTunes&lt;/h4&gt;
 
 &lt;p&gt;iTunes 导入音乐后会在自己的资料文件夹中复制一份音乐文件，因此可以将原始的音乐文件删除。同时可以利用 iTunes 中的风格作为标签，区分不同类型的音乐。&lt;/p&gt;
 
-&lt;h2 id=&quot;vox&quot;&gt;Vox&lt;/h2&gt;
+&lt;h4 id=&quot;vox&quot;&gt;Vox&lt;/h4&gt;
 
 &lt;p&gt;Vox 播放无损音乐时需要 cue 文件，而 Win 系统下的编码一般是 GB-2312，而 OS X 系统中的编码是 UTF-8，因此直接打开 Win 下编码的 cue 文件会出现乱码，需要利用 &lt;a href=&quot;https://itunes.apple.com/cn/app/eztext/id421342426?mt=12&quot;&gt;ezText&lt;/a&gt; 应用转码才能正常打开。&lt;/p&gt;
 </description>
@@ -617,27 +617,27 @@
 
 &lt;p&gt;拿到RMBP自然要先折腾一番，为了以后更新换代方便，将折腾的过程记录如下。&lt;/p&gt;
 
-&lt;h1 id=&quot;geek工具&quot;&gt;Geek工具&lt;/h1&gt;
+&lt;h3 id=&quot;geek工具&quot;&gt;Geek工具&lt;/h3&gt;
 
 &lt;p&gt;RMBP现在应该算码农的标配了，炫丽的高清屏写起代码真是倍儿爽。虽然学的是电气，但咱也有一颗Geek的心。本节包括Geek的主要工具。&lt;/p&gt;
 
-&lt;h2 id=&quot;文本编辑器&quot;&gt;文本编辑器&lt;/h2&gt;
+&lt;h4 id=&quot;文本编辑器&quot;&gt;文本编辑器&lt;/h4&gt;
 
-&lt;h3 id=&quot;vim&quot;&gt;Vim&lt;/h3&gt;
+&lt;h5 id=&quot;vim&quot;&gt;Vim&lt;/h5&gt;
 
 &lt;p&gt;Vim被誉为“编辑器之神”，相较于Emacs，其最大的好处是启动快。我选择的是MacVim，可以直接从&lt;a href=&quot;http://www.vim.org/download.php&quot; target=&quot;_blank&quot;&gt;Vim主页的下载页面&lt;/a&gt;下载dmg文件后安装。&lt;/p&gt;
 
 &lt;p&gt;Vim的配置工作相对简单，只需要将配置文件&lt;code&gt;.vimrc&lt;/code&gt;放到根目录~下就可以了。我个人用的是&lt;a href=&quot;http://github.com/tomasr/molokai&quot;&gt;molokai&lt;/a&gt;主题，下载后需要放到Vim对应的文件夹中，具体路径为：/MacVim.app/Contents/Resources/vim/runtime/colors.&lt;/p&gt;
 
-&lt;h3 id=&quot;emacs&quot;&gt;Emacs&lt;/h3&gt;
+&lt;h5 id=&quot;emacs&quot;&gt;Emacs&lt;/h5&gt;
 
 &lt;p&gt;与Vim相比，Emacs被誉为“神之编辑器”，也有人调侃Emacs是伪装成操作系统的编辑器。Emacs需要配合各种&lt;code&gt;package&lt;/code&gt;以实现各种强大的功能。我个人主要用的是Org-mode，用来做简单的GTD管理和日常记录。&lt;/p&gt;
 
 &lt;p&gt;Emacs的配置比Vim要复杂一些。首先是下载Emacs程序，不想自己编译的话可以直接选择&lt;a href=&quot;http://emacsformacosx.com/&quot;&gt;Emacs for Mac OS X&lt;/a&gt;，之后需要将配置文件放到&lt;code&gt;~/.emacs.d&lt;/code&gt;中。理论上利用&lt;code&gt;package.el&lt;/code&gt;提供的包管理功能可以自动下载需要的&lt;code&gt;package&lt;/code&gt;，不过现在我的配置文件中还没有这么智能，需要到 Emacs 中手动下载各个&lt;code&gt;package&lt;/code&gt;，比较麻烦。各个&lt;code&gt;package&lt;/code&gt;的配置文件可以参考之前的配置文件稍加修改。&lt;/p&gt;
 
-&lt;h2 id=&quot;排版工具&quot;&gt;排版工具&lt;/h2&gt;
+&lt;h4 id=&quot;排版工具&quot;&gt;排版工具&lt;/h4&gt;
 
-&lt;h3 id=&quot;tex&quot;&gt;TeX&lt;/h3&gt;
+&lt;h5 id=&quot;tex&quot;&gt;TeX&lt;/h5&gt;
 
 &lt;p&gt;TeX是学术界通用的排版工具，而且Mac上的Microsoft Office可以用惨不忍睹来形容。我选择的是&lt;a href=&quot;https://tug.org/mactex/&quot;&gt;MaCTeX 发行版&lt;/a&gt;。TeX的编辑工具推荐以下两个：&lt;/p&gt;
 
@@ -646,25 +646,25 @@
 &lt;li&gt;&lt;p&gt;Emacs + AUCTeX：“神之编辑器”出现了！利用GNU自己的AUCTeX 可以方便地在Emacs中编辑TeX文档，再加上Skim即可实现TeX &amp;lt;-&amp;gt; PDF的双向搜索功能，唯一的问题是学习成本较高。&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;blog相关&quot;&gt;Blog相关&lt;/h2&gt;
+&lt;h4 id=&quot;blog相关&quot;&gt;Blog相关&lt;/h4&gt;
 
-&lt;h3 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h3&gt;
+&lt;h5 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h5&gt;
 
 &lt;p&gt;Jekyll是基于Ruby的静态博客生成工具，利用Jekyll + Bootstrap + GitHub Pages可以方便快捷地生成自己的博客网站（例如本网站）。Mac是自带Ruby的，因此可以直接利用gem安装最新stable版的Jekyll：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo gem install jekyll
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;redcarpet&quot;&gt;redcarpet&lt;/h3&gt;
+&lt;h5 id=&quot;redcarpet&quot;&gt;redcarpet&lt;/h5&gt;
 
 &lt;p&gt;由于没找到Pygments支持行内代码高亮的方法，现在的解决方案是利用redcarpet + Markdown实现，redcarpet同样可以利用gem安装：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo gem install redcarpet
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;其他工具&quot;&gt;其他工具&lt;/h2&gt;
+&lt;h4 id=&quot;其他工具&quot;&gt;其他工具&lt;/h4&gt;
 
-&lt;h3 id=&quot;homebrew&quot;&gt;Homebrew&lt;/h3&gt;
+&lt;h5 id=&quot;homebrew&quot;&gt;Homebrew&lt;/h5&gt;
 
 &lt;p&gt;用过Ubuntu的应该都能体会&lt;code&gt;apt-get&lt;/code&gt;的好处，Mac上也有类似的包管理程序，主要是Homebrew和Macports。Homebrew的安装方法可以参考&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew主页&lt;/a&gt;。&lt;/p&gt;
 
-&lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
+&lt;h5 id=&quot;git&quot;&gt;Git&lt;/h5&gt;
 
 &lt;p&gt;Git是Linux之父Linus Torvalds创作的分布式版本控制系统，结合GitHub可以轻松实现版本控制。Git可以利用Homebrew直接安装：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;brew install git
@@ -680,12 +680,12 @@
   i白金批卡2个月，赶上航班延误两小时，终于可以薅中信的羊毛了。
 &lt;/p&gt;
 
-&lt;h1&gt;航班延误&lt;/h1&gt;
+&lt;h3&gt;航班延误&lt;/h3&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
   2014年11月20日，计划乘坐东航MU2884航班由通辽飞往北京。计划起飞时间为10:20，9点多到机场，发现飞机还没来。过一会机场广播说由于通辽机场大雾，MU2884的前序航班MU2883备降哈尔滨。无奈下返回酒店，心理盘算着如果能晚两小时以上就完美了。11点15接到MU2883由备降的哈尔滨机场起飞来通辽机场，12点从酒店吃完饭再次前往通辽。12点35登机，12点45起飞，可能由于通辽有雾，北京有霾，原本60分钟的航程用了80分钟，14点05分才降落在首都机场。由于中信的延误是以落地时间为准的，延误2小时20分钟，超过了2小时，因此可以索赔。
 &lt;/p&gt;
 
-&lt;h1&gt;索赔所需材料&lt;/h1&gt;
+&lt;h3&gt;索赔所需材料&lt;/h3&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
   回校后立即着手开始准备索赔材料。根据&lt;a href=&quot;http://cards.ecitic.com/tc/flight.htm&quot; target=&quot;_blank&quot;&gt;中信银行航班延误保险条款及细则&lt;/a&gt;，需要准备的索赔材料有：
 &lt;/p&gt;
@@ -727,7 +727,7 @@
   &lt;li&gt;大深圳的服务态度没得说。中间和中国人保财险深圳分公司通过几次电话，对方都很耐心地询问和解释，最后一次说明是他们系统升级的原因后，还及时地表达了歉意。我在去香港的半年里多次到深圳，对深圳感觉很不错，这是一座充满活力的城市。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1&gt;国航新机型波音747-8&lt;/h1&gt;
+&lt;h3&gt;国航新机型波音747-8&lt;/h3&gt;
 &lt;p class=&quot;paragraph&quot;&gt;
   国航新机型波音747-8，目前已有两架入列国航梯队，编号分别是B-2485和B-2486，二者执飞的航班可以参考&lt;a href=&quot;http://www.flightradar24.com/reg/b-2485&quot; target=&quot;_blank&quot;&gt;国航B-2485执飞航班&lt;/a&gt;和&lt;a href=&quot;http://www.flightradar24.com/reg/b-2486&quot; target=&quot;_blank&quot;&gt;国航B-2486执飞航班&lt;/a&gt;。在国内由于一些特殊原因，以上链接可能没法直接访问，请考虑利用VPN等其他方式。目前（2014年11月）二者执飞航班为
 &lt;/p&gt;
@@ -768,7 +768,7 @@
   转眼间又到11月了，去年这时候我起身赴港，一周年之际，写篇博客纪念我的香港生活，以及我与香港的不解之缘。
 &lt;/p&gt;
 
-&lt;h1&gt;缘起&lt;/h1&gt;
+&lt;h3&gt;缘起&lt;/h3&gt;
 
 &lt;blockquote&gt;
 小河弯弯向南流 流到香江去看一看 &lt;br /&gt;
@@ -797,19 +797,19 @@
   转眼到了1997年，香港回归的年份，全国都沉浸在喜悦的氛围中。作为祖国的花朵，自然会被拉去参加与香港回归相关的事情。我自己就参加了香港回归知识竞赛和香港回归舞蹈表演，都是作为秦皇岛铁路小学参加北京铁路局天津铁路分局举办的活动。先说知识竞赛吧，记得是每人发一本书，上面画一些重点，死记硬背之后去参赛，当时我过年都还在背题。记了一大堆人名，安子介、霍英东、邵逸夫……最后考试的时候有道题印象尤深，世界船王是（），我填的包玉刚，答案是香港的包玉刚。翻开发的书一看，确实是香港的包玉刚……这不是香港回归竞赛么，不是香港的还能是台湾的么……舞蹈表演听起来比较奇幻，虽然现在体型发胖，没法起舞了。不过当时还排练了好久，而且我是扮演香港儿童，和大陆的儿童团聚，后面还有一群小白鸽。现在还有表演的照片在家里，就不传上来了。
 &lt;/p&gt;
 
-&lt;h1&gt;第一次抵港&lt;/h1&gt;
+&lt;h3&gt;第一次抵港&lt;/h3&gt;
 
 &lt;p class=&quot;paragraph&quot;&gt;
   2012年6月底，赴佛山参加博士生实践。2012年6月30日，从福田口岸过关，来到了教科书中提到的万恶的资本主义社会，世界三大金融中心之一的香港。当晚从第一城坐到旺角东，然后步行到旺角，再经油麻地到尖沙咀，深切地感受了香港闹市区的繁华和嘈杂。第二天上午又到港岛的中环苹果店买了个Thunderbolt和网口的转接头，品尝了米其林一星的添好运，还到维多利亚公园围观了港人的七一大游行。下午就乘车由福田口岸过关返回佛山，结束了短暂的香港两日游。
 &lt;/p&gt;
 
-&lt;h1&gt;半年的香港交换学习&lt;/h1&gt;
+&lt;h3&gt;半年的香港交换学习&lt;/h3&gt;
 
 &lt;p class=&quot;paragraph&quot;&gt;
   2013年11月10日再次由福田口岸过关到达香港，开始半年的香港交换学习生活。仍然是住在小哥家，不过这次终于不是睡在客厅了，而是搬进了卧室。香港的天气并没有想象中的那么难熬，不过3月份连日阴天不见阳光确实让我抑郁了一阵。在港的最大收获就是在小哥的带领下，试图学了学做饭，虽然最后手艺仍不理想，但好歹是饿不死了。另外还去广东的广州肇庆以及潮汕分别转了一圈，深圳去的就太多了。还记得和瓜瓜、胖哥哥和岩峰在深圳happy那天回港后赶上香港20年来最早的黑雨警告，也算一个特别的回忆吧。
 &lt;/p&gt;
 
-&lt;h1&gt;结语&lt;/h1&gt;
+&lt;h3&gt;结语&lt;/h3&gt;
 
 &lt;p class=&quot;paragraph&quot;&gt;
   转眼离开香港也有半年的时间了。这一段时间香港并不太平。人大发表的《“一国两制”在香港特别行政区的实践》，以及后来关于普选的争论和占中事件，都让香港经常出现在新闻中。下面是非官方的香港市歌《狮子山下》，以此祝愿金紫荆永远盛开。

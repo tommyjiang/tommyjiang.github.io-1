@@ -115,7 +115,7 @@
   因为科研的需要，最近钻研了一下Python中调用Matlab进行混合编程的方法，记录如下。
 </p>
 
-<h1>Python中调用Matlab的方法</h1>
+<h3>Python中调用Matlab的方法</h3>
 <p class="paragraph">
   我用的仿真软件是Power Factory（简称PF），在机电暂态仿真方面非常好用。当然，仿真软件的一个软肋是添加自己需要的功能比较麻烦。我的实际需求是在仿真时进行优化，PF自身无能为力。好在最近PF加入了调用Python脚本的功能，而Python又是典型的<a href="https://www.python.org/doc/essays/omg-darpa-mcc-position/" target="_blank">胶水语言</a>，所以利用Python调用Matlab进行优化即可。其实最简单的方法是不用Matlab，直接在Python中利用NumPy和SciPy等进行优化，但无奈最初的程序是用Matlab写的，只能采用PF<->Python<->Matlab的方法。
 </p>
@@ -154,18 +154,18 @@
   在Python中利用win32com.client中的方法，先尝试查询是否有正在运行的Matlab Server，若没有，则新建一个Matlab Server。下面Feval的用法可以参考<a href="http://www.mathworks.cn/help/matlab/ref/com.feval.html" target="_blank">Matlab官网Feval(COM)</a>的说明。简单来说，第一个参数是函数名，第二个参数是nargout即返回变量的个数，第三个参数我还没搞清楚，根据官网的说明，这个可以用于不同client间传递数据。最后面的参数就是函数的输入参数。
 </p>
 
-<h1>Matlab函数参数及返回值为矩阵时的处理</h1>
+<h3>Matlab函数参数及返回值为矩阵时的处理</h3>
 <p class="paragraph">
   上面一节的内容是比较基础的，在网上也都能查到。现在都讲究微创新，在别人的基础上加一些新的东西，例如本节内容。我查到的网上关于Python调用Matlab方法的资料中，调用的Matlab函数中的参数均为标量，返回值也为标量。本节主要讨论的是参数和返回值均为向量的情况。
 </p>
 
-<h2>Python传参给Matlab函数</h2>
+<h4>Python传参给Matlab函数</h4>
 
 <p class="paragraph">
   在Python中生成一个list对象，即可作为参数传递给Matlab。但该list传到Matlab中之后，并不是数值矩阵，而是cell矩阵，因此需要利用<span class="highlight" align="bottom"><code class="matlab"><span class="nf">cell2mat</span></code></span>函数，在Matlab中将传入的cell矩阵转化为数值矩阵。
 </p>
 
-<h2>Matlab返回值给Python</h2>
+<h4>Matlab返回值给Python</h4>
 
 <p class="paragraph">
   同样的，Matlab返回的矩阵在Python中并不是list类型。以我实际使用的函数为例，该函数在Matlab中返回的是一个10*1的矩阵。但是在Python中的类型为三维的tuple，需要用tuple[0][n][0](n为0到9的整数)才能获得其返回值。最好能将返回的三维tuple转换为一维的list，以方便后续的处理。

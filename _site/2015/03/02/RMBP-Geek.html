@@ -115,27 +115,27 @@
 
 <p>拿到RMBP自然要先折腾一番，为了以后更新换代方便，将折腾的过程记录如下。</p>
 
-<h1 id="geek工具">Geek工具</h1>
+<h3 id="geek工具">Geek工具</h3>
 
 <p>RMBP现在应该算码农的标配了，炫丽的高清屏写起代码真是倍儿爽。虽然学的是电气，但咱也有一颗Geek的心。本节包括Geek的主要工具。</p>
 
-<h2 id="文本编辑器">文本编辑器</h2>
+<h4 id="文本编辑器">文本编辑器</h4>
 
-<h3 id="vim">Vim</h3>
+<h5 id="vim">Vim</h5>
 
 <p>Vim被誉为“编辑器之神”，相较于Emacs，其最大的好处是启动快。我选择的是MacVim，可以直接从<a href="http://www.vim.org/download.php" target="_blank">Vim主页的下载页面</a>下载dmg文件后安装。</p>
 
 <p>Vim的配置工作相对简单，只需要将配置文件<code>.vimrc</code>放到根目录~下就可以了。我个人用的是<a href="http://github.com/tomasr/molokai">molokai</a>主题，下载后需要放到Vim对应的文件夹中，具体路径为：/MacVim.app/Contents/Resources/vim/runtime/colors.</p>
 
-<h3 id="emacs">Emacs</h3>
+<h5 id="emacs">Emacs</h5>
 
 <p>与Vim相比，Emacs被誉为“神之编辑器”，也有人调侃Emacs是伪装成操作系统的编辑器。Emacs需要配合各种<code>package</code>以实现各种强大的功能。我个人主要用的是Org-mode，用来做简单的GTD管理和日常记录。</p>
 
 <p>Emacs的配置比Vim要复杂一些。首先是下载Emacs程序，不想自己编译的话可以直接选择<a href="http://emacsformacosx.com/">Emacs for Mac OS X</a>，之后需要将配置文件放到<code>~/.emacs.d</code>中。理论上利用<code>package.el</code>提供的包管理功能可以自动下载需要的<code>package</code>，不过现在我的配置文件中还没有这么智能，需要到 Emacs 中手动下载各个<code>package</code>，比较麻烦。各个<code>package</code>的配置文件可以参考之前的配置文件稍加修改。</p>
 
-<h2 id="排版工具">排版工具</h2>
+<h4 id="排版工具">排版工具</h4>
 
-<h3 id="tex">TeX</h3>
+<h5 id="tex">TeX</h5>
 
 <p>TeX是学术界通用的排版工具，而且Mac上的Microsoft Office可以用惨不忍睹来形容。我选择的是<a href="https://tug.org/mactex/">MaCTeX 发行版</a>。TeX的编辑工具推荐以下两个：</p>
 
@@ -144,25 +144,25 @@
 <li><p>Emacs + AUCTeX：“神之编辑器”出现了！利用GNU自己的AUCTeX 可以方便地在Emacs中编辑TeX文档，再加上Skim即可实现TeX &lt;-&gt; PDF的双向搜索功能，唯一的问题是学习成本较高。</p></li>
 </ul>
 
-<h2 id="blog相关">Blog相关</h2>
+<h4 id="blog相关">Blog相关</h4>
 
-<h3 id="jekyll">Jekyll</h3>
+<h5 id="jekyll">Jekyll</h5>
 
 <p>Jekyll是基于Ruby的静态博客生成工具，利用Jekyll + Bootstrap + GitHub Pages可以方便快捷地生成自己的博客网站（例如本网站）。Mac是自带Ruby的，因此可以直接利用gem安装最新stable版的Jekyll：</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo gem install jekyll
 </code></pre></div>
-<h3 id="redcarpet">redcarpet</h3>
+<h5 id="redcarpet">redcarpet</h5>
 
 <p>由于没找到Pygments支持行内代码高亮的方法，现在的解决方案是利用redcarpet + Markdown实现，redcarpet同样可以利用gem安装：</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo gem install redcarpet
 </code></pre></div>
-<h2 id="其他工具">其他工具</h2>
+<h4 id="其他工具">其他工具</h4>
 
-<h3 id="homebrew">Homebrew</h3>
+<h5 id="homebrew">Homebrew</h5>
 
 <p>用过Ubuntu的应该都能体会<code>apt-get</code>的好处，Mac上也有类似的包管理程序，主要是Homebrew和Macports。Homebrew的安装方法可以参考<a href="http://brew.sh/">Homebrew主页</a>。</p>
 
-<h3 id="git">Git</h3>
+<h5 id="git">Git</h5>
 
 <p>Git是Linux之父Linus Torvalds创作的分布式版本控制系统，结合GitHub可以轻松实现版本控制。Git可以利用Homebrew直接安装：</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">brew install git

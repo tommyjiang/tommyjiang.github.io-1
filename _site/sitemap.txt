@@ -22,7 +22,6 @@ http://tommyjiang.github.com/2014/11/20/citic-card-delay-record
 http://tommyjiang.github.com/2014/11/10/Hong-Kong-anniversary
 http://tommyjiang.github.com/2014/10/31/python-matlab-hybrid
 http://tommyjiang.github.com/2014/09/30/credit-card
-http://tommyjiang.github.com/2014/09/12/Kunming-travel
 http://tommyjiang.github.com/2014/08/27/CA-information
 http://tommyjiang.github.com/2014/08/23/emacs-org-mode-time-stamp-language
 http://tommyjiang.github.com/2014/08/16/pt-share
