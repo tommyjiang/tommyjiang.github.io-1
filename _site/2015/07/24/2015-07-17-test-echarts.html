@@ -93,7 +93,7 @@
       
       <ul id="post_info" class="tag_box inline">
         <li><i class="fa fa-calendar"></i></li>
-        <li> 2015 年 07 月 17 日</li>
+        <li> 2015 年 07 月 24 日</li>
         <li><i class="fa fa-folder-open"></i></li>
         
         
@@ -144,7 +144,7 @@
     require(
             [
         　　'echarts',
-        　　'echarts/chart/bar', 
+        　　'echarts/chart/bar',
         　　'echarts/chart/line'
         ],
         drawEcharts
@@ -155,9 +155,9 @@
         drawLine(ec);
         drawLine2(ec);
     }
-    
+
     function drawBar(ec){
-        var myBarChart = ec.init(document.getElementById('barMain')); 
+        var myBarChart = ec.init(document.getElementById('barMain'));
         option = {
                         title : {
                 text: "各渠道销量"
@@ -213,12 +213,12 @@
                     data:[820, 932, 901, 934, 1290, 1330, 1320]
                 }
             ]
-        };    
+        };
         myBarChart.setOption(option,true); //当setOption第二个参数为true时，会阻止数据合并
     }
 
     function drawLine(ec){
-            var myLineChart = ec.init(document.getElementById('lineMain')); 
+            var myLineChart = ec.init(document.getElementById('lineMain'));
         var option2 = {
                 title : {
                             text: "一周气温变化"
@@ -276,11 +276,11 @@
                 },
             ]
         };
-        myLineChart.setOption(option2,true); 
+        myLineChart.setOption(option2,true);
     }
 
     function drawLine2(ec){
-            var myLineChart2 = ec.init(document.getElementById('lineMain2')); 
+            var myLineChart2 = ec.init(document.getElementById('lineMain2'));
         var option3 = {
                 title : {
                             text: "一周气温变化"
@@ -338,7 +338,7 @@
                 },
             ]
                 }
-        myLineChart2.setOption(option3,true); 
+        myLineChart2.setOption(option3,true);
     };
 </script>
 
@@ -367,7 +367,7 @@
         
         <li><a href="/posts.html">索引</a></li>
         
-        <li class="next disabled"><a>后一篇 &rarr;</a>
+        <li class="next"><a href="/2015/07/27/iPhone-export-QQ-music" title="iPhone QQ音乐中的 mp3 导出到 Mac 的方法">后一篇 &rarr;</a></li>
         
       </ul>
     <br />

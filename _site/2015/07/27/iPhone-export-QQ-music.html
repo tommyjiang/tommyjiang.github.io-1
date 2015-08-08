@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="utf-8">
+    <title>iPhone QQ音乐中的 mp3 导出到 Mac 的方法</title>
+    
+    
+    <meta name="author" content="Tommy">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/typo.css" rel="stylesheet">
+    <link href="/css/solarized.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/datatables-bootstrap.css" rel="stylesheet">
+    <link href="/css/codepiano.css" rel="stylesheet">
+
+    <!-- javascript files -->
+    <script type="text/javascript" src="/js/jquery-2.0.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/js/datatables-bootstrap.js"></script>
+    <script type="text/javascript" src="/js/codepiano.js"></script>
+
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    <script type="text/javascript">
+    </script>
+
+  </head>
+
+  <body id="scroll-pane" data-spy="scroll" data-target="#time-list-nav">
+    <div class="wrapper">
+      <!-- 导航条 -->
+      <div class="nav navbar-nav" id="nav-wrap">
+        <div class="navbar-header">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+            <a class="navbar-brand" href="/">
+              <span class="site-author"> Tommy </span>
+              <span class="site-title"> /* 电力引领生活 */ </span>
+            </a>
+            <ul id="nav-menu" class="nav navbar-nav">
+              
+              
+              
+
+
+
+
+
+<li class="posts"><a href="/posts.html">文章</a></li>
+<li class="timeline"><a href="/timeline.html">归档</a></li>
+<li class="categories"><a href="/categories.html">目录</a></li>
+<li class="about"><a href="/about.html">关于</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+      </div>
+
+      <!-- 正文 -->
+      
+
+<div class="row post-full typo">
+  <div class="col-md-2"></div>
+  <div class="col-md-8 typo">
+    <h2>iPhone QQ音乐中的 mp3 导出到 Mac 的方法 </h2>
+    <div class="post_info">
+      
+      <ul id="post_info" class="tag_box inline">
+        <li><i class="fa fa-calendar"></i></li>
+        <li> 2015 年 07 月 27 日</li>
+        <li><i class="fa fa-folder-open"></i></li>
+        
+        
+ 
+  <li>
+    <a href="/categories.html#技术-ref">
+      技术 
+    </a>
+  </li>
+  
+
+
+
+      </ul>
+        
+    </div>
+    <div class="content">
+      <p>将 iPhone QQ音乐中的 mp3 导出到 Mac 的方法和具体步骤。</p>
+
+<p>周五回学校看了《中国好声音》的第四季第二集，非常喜欢刘伟男演绎的《Lemon Tree》（这首歌也是我高中英语老师最喜欢的英文歌），这小伙的版本还受到了 <a href="http://weibo.com/1705586121/CsIvG4NGO?ref=&amp;type=comment#_rnd1438003302470">G. E. M. 的表扬</a>。百度后发现本季《中国好声音》的歌曲只能通过QQ音乐的客户端下载，而QQ音乐又没有 Mac 版，于是就用 iPhone 中的QQ音乐下了 mp3 文件再导到 Mac 中。但整个过程还挺麻烦的，具体步骤如下。</p>
+
+<p>前提条件：iPhone 需要越狱，Mac 上需要安装 iTunes 和同步助手（或其他同类软件）。</p>
+
+<h1 id="iphone-qq音乐中-mp3-文件的批量导出">iPhone QQ音乐中 mp3 文件的批量导出</h1>
+
+<p>iPhone QQ音乐中的 mp3 文件并不是存储在程序对应的 Documents 文件夹下面，而是在如下路径中：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">/var/mobile/Containers/Data/Application/编号/Documents/iMusic/
+</code></pre></div>
+<p>以上路径中的“编号”每个 iPhone 都不一样，可以用如下方法查询到该编号：利用 Cydia 在越狱后的 iPhone 上安装 iFile，查询不同编号程序的文档大小，一般来说，由于QQ音乐中的 mp3 文件较多，因此文档大小一般很大，可以利用文档大小这个特征查询QQ音乐对应的编号。得到该编号后，就可以在同步助手中把这个目录下的所有子文件夹和其中的 mp3 文件导出到 Mac 了。</p>
+
+<h1 id="已导出-mp3-文件批量更改后缀名">已导出 mp3 文件批量更改后缀名</h1>
+
+<p>上一步导出的是 iMusic 整个文件夹，其中包括很多子文件夹，每个子文件夹内又有一些后缀名为 tm0 的文件，其实这些就是 QQ音乐里的 mp3 文件，我们需要批量将这个文件夹下所有文件的后缀名 tm0 改为 mp3。可以在终端中输入如下命令将文件后缀名由 tm0 更改为 mp3：</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">find . -name <span class="s2">&quot;*.tm0&quot;</span><span class="p">|</span>sed <span class="s1">&#39;s/.tm0//&#39;</span><span class="p">|</span>xargs -n1 -I <span class="o">{}</span> mv <span class="o">{}</span>.tm0 <span class="o">{}</span>.mp3
+</code></pre></div>
+<p>注意需要先进入导出的 iMusic 文件夹对应的目录后，再输入以上命令。</p>
+
+<h1 id="找到对应的歌曲">找到对应的歌曲</h1>
+
+<p>把导出的 iMusic 文件夹中的后缀名为 tm0 文件的后缀名全部更改为 mp3 后，还差最后一步，也就是在所有 mp3 文件中找到某一首歌。这步不推荐使用 iTunes，因为 iTunes 会把所有歌曲复制一份到程序的存储目录。可以选择 <a href="http://coppertino.com/vox/mac">Vox</a> 添加 iMusic 文件夹中的所有歌曲到一个播放列表，再在播放列表中找到对应的歌名，然后右键选择“Show in Finder”即可定位到具体的 mp3 文件。</p>
+
+    </div>
+
+    
+    <ul id="tag_info" class="tag_box inline">
+      <li><i class="fa fa-tags"></i></li>
+      
+      
+   
+    <li><a href="/posts.html#iPhone">iPhone <span>1</span></a></li>
+   
+    <li><a href="/posts.html#Mac">Mac <span>2</span></a></li>
+  
+
+
+
+    </ul>
+      
+
+    <hr>
+      <ul class="pagination pull-right">
+        
+        <li class="prev"><a href="/2015/07/24/2015-07-17-test-echarts" title="Echarts">&larr; 前一篇</a></li>
+        
+        <li><a href="/posts.html">索引</a></li>
+        
+        <li class="next disabled"><a>后一篇 &rarr;</a>
+        
+      </ul>
+    <br />
+    <div id="comment-hook"></div>
+    
+
+
+  <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="iPhone QQ音乐中的 mp3 导出到 Mac 的方法" data-title="iPhone QQ音乐中的 mp3 导出到 Mac 的方法" data-url="page.url"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"tommyjiang"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+  </div>
+  <div class="col-md-2"></div>
+</div>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+ "HTML-CSS": {linebreaks: {automatic: true}},
+ SVG: {linebreaks: {automatic: true}}
+ });
+</script>
+
+
+
+
+    
+
+  </body>
+</html>
+

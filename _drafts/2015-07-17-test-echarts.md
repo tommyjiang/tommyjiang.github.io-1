@@ -34,7 +34,7 @@ test2
     require(
     		[
         　　'echarts',
-        　　'echarts/chart/bar', 
+        　　'echarts/chart/bar',
         　　'echarts/chart/line'
         ],
         drawEcharts
@@ -45,9 +45,9 @@ test2
         drawLine(ec);
         drawLine2(ec);
     }
-    
+
     function drawBar(ec){
-        var myBarChart = ec.init(document.getElementById('barMain')); 
+        var myBarChart = ec.init(document.getElementById('barMain'));
         option = {
 						title : {
                 text: "各渠道销量"
@@ -103,12 +103,12 @@ test2
                     data:[820, 932, 901, 934, 1290, 1330, 1320]
                 }
             ]
-        };    
+        };
         myBarChart.setOption(option,true); //当setOption第二个参数为true时，会阻止数据合并
     }
 
     function drawLine(ec){
-		    var myLineChart = ec.init(document.getElementById('lineMain')); 
+		    var myLineChart = ec.init(document.getElementById('lineMain'));
         var option2 = {
 		        title : {
 		    				text: "一周气温变化"
@@ -166,11 +166,11 @@ test2
                 },
             ]
         };
-        myLineChart.setOption(option2,true); 
+        myLineChart.setOption(option2,true);
     }
 
     function drawLine2(ec){
-		    var myLineChart2 = ec.init(document.getElementById('lineMain2')); 
+		    var myLineChart2 = ec.init(document.getElementById('lineMain2'));
         var option3 = {
 		        title : {
 		    				text: "一周气温变化"
@@ -228,7 +228,7 @@ test2
                 },
             ]
 				}
-        myLineChart2.setOption(option3,true); 
+        myLineChart2.setOption(option3,true);
     };
 </script>
 <!-- end -->
