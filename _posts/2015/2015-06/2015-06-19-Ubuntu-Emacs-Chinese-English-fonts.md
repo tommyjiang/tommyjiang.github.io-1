@@ -17,7 +17,7 @@ icon: code
 
 由于 Inconsolata 字体只包括英文，因此中文仍然用 Heiti SC 字体显示。
 
-#### Ubuntu 系统 Emacs 字体设置
+### Ubuntu 系统 Emacs 字体设置
 Ubuntu 下的配置要麻烦一些。首先要安装 Inconsolata 和 Heiti SC 两种字体，用 GUI 就可以直接安装。然后在 Emacs 的配置文件中加入如下配置语句。
 
 ```cl

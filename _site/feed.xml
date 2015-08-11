@@ -7,6 +7,53 @@
 		<atom:link href="http://tommyjiang.github.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Matlab 中利用 m 文件修改 Simulink 中模型参数的方法</title>
+				<description>&lt;p&gt;介绍在 Matlab 中利用 m 文件修改 Simulink 中模型参数的方法。&lt;/p&gt;
+
+&lt;h3 id=&quot;电力系统仿真工具&quot;&gt;电力系统仿真工具&lt;/h3&gt;
+
+&lt;p&gt;我个人博士论文的隐名评审意见中有如下评语：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;除第二章的简单实验外，本文的所有结论均源于仿真，这大大降低了本文的创新性和说服力。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;说实话，和任何事一样，博士毕业其实是实力和运气综合作用的结果，尤其是研究生院负责的论文盲审环节，虽然可以填最多3个需要回避的老师，但也容易送到学术观点有争议或者导师的“宿敌”手中。比如我个人的这个评审意见——审我论文的这位老师很有可能是电力电子方向而不是电力系统方向的，因为电力系统方向的老师肯定清楚，目前电力系统领域的绝大多数研究，只能依靠仿真，因此不太会给出上述评语。但我还是应该感谢下这位老师，因为他虽然在评审时给了我2个C（一共4小项），但最后总评很厚道地给了个B，不然我还要继续在学校读博……&lt;/p&gt;
+
+&lt;p&gt;说回电力系统的仿真工具，我个人了解的有以下软件：BPA、PSASP、Matlab/Simulink、PSCAD、PSS/E、PowerFactory、RTDS、RT-Lab、PXI……这方面可以参考&lt;a href=&quot;http://wenku.baidu.com/link?url=lyB8iBkcX7HUakjhmgnWHX0xNV7-E3RIWFrzxDXEgmgs4NYdomg6YlY2hBDBSOuXJ8JWKW0Amu6lZMeB_8HzXz4yjLper1sGNdGPOJajAQO&quot;&gt;武大曹博的PPT&lt;/a&gt;，里面有关于各软件的详细说明和对比。就我个人而言，更喜欢用&lt;em&gt;纯代码&lt;/em&gt;进行仿真，原因是纯代码调试起来更为方便，而且也更容易进行版本管理。但电力系统仿真中应用纯代码的情形毕竟较少，一般与优化相关的研究更偏好用纯代码，但动态仿真绝大多数时候还是要用 GUI 仿真软件。&lt;/p&gt;
+
+&lt;p&gt;Matlab/Simulink 就是一个常用的仿真工具，它的突出优点是可以和 Matlab 代码完美对接。但利用 Simulink 模型进行仿真时，如果需要在某些时刻改变系统参数，利用 GUI 界面进行设置会比较麻烦，可以利用 m 文件实现，具体方法如下。&lt;/p&gt;
+
+&lt;h3 id=&quot;m-文件修改-simulink-模型参数的方法&quot;&gt;m 文件修改 Simulink 模型参数的方法&lt;/h3&gt;
+
+&lt;p&gt;利用 m 文件修改 Simulink 模型参数方法的总体思想如下：首先在初始参数下仿真 t_1 时间，记录该时间结束时系统所有状态量的值，之后更改系统参数，以之前记录的系统所有状态量的值作为初值，重新进行仿真，如此循环往复。&lt;/p&gt;
+
+&lt;p&gt;可以在 m 文件中利用&lt;code&gt;set_param&lt;/code&gt;函数设置 Simulink 模型仿真的相关参数：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;n&quot;&gt;set_param&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;ModelName&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;LoadInitialState&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;off&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;...&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;&amp;#39;SaveFinalState&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;on&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;SaveCompleteFinalSimState&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;on&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;FinalStateName&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;xFinal&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;...&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;&amp;#39;StartTime&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;0&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;StopTime&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;其中&lt;code&gt;ModelName&lt;/code&gt;为 Simulink 模型的文件名，注意第一次仿真时初值均为0，因此&lt;code&gt;LoadInitialState&lt;/code&gt;这个选项要设置为&lt;code&gt;off&lt;/code&gt;，之后的仿真中则需要均设置为&lt;code&gt;on&lt;/code&gt;。第2行对应的是保存系统状态量终值的相关设置，其中&lt;code&gt;FinalStateName&lt;/code&gt;为终值存储的变量名，之后仿真的初值需要设置为该变量名。&lt;/p&gt;
+
+&lt;h3 id=&quot;相关问题&quot;&gt;相关问题&lt;/h3&gt;
+
+&lt;h4 id=&quot;仿真继续时提示仿真时间与初始值时刻不同&quot;&gt;仿真继续时提示仿真时间与初始值时刻不同&lt;/h4&gt;
+
+&lt;p&gt;利用以上代码实现 m 文件修改 Simulink 模型参数继续仿真的过程中，会遇到如下警告：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Warning: The start time of model &amp;#39;Exp2_1_SimModel&amp;#39; is different from the start time saved in the initial SimState. The start time has therefore been reset to 0. 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;但最后的仿真结果对应的变量中，时间是从0开始一直到仿真结束时刻，并未出现上述警告中提到的将仿真起始时间设置为0。我又试了试直接在 Simulink 中加载初始值然后仿真，并未出现上述警告。由于该警告对仿真结果并无影响，因此可以暂时忽略，之后如果解决了当然最后，解决不了也无大碍。&lt;/p&gt;
+
+&lt;h4 id=&quot;simulink-模型中参数无法改变&quot;&gt;Simulink 模型中参数无法改变&lt;/h4&gt;
+
+&lt;p&gt;电力系统的仿真一般采用 Simulink 中的 SimPower 模块，我搭了一个单相半桥 PWM 的仿真模型，可以改变该模型中的调制比参数 m 以及电容电压 V_DC，但无法改变反电势电源的电压幅值 Vs 和支路电阻/电感，修改后者后 Matlab 会报以下错误：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Simulink cannot load the initial SimState because the model,&amp;#39;Exp2_1_SimModel&amp;#39;, was changed after the SimState was saved. Run the simulation again and resave the SimState.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;目前还没找到太好的解决方法，只能采用变通的方法。例如修改反电势电源电压幅值可以等效为修改调制比 m，二者对应的电流波形是相同的。&lt;/p&gt;
+</description>
+				<pubDate>Tue, 11 Aug 2015 12:42:56 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/08/11/2015-08-10-Simulink-m-file</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/08/11/2015-08-10-Simulink-m-file</guid>
+			</item>
+		
+			<item>
 				<title>iPhone QQ音乐中的 mp3 导出到 Mac 的方法</title>
 				<description>&lt;p&gt;将 iPhone QQ音乐中的 mp3 导出到 Mac 的方法和具体步骤。&lt;/p&gt;
 
@@ -455,7 +502,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;由于 Inconsolata 字体只包括英文，因此中文仍然用 Heiti SC 字体显示。&lt;/p&gt;
 
-&lt;h4 id=&quot;ubuntu-系统-emacs-字体设置&quot;&gt;Ubuntu 系统 Emacs 字体设置&lt;/h4&gt;
+&lt;h3 id=&quot;ubuntu-系统-emacs-字体设置&quot;&gt;Ubuntu 系统 Emacs 字体设置&lt;/h3&gt;
 
 &lt;p&gt;Ubuntu 下的配置要麻烦一些。首先要安装 Inconsolata 和 Heiti SC 两种字体，用 GUI 就可以直接安装。然后在 Emacs 的配置文件中加入如下配置语句。&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;c1&quot;&gt;; 设置英文字体&lt;/span&gt;
@@ -760,78 +807,6 @@
 				<pubDate>Thu, 20 Nov 2014 00:00:00 +0800</pubDate>
 				<link>http://tommyjiang.github.com/2014/11/20/citic-card-delay-record</link>
 				<guid isPermaLink="true">http://tommyjiang.github.com/2014/11/20/citic-card-delay-record</guid>
-			</item>
-		
-			<item>
-				<title>抵港一周年纪念</title>
-				<description>&lt;p class=&quot;paragraph&quot;&gt;
-  转眼间又到11月了，去年这时候我起身赴港，一周年之际，写篇博客纪念我的香港生活，以及我与香港的不解之缘。
-&lt;/p&gt;
-
-&lt;h3&gt;缘起&lt;/h3&gt;
-
-&lt;blockquote&gt;
-小河弯弯向南流 流到香江去看一看 &lt;br /&gt;
-东方之珠 我的爱人 你的风采是否浪漫依然 &lt;br /&gt;
-月儿弯弯的海港 夜色深深 灯火闪亮 &lt;br /&gt;
-东方之珠 整夜未眠 &lt;br /&gt;
-守着沧海桑田变幻的诺言 &lt;br /&gt;
-让海风吹拂了五千年 &lt;br /&gt;
-每一滴泪珠 仿佛都说出你的尊严 &lt;br /&gt;
-让海潮伴我来保佑你 &lt;br /&gt;
-请别忘记我 永远不变黄色的脸 &lt;br /&gt;
-船儿弯弯入海港 回头望望沧海茫茫 &lt;br /&gt;
-东方之珠拥抱着我 &lt;br /&gt;
-让我温暖 你那苍凉的胸膛 &lt;br /&gt;
-让海风吹拂了五千年 &lt;br /&gt;
-每一滴泪珠 仿佛都说出你的尊严 &lt;br /&gt;
-让海潮伴我来保佑你 &lt;br /&gt;
-请别忘记我 永远不变黄色的脸
-&lt;/blockquote&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  《东方之珠》是内地人耳熟能详的，也可能是最容易想到的与香港有关的歌曲了。然而我印象中最早听到这首歌还是在幼儿园，那天还是阴天，快到晚上了，身边的小朋友一个个都被家长接走了，只有我一个人坐在屋子里，听老师单曲循环这首歌。原因是我妈那天有事，没能来按时接我，最后来接我时天都黑了。后来想想，一下午都沉浸在《东方之珠》的旋律里，应该算是我和香港最早的缘分了，虽然当时我并不知道这首歌唱的是香港。
-&lt;/p&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  转眼到了1997年，香港回归的年份，全国都沉浸在喜悦的氛围中。作为祖国的花朵，自然会被拉去参加与香港回归相关的事情。我自己就参加了香港回归知识竞赛和香港回归舞蹈表演，都是作为秦皇岛铁路小学参加北京铁路局天津铁路分局举办的活动。先说知识竞赛吧，记得是每人发一本书，上面画一些重点，死记硬背之后去参赛，当时我过年都还在背题。记了一大堆人名，安子介、霍英东、邵逸夫……最后考试的时候有道题印象尤深，世界船王是（），我填的包玉刚，答案是香港的包玉刚。翻开发的书一看，确实是香港的包玉刚……这不是香港回归竞赛么，不是香港的还能是台湾的么……舞蹈表演听起来比较奇幻，虽然现在体型发胖，没法起舞了。不过当时还排练了好久，而且我是扮演香港儿童，和大陆的儿童团聚，后面还有一群小白鸽。现在还有表演的照片在家里，就不传上来了。
-&lt;/p&gt;
-
-&lt;h3&gt;第一次抵港&lt;/h3&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  2012年6月底，赴佛山参加博士生实践。2012年6月30日，从福田口岸过关，来到了教科书中提到的万恶的资本主义社会，世界三大金融中心之一的香港。当晚从第一城坐到旺角东，然后步行到旺角，再经油麻地到尖沙咀，深切地感受了香港闹市区的繁华和嘈杂。第二天上午又到港岛的中环苹果店买了个Thunderbolt和网口的转接头，品尝了米其林一星的添好运，还到维多利亚公园围观了港人的七一大游行。下午就乘车由福田口岸过关返回佛山，结束了短暂的香港两日游。
-&lt;/p&gt;
-
-&lt;h3&gt;半年的香港交换学习&lt;/h3&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  2013年11月10日再次由福田口岸过关到达香港，开始半年的香港交换学习生活。仍然是住在小哥家，不过这次终于不是睡在客厅了，而是搬进了卧室。香港的天气并没有想象中的那么难熬，不过3月份连日阴天不见阳光确实让我抑郁了一阵。在港的最大收获就是在小哥的带领下，试图学了学做饭，虽然最后手艺仍不理想，但好歹是饿不死了。另外还去广东的广州肇庆以及潮汕分别转了一圈，深圳去的就太多了。还记得和瓜瓜、胖哥哥和岩峰在深圳happy那天回港后赶上香港20年来最早的黑雨警告，也算一个特别的回忆吧。
-&lt;/p&gt;
-
-&lt;h3&gt;结语&lt;/h3&gt;
-
-&lt;p class=&quot;paragraph&quot;&gt;
-  转眼离开香港也有半年的时间了。这一段时间香港并不太平。人大发表的《“一国两制”在香港特别行政区的实践》，以及后来关于普选的争论和占中事件，都让香港经常出现在新闻中。下面是非官方的香港市歌《狮子山下》，以此祝愿金紫荆永远盛开。
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-人生中有歡喜　難免亦常有淚 &lt;br /&gt;
-我哋大家在獅子山下相遇上 &lt;br /&gt;
-總算是歡笑多於唏噓 &lt;br /&gt;
-人生不免崎嶇　難以絕無掛慮 &lt;br /&gt;
-既是同舟在獅子山下且共濟 &lt;br /&gt;
-拋棄區分求共對 &lt;br /&gt;
-放開彼此心中矛盾　理想一起去追 &lt;br /&gt;
-同舟人　誓相隨　無畏更無懼 &lt;br /&gt;
-同處海角天邊　攜手踏平崎嶇 &lt;br /&gt;
-我哋大家用艱辛努力寫下那 &lt;br /&gt;
-不朽香江名句 
-&lt;/blockquote&gt;
-</description>
-				<pubDate>Mon, 10 Nov 2014 00:00:00 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2014/11/10/Hong-Kong-anniversary</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2014/11/10/Hong-Kong-anniversary</guid>
 			</item>
 		
 	</channel>
