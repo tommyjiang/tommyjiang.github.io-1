@@ -21,21 +21,21 @@ icon: code
 Matlab/Simulink 就是一个常用的仿真工具，它的突出优点是可以和 Matlab 代码完美对接。但利用 Simulink 模型进行仿真时，如果需要在某些时刻改变系统参数，利用 GUI 界面进行设置会比较麻烦，可以利用 m 文件实现，具体方法如下。
 
 ### m 文件修改 Simulink 模型参数的方法
-利用 m 文件修改 Simulink 模型参数方法的总体思想如下：首先在初始参数下仿真 t_1 时间，记录该时间结束时系统所有状态量的值，之后更改系统参数，以之前记录的系统所有状态量的值作为初值，重新进行仿真，如此循环往复。
+利用 m 文件修改 Simulink 模型参数方法的总体思想如下：首先在初始参数下仿真一段时间，记录该时间结束时系统所有状态量的值，之后修改系统参数，再以上一次仿真结束时记录的系统所有状态量的值作为初值，重新仿真，如此循环往复。
 
 可以在 m 文件中利用`set_param`函数设置 Simulink 模型仿真的相关参数：
 
 ```matlab
 set_param('ModelName','LoadInitialState','off',...
-          'SaveFinalState','on','SaveCompleteFinalSimState','on','FinalStateName','xFinal',...
-          'StartTime','0','StopTime','1');
+          'SaveFinalState','on','SaveCompleteFinalSimState','on',...
+          'FinalStateName','xFinal','StartTime','0','StopTime','1');
 ```
 
-其中`ModelName`为 Simulink 模型的文件名，注意第一次仿真时初值均为0，因此`LoadInitialState`这个选项要设置为`off`，之后的仿真中则需要均设置为`on`。第2行对应的是保存系统状态量终值的相关设置，其中`FinalStateName`为终值存储的变量名，之后仿真的初值需要设置为该变量名。
+其中`ModelName`为 Simulink 模型的文件名，注意第一次仿真不需要载入初值，因此`LoadInitialState`选项需要设为`off`，之后的仿真中则需要将该项设置为`on`。第2行对应的是保存系统状态量终值的相关设置，其中`FinalStateName`为终值存储的变量名，之后仿真的初值需要设置为该变量名。
 
 ### 相关问题
 
-#### 仿真继续时提示仿真时间与初始值时刻不同
+#### 继续进行仿真时提示仿真起始时间与状态变量初始值的时间不同
 
 利用以上代码实现 m 文件修改 Simulink 模型参数继续仿真的过程中，会遇到如下警告：
 
@@ -43,11 +43,11 @@ set_param('ModelName','LoadInitialState','off',...
 Warning: The start time of model 'Exp2_1_SimModel' is different from the start time saved in the initial SimState. The start time has therefore been reset to 0. 
 ```
 
-但最后的仿真结果对应的变量中，时间是从0开始一直到仿真结束时刻，并未出现上述警告中提到的将仿真起始时间设置为0。我又试了试直接在 Simulink 中加载初始值然后仿真，并未出现上述警告。由于该警告对仿真结果并无影响，因此可以暂时忽略，之后如果解决了当然最后，解决不了也无大碍。
+虽然出现了上述警告，但存储仿真结果的变量中，时间仍然是从0开始一直到全部仿真结束对应的时刻，并未出现上述警告中提到的将每次重新仿真的起始时间设置为0的情况。我试了试直接在 Simulink 中加载初始值然后仿真，并未出现上述警告。由于该警告目前对仿真结果并无影响，因此暂时将其忽略，之后如果能解决当然最好，就算解决不了也无大碍。
 
-#### Simulink 模型中参数无法改变
+#### Simulink 模型中某些参数无法改变
 
-电力系统的仿真一般采用 Simulink 中的 SimPower 模块，我搭了一个单相半桥 PWM 的仿真模型，可以改变该模型中的调制比参数 m 以及电容电压 V_DC，但无法改变反电势电源的电压幅值 Vs 和支路电阻/电感，修改后者后 Matlab 会报以下错误：
+电力系统的仿真一般采用 Simulink 中的 SimPower 库，我利用 SimPower 搭建了一个单相半桥 PWM 的仿真模型，可以改变该模型中的调制比参数 m 以及电容电压 V_DC，但无法改变模型中反电势电源的电压幅值 Vs 和支路电阻/电感的值，修改后面二者后 Matlab 会报以下错误：
 
 ```
 Simulink cannot load the initial SimState because the model,'Exp2_1_SimModel', was changed after the SimState was saved. Run the simulation again and resave the SimState.

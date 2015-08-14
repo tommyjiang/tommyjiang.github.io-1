@@ -23,34 +23,34 @@
 
 &lt;h3 id=&quot;m-文件修改-simulink-模型参数的方法&quot;&gt;m 文件修改 Simulink 模型参数的方法&lt;/h3&gt;
 
-&lt;p&gt;利用 m 文件修改 Simulink 模型参数方法的总体思想如下：首先在初始参数下仿真 t_1 时间，记录该时间结束时系统所有状态量的值，之后更改系统参数，以之前记录的系统所有状态量的值作为初值，重新进行仿真，如此循环往复。&lt;/p&gt;
+&lt;p&gt;利用 m 文件修改 Simulink 模型参数方法的总体思想如下：首先在初始参数下仿真一段时间，记录该时间结束时系统所有状态量的值，之后修改系统参数，再以上一次仿真结束时记录的系统所有状态量的值作为初值，重新仿真，如此循环往复。&lt;/p&gt;
 
 &lt;p&gt;可以在 m 文件中利用&lt;code&gt;set_param&lt;/code&gt;函数设置 Simulink 模型仿真的相关参数：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;n&quot;&gt;set_param&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;ModelName&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;LoadInitialState&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;off&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;...&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;&amp;#39;SaveFinalState&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;on&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;SaveCompleteFinalSimState&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;on&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;FinalStateName&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;xFinal&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;...&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;&amp;#39;StartTime&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;0&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;StopTime&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;&amp;#39;SaveFinalState&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;on&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;SaveCompleteFinalSimState&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;on&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;...&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;&amp;#39;FinalStateName&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;xFinal&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;StartTime&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;0&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;StopTime&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;其中&lt;code&gt;ModelName&lt;/code&gt;为 Simulink 模型的文件名，注意第一次仿真时初值均为0，因此&lt;code&gt;LoadInitialState&lt;/code&gt;这个选项要设置为&lt;code&gt;off&lt;/code&gt;，之后的仿真中则需要均设置为&lt;code&gt;on&lt;/code&gt;。第2行对应的是保存系统状态量终值的相关设置，其中&lt;code&gt;FinalStateName&lt;/code&gt;为终值存储的变量名，之后仿真的初值需要设置为该变量名。&lt;/p&gt;
+&lt;p&gt;其中&lt;code&gt;ModelName&lt;/code&gt;为 Simulink 模型的文件名，注意第一次仿真不需要载入初值，因此&lt;code&gt;LoadInitialState&lt;/code&gt;选项需要设为&lt;code&gt;off&lt;/code&gt;，之后的仿真中则需要将该项设置为&lt;code&gt;on&lt;/code&gt;。第2行对应的是保存系统状态量终值的相关设置，其中&lt;code&gt;FinalStateName&lt;/code&gt;为终值存储的变量名，之后仿真的初值需要设置为该变量名。&lt;/p&gt;
 
 &lt;h3 id=&quot;相关问题&quot;&gt;相关问题&lt;/h3&gt;
 
-&lt;h4 id=&quot;仿真继续时提示仿真时间与初始值时刻不同&quot;&gt;仿真继续时提示仿真时间与初始值时刻不同&lt;/h4&gt;
+&lt;h4 id=&quot;继续进行仿真时提示仿真起始时间与状态变量初始值的时间不同&quot;&gt;继续进行仿真时提示仿真起始时间与状态变量初始值的时间不同&lt;/h4&gt;
 
 &lt;p&gt;利用以上代码实现 m 文件修改 Simulink 模型参数继续仿真的过程中，会遇到如下警告：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Warning: The start time of model &amp;#39;Exp2_1_SimModel&amp;#39; is different from the start time saved in the initial SimState. The start time has therefore been reset to 0. 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;但最后的仿真结果对应的变量中，时间是从0开始一直到仿真结束时刻，并未出现上述警告中提到的将仿真起始时间设置为0。我又试了试直接在 Simulink 中加载初始值然后仿真，并未出现上述警告。由于该警告对仿真结果并无影响，因此可以暂时忽略，之后如果解决了当然最后，解决不了也无大碍。&lt;/p&gt;
+&lt;p&gt;虽然出现了上述警告，但存储仿真结果的变量中，时间仍然是从0开始一直到全部仿真结束对应的时刻，并未出现上述警告中提到的将每次重新仿真的起始时间设置为0的情况。我试了试直接在 Simulink 中加载初始值然后仿真，并未出现上述警告。由于该警告目前对仿真结果并无影响，因此暂时将其忽略，之后如果能解决当然最好，就算解决不了也无大碍。&lt;/p&gt;
 
-&lt;h4 id=&quot;simulink-模型中参数无法改变&quot;&gt;Simulink 模型中参数无法改变&lt;/h4&gt;
+&lt;h4 id=&quot;simulink-模型中某些参数无法改变&quot;&gt;Simulink 模型中某些参数无法改变&lt;/h4&gt;
 
-&lt;p&gt;电力系统的仿真一般采用 Simulink 中的 SimPower 模块，我搭了一个单相半桥 PWM 的仿真模型，可以改变该模型中的调制比参数 m 以及电容电压 V_DC，但无法改变反电势电源的电压幅值 Vs 和支路电阻/电感，修改后者后 Matlab 会报以下错误：&lt;/p&gt;
+&lt;p&gt;电力系统的仿真一般采用 Simulink 中的 SimPower 库，我利用 SimPower 搭建了一个单相半桥 PWM 的仿真模型，可以改变该模型中的调制比参数 m 以及电容电压 V_DC，但无法改变模型中反电势电源的电压幅值 Vs 和支路电阻/电感的值，修改后面二者后 Matlab 会报以下错误：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Simulink cannot load the initial SimState because the model,&amp;#39;Exp2_1_SimModel&amp;#39;, was changed after the SimState was saved. Run the simulation again and resave the SimState.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;目前还没找到太好的解决方法，只能采用变通的方法。例如修改反电势电源电压幅值可以等效为修改调制比 m，二者对应的电流波形是相同的。&lt;/p&gt;
 </description>
-				<pubDate>Tue, 11 Aug 2015 12:42:56 +0800</pubDate>
-				<link>http://tommyjiang.github.com/2015/08/11/2015-08-10-Simulink-m-file</link>
-				<guid isPermaLink="true">http://tommyjiang.github.com/2015/08/11/2015-08-10-Simulink-m-file</guid>
+				<pubDate>Fri, 14 Aug 2015 19:14:36 +0800</pubDate>
+				<link>http://tommyjiang.github.com/2015/08/14/2015-08-10-Simulink-m-file</link>
+				<guid isPermaLink="true">http://tommyjiang.github.com/2015/08/14/2015-08-10-Simulink-m-file</guid>
 			</item>
 		
 			<item>

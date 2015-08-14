@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="utf-8">
+    <title>Matlab 中利用 m 文件修改 Simulink 中模型参数的方法</title>
+    
+    
+    <meta name="author" content="Tommy">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/typo.css" rel="stylesheet">
+    <link href="/css/solarized.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/datatables-bootstrap.css" rel="stylesheet">
+    <link href="/css/codepiano.css" rel="stylesheet">
+
+    <!-- javascript files -->
+    <script type="text/javascript" src="/js/jquery-2.0.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/js/datatables-bootstrap.js"></script>
+    <script type="text/javascript" src="/js/codepiano.js"></script>
+
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    <script type="text/javascript">
+    </script>
+
+  </head>
+
+  <body id="scroll-pane" data-spy="scroll" data-target="#time-list-nav">
+    <div class="wrapper">
+      <!-- 导航条 -->
+      <div class="nav navbar-nav" id="nav-wrap">
+        <div class="navbar-header">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+            <a class="navbar-brand" href="/">
+              <span class="site-author"> Tommy </span>
+              <span class="site-title"> /* 电力引领生活 */ </span>
+            </a>
+            <ul id="nav-menu" class="nav navbar-nav">
+              
+              
+              
+
+
+
+
+
+<li class="posts"><a href="/posts.html">文章</a></li>
+<li class="timeline"><a href="/timeline.html">归档</a></li>
+<li class="categories"><a href="/categories.html">目录</a></li>
+<li class="about"><a href="/about.html">关于</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+      </div>
+
+      <!-- 正文 -->
+      
+
+<div class="row post-full typo">
+  <div class="col-md-2"></div>
+  <div class="col-md-8 typo">
+    <h2>Matlab 中利用 m 文件修改 Simulink 中模型参数的方法 </h2>
+    <div class="post_info">
+      
+      <ul id="post_info" class="tag_box inline">
+        <li><i class="fa fa-calendar"></i></li>
+        <li> 2015 年 08 月 14 日</li>
+        <li><i class="fa fa-folder-open"></i></li>
+        
+        
+ 
+  <li>
+    <a href="/categories.html#技术-ref">
+      技术 
+    </a>
+  </li>
+  
+
+
+
+      </ul>
+        
+    </div>
+    <div class="content">
+      <p>介绍在 Matlab 中利用 m 文件修改 Simulink 中模型参数的方法。</p>
+
+<h3 id="电力系统仿真工具">电力系统仿真工具</h3>
+
+<p>我个人博士论文的隐名评审意见中有如下评语：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">除第二章的简单实验外，本文的所有结论均源于仿真，这大大降低了本文的创新性和说服力。
+</code></pre></div>
+<p>说实话，和任何事一样，博士毕业其实是实力和运气综合作用的结果，尤其是研究生院负责的论文盲审环节，虽然可以填最多3个需要回避的老师，但也容易送到学术观点有争议或者导师的“宿敌”手中。比如我个人的这个评审意见——审我论文的这位老师很有可能是电力电子方向而不是电力系统方向的，因为电力系统方向的老师肯定清楚，目前电力系统领域的绝大多数研究，只能依靠仿真，因此不太会给出上述评语。但我还是应该感谢下这位老师，因为他虽然在评审时给了我2个C（一共4小项），但最后总评很厚道地给了个B，不然我还要继续在学校读博……</p>
+
+<p>说回电力系统的仿真工具，我个人了解的有以下软件：BPA、PSASP、Matlab/Simulink、PSCAD、PSS/E、PowerFactory、RTDS、RT-Lab、PXI……这方面可以参考<a href="http://wenku.baidu.com/link?url=lyB8iBkcX7HUakjhmgnWHX0xNV7-E3RIWFrzxDXEgmgs4NYdomg6YlY2hBDBSOuXJ8JWKW0Amu6lZMeB_8HzXz4yjLper1sGNdGPOJajAQO">武大曹博的PPT</a>，里面有关于各软件的详细说明和对比。就我个人而言，更喜欢用<em>纯代码</em>进行仿真，原因是纯代码调试起来更为方便，而且也更容易进行版本管理。但电力系统仿真中应用纯代码的情形毕竟较少，一般与优化相关的研究更偏好用纯代码，但动态仿真绝大多数时候还是要用 GUI 仿真软件。</p>
+
+<p>Matlab/Simulink 就是一个常用的仿真工具，它的突出优点是可以和 Matlab 代码完美对接。但利用 Simulink 模型进行仿真时，如果需要在某些时刻改变系统参数，利用 GUI 界面进行设置会比较麻烦，可以利用 m 文件实现，具体方法如下。</p>
+
+<h3 id="m-文件修改-simulink-模型参数的方法">m 文件修改 Simulink 模型参数的方法</h3>
+
+<p>利用 m 文件修改 Simulink 模型参数方法的总体思想如下：首先在初始参数下仿真一段时间，记录该时间结束时系统所有状态量的值，之后修改系统参数，再以上一次仿真结束时记录的系统所有状态量的值作为初值，重新仿真，如此循环往复。</p>
+
+<p>可以在 m 文件中利用<code>set_param</code>函数设置 Simulink 模型仿真的相关参数：</p>
+<div class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="n">set_param</span><span class="p">(</span><span class="s">&#39;ModelName&#39;</span><span class="p">,</span><span class="s">&#39;LoadInitialState&#39;</span><span class="p">,</span><span class="s">&#39;off&#39;</span><span class="p">,</span><span class="c">...</span>
+          <span class="s">&#39;SaveFinalState&#39;</span><span class="p">,</span><span class="s">&#39;on&#39;</span><span class="p">,</span><span class="s">&#39;SaveCompleteFinalSimState&#39;</span><span class="p">,</span><span class="s">&#39;on&#39;</span><span class="p">,</span><span class="c">...</span>
+          <span class="s">&#39;FinalStateName&#39;</span><span class="p">,</span><span class="s">&#39;xFinal&#39;</span><span class="p">,</span><span class="s">&#39;StartTime&#39;</span><span class="p">,</span><span class="s">&#39;0&#39;</span><span class="p">,</span><span class="s">&#39;StopTime&#39;</span><span class="p">,</span><span class="s">&#39;1&#39;</span><span class="p">);</span>
+</code></pre></div>
+<p>其中<code>ModelName</code>为 Simulink 模型的文件名，注意第一次仿真不需要载入初值，因此<code>LoadInitialState</code>选项需要设为<code>off</code>，之后的仿真中则需要将该项设置为<code>on</code>。第2行对应的是保存系统状态量终值的相关设置，其中<code>FinalStateName</code>为终值存储的变量名，之后仿真的初值需要设置为该变量名。</p>
+
+<h3 id="相关问题">相关问题</h3>
+
+<h4 id="继续进行仿真时提示仿真起始时间与状态变量初始值的时间不同">继续进行仿真时提示仿真起始时间与状态变量初始值的时间不同</h4>
+
+<p>利用以上代码实现 m 文件修改 Simulink 模型参数继续仿真的过程中，会遇到如下警告：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Warning: The start time of model &#39;Exp2_1_SimModel&#39; is different from the start time saved in the initial SimState. The start time has therefore been reset to 0. 
+</code></pre></div>
+<p>虽然出现了上述警告，但存储仿真结果的变量中，时间仍然是从0开始一直到全部仿真结束对应的时刻，并未出现上述警告中提到的将每次重新仿真的起始时间设置为0的情况。我试了试直接在 Simulink 中加载初始值然后仿真，并未出现上述警告。由于该警告目前对仿真结果并无影响，因此暂时将其忽略，之后如果能解决当然最好，就算解决不了也无大碍。</p>
+
+<h4 id="simulink-模型中某些参数无法改变">Simulink 模型中某些参数无法改变</h4>
+
+<p>电力系统的仿真一般采用 Simulink 中的 SimPower 库，我利用 SimPower 搭建了一个单相半桥 PWM 的仿真模型，可以改变该模型中的调制比参数 m 以及电容电压 V_DC，但无法改变模型中反电势电源的电压幅值 Vs 和支路电阻/电感的值，修改后面二者后 Matlab 会报以下错误：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Simulink cannot load the initial SimState because the model,&#39;Exp2_1_SimModel&#39;, was changed after the SimState was saved. Run the simulation again and resave the SimState.
+</code></pre></div>
+<p>目前还没找到太好的解决方法，只能采用变通的方法。例如修改反电势电源电压幅值可以等效为修改调制比 m，二者对应的电流波形是相同的。</p>
+
+    </div>
+
+    
+    <ul id="tag_info" class="tag_box inline">
+      <li><i class="fa fa-tags"></i></li>
+      
+      
+   
+    <li><a href="/posts.html#电力系统">电力系统 <span>1</span></a></li>
+   
+    <li><a href="/posts.html#Matlab">Matlab <span>2</span></a></li>
+  
+
+
+
+    </ul>
+      
+
+    <hr>
+      <ul class="pagination pull-right">
+        
+        <li class="prev"><a href="/2015/07/27/iPhone-export-QQ-music" title="iPhone QQ音乐中的 mp3 导出到 Mac 的方法">&larr; 前一篇</a></li>
+        
+        <li><a href="/posts.html">索引</a></li>
+        
+        <li class="next disabled"><a>后一篇 &rarr;</a>
+        
+      </ul>
+    <br />
+    <div id="comment-hook"></div>
+    
+
+
+  <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Matlab 中利用 m 文件修改 Simulink 中模型参数的方法" data-title="Matlab 中利用 m 文件修改 Simulink 中模型参数的方法" data-url="page.url"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"tommyjiang"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+  </div>
+  <div class="col-md-2"></div>
+</div>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+ "HTML-CSS": {linebreaks: {automatic: true}},
+ SVG: {linebreaks: {automatic: true}}
+ });
+</script>
+
+
+
+
+    
+
+  </body>
+</html>
+
