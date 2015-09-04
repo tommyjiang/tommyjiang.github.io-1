@@ -4,7 +4,7 @@
 <html lang="cn">
   <head>
     <meta charset="utf-8">
-    <title>Ubuntu 系统 Emacs 中英文字体设置</title>
+    <title>新诗集萃</title>
     
     
     <meta name="author" content="Tommy">
@@ -88,19 +88,19 @@
 <div class="row post-full typo">
   <div class="col-md-2"></div>
   <div class="col-md-8 typo">
-    <h2>Ubuntu 系统 Emacs 中英文字体设置 </h2>
+    <h2>新诗集萃 </h2>
     <div class="post_info">
       
       <ul id="post_info" class="tag_box inline">
         <li><i class="fa fa-calendar"></i></li>
-        <li> 2015 年 06 月 19 日</li>
+        <li> 2015 年 08 月 29 日</li>
         <li><i class="fa fa-folder-open"></i></li>
         
         
  
   <li>
-    <a href="/categories.html#技术-ref">
-      技术 
+    <a href="/categories.html#爱好-ref">
+      爱好 
     </a>
   </li>
   
@@ -111,30 +111,25 @@
         
     </div>
     <div class="content">
-      <p>终于要毕业了，离开前把2010年3月买的华硕老电脑重装了，没再装 Win，选择的是 Ubuntu 15.04系统，装完才发现不是 LTS (Long Term Support)，先凑合用吧。计划把 RMBP 上的配置全部迁移过来，其中 Emacs 字体部分折腾了一上午，配置过程记录如下备案。</p>
+      <p>摘录了个人喜欢的诸多新诗名篇佳句。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">一代人 顾城
 
-<h3 id="os-x-系统-emacs-字体设置">OS X 系统 Emacs 字体设置</h3>
+黑夜给了我黑色的眼睛
+我却用它寻找光明
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">避免 顾城
 
-<p>目前我个人 Emacs 的字体方案是英文 Inconsolata + 中文 黑体-简（Heiti SC）。OS X 系统下的配置相对简单，由于已经自带了黑体-简字体，因此只需要安装 Inconsolata 字体。Emacs 默认使用的就是黑体-简字体，因此只需要在 Emacs 的配置文件中加入如下配置语句即可。</p>
-<div class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;default</span> <span class="no">nil</span> <span class="ss">:font</span> <span class="s">&quot;Inconsolata 24&quot;</span><span class="p">))</span>
+你不愿意种花
+你说
+我不愿看见它
+一点点凋落
+
+是的
+为了避免结束
+你避免了一切开始
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">错误 郑愁予
+
+我打江南走过
 </code></pre></div>
-<p>由于 Inconsolata 字体只包括英文，因此中文仍然用 Heiti SC 字体显示。</p>
-
-<h3 id="ubuntu-系统-emacs-字体设置">Ubuntu 系统 Emacs 字体设置</h3>
-
-<p>Ubuntu 下的配置要麻烦一些。首先要安装 Inconsolata 和 Heiti SC 两种字体，用 GUI 就可以直接安装。然后在 Emacs 的配置文件中加入如下配置语句。</p>
-<div class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="c1">; 设置英文字体</span>
-<span class="p">(</span><span class="nv">set-face-attribute</span> <span class="ss">&#39;default</span> <span class="no">nil</span> <span class="ss">:font</span> <span class="s">&quot;Inconsolata 18&quot;</span><span class="p">)</span>
-<span class="c1">; 设置中文字体</span>
-<span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">charset</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">kana</span> <span class="nv">han</span> <span class="nc">symbol</span> <span class="nv">cjk-misc</span> <span class="nv">bopomofo</span><span class="p">))</span>
-  <span class="p">(</span><span class="nv">set-fontset-font</span> <span class="p">(</span><span class="nv">frame-parameter</span> <span class="no">nil</span> <span class="ss">&#39;font</span><span class="p">)</span>
-  <span class="nv">charset</span>
-  <span class="p">(</span><span class="nv">font-spec</span> <span class="ss">:family</span> <span class="s">&quot;Heiti SC&quot;</span><span class="p">)))</span>
-</code></pre></div>
-<h3 id="中英文混排等宽效果">中英文混排等宽效果</h3>
-
-<p>英文 Inconsolata + 中文 Heiti SC 的字体搭配可以在 Emacs 中实现中英文混排等宽的效果，但必须将字号设置为12，18或者24号，可能与两种字体的比例有关。笔记本的屏幕下一般18号字体就足够了，如果外接显示器或者台式机，可以选择24号字体。</p>
-
     </div>
 
     
@@ -143,9 +138,9 @@
       
       
    
-    <li><a href="/posts.html#Ubuntu">Ubuntu <span>1</span></a></li>
+    <li><a href="/posts.html#文学">文学 <span>2</span></a></li>
    
-    <li><a href="/posts.html#Emacs">Emacs <span>3</span></a></li>
+    <li><a href="/posts.html#诗歌">诗歌 <span>2</span></a></li>
   
 
 
@@ -156,11 +151,11 @@
     <hr>
       <ul class="pagination pull-right">
         
-        <li class="prev"><a href="/2015/06/10/collect-resources" title="资料来源及工具总结">&larr; 前一篇</a></li>
+        <li class="prev"><a href="/2015/08/10/Simulink-m-file" title="Matlab 中利用 m 文件修改 Simulink 中模型参数的方法">&larr; 前一篇</a></li>
         
         <li><a href="/posts.html">索引</a></li>
         
-        <li class="next"><a href="/2015/07/03/driver-license-renew" title="外地驾驶证到期在北京换领新驾驶证流程总结">后一篇 &rarr;</a></li>
+        <li class="next"><a href="/2015/08/29/2015-08-29-new-era-poems" title="新诗集萃">后一篇 &rarr;</a></li>
         
       </ul>
     <br />
@@ -169,7 +164,7 @@
 
 
   <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Ubuntu 系统 Emacs 中英文字体设置" data-title="Ubuntu 系统 Emacs 中英文字体设置" data-url="page.url"></div>
+	<div class="ds-thread" data-thread-key="新诗集萃" data-title="新诗集萃" data-url="page.url"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
