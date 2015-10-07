@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Matlab 中利用 m 文件修改 Simulink 中模型参数的方法
+title: Matlab 中利用 m 文件修改 Simulink 模型参数的方法
 categories: [技术]
 tags: [电力系统, Matlab]
 icon: code

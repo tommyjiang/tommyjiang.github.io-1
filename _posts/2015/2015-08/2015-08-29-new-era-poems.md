@@ -3,7 +3,7 @@ layout: post
 title: 新诗集萃
 categories: [爱好]
 tags: [文学, 诗歌]
-icon: 
+icon: leaf
 ---
 摘录了个人喜欢的新诗名篇佳句。
 

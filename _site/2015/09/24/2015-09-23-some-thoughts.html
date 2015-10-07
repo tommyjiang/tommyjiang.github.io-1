@@ -4,7 +4,7 @@
 <html lang="cn">
   <head>
     <meta charset="utf-8">
-    <title>iPhone QQ音乐中的 mp3 导出到 Mac 的方法</title>
+    <title>思君令人老，岁月忽已晚</title>
     
     
     <meta name="author" content="Tommy">
@@ -88,19 +88,19 @@
 <div class="row post-full typo">
   <div class="col-md-2"></div>
   <div class="col-md-8 typo">
-    <h2>iPhone QQ音乐中的 mp3 导出到 Mac 的方法 </h2>
+    <h2>思君令人老，岁月忽已晚 </h2>
     <div class="post_info">
       
       <ul id="post_info" class="tag_box inline">
         <li><i class="fa fa-calendar"></i></li>
-        <li> 2015 年 07 月 27 日</li>
+        <li> 2015 年 09 月 24 日</li>
         <li><i class="fa fa-folder-open"></i></li>
         
         
  
   <li>
-    <a href="/categories.html#技术-ref">
-      技术 
+    <a href="/categories.html#生活-ref">
+      生活 
     </a>
   </li>
   
@@ -111,29 +111,15 @@
         
     </div>
     <div class="content">
-      <p>将 iPhone QQ音乐中的 mp3 导出到 Mac 的方法和具体步骤。</p>
+      <p>转眼入职已经将近俩月了。今晚10点多一如既往地最后一个离开办公室，回到单位免费提供的半地下室宿舍。虽然说是半地下室，但其实和地下室几乎没区别——窗外斜上方的一小点缝隙使得都不足以让我在每天早上醒来时辨别，今天究竟是晴天还是阴天。</p>
 
-<p>周五回学校看了《中国好声音》的第四季第二集，非常喜欢刘伟男演绎的《Lemon Tree》（这首歌也是我高中英语老师最喜欢的英文歌），这小伙的版本还受到了 <a href="http://weibo.com/1705586121/CsIvG4NGO?ref=&amp;type=comment#_rnd1438003302470">G. E. M. 的表扬</a>。百度后发现本季《中国好声音》的歌曲只能通过QQ音乐的客户端下载，而QQ音乐又没有 Mac 版，于是就用 iPhone 中的QQ音乐下了 mp3 文件再导到 Mac 中。但整个过程还挺麻烦的，具体步骤如下。</p>
+<p>独自一人坐在宿舍，靠上网打发睡前无聊的时间。不经意间打开了自己的QQ空间，看到很多8、9年前自己写的日志，不禁哑然失笑，原来当年的我是这么的幼稚，该用大数据分析一下当年日志里诸如“呵呵”、“奋斗”、“青春”这些词出现的次数，再和现在博客里文章的高频词汇进行下对比，也算从一个侧面印证了我的成长吧。当年的日志还有另一个特点，就是经常会引用一些古文和古诗。我高中时语文成绩还是不错的，而且我也以文艺青年自诩，所以时隔这么多年之后，本文的标题仍然延续了这一传统，也算一种怀念吧。</p>
 
-<p>前提条件：iPhone 需要越狱，Mac 上需要安装 iTunes 和同步助手（或其他同类软件）。</p>
+<p>其实今天这篇博文本来是想抱怨下工作中要用到的PSCAD有多难用，但又恐单纯地抱怨显得太单薄了，所以就信马由缰，随性而作，想什么说什么吧。</p>
 
-<h3 id="iphone-qq音乐中-mp3-文件的批量导出">iPhone QQ音乐中 mp3 文件的批量导出</h3>
+<h1 id="入职感想">入职感想</h1>
 
-<p>iPhone QQ音乐中的 mp3 文件并不是存储在程序对应的 Documents 文件夹下面，而是在如下路径中：</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">/var/mobile/Containers/Data/Application/编号/Documents/iMusic/
-</code></pre></div>
-<p>以上路径中的“编号”每个 iPhone 都不一样，例如我的是以 02F6D75F 开头的一系列字符，可以用如下方法查询到该编号：利用 Cydia 在越狱后的 iPhone 上安装 iFile，查询不同编号程序的文档大小，一般来说，由于QQ音乐中的 mp3 文件较多，因此文档大小一般很大，可以利用文档大小这个特征查询QQ音乐对应的编号。得到该编号后，就可以在同步助手中把这个目录下的所有子文件夹和其中的 mp3 文件导出到 Mac 了。</p>
-
-<h3 id="已导出-mp3-文件批量更改后缀名">已导出 mp3 文件批量更改后缀名</h3>
-
-<p>上一步导出的是 iMusic 整个文件夹，其中包括很多子文件夹，每个子文件夹内又有一些后缀名为 tm0 的文件，其实这些就是 QQ音乐里的 mp3 文件，我们需要批量将这个文件夹下所有文件的后缀名 tm0 改为 mp3。可以在终端中输入如下命令将文件后缀名由 tm0 更改为 mp3：</p>
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">find . -name <span class="s2">&quot;*.tm0&quot;</span><span class="p">|</span>sed <span class="s1">&#39;s/.tm0//&#39;</span><span class="p">|</span>xargs -n1 -I <span class="o">{}</span> mv <span class="o">{}</span>.tm0 <span class="o">{}</span>.mp3
-</code></pre></div>
-<p>注意需要先进入导出的 iMusic 文件夹对应的目录后，再输入以上命令。</p>
-
-<h3 id="找到对应的歌曲">找到对应的歌曲</h3>
-
-<p>把导出的 iMusic 文件夹中的后缀名为 tm0 文件的后缀名全部更改为 mp3 后，还差最后一步，也就是在所有 mp3 文件中找到某一首歌。这步不推荐使用 iTunes，因为 iTunes 会把所有歌曲复制一份到程序的存储目录。可以选择 <a href="http://coppertino.com/vox/mac">Vox</a> 添加 iMusic 文件夹中的所有歌曲到一个播放列表，再在播放列表中找到对应的歌名，然后右键选择“Show in Finder”即可定位到具体的 mp3 文件。</p>
+<p>PSCAD</p>
 
     </div>
 
@@ -143,9 +129,9 @@
       
       
    
-    <li><a href="/posts.html#iPhone">iPhone <span>1</span></a></li>
+    <li><a href="/posts.html#生活">生活 <span>2</span></a></li>
    
-    <li><a href="/posts.html#Mac">Mac <span>2</span></a></li>
+    <li><a href="/posts.html#感悟">感悟 <span>1</span></a></li>
   
 
 
@@ -156,11 +142,11 @@
     <hr>
       <ul class="pagination pull-right">
         
-        <li class="prev"><a href="/2015/07/09/graduation-party" title="2015年毕业晚会观后感">&larr; 前一篇</a></li>
+        <li class="prev"><a href="/2015/08/29/new-era-poems" title="新诗集萃">&larr; 前一篇</a></li>
         
         <li><a href="/posts.html">索引</a></li>
         
-        <li class="next"><a href="/2015/08/10/Simulink-m-file" title="Matlab 中利用 m 文件修改 Simulink 模型参数的方法">后一篇 &rarr;</a></li>
+        <li class="next disabled"><a>后一篇 &rarr;</a>
         
       </ul>
     <br />
@@ -169,7 +155,7 @@
 
 
   <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="iPhone QQ音乐中的 mp3 导出到 Mac 的方法" data-title="iPhone QQ音乐中的 mp3 导出到 Mac 的方法" data-url="page.url"></div>
+	<div class="ds-thread" data-thread-key="思君令人老，岁月忽已晚" data-title="思君令人老，岁月忽已晚" data-url="page.url"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
