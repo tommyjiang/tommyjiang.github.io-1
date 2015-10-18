@@ -10,6 +10,7 @@ http://tommyjiang.github.com/page2/
 http://tommyjiang.github.com/page3/
 http://tommyjiang.github.com/page4/
 
+http://tommyjiang.github.com/2015/10/07/2015-10-10-2015-national-celebration-concert
 http://tommyjiang.github.com/2015/10/07/2015-07-17-test-echarts
 http://tommyjiang.github.com/2015/10/01/jing-jin-tang-high-speed-railway
 http://tommyjiang.github.com/2015/08/29/new-era-poems
