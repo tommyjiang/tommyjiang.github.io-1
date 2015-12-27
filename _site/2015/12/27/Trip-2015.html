@@ -1,0 +1,637 @@
+
+
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="utf-8">
+    <title>2015旅程统计及个人飞行统计</title>
+    
+    
+    <meta name="author" content="Tommy">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/typo.css" rel="stylesheet">
+    <link href="/css/solarized.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/datatables-bootstrap.css" rel="stylesheet">
+    <link href="/css/codepiano.css" rel="stylesheet">
+
+    <!-- javascript files -->
+    <script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/js/datatables-bootstrap.js"></script>
+    <script type="text/javascript" src="/js/codepiano.js"></script>
+
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    <script type="text/javascript">
+    </script>
+
+  </head>
+
+  <body id="scroll-pane" data-spy="scroll" data-target="#time-list-nav">
+    <div class="wrapper">
+      <!-- 导航条 -->
+      <div class="nav navbar-nav" id="nav-wrap">
+        <div class="navbar-header">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+            <a class="navbar-brand" href="/">
+              <span class="site-author"> Tommy </span>
+              <span class="site-title"> /* 电力引领生活 */ </span>
+            </a>
+            <ul id="nav-menu" class="nav navbar-nav">
+              
+              
+              
+
+
+
+
+
+<li class="posts"><a href="/posts.html">文章</a></li>
+<li class="timeline"><a href="/timeline.html">归档</a></li>
+<li class="categories"><a href="/categories.html">目录</a></li>
+<li class="about"><a href="/about.html">关于</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+      </div>
+
+      <!-- 正文 -->
+      
+
+<div class="row post-full typo">
+  <div class="col-md-2"></div>
+  <div class="col-md-8 typo">
+    <h2>2015旅程统计及个人飞行统计 </h2>
+    <div class="post_info">
+      
+      <ul id="post_info" class="tag_box inline">
+        <li><i class="fa fa-calendar"></i></li>
+        <li> 2015 年 12 月 27 日</li>
+        <li><i class="fa fa-folder-open"></i></li>
+        
+        
+ 
+  <li>
+    <a href="/categories.html#技术-ref">
+      技术 
+    </a>
+  </li>
+  
+
+
+
+      </ul>
+        
+    </div>
+    <div class="content">
+      <p>test</p>
+
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+
+<div id="barMain" style="height:400px"></div>
+
+<p>test</p>
+
+<div id="lineMain" style="height:400px"></div>
+
+<p>test2</p>
+
+<div id="lineMain2" style="height:400px"></div>
+
+<!-- -->
+
+<!-- ECharts单文件引入 -->
+
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+
+<script type="text/javascript">
+// 路径配置
+        require.config(
+                {
+                        paths: {
+                                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        }
+        );
+
+    require(
+            [
+        　　'echarts',
+        　　'echarts/chart/bar',
+        　　'echarts/chart/line'
+        ],
+        drawEcharts
+    );
+
+    function drawEcharts(ec){
+        drawBar(ec);
+    }
+
+    function drawBar(ec){
+        var myBarChart = ec.init(document.getElementById('barMain'));
+        option = {
+                        title : {
+                text: "各渠道销量"
+                        },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : ['周一','周二','周三','周四','周五','周六','周日']
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'邮件营销',
+                    type:'line',
+                    stack: '总量',
+                    data:[120, 132, 101, 134, 90, 230, 210]
+                },
+                {
+                    name:'联盟广告',
+                    type:'line',
+                    stack: '总量',
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                },
+                {
+                    name:'视频广告',
+                    type:'line',
+                    stack: '总量',
+                    data:[150, 232, 201, 154, 190, 330, 410]
+                },
+                {
+                    name:'直接访问',
+                    type:'line',
+                    stack: '总量',
+                    data:[320, 332, 301, 334, 390, 330, 320]
+                },
+                {
+                    name:'搜索引擎',
+                    type:'line',
+                    stack: '总量',
+                    data:[820, 932, 901, 934, 1290, 1330, 1320]
+                }
+            ]
+        };
+        myBarChart.setOption(option,true); //当setOption第二个参数为true时，会阻止数据合并
+    }
+
+                    tooltip : {
+                            trigger: 'axis'
+                    },
+                    legend: {
+                            data:['最高气温','最低气温']
+                    },
+                    calculable : true,
+                    xAxis : [{
+                        type : 'category',
+                            boundaryGap : false,
+                            data : ['周一','周二','周三','周四','周五','周六','周日']
+                    }],
+                    yAxis : [{
+                            type : 'value',
+                            axisLabel : {
+                                formatter: '{value} °C'
+                            }
+                    }],
+                    series : [
+                        {
+                                name:'最高气温',
+                                type:'line',
+                                data:[11, 11, 15, 13, 12, 13, 10],
+                                markPoint : {
+                                        data : [
+                                                {type : 'max', name: '最大值'},
+                                                {type : 'min', name: '最小值'}
+                                        ]
+                                },
+                                markLine : {
+                                        data : [
+　　    　　　　            {type : 'average', name: '平均值'}
+　　    　　            ]
+                    }
+                },
+
+                            {
+                    name:'最低气温',
+                            type:'line',
+                            data:[1, -2, 2, 5, 3, 2, 0],
+                            markPoint : {
+                                    data : [
+                                            {name : '周最低', value : -2, xAxis: 1, yAxis: -1.5}
+                                    ]
+                            },
+                    markLine : {
+                                    data : [
+　　    　　　　            {type : 'average', name : '平均值'}
+　　    　　            ]
+                    },
+                },
+            ]
+                }
+        myLineChart2.setOption(option3,true);
+    };
+</script>
+
+<!-- end -->
+
+<p>var effect = {
+    show: true,
+    scaleSize: require(&lsquo;zrender/tool/env&rsquo;).canvasSupported ? 1 : 2,
+    period: 30,             // 运动周期，无单位，值越大越慢
+    color: &rsquo;#fff&rsquo;,
+    shadowColor: &#39;rgba(220,220,220,0.4)&rsquo;,
+    shadowBlur : 5 
+};
+function itemStyle(idx) {
+    return {
+        normal: {
+            color:&rsquo;#fff&rsquo;,
+            borderWidth:1,
+            borderColor:[&#39;rgba(30,144,255,1)&rsquo;,&#39;lime&rsquo;][idx],
+            lineStyle: {
+                //shadowColor : [&#39;rgba(30,144,255,1)&rsquo;,&#39;lime&rsquo;][idx], //默认透明
+                //shadowBlur: 10,
+                //shadowOffsetX: 0,
+                //shadowOffsetY: 0,
+                type: &#39;solid&rsquo;
+            }
+        }
+    }
+};
+option = {
+    backgroundColor: &rsquo;#1b1b1b&rsquo;,
+    color: [&#39;rgba(30,144,255,1)&rsquo;,&#39;lime&rsquo;],
+    title : {
+        text: &#39;中国铁路运输主干线&rsquo;,
+        subtext:&#39;数据来自维基百科&rsquo;,
+        sublink: &rsquo;<a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E9%93%81%E8%B7%AF%E8%BF%90%E8%BE%93">http://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E9%93%81%E8%B7%AF%E8%BF%90%E8%BE%93</a>&rsquo;,
+        x:&#39;center&rsquo;,
+        textStyle : {
+            color: &rsquo;#fff&rsquo;
+        }
+    },
+    tooltip : {
+        trigger: &#39;item&rsquo;,
+        formatter: &rsquo;{b}&rsquo;
+    },
+    legend: {
+        orient: &#39;vertical&rsquo;,
+        x:&#39;left&rsquo;,
+        selectedMode:&#39;single&rsquo;,
+        data:[&#39;八纵通道&rsquo;, &#39;八横通道&rsquo;],
+        textStyle : {
+            color: &rsquo;#fff&rsquo;
+        }
+    },
+    toolbox: {
+        show : true,
+        orient : &#39;vertical&rsquo;,
+        x: &#39;right&rsquo;,
+        y: &#39;center&rsquo;,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    series : [
+        {
+            name: &#39;八纵通道&rsquo;,
+            type: &#39;map&rsquo;,
+            roam: true,
+            hoverable: false,
+            mapType: &#39;china&rsquo;,
+            itemStyle:{
+                normal:{
+                    borderColor:&#39;rgba(100,149,237,1)&rsquo;,
+                    borderWidth:0.5,
+                    areaStyle:{
+                        color: &rsquo;#1b1b1b&rsquo;
+                    }
+                }
+            },
+            data:[],
+            markLine : {
+                symbol: [&#39;circle&rsquo;, &#39;circle&rsquo;],<br>
+                symbolSize : 1,
+                effect : effect,
+                itemStyle : itemStyle(0),
+                smooth:true,
+                data : [
+                    [{name:&#39;北京&rsquo;}, {name:&#39;哈尔滨&rsquo;}],
+                    [{name:&#39;哈尔滨&rsquo;}, {name:&#39;满洲里&rsquo;}],</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">                [{name:&#39;沈阳&#39;}, {name:&#39;大连&#39;}],
+                [{name:&#39;大连&#39;}, {name:&#39;烟台&#39;}],
+                [{name:&#39;烟台&#39;}, {name:&#39;青岛&#39;}],
+                [{name:&#39;青岛&#39;}, {name:&#39;淮安&#39;}],
+                [{name:&#39;淮安&#39;}, {name:&#39;上海&#39;}],
+                [{name:&#39;上海&#39;}, {name:&#39;杭州&#39;}],
+                [{name:&#39;杭州&#39;}, {name:&#39;宁波&#39;}],
+                [{name:&#39;宁波&#39;}, {name:&#39;温州&#39;}],
+                [{name:&#39;温州&#39;}, {name:&#39;福州&#39;}],
+                [{name:&#39;福州&#39;}, {name:&#39;厦门&#39;}],
+                [{name:&#39;厦门&#39;}, {name:&#39;广州&#39;}],
+                [{name:&#39;广州&#39;}, {name:&#39;湛江&#39;}],
+
+                [{name:&#39;北京&#39;}, {name:&#39;天津&#39;}],
+                [{name:&#39;天津&#39;}, {name:&#39;济南&#39;}],
+                [{name:&#39;济南&#39;}, {name:&#39;南京&#39;}],
+                [{name:&#39;南京&#39;}, {name:&#39;上海&#39;}],
+
+                [{name:&#39;北京&#39;}, {name:&#39;南昌&#39;}],
+                [{name:&#39;南昌&#39;}, {name:&#39;深圳&#39;}],
+                [{name:&#39;深圳&#39;}, {name:&#39;九龙红磡&#39;}],
+
+                [{name:&#39;北京&#39;}, {name:&#39;郑州&#39;}],
+                [{name:&#39;郑州&#39;}, {name:&#39;武汉&#39;}],
+                [{name:&#39;武汉&#39;}, {name:&#39;广州&#39;}],
+
+                [{name:&#39;大同&#39;}, {name:&#39;太原&#39;}],
+                [{name:&#39;太原&#39;}, {name:&#39;焦作&#39;}],
+                [{name:&#39;焦作&#39;}, {name:&#39;洛阳&#39;}],
+                [{name:&#39;洛阳&#39;}, {name:&#39;柳州&#39;}],
+                [{name:&#39;柳州&#39;}, {name:&#39;湛江&#39;}],
+
+                [{name:&#39;包头&#39;}, {name:&#39;西安&#39;}],
+                [{name:&#39;西安&#39;}, {name:&#39;重庆&#39;}],
+                [{name:&#39;重庆&#39;}, {name:&#39;贵阳&#39;}],
+                [{name:&#39;贵阳&#39;}, {name:&#39;柳州&#39;}],
+                [{name:&#39;柳州&#39;}, {name:&#39;南宁&#39;}],
+
+                [{name:&#39;兰州&#39;}, {name:&#39;成都&#39;}],
+                [{name:&#39;成都&#39;}, {name:&#39;昆明&#39;}]
+            ]
+        }
+    },
+    {
+        name: &#39;八横通道&#39;,
+        type: &#39;map&#39;,
+        mapType: &#39;china&#39;,
+        itedmStyle:{
+            normal:{
+                borderColor:&#39;rgba(100,149,237,1)&#39;,
+                borderWidth:0.5,
+                areaStyle:{
+                    color: &#39;#1b1b1b&#39;
+                }
+            }
+        },
+        data:[],
+        markLine : {
+            symbol: [&#39;circle&#39;, &#39;circle&#39;],  
+            symbolSize : 1,
+            effect : effect,
+            itemStyle : itemStyle(1),
+            smooth:true,
+            data : [
+                [{name:&#39;北京&#39;}, {name:&#39;兰州&#39;}],
+                [{name:&#39;兰州&#39;}, {name:&#39;拉萨&#39;}],
+
+                [{name:&#39;大同&#39;}, {name:&#39;秦皇岛&#39;}],
+
+                [{name:&#39;神木&#39;}, {name:&#39;黄骅&#39;}],
+
+                [{name:&#39;太原&#39;}, {name:&#39;德州&#39;}],
+                [{name:&#39;德州&#39;}, {name:&#39;龙口&#39;}],
+                [{name:&#39;龙口&#39;}, {name:&#39;烟台&#39;}],
+
+                [{name:&#39;太原&#39;}, {name:&#39;德州&#39;}],
+                [{name:&#39;德州&#39;}, {name:&#39;济南&#39;}],
+                [{name:&#39;济南&#39;}, {name:&#39;青岛&#39;}],
+
+                [{name:&#39;长治&#39;}, {name:&#39;邯郸&#39;}],
+                [{name:&#39;邯郸&#39;}, {name:&#39;济南&#39;}],
+                [{name:&#39;济南&#39;}, {name:&#39;青岛&#39;}],
+
+                [{name:&#39;瓦塘&#39;}, {name:&#39;临汾&#39;}],
+                [{name:&#39;临汾&#39;}, {name:&#39;长治&#39;}],
+                [{name:&#39;长治&#39;}, {name:&#39;汤阴&#39;}],
+                [{name:&#39;汤阴&#39;}, {name:&#39;台前&#39;}],
+                [{name:&#39;台前&#39;}, {name:&#39;兖州&#39;}],
+                [{name:&#39;兖州&#39;}, {name:&#39;日照&#39;}],
+
+                [{name:&#39;侯马&#39;}, {name:&#39;月山&#39;}],
+                [{name:&#39;月山&#39;}, {name:&#39;新乡&#39;}],
+                [{name:&#39;新乡&#39;}, {name:&#39;兖州&#39;}],
+                [{name:&#39;兖州&#39;}, {name:&#39;日照&#39;}],
+
+                [{name:&#39;连云港&#39;}, {name:&#39;郑州&#39;}],
+                [{name:&#39;郑州&#39;}, {name:&#39;兰州&#39;}],
+                [{name:&#39;兰州&#39;}, {name:&#39;乌鲁木齐&#39;}],
+                [{name:&#39;乌鲁木齐&#39;}, {name:&#39;阿拉山口&#39;}],
+
+                [{name:&#39;西安&#39;}, {name:&#39;南阳&#39;}],
+                [{name:&#39;南阳&#39;}, {name:&#39;信阳&#39;}],
+                [{name:&#39;信阳&#39;}, {name:&#39;合肥&#39;}],
+                [{name:&#39;合肥&#39;}, {name:&#39;南京&#39;}],
+                [{name:&#39;南京&#39;}, {name:&#39;启东&#39;}],
+
+                [{name:&#39;重庆&#39;}, {name:&#39;武汉&#39;}],
+                [{name:&#39;武汉&#39;}, {name:&#39;九江&#39;}],
+                [{name:&#39;九江&#39;}, {name:&#39;铜陵&#39;}],
+                [{name:&#39;铜陵&#39;}, {name:&#39;南京&#39;}],
+                [{name:&#39;南京&#39;}, {name:&#39;上海&#39;}],
+
+                [{name:&#39;上海&#39;}, {name:&#39;怀化&#39;}],
+                [{name:&#39;怀化&#39;}, {name:&#39;重庆&#39;}],
+                [{name:&#39;重庆&#39;}, {name:&#39;成都&#39;}],
+                [{name:&#39;成都&#39;}, {name:&#39;贵阳&#39;}],
+                [{name:&#39;贵阳&#39;}, {name:&#39;昆明&#39;}],
+
+                [{name:&#39;昆明&#39;}, {name:&#39;南宁&#39;}],
+                [{name:&#39;南宁&#39;}, {name:&#39;黎塘&#39;}],
+                [{name:&#39;黎塘&#39;}, {name:&#39;湛江&#39;}]
+            ]
+        },
+        geoCoord: {
+            &#39;阿拉山口&#39;:[82.5757,45.1706],
+            &#39;包头&#39;:[109.8403,40.6574],
+            &#39;北京&#39;:[116.4075,39.9040],
+            &#39;成都&#39;:[104.0665,30.5723],
+            &#39;大连&#39;:[121.6147,38.9140],
+            &#39;大同&#39;:[113.3001,40.0768],
+            &#39;德州&#39;:[116.3575,37.4341],
+            &#39;福州&#39;:[119.2965,26.0745],
+            &#39;广州&#39;:[113.2644,23.1292],
+            &#39;贵阳&#39;:[106.6302,26.6477],
+            &#39;哈尔滨&#39;:[126.5363,45.8023],
+            &#39;邯郸&#39;:[114.5391,36.6256],
+            &#39;杭州&#39;:[120.1551,30.2741],
+            &#39;合肥&#39;:[117.2272,31.8206],
+            &#39;侯马&#39;:[111.3720,35.6191],
+            &#39;怀化&#39;:[109.9985,27.5550],
+            &#39;淮安&#39;:[119.0153,33.6104],
+            &#39;黄骅&#39;:[117.3300,38.3714],
+            &#39;济南&#39;:[117.1205,36.6510],
+            &#39;焦作&#39;:[113.2418,35.2159],
+            &#39;九江&#39;:[116.0019,29.7051],
+            &#39;九龙红磡&#39;:[114.1870,22.3076],
+            &#39;昆明&#39;:[102.8329,24.8801],
+            &#39;拉萨&#39;:[91.1409,29.6456],
+            &#39;兰州&#39;:[103.8343,36.0611],
+            &#39;黎塘&#39;:[109.1363,23.2066],
+            &#39;连云港&#39;:[119.2216,34.5967],
+            &#39;临汾&#39;:[111.5190,36.0880],
+            &#39;柳州&#39;:[109.4160,24.3255],
+            &#39;龙口&#39;:[120.4778,37.6461],
+            &#39;洛阳&#39;:[112.4540,34.6197],
+            &#39;满洲里&#39;:[117.3787,49.5978],
+            &#39;南昌&#39;:[115.8581,28.6832],
+            &#39;南京&#39;:[118.7969,32.0603],
+            &#39;南宁&#39;:[108.3661,22.8172],
+            &#39;南阳&#39;:[112.5283,32.9908],
+            &#39;宁波&#39;:[121.5440,29.8683],
+            &#39;启东&#39;:[121.6574,31.8082],
+            &#39;秦皇岛&#39;:[119.6005,39.9354],
+            &#39;青岛&#39;:[120.3826,36.0671],
+            &#39;日照&#39;:[119.5269,35.4164],
+            &#39;厦门&#39;:[118.0894,24.4798],
+            &#39;上海&#39;:[121.4737,31.2304],
+            &#39;深圳&#39;:[114.0579,22.5431],
+            &#39;神木&#39;:[110.4871,38.8610],
+            &#39;沈阳&#39;:[123.4315,41.8057],
+            &#39;台前&#39;:[115.8717,35.9701],
+            &#39;太原&#39;:[112.5489,37.8706],
+            &#39;汤阴&#39;:[114.3572,35.9218],
+            &#39;天津&#39;:[117.2010,39.0842],
+            &#39;铜陵&#39;:[117.8121,30.9454],
+            &#39;瓦塘&#39;:[109.7600,23.3161],
+            &#39;温州&#39;:[120.6994,27.9943],
+            &#39;乌鲁木齐&#39;:[87.6168,43.8256],
+            &#39;武汉&#39;:[114.3054,30.5931],
+            &#39;西安&#39;:[108.9402,34.3416],
+            &#39;新乡&#39;:[113.9268,35.3030],
+            &#39;信阳&#39;:[114.0913,32.1470],
+            &#39;烟台&#39;:[121.4479,37.4638],
+            &#39;兖州&#39;:[116.7838,35.5531],
+            &#39;月山&#39;:[113.0550,35.2104],
+            &#39;湛江&#39;:[110.3594,21.2707],
+            &#39;长治&#39;:[113.1163,36.1954],
+            &#39;郑州&#39;:[113.6254,34.7466],
+            &#39;重庆&#39;:[106.5516,29.5630]
+        }
+    }
+]
+</code></pre></div>
+<p>};</p>
+
+    </div>
+
+    
+    <ul id="tag_info" class="tag_box inline">
+      <li><i class="fa fa-tags"></i></li>
+      
+      
+   
+    <li><a href="/posts.html#Echarts">Echarts <span>3</span></a></li>
+   
+    <li><a href="/posts.html#统计">统计 <span>1</span></a></li>
+   
+    <li><a href="/posts.html#旅行">旅行 <span>1</span></a></li>
+  
+
+
+
+    </ul>
+      
+
+    <hr>
+      <ul class="pagination pull-right">
+        
+        <li class="prev"><a href="/2015/12/23/Mac-Geek" title="Mac for Geek">&larr; 前一篇</a></li>
+        
+        <li><a href="/posts.html">索引</a></li>
+        
+        <li class="next"><a href="/2015/12/28/Trip-2015" title="Echarts">后一篇 &rarr;</a></li>
+        
+      </ul>
+    <br />
+    <div id="comment-hook"></div>
+    
+
+
+  <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="2015旅程统计及个人飞行统计" data-title="2015旅程统计及个人飞行统计" data-url="page.url"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"tommyjiang"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
+
+  </div>
+  <div class="col-md-2"></div>
+</div>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+ "HTML-CSS": {linebreaks: {automatic: true}},
+ SVG: {linebreaks: {automatic: true}}
+ });
+</script>
+
+
+
+
+    
+
+  </body>
+</html>
+

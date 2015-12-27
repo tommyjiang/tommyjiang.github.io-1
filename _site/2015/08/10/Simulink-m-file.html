@@ -113,7 +113,7 @@
     <div class="content">
       <p>介绍在 Matlab 中利用 m 文件修改 Simulink 中模型参数的方法。</p>
 
-<h3 id="电力系统仿真工具">电力系统仿真工具</h3>
+<h3 id=">电力系统仿真工具</h3>
 
 <p>我个人博士论文的隐名评审意见中有如下评语：</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">除第二章的简单实验外，本文的所有结论均源于仿真，这大大降低了本文的创新性和说服力。
@@ -124,7 +124,7 @@
 
 <p>Matlab/Simulink 就是一个常用的仿真工具，它的突出优点是可以和 Matlab 代码完美对接。但利用 Simulink 模型进行仿真时，如果需要在某些时刻改变系统参数，利用 GUI 界面进行设置会比较麻烦，可以利用 m 文件实现，具体方法如下。</p>
 
-<h3 id="m-文件修改-simulink-模型参数的方法">m 文件修改 Simulink 模型参数的方法</h3>
+<h3 id="m-simulink">m 文件修改 Simulink 模型参数的方法</h3>
 
 <p>利用 m 文件修改 Simulink 模型参数方法的总体思想如下：首先在初始参数下仿真一段时间，记录该时间结束时系统所有状态量的值，之后修改系统参数，再以上一次仿真结束时记录的系统所有状态量的值作为初值，重新仿真，如此循环往复。</p>
 
@@ -135,16 +135,16 @@
 </code></pre></div>
 <p>其中<code>ModelName</code>为 Simulink 模型的文件名，注意第一次仿真不需要载入初值，因此<code>LoadInitialState</code>选项需要设为<code>off</code>，之后的仿真中则需要将该项设置为<code>on</code>。第2行对应的是保存系统状态量终值的相关设置，其中<code>FinalStateName</code>为终值存储的变量名，之后仿真的初值需要设置为该变量名。</p>
 
-<h3 id="相关问题">相关问题</h3>
+<h3 id=">相关问题</h3>
 
-<h4 id="继续进行仿真时提示仿真起始时间与状态变量初始值的时间不同">继续进行仿真时提示仿真起始时间与状态变量初始值的时间不同</h4>
+<h4 id=">继续进行仿真时提示仿真起始时间与状态变量初始值的时间不同</h4>
 
 <p>利用以上代码实现 m 文件修改 Simulink 模型参数继续仿真的过程中，会遇到如下警告：</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">Warning: The start time of model &#39;Exp2_1_SimModel&#39; is different from the start time saved in the initial SimState. The start time has therefore been reset to 0. 
 </code></pre></div>
 <p>虽然出现了上述警告，但存储仿真结果的变量中，时间仍然是从0开始一直到全部仿真结束对应的时刻，并未出现上述警告中提到的将每次重新仿真的起始时间设置为0的情况。我试了试直接在 Simulink 中加载初始值然后仿真，并未出现上述警告。由于该警告目前对仿真结果并无影响，因此暂时将其忽略，之后如果能解决当然最好，就算解决不了也无大碍。</p>
 
-<h4 id="simulink-模型中某些参数无法改变">Simulink 模型中某些参数无法改变</h4>
+<h4 id="simulink">Simulink 模型中某些参数无法改变</h4>
 
 <p>电力系统的仿真一般采用 Simulink 中的 SimPower 库，我利用 SimPower 搭建了一个单相半桥 PWM 的仿真模型，可以改变该模型中的调制比参数 m 以及电容电压 V_DC，但无法改变模型中反电势电源的电压幅值 Vs 和支路电阻/电感的值，修改后面二者后 Matlab 会报以下错误：</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">Simulink cannot load the initial SimState because the model,&#39;Exp2_1_SimModel&#39;, was changed after the SimState was saved. Run the simulation again and resave the SimState.
